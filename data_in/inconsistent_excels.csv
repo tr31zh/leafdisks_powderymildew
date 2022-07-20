@@ -1,0 +1,114 @@
+experiment;sheet;sporulation_oob;sporulation_ds_inc;densite_sporulation_oob;necrose_oob;necrose_sn_inc;necrose_tn_inc;taille_necrose_oob;surface_necrosee_oob;oiv_oob;oiv_s_inc;ligne_oob
+Exp16DM01_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp16DM02_rep1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM02_rep2_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM03_rep1_saisie;fichier total;0;1;0;1;0;0;0;0;0;0;0
+Exp16DM03_rep2_saisie;fichier total;0;1;1;1;0;0;0;0;0;0;0
+Exp16DM03_rep3_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM04_rep1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM04_rep2_saisie;fichier total;1;1;0;1;1;1;0;0;0;1;0
+Exp16DM05_rep1_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp16DM05_rep2_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp16DM05_rep3_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM05_rep4_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM05_rep5_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM05_rep6_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM06_saisie;fichier total;1;1;1;1;1;1;0;0;0;0;0
+Exp16DM07_rep1_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
+Exp16DM08_rep1_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
+Exp16DM09_rep1_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp16DM10_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp16DM11_rep1_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
+Exp16DM11_rep2_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp16DM12_rep1_saisie;fichier total;1;1;0;1;1;1;0;0;0;1;0
+Exp16DM12_rep2_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp17DM01_inoc1_saisie;fichier total;1;1;1;0;1;1;1;1;1;0;0
+Exp17DM01_inoc2_saisie;fichier total;0;0;0;1;1;1;0;0;0;1;0
+Exp17DM01_inoc3_saisie;fichier total;1;1;0;1;0;0;0;0;0;1;0
+Exp17DM02_inoc1_saisie;fichier total;0;0;0;1;1;1;0;0;0;1;0
+Exp17DM02_inoc2_saisie;fichier total;0;0;0;1;1;1;0;0;0;1;0
+Exp17DM02_inoc3_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp17DM03_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp17DM03_inoc2_saisie;fichier total;1;1;0;0;1;1;0;0;1;0;0
+Exp17DM04_inoc1_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp17DM04_inoc2_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp17DM04_inoc3_saisie;fichier total;1;1;0;0;1;1;0;0;1;0;0
+Exp17DM04_inoc4_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp17DM07_inoc1_saisie;4dpi;1;1;0;0;1;1;0;0;1;0;0
+Exp17DM07_inoc1_saisie;5dpi;1;1;0;1;1;1;0;0;0;0;0
+Exp17DM07_inoc1_saisie;6dpi;0;0;0;1;0;0;1;0;0;0;0
+Exp17DM08_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp18DM01_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp18DM01_inoc2_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp18DM02_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp18DM02_inoc2et3_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp18DM03_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp18DM04_inoc1_saisie;4dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp18DM04_inoc1_saisie;5dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp18DM04_inoc1_saisie;6dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp18DM05_saisie;Exp18DM05_saisie_t4;0;0;0;1;0;0;0;0;0;0;0
+Exp18DM05_saisie;Exp18DM05_saisie_t5;0;0;0;1;0;0;0;0;0;1;0
+Exp18DM06_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp18DM07_saisie;Feuil1;0;0;0;1;1;1;0;0;0;0;0
+Exp18DM10_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp19DM01_saisie;fichier total;1;1;0;0;1;1;0;0;1;0;0
+Exp19DM02_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp19DM02_inoc2_saisie;fichier total;1;1;1;1;1;1;0;0;0;0;0
+Exp19DM03_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp19DM03_inoc2_saisie;fichier total;0;1;0;1;1;1;0;0;0;0;0
+Exp19DM04_inoc1_saisie;fichier total;0;0;0;0;1;1;0;0;0;0;0
+Exp19DM04_inoc2_saisie;fichier total;0;0;0;0;1;1;0;0;0;0;0
+Exp19DM06_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp19DM06_inoc2_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp19DM07_saisie;fichier total;1;1;1;0;1;1;1;1;1;0;0
+Exp19DM09_saisie;22-07;0;0;0;1;0;0;0;0;0;0;0
+Exp20DM01_inoc1_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
+Exp20DM01_inoc2_saisie;fichier total;0;1;1;1;0;0;0;0;0;1;1
+Exp20DM02_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp20DM02_inoc2_saisie;fichier total;0;1;1;1;0;0;0;0;0;0;0
+Exp20DM03_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp20DM03_inoc2_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp20DM04_inoc1_saisie;fichier total;0;0;1;1;1;1;0;0;1;0;0
+Exp20DM04_inoc2_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
+Exp21DM01_inoc1_saisie;3dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM01_inoc1_saisie;6dpi;0;1;1;1;0;0;0;0;0;0;0
+Exp21DM01_inoc2_saisie;6dpi;0;1;1;1;1;1;0;0;0;1;0
+Exp21DM02_inoc1_saisie;6dpi;0;1;1;1;0;0;0;0;0;0;0
+Exp21DM02_inoc2_saisie;Feuil1;0;0;0;1;1;1;0;0;0;0;0
+Exp21DM03_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM03_inoc2_saisie;3dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM03_inoc2_saisie;6dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM03_inoc3_saisie;4dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM03_inoc3_saisie;6dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM03_inoc4_saisie;4dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM03_inoc4_saisie;6dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM04_inoc1_saisie;6dpi;1;1;0;0;1;1;0;0;1;0;0
+Exp21DM04_inoc2_saisie;3dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM04_inoc2_saisie;6dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM04_inoc3_saisie;6dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM05_inoc1_saisie;2dpi;0;1;1;1;0;0;0;0;0;0;0
+Exp21DM05_inoc1_saisie;3dpi;0;0;0;1;1;1;1;1;0;0;0
+Exp21DM05_inoc1_saisie;6dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM05_inoc2_saisie;3dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM05_inoc2_saisie;6dpi;0;1;1;1;0;0;0;0;0;0;0
+Exp21DM05_inoc3_saisie;6dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM05_inoc4_saisie;4dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM05_inoc4_saisie;5dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM05_inoc4_saisie;6dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM07_inoc1_saisie;fichier total;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM08_inoc1_saisie;4dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM08_inoc1_saisie;5dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM08_inoc1_saisie;6dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM08_inoc2_saisie;4dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM08_inoc2_saisie;5dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM08_inoc2_saisie;6dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM12_saisie;3dpi;0;1;1;1;0;0;0;0;0;0;0
+Exp21DM12_saisie;4dpi;0;1;0;1;1;1;0;0;0;0;0
+Exp21DM12_saisie;6dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM13_inoc1_saisie;3dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM13_inoc1_saisie;4dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM13_inoc1_saisie;7dpi;1;1;1;0;1;1;1;1;1;0;0
+Exp21DM13_inoc2_saisie;6dpi;0;0;0;1;0;0;0;0;0;0;0
+Exp21DM14_inoc1_saisie;2dpi;0;0;0;1;1;1;0;0;0;0;0
+Exp21DM14_inoc1_saisie;4dpi;0;1;0;1;1;1;0;0;0;0;0
+Exp21DM14_inoc1_saisie;8dpi;0;0;0;1;1;1;0;0;0;0;0
