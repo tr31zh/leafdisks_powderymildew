@@ -4,8 +4,6 @@ from pathlib import Path
 from functools import reduce
 import warnings
 
-from tqdm import tqdm
-
 import pandas as pd
 import numpy as np
 
@@ -331,7 +329,7 @@ def get_distant_excels():
     else:
         files = [
             os.path.join(root, name)
-            for root, _, files in tqdm(os.walk("Z:", topdown=False))
+            for root, _, files in os.walk("Z:", topdown=False)
             for name in files
             if "_saisie" in name
             and "DM" in name
@@ -666,7 +664,6 @@ with col_target:
         """
     We need:
     - Base python libraries for file management
-    - tqdm for progress tracking
     - Pandas and Numpy for the dataframes
     - SkLearn for statistics
     - Plotly for ... plotting    
