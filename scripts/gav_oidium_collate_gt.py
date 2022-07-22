@@ -1,24 +1,19 @@
 import os
 import shutil
 from pathlib import Path
-import itertools
-from matplotlib.pyplot import title
 from functools import reduce
+import warnings
 
 from tqdm import tqdm
 
 import pandas as pd
 import numpy as np
 
-import warnings
-
-warnings.simplefilter("ignore")
+import streamlit as st
 
 from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, normalize
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.cross_decomposition import PLSRegression, CCA, PLSSVD
-from skimage import io as skio
+from sklearn.preprocessing import StandardScaler
+from sklearn.cross_decomposition import PLSRegression
 
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
@@ -29,8 +24,7 @@ import plotly.io as pio
 pd.options.plotting.backend = "plotly"
 pd.options.display.float_format = "{:4,.2f}".format
 
-
-import streamlit as st
+warnings.simplefilter("ignore")
 
 st.set_page_config(
     page_title="Extaedio",
