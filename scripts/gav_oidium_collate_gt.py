@@ -1,11 +1,7 @@
 import os
-import shutil
-from pathlib import Path
-from functools import reduce
 import warnings
 
 import pandas as pd
-import numpy as np
 
 import streamlit as st
 
@@ -19,6 +15,10 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.io as pio
 
+import gav_oidium_func as gof
+import gav_oidium_const as goc
+import gav_oidium_text as got
+
 pd.options.plotting.backend = "plotly"
 pd.options.display.float_format = "{:4,.2f}".format
 
@@ -31,37 +31,9 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-datain_path = os.path.join(".", "data_in")
-excel_file_path = os.path.join(datain_path, "oidium_source_excels", "")
-oidium_extracted_csvs_path = os.path.join(datain_path, "oidium_extracted_csvs", "")
-excel_file_list_path = os.path.join(excel_file_path, "excel_list.txt")
-path_to_df_result = os.path.join(datain_path, "extracted_csv_files.csv")
-odd_numbers = [1, 3, 5, 7, 9]
-available_templates = list(pio.templates.keys())
 
-needed_columns = ["nomphoto", "oiv", "s", "sq", "n", "fn", "tn", "ligne", "colonne"]
-
-oiv_452_spec_req = """
-**From the specifications we now that a clean dataframe has the following rules**:
-- _sporulation_ **must be** 1 ou 0
-- if _sporulation_ **is** 0 , _densite_sporulation_ **must be** NaN else it **must be** an odd number
-- _densite_sporulation_ **must be** a number and **not** 0
-- _necrosis_ **must be** 1 ou 0
-- if _necrosis_ **is** 1 _surface_necrosee_ & _taille_necrose_ **must not be** none else they **must**
-- _surface_necrosee_ & _taille_necrose_ **must be** NaN or odd
-- _OIV_ **must be** an odd number
-- if _OIV_ is 9 **there must be no** _sporulation_ else **there must be**
-- _ligne_ **must not** be NA
-"""
-
-
-def check_list_in_list(required_columns, available_columns):
-    failures = []
-    for rc in required_columns:
-        if rc not in available_columns:
-            failures.append(rc)
-
-    return True if len(failures) == 0 else failures
+def st_progress(step, total):
+    current_pg((step + 1) / total)
 
 
 def print_dataframe_and_shape(df):
@@ -69,582 +41,63 @@ def print_dataframe_and_shape(df):
     st.markdown(df.shape)
 
 
+@st.cache
 def plot_variance(df_ev):
-    df_ev = df_ev.assign(cumulative=df_ev["exp_var_per"].cumsum())
-    ev_fig = go.Figure()
-    ev_fig.add_trace(
-        go.Bar(
-            x=df_ev["pc"],
-            y=df_ev["exp_var_per"],
-            name="individual",
-            texttemplate="%{y}",
-            textfont_size=20,
-        )
-    )
-    ev_fig.add_trace(
-        go.Scatter(
-            x=df_ev["pc"],
-            y=df_ev["cumulative"],
-            name="cumulative",
-        )
-    )
-    ev_fig.update_layout(
-        height=700,
-        width=800,
-        title="Explained variance by different principal components",
-        xaxis_title="Principal component",
-        yaxis_title="Explained variance in percent",
-    )
-    return ev_fig
-
-
-def plot_inconsistencies(df, sort_values: bool = True):
-    columns = [
-        ["sporulation", "densite_sporulation", ""],
-        ["necrose", "surface_necrosee", "taille_necrose"],
-        ["ligne", "colonne", "oiv"],
-    ]
-
-    fig = make_subplots(rows=3, cols=3, subplot_titles=np.array(columns).flatten())
-
-    for idl, l in enumerate(columns):
-        for idc, c in enumerate(l):
-            if not c:
-                continue
-            fig.add_trace(
-                go.Histogram(
-                    x=df[c].sort_values().astype(str)
-                    if sort_values is True
-                    else df[c].astype(str),
-                    texttemplate="%{y}",
-                    textfont_size=20,
-                    name=c,
-                ),
-                row=idl + 1,
-                col=idc + 1,
-            )
-
-    fig.update_layout(
-        height=1000,
-        width=1400,
-        xaxis_title="Value",
-        yaxis_title="Count",
-    )
-
-    return fig
+    return gof.plot_variance(df_ev=df_ev)
 
 
 def get_oiv_cat(df):
-    return df.oiv.astype(str)
+    return gof.get_oiv_cat(df)
 
 
 @st.cache
 def get_common_columns(csv_files):
-    common_columns = set(pd.read_csv(csv_files[0]).columns.to_list())
-    columns_occ = {}
-    for filepath in csv_files:
-        cu_columns = pd.read_csv(filepath).columns.to_list()
-        for c in cu_columns:
-            if c in columns_occ:
-                columns_occ[c] += 1
-            else:
-                columns_occ[c] = 1
-        common_columns = common_columns.intersection(set(cu_columns))
-    return list(common_columns)
+    return gof.get_common_columns(csv_files=csv_files)
 
 
 @st.cache()
 def build_inconsistencies_dataframe(df_source):
-    df_inconsistent = (
-        pd.concat(
-            [
-                df_source[~df_source.sporulation.isin([0, 1])].assign(
-                    because="sporulation_oob"
-                ),
-                df_source[
-                    ~(
-                        (
-                            (df_source.sporulation == 0)
-                            & df_source.densite_sporulation.isna()
-                        )
-                        | (
-                            (df_source.sporulation == 1)
-                            & ~df_source.densite_sporulation.isna()
-                        )
-                    )
-                ].assign(because="sporulation_ds_inc"),
-                df_source[
-                    ~(
-                        df_source.densite_sporulation.isin(odd_numbers)
-                        | df_source.densite_sporulation.isna()
-                    )
-                ].assign(because="densite_sporulation_oob"),
-                df_source[df_source.necrose.isin([0, 1])].assign(because="necrose_oob"),
-                df_source[
-                    ~(
-                        ((df_source.necrose == 1) & ~df_source.surface_necrosee.isna())
-                        | ((df_source.necrose == 0) & df_source.surface_necrosee.isna())
-                    )
-                ].assign(because="necrose_sn_inc"),
-                df_source[
-                    ~(
-                        ((df_source.necrose == 1) & ~df_source.taille_necrose.isna())
-                        | ((df_source.necrose == 0) & df_source.taille_necrose.isna())
-                    )
-                ].assign(because="necrose_tn_inc"),
-                df_source[
-                    ~(
-                        df_source.taille_necrose.isin(odd_numbers)
-                        | df_source.taille_necrose.isna()
-                    )
-                ].assign(because="taille_necrose_oob"),
-                df_source[
-                    ~(
-                        df_source.surface_necrosee.isin(odd_numbers)
-                        | df_source.surface_necrosee.isna()
-                    )
-                ].assign(because="surface_necrosee_oob"),
-                df_source[~df_source.oiv.isin(odd_numbers)].assign(because="oiv_oob"),
-                df_source[
-                    ~(
-                        ((df_source.oiv == 9) & df_source.sporulation == 0)
-                        | ((df_source.oiv != 9) & df_source.sporulation == 1)
-                    )
-                ].assign(because="oiv_s_inc"),
-                df_source[~df_source.ligne.notna()].assign(because="ligne_oob"),
-            ]
-        )[["experiment", "sheet", "because"]]
-        .sort_values(["experiment", "sheet", "because"])
-        .drop_duplicates()
-        .reset_index(drop=True)
-    )
-
-    df_inconsistent = (
-        df_inconsistent.assign(
-            sporulation_oob=np.where(df_inconsistent.because == "sporulation_oob", 1, 0),
-            sporulation_ds_inc=np.where(
-                df_inconsistent.because == "sporulation_ds_inc", 1, 0
-            ),
-            densite_sporulation_oob=np.where(
-                df_inconsistent.because == "densite_sporulation_oob", 1, 0
-            ),
-            necrose_oob=np.where(df_inconsistent.because == "necrose_oob", 1, 0),
-            necrose_sn_inc=np.where(df_inconsistent.because == "necrose_sn_inc", 1, 0),
-            necrose_tn_inc=np.where(df_inconsistent.because == "necrose_tn_inc", 1, 0),
-            taille_necrose_oob=np.where(
-                df_inconsistent.because == "taille_necrose_oob", 1, 0
-            ),
-            surface_necrosee_oob=np.where(
-                df_inconsistent.because == "surface_necrosee_oob", 1, 0
-            ),
-            oiv_oob=np.where(df_inconsistent.because == "oiv_oob", 1, 0),
-            oiv_s_inc=np.where(df_inconsistent.because == "oiv_s_inc", 1, 0),
-            ligne_oob=np.where(df_inconsistent.because == "ligne_oob", 1, 0),
-        )
-        .drop(["because"], axis=1)
-        .groupby(["experiment", "sheet"])
-        .agg("sum")
-        .reset_index(drop=False)
-        .drop_duplicates()
-    )
-
-    df_inconsistent.to_csv(
-        os.path.join(datain_path, "inconsistent_excels.csv"),
-        index=False,
-        sep=";",
-    )
-
-    return df_inconsistent
+    return gof.build_inconsistencies_dataframe(df_source=df_source)
 
 
 @st.cache()
 def clean_merged_dataframe(df_source):
-    return (
-        df_source[
-            (
-                # sporulation must be 1 ou 0
-                df_source.sporulation.isin([0, 1])
-                # if sporulation is 0 , densite_sporulation must be NaN else it must be an odd number
-                & (
-                    ((df_source.sporulation == 0) & df_source.densite_sporulation.isna())
-                    | (
-                        (df_source.sporulation == 1)
-                        & ~df_source.densite_sporulation.isna()
-                    )
-                )
-                # densite_sporulation a number and not 0
-                & (
-                    df_source.densite_sporulation.isin(odd_numbers)
-                    | df_source.densite_sporulation.isna()
-                )
-                # necrosis must be 1 ou 0
-                & df_source.necrose.isin([0, 1])
-                # if necrosis is 1 surface_necrosee & taille_necrose must not be none else they must
-                & (
-                    ((df_source.necrose == 1) & ~df_source.surface_necrosee.isna())
-                    | ((df_source.necrose == 0) & df_source.surface_necrosee.isna())
-                )
-                & (
-                    ((df_source.necrose == 1) & ~df_source.taille_necrose.isna())
-                    | ((df_source.necrose == 0) & df_source.taille_necrose.isna())
-                )
-                # surface_necrosee & taille_necrose must be NaN or odd
-                & (
-                    df_source.taille_necrose.isin(odd_numbers)
-                    | df_source.taille_necrose.isna()
-                )
-                & (
-                    df_source.surface_necrosee.isin(odd_numbers)
-                    | df_source.surface_necrosee.isna()
-                )
-                # OIV must be an odd number
-                & df_source.oiv.isin(odd_numbers)
-                # if OIV is 9 there must be no sporulation else there must be
-                & (
-                    ((df_source.oiv == 9) & df_source.sporulation == 0)
-                    | ((df_source.oiv != 9) & df_source.sporulation == 1)
-                )
-                # line must not be NA
-                & df_source.ligne.notna()
-            )
-        ]
-        .assign(
-            colonne=lambda x: x.colonne.astype("Int64"),
-            necrose=lambda x: x.necrose.astype("Int64"),
-            oiv=lambda x: x.oiv.astype("Int64"),
-            sporulation=lambda x: x.sporulation.astype("Int64"),
-            surface_necrosee=lambda x: x.surface_necrosee.astype("Int64"),
-            densite_sporulation=lambda x: x.densite_sporulation.astype("Int64"),
-            taille_necrose=lambda x: x.taille_necrose.astype("Int64"),
-        )
-        .drop_duplicates()
-    )
+    return gof.clean_merged_dataframe(df_source=df_source)
 
 
 @st.cache
 def get_distant_excels():
-    if os.path.isfile(excel_file_list_path):
-        with open(excel_file_list_path, "r", encoding="UTF8") as f:
-            files = f.read().split("?")
-    else:
-        files = [
-            os.path.join(root, name)
-            for root, _, files in os.walk("Z:", topdown=False)
-            for name in files
-            if "_saisie" in name
-            and "DM" in name
-            and (name.endswith("xlsx") or name.endswith("xls"))
-        ]
-        pd.DataFrame(
-            list(zip([os.path.basename(fn) for fn in files], files)),
-            columns=["file", "path"],
-        ).to_csv(os.path.join(datain_path, "imported_excels.csv"), sep=";")
-        with open(excel_file_list_path, "w+", encoding="UTF8") as f:
-            f.write("?".join(files))
-    return files
+    return gof.get_distant_excels()
 
 
 @st.cache(suppress_st_warning=True)
 def copy_excel_files(files):
-    for i, file in enumerate(files):
-        file_name = os.path.basename(file)
-        pg_copy_excel_files.progress((i + 1) / len(files))
-        if not file_name.startswith("~$") and not os.path.isfile(
-            os.path.join(
-                excel_file_path,
-                file_name,
-            )
-        ):
-            shutil.copy(src=file, dst=excel_file_path)
+    gof.copy_excel_files(files, st_progress)
 
 
 @st.cache
 def filter_csvs():
-    if os.path.isfile(path_to_df_result):
-        return pd.read_csv(path_to_df_result)
-    else:
-        df_result = pd.DataFrame(
-            columns=[
-                "file",
-                "sheet",
-                "outcome",
-                "comment",
-                "csv_file_name",
-            ]
-        )
-
-        def add_result(
-            df,
-            file,
-            sheet,
-            outcome,
-            comment="success",
-            csv_file_name=np.nan,
-        ):
-            return df.append(
-                {
-                    "file": file,
-                    "sheet": sheet,
-                    "outcome": outcome,
-                    "comment": comment,
-                    "csv_file_name": csv_file_name,
-                },
-                ignore_index=True,
-            )
-
-        def lower_dataframe(df):
-            try:
-                df.columns = df.columns.str.lower().str.replace(" ", "")
-                for c in df.columns:
-                    if c != "nomphoto" and df[c].dtype == object:
-                        df[c] = df[c].str.lower().str.replace(" ", "")
-            except:
-                return False
-            else:
-                return df
-
-        lcl_excel_files = [
-            os.path.join(root, name)
-            for root, _, files in os.walk(
-                excel_file_path,
-                topdown=False,
-            )
-            for name in files
-            if name.endswith("_saisie.xlsx")
-        ]
-
-        for i, lcl_excel_file in enumerate(lcl_excel_files):
-            pg_build_csv.progress((i + 1) / len(lcl_excel_files))
-            tst_excel_file = pd.ExcelFile(lcl_excel_file)
-            for sheet_name in tst_excel_file.sheet_names:
-                df = lower_dataframe(df=tst_excel_file.parse(sheet_name=sheet_name))
-                if df is False:
-                    df_result = add_result(
-                        df=df_result,
-                        file=os.path.basename(lcl_excel_file),
-                        sheet=sheet_name,
-                        outcome=False,
-                        comment="Corrupted dataframe",
-                    )
-                    continue
-                header_loc = (
-                    df[df == "numinc"].dropna(axis=1, how="all").dropna(how="all")
-                )
-                if header_loc.shape == (0, 0):
-                    header_loc = (
-                        df[df == "num"].dropna(axis=1, how="all").dropna(how="all")
-                    )
-                    if header_loc.shape == (0, 0):
-                        df_result = add_result(
-                            df=df_result,
-                            file=os.path.basename(lcl_excel_file),
-                            sheet=sheet_name,
-                            outcome=False,
-                            comment="No header",
-                        )
-                        continue
-                df = lower_dataframe(
-                    df=tst_excel_file.parse(
-                        sheet_name,
-                        skiprows=header_loc.index.item() + 1,
-                        na_values=["", "NA", "na"],
-                    )
-                )
-                if df is False:
-                    df_result = add_result(
-                        df=df_result,
-                        file=os.path.basename(lcl_excel_file),
-                        sheet=sheet_name,
-                        outcome=False,
-                        comment="Corrupted dataframe",
-                    )
-                    continue
-                if (
-                    res := check_list_in_list(
-                        required_columns=needed_columns,
-                        available_columns=df.columns.to_list(),
-                    )
-                ) is True:
-                    csv_file_name = f"{Path(lcl_excel_file).stem}_{sheet_name}.csv"
-                    df = df.assign(
-                        exp=Path(lcl_excel_file).stem,
-                        sheet=sheet_name,
-                    ).dropna(subset=["nomphoto", "oiv"])[
-                        needed_columns + ["exp", "sheet"]
-                    ]
-                    if df.shape[0] > 0:
-                        df.to_csv(
-                            os.path.join(oidium_extracted_csvs_path, csv_file_name),
-                            index=False,
-                        )
-                        df_result = add_result(
-                            df=df_result,
-                            file=os.path.basename(lcl_excel_file),
-                            sheet=sheet_name,
-                            outcome=True,
-                            csv_file_name=csv_file_name,
-                        )
-                    else:
-                        df_result = add_result(
-                            df=df_result,
-                            file=os.path.basename(lcl_excel_file),
-                            sheet=sheet_name,
-                            outcome=False,
-                            comment="Corrupted dataframe, failed to retrieve photos",
-                        )
-                else:
-                    df_result = add_result(
-                        df=df_result,
-                        file=os.path.basename(lcl_excel_file),
-                        sheet=sheet_name,
-                        outcome=False,
-                        comment=f"Missing columns: {res}",
-                    )
-
-        df_result.to_csv(path_to_df_result, index=False)
-        return df_result
+    return gof.filter_csvs(st_progress)
 
 
 @st.cache()
 def get_local_csvs():
-    return [
-        os.path.join(root, name)
-        for root, _, files in os.walk(
-            oidium_extracted_csvs_path,
-            topdown=False,
-        )
-        for name in files
-        if name.endswith(".csv")
-    ]
+    return gof.get_local_csvs()
 
 
 @st.cache()
 def build_raw_merged(lcl_csv_files):
-    return pd.concat(
-        [
-            pd.read_csv(filepath)[get_common_columns(lcl_csv_files)]
-            for filepath in lcl_csv_files
-        ]
-    ).rename(
-        columns={
-            "exp": "experiment",
-            "sheet": "sheet",
-            "oiv": "oiv",
-            "nomphoto": "image_name",
-            "s": "sporulation",
-            "fn": "surface_necrosee",
-            "n": "necrose",
-            "sq": "densite_sporulation",
-            "tn": "taille_necrose",
-        }
-    )
-
-
-def build_dup_df(df):
-
-    df_inverted_dup_check = df.drop(["colonne"], axis=1, errors="ignore").select_dtypes(
-        exclude=object
-    )
-
-    df_dict = {
-        k: df_inverted_dup_check[df_inverted_dup_check.oiv == k].drop(["oiv"], axis=1)
-        for k in [1, 3, 5, 7, 9]
-    }
-
-    dup_df_lst = []
-    pairs = []
-    qtty = []
-    dup_col_count = 0
-    for i, j in [
-        (1, 3),
-        (1, 5),
-        (1, 7),
-        (1, 9),
-        (3, 5),
-        (3, 7),
-        (3, 9),
-        (5, 7),
-        (5, 9),
-        (7, 9),
-    ]:
-        tmp_df = pd.merge(df_dict[i], df_dict[j], how="inner").drop_duplicates()
-        tmp_df[f"{i}_{j}"] = True
-        pairs.append(f"{i}_{j}")
-        qtty.append(tmp_df.shape[0])
-        if tmp_df.shape[0] > 0:
-            dup_df_lst.append(tmp_df)
-            dup_col_count += 1
-    if len(dup_df_lst) > 0:
-        df_dup = (
-            reduce(
-                lambda left, right: pd.merge(
-                    left,
-                    right,
-                    on=df_inverted_dup_check.drop(["oiv"], axis=1).columns.to_list(),
-                    how="outer",
-                ),
-                dup_df_lst,
-            )
-            .drop_duplicates()
-            .sort_values(df_inverted_dup_check.drop(["oiv"], axis=1).columns.to_list())
-            .reset_index(drop=True)
-        )
-        df_dup = (
-            df_dup[df_dup.isnull().sum(axis=1) < dup_col_count - 1]
-            .dropna(axis=1, how="all")
-            .reset_index(drop=True)
-        )
-    else:
-        df_dup = pd.DataFrame()
-
-    return {"df_dup": df_dup, "pairs": pairs, "count": qtty}
+    return gof.build_raw_merged(lcl_csv_files=lcl_csv_files)
 
 
 @st.cache()
 def build_sbs_plsda(df_src, df_dup):
-    df_sheet_plsda = pd.DataFrame(columns=["experiment", "sheet", "row_count", "score"])
-
-    df_dup_compare = df_dup.select_dtypes(exclude=object)
-    for _, row in df_src[["experiment", "sheet"]].drop_duplicates().iterrows():
-        try:
-            df = (
-                df_src[
-                    (df_src.experiment == row["experiment"])
-                    & (df_src.sheet == row["sheet"])
-                ]
-                .select_dtypes(exclude=object)
-                .drop(["colonne"], axis=1)
-                .drop_duplicates()
-            )
-            tmp_df = pd.merge(df, df_dup_compare, how="inner").drop_duplicates()
-            X = df.drop(["oiv"], axis=1)
-            y = df.oiv
-            X = StandardScaler().fit(X).transform(X)
-            cur_pls_da = PLSRegression(n_components=X.shape[1])
-            cur_pls_da.fit(X, y).transform(X)
-
-            df_sheet_plsda = df_sheet_plsda.append(
-                {
-                    "experiment": row["experiment"],
-                    "sheet": row["sheet"],
-                    "row_count": df.shape[0],
-                    "score": cur_pls_da.score(X, df.oiv),
-                    "dup_count": tmp_df.shape[0],
-                    "dup_rate": tmp_df.shape[0] / df.shape[0],
-                },
-                ignore_index=True,
-            )
-        except:
-            df_sheet_plsda = df_sheet_plsda.append(
-                {"experiment": row["experiment"], "sheet": row["sheet"]},
-                ignore_index=True,
-            )
-    return df_sheet_plsda
+    return gof.build_sbs_plsda(df_src=df_src, df_dup=df_dup)
 
 
 @st.cache()
 def cache_build_dup_df(df):
-    return build_dup_df(df)
+    return gof.build_dup_df(df)
 
 
 st.markdown("# Leaf Disk Collate Ground Truth")
@@ -652,47 +105,11 @@ st.markdown("# Leaf Disk Collate Ground Truth")
 col_target, col_explain = st.columns(2)
 
 with col_target:
-    st.markdown(
-        """
-    This notebook will:
-    - Retrieve all available Excel files
-    - Translate them to CSV and merge them
-    - Build models to asses the possibility of predicting OIV from various visual variables
-    """
-    )
-    st.markdown(
-        """
-    We need:
-    - Base python libraries for file management
-    - Pandas and Numpy for the dataframes
-    - SkLearn for statistics
-    - Plotly for ... plotting    
-    """
-    )
+    st.markdown(got.txt_target)
 
 with col_explain:
 
-    st.markdown(
-        """
-    Functions needed to:
-    - Check that the dataframe has at least the needed columns
-    - Plot model variance
-    - Plot an histogram of the variables needed for the OIV so inconsistencies can be detected
-    - Generate categorical OIV from dataframe
-    """
-    )
-
-    st.markdown(
-        f"""
-    Constants:
-    - Path to datain: {os.path.abspath(datain_path)}
-    - Path to distant Excel files: {os.path.abspath(excel_file_path)}
-    - Path to local EXcel files: {os.path.abspath(oidium_extracted_csvs_path)}
-    - Path to extracted CSVs: {os.path.abspath(excel_file_list_path)}
-    - Path to individual CSV generation result: {os.path.abspath(path_to_df_result)}
-    - Needed columns: {needed_columns}
-    """
-    )
+    st.markdown(got.txt_target)
 
 st.markdown("## What is OIV and how do we want to predict it")
 
@@ -700,28 +117,8 @@ col_desc_oiv, col_desc_variables = st.columns(2)
 
 with col_desc_oiv:
     st.markdown("### OIV")
-
-    st.markdown(
-        "OIV 452-2 is a standard to evaluate resistance to powdery mildew in vine disk leafs"
-    )
-    st.markdown(
-        """
-        > &mdash; From OIV the 452-2 specification.
-        >
-        >  Characteristic: Leaf: degree of resistance to Plasmopara (leaf disc test)  
-        >  Notes:
-        >  1: very little 3:little 5:medium 7:high 9:very high   
-        >  Observation during the whole vegetation period, as long as there are young leaves, on vines not treated with
-        >  chemicals.
-        >  Because the zoospores penetrate through the stomata, the leaf discs have to be placed with the lower surface up.
-        >  Using a standardized spore suspension with 25000 spores/ml (counting chamber), a pipette is used to place 40µl
-        >  or 1000 spores on each leaf disc.
-        >  Incubation: in complete darkness (aluminum coat), room temperature, 4 days.
-        >  Remark: if the inoculum remains on the leaf disc too long, lesions are produced. Therefore, 24 hours after
-        >  inoculation, the spore suspension has to be removed by blotting with a filter paper. 
-        """
-    )
-    st.image(os.path.join(datain_path, "images", "OIV_examples.png"))
+    st.markdown(got.txt_oiv_452_spec)
+    st.image(os.path.join(goc.datain_path, "images", "OIV_examples.png"))
     st.warning(
         "OIV 452-2 is a resistance scale, higher note means less disease phenotype"
     )
@@ -729,8 +126,8 @@ with col_desc_oiv:
 with col_desc_variables:
     st.markdown("### Other variables")
     st.markdown("Other variables with which we want to predict OIV 452-2")
-    st.image(os.path.join(datain_path, "images", "oiv_452-1_desc.png"))
-    st.markdown(oiv_452_spec_req)
+    st.image(os.path.join(goc.datain_path, "images", "oiv_452-1_desc.png"))
+    st.markdown(got.txt_oiv_452_spec_req)
 
 
 st.markdown("### The aim of this dashboard")
@@ -755,17 +152,17 @@ we're going to parse all the folders year by year and retrieve the files.
 """
 )
 
-if os.path.isfile(path_to_df_result) is False:
+if os.path.isfile(goc.path_to_df_result) is False:
     files = get_distant_excels()
 
     st.write(files)
 
     st.write("Copying files")
-    pg_copy_excel_files = st.progress(0)
+    current_pg = st.progress(0)
 
     copy_excel_files(files)
 
-    pg_copy_excel_files.progress(1.0)
+    current_pg.progress(1.0)
 else:
     st.write("Excel files already parsed")
 st.success("")
@@ -782,14 +179,14 @@ We look for 2 particular headers, sheets will be discarded if:
 
 st.write("Building CSVs")
 
-pg_build_csv = st.progress(0)
+current_pg = st.progress(0)
 
 df_result = filter_csvs()
 
-pg_build_csv.progress(1.0)
+current_pg.progress(1.0)
 
 lcl_csv_files = [
-    os.path.join(oidium_extracted_csvs_path, filename)
+    os.path.join(goc.oidium_extracted_csvs_path, filename)
     for filename in df_result.csv_file_name.dropna().to_list()
 ]
 
@@ -803,51 +200,100 @@ sample_csv = st.selectbox(
     index=0,
     format_func=lambda x: os.path.basename(x),
 )
+
 if sample_csv != "Select one":
-    st.dataframe(pd.read_csv(sample_csv))
+    col_sample_df, col_sample_dup = st.columns(2)
+    df_smpl = pd.read_csv(sample_csv)
+    with col_sample_df:
+        st.dataframe(df_smpl)
+    with col_sample_dup:
+        st.dataframe(
+            gof.build_dup_df(
+                gof.clean_merged_dataframe(
+                    df_smpl[goc.needed_columns]
+                    # .drop(["colonne"], axis=1)
+                    .drop_duplicates()
+                    .assign(
+                        n=lambda x: x.n.astype("Int64"),
+                        oiv=lambda x: x.oiv.astype("Int64"),
+                        s=lambda x: x.s.astype("Int64"),
+                        fn=lambda x: x.fn.astype("Int64"),
+                        sq=lambda x: x.sq.astype("Int64"),
+                        tn=lambda x: x.tn.astype("Int64"),
+                    )
+                    .assign(
+                        fn=lambda x: 10 - x.fn,
+                        sq=lambda x: 10 - x.sq,
+                        tn=lambda x: 10 - x.tn,
+                    )
+                    .assign(
+                        fn=lambda x: x.fn.fillna(0),
+                        sq=lambda x: x.sq.fillna(0),
+                        tn=lambda x: x.tn.fillna(0),
+                        s=lambda x: x.s.fillna(0),
+                    )
+                    .rename(
+                        columns={
+                            "exp": "experiment",
+                            "sheet": "sheet",
+                            "oiv": "oiv",
+                            "nomphoto": "image_name",
+                            "s": "sporulation",
+                            "fn": "surface_necrosee",
+                            "n": "necrose",
+                            "sq": "densite_sporulation",
+                            "tn": "taille_necrose",
+                        }
+                    )
+                ).select_dtypes(exclude=object)
+            )["df_dup"]
+        )
 
+col_rej_csv_text, col_rej_csv_hist = st.columns([1, 3])
 
-st.markdown(
-    """
-**Some CSVs where rejected:**
-- Some are experiment description with no data
-- Some have no images
-- Some are corrupted, ie, it was impossible to read them
-- ...
-"""
-)
-
-fig = px.histogram(
-    data_frame=df_result.sort_values(["comment"]),
-    x="comment",
-    color="comment",
-    width=1400,
-    height=400,
-    text_auto=True,
-).update_layout(
-    font=dict(
-        family="Courier New, monospace",
-        size=18,
-    ),
-    xaxis=go.XAxis(title="Time", showticklabels=False),
-    xaxis_visible=False,
-)
-
-fig.add_annotation(
-    dict(
-        # font=dict(color="yellow", size=15),
-        x=0,
-        y=-0.12,
-        showarrow=False,
-        text=f"From {df_result.shape[0]} sheets available {df_result[df_result.comment == 'success'].shape[0]} were successfully loaded",
-        textangle=0,
-        xanchor="left",
-        xref="paper",
-        yref="paper",
+with col_rej_csv_text:
+    st.markdown(
+        """
+        **Some CSVs where rejected:**
+        - Some are experiment description with no data
+        - Some have no images
+        - Some are corrupted, ie, it was impossible to read them
+        - ...
+        """
     )
-)
 
-st.plotly_chart(fig)
+with col_rej_csv_hist:
+    fig = px.histogram(
+        data_frame=df_result.sort_values(["comment"]),
+        x="comment",
+        color="comment",
+        width=1200,
+        height=400,
+        text_auto=True,
+    ).update_layout(
+        font=dict(
+            family="Courier New, monospace",
+            size=14,
+        ),
+        xaxis=go.XAxis(title="Time", showticklabels=False),
+        xaxis_visible=False,
+    )
+
+    fig.add_annotation(
+        dict(
+            # font=dict(color="yellow", size=15),
+            x=0,
+            y=-0.12,
+            showarrow=False,
+            text=f"From {df_result.shape[0]} sheets available {df_result[df_result.comment == 'success'].shape[0]} were successfully loaded",
+            textangle=0,
+            xanchor="left",
+            xref="paper",
+            yref="paper",
+        )
+    )
+
+    st.plotly_chart(fig)
 
 st.markdown("#### Which ones are corrupted")
 
@@ -860,12 +306,12 @@ df_corrupted = (
             ]
         )
     ]
-    .drop(["csv_file_name"], axis=1)
+    .drop(["csv_file_name", "outcome"], axis=1)
     .reset_index(drop=True)
 )
 
 df_corrupted.to_csv(
-    os.path.join(datain_path, "corrupted_excels.csv"),
+    os.path.join(goc.datain_path, "corrupted_excels.csv"),
     index=False,
     sep=";",
 )
@@ -882,14 +328,14 @@ st.dataframe(df_raw_merged.head(n=100))
 st.markdown(df_raw_merged.shape)
 
 st.write("#### Data consistency check")
-st.markdown(oiv_452_spec_req)
-st.plotly_chart(plot_inconsistencies(df_raw_merged, sort_values=False))
+st.markdown(got.txt_oiv_452_spec_req)
+st.plotly_chart(gof.plot_inconsistencies(df_raw_merged, sort_values=False))
 st.warning("Various rows are inconsistent")
 st.markdown("After removing inconsistent lines we get a new consistent dataframe")
 df_merged = clean_merged_dataframe(df_raw_merged)
 st.dataframe(df_merged.head(50))
 st.markdown(df_merged.shape)
-st.plotly_chart(plot_inconsistencies(df_merged))
+st.plotly_chart(gof.plot_inconsistencies(df_merged))
 st.info(f"We went from {df_raw_merged.shape[0]} to {df_merged.shape[0]} consistent rows")
 st.write("List of sheets with inconsistent data")
 df_inconsistent = build_inconsistencies_dataframe(df_raw_merged)
@@ -1421,7 +867,7 @@ df_es = (
 
 with sbs_sng_dups:
     st.markdown("#### Duplicate predictions")
-    print_dataframe_and_shape(build_dup_df(df_es)["df_dup"])
+    print_dataframe_and_shape(gof.build_dup_df(df_es)["df_dup"])
 
 with sbs_sng_scatter:
     st.markdown("#### sPLS-DA")
