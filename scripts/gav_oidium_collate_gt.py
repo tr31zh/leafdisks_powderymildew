@@ -1407,8 +1407,6 @@ st.markdown("### Single sheet prediction")
 
 sbs_sng_sel, sbs_sng_dups, sbs_sng_scatter = st.columns([1, 3, 3])
 
-print(df_inverted.dtypes)
-
 with sbs_sng_sel:
     st.markdown("#### Sheet selection")
     exp = st.selectbox(
