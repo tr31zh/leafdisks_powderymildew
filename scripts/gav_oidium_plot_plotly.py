@@ -60,7 +60,7 @@ def plot_avg_by_oiv(df_src, width, height):
     )
 
 
-def plot_model(X, x_comp, y_comp, color, width, height, title):
+def plot_model(X, x_comp, y_comp, color, width, height, title, axis_title_root: str = "PC"):
     fig = px.scatter(
         x=X[:, x_comp],
         y=X[:, y_comp],
@@ -87,8 +87,8 @@ def plot_model(X, x_comp, y_comp, color, width, height, title):
     )
     fig.update_layout(
         title=title,
-        xaxis_title=f"PCA {x_comp + 1}",
-        yaxis_title=f"PCA {y_comp + 2}",
+        xaxis_title=f"{axis_title_root}{x_comp + 1}",
+        yaxis_title=f"{axis_title_root}{y_comp + 1}",
         legend_title="OIV value",
     )
     return fig

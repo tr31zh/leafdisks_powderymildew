@@ -246,13 +246,20 @@ st.dataframe(df_raw_merged.head(n=100))
 st.markdown(df_raw_merged.shape)
 
 st.write("#### Data consistency check")
-st.markdown(got.txt_oiv_452_spec_req)
-st.plotly_chart(gof.plot_inconsistencies(df_raw_merged, sort_values=False))
+col_data_consistency_spec, col_data_consistency_plot = st.columns([1,3])
+with col_data_consistency_spec:    
+    st.markdown(got.txt_oiv_452_spec_req)
+
+with col_data_consistency_plot:
+    st.plotly_chart(gof.plot_inconsistencies(df_raw_merged, sort_values=False, width=1200, height=1000,))
+
 st.warning("Various rows are inconsistent")
 st.markdown("After removing inconsistent lines we get a new consistent dataframe")
 df_merged = clean_merged_dataframe(df_raw_merged)
-st.dataframe(df_merged.head(50))
-st.markdown(df_merged.shape)
+print_dataframe_and_shape(df_merged.head(50))
+# st.write(df_merged)
+# st.dataframe(df_merged.head(50))
+# st.markdown(df_merged.shape)
 st.plotly_chart(gof.plot_inconsistencies(df_merged))
 st.info(f"We went from {df_raw_merged.shape[0]} to {df_merged.shape[0]} consistent rows")
 st.write("List of sheets with inconsistent data")
@@ -416,8 +423,8 @@ with col_inv_df:
     st.markdown(df_inverted.shape)
 
 with con_inv_num_df:
-    st.markdown("### The head of numeric dataframe")
-    st.dataframe(df_inv_num.head(10))
+    st.markdown("### The numeric dataframe")
+    st.dataframe(df_inv_num)
     st.markdown(df_inv_num.shape)
 
 
@@ -574,14 +581,14 @@ _, inv_x, inv_y, _ = st.columns([1, 1, 1, 1])
 with inv_x:
     inv_x_comp = st.selectbox(
         label="Inverted principal component for x axis",
-        options=[i for i in range(Xi.shape[1] - 1)],
+        options=[i + 1 for i in range(Xi.shape[1] - 1)],
         index=0,
     )
 
 with inv_y:
     inv_y_comp = st.selectbox(
         label="Inverted principal component for y axis",
-        options=[i for i in range(Xi.shape[1] - 1)],
+        options=[i + 1 for i in range(Xi.shape[1] - 1)],
         index=1,
     )
 
@@ -592,8 +599,8 @@ with inv_pca:
     st.plotly_chart(
         gop.plot_model(
             X=PCA().fit_transform(Xi),
-            x_comp=inv_x_comp,
-            y_comp=inv_y_comp,
+            x_comp=inv_x_comp - 1,
+            y_comp=inv_y_comp - 1,
             color=yi.astype(str),
             width=800,
             height=700,
@@ -609,12 +616,13 @@ with inv_splsda:
     st.plotly_chart(
         gop.plot_model(
             X=pls_data_all_inv.x_scores_,
-            x_comp=inv_x_comp,
-            y_comp=inv_y_comp,
+            x_comp=inv_x_comp - 1,
+            y_comp=inv_y_comp - 1,
             color=yi.astype(str),
             width=800,
             height=700,
             title="Inverted sPLS-DA",
+            axis_title_root="X-variate ",
         )
     )
     st.markdown(f"**sPLSDA score**: {pls_data_all_inv.score(Xi, yi)}")
@@ -721,6 +729,8 @@ df_es = (
 )
 
 with sbs_sng_dups:
+    st.markdown("#### Sheet")
+    print_dataframe_and_shape(df_es)
     st.markdown("#### Duplicate predictions")
     print_dataframe_and_shape(gof.build_dup_df(df_es)["df_dup"])
 
@@ -733,11 +743,12 @@ with sbs_sng_scatter:
     st.plotly_chart(
         gop.plot_model(
             X=es_pls_da.x_scores_,
-            x_comp=1,
-            y_comp=2,
+            x_comp=1 - 1,
+            y_comp=2 - 1,
             color=y.astype(str),
             height=700,
             width=700,
             title=f"sPLS-DA for experiment {exp} sheet {sheet}score: {es_pls_da.score(X, y)}",
+            axis_title_root="X-variate ",
         )
     )

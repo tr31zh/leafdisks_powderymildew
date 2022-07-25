@@ -18,7 +18,7 @@ txt_oiv_452_spec_req = """
 txt_oiv_452_spec = """
 OIV 452-2 is a standard to evaluate resistance to powdery mildew in vine disk leafs
 
-> &mdash; From OIV the 452-2 specification.
+From OIV the 452-2 specification.
 >
 >  Characteristic: Leaf: degree of resistance to Plasmopara (leaf disc test)  
 >  Notes:
