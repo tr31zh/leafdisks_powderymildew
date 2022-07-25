@@ -18,6 +18,7 @@ import plotly.io as pio
 import gav_oidium_func as gof
 import gav_oidium_const as goc
 import gav_oidium_text as got
+import gav_oidium_plot_plotly as gop
 
 pd.options.plotting.backend = "plotly"
 pd.options.display.float_format = "{:4,.2f}".format
@@ -100,6 +101,16 @@ def cache_build_dup_df(df):
     return gof.build_dup_df(df)
 
 
+@st.cache()
+def cache_build_sbs_dup_df(df_src):
+    return gof.build_sbs_dup_df(df_src)
+
+
+@st.cache()
+def cache_invert_axis(df_src):
+    return gof.invert_axis(df_src=df_src)
+
+
 st.markdown("# Leaf Disk Collate Ground Truth")
 
 col_target, col_explain = st.columns(2)
@@ -141,16 +152,7 @@ st.markdown("## Build dataframe")
 lcl_csv_files = get_local_csvs()
 
 st.markdown("### Retrieve distant Excels")
-st.markdown(
-    """
-Get all related file's path in the distant server.  
-Experiements are stored by year and by experiment, the excels files with data are Excel classifiers which contain "saisie", 
-we're going to parse all the folders year by year and retrieve the files.
-
-- Files containing DM for domny mildew, ie mildiou, are selected for OIV analysis
-- Files containing PM for powdery mildew, ie oïdium, are discarded
-"""
-)
+st.markdown(got.txt_get_excels)
 
 if os.path.isfile(goc.path_to_df_result) is False:
     files = get_distant_excels()
@@ -169,13 +171,7 @@ st.success("")
 
 st.markdown("### Build CSVs")
 
-st.markdown(
-    """
-We look for 2 particular headers, sheets will be discarded if:
-- the header is not found
-- the dataframe is corrupted, ie unable to find images or a column is malformed
-"""
-)
+st.markdown(got.txt_excel_headers)
 
 st.write("Building CSVs")
 
@@ -196,104 +192,26 @@ st.write(lcl_csv_files)
 st.write(f"A sample file: {lcl_csv_files[13]}")
 sample_csv = st.selectbox(
     label="Select a CSV to view:",
-    options=["Select one"] + lcl_csv_files,
+    options=lcl_csv_files,
     index=0,
     format_func=lambda x: os.path.basename(x),
 )
 
-if sample_csv != "Select one":
-    col_sample_df, col_sample_dup = st.columns(2)
-    df_smpl = pd.read_csv(sample_csv)
-    with col_sample_df:
-        st.dataframe(df_smpl)
-    with col_sample_dup:
-        st.dataframe(
-            gof.build_dup_df(
-                gof.clean_merged_dataframe(
-                    df_smpl[goc.needed_columns]
-                    # .drop(["colonne"], axis=1)
-                    .drop_duplicates()
-                    .assign(
-                        n=lambda x: x.n.astype("Int64"),
-                        oiv=lambda x: x.oiv.astype("Int64"),
-                        s=lambda x: x.s.astype("Int64"),
-                        fn=lambda x: x.fn.astype("Int64"),
-                        sq=lambda x: x.sq.astype("Int64"),
-                        tn=lambda x: x.tn.astype("Int64"),
-                    )
-                    .assign(
-                        fn=lambda x: 10 - x.fn,
-                        sq=lambda x: 10 - x.sq,
-                        tn=lambda x: 10 - x.tn,
-                    )
-                    .assign(
-                        fn=lambda x: x.fn.fillna(0),
-                        sq=lambda x: x.sq.fillna(0),
-                        tn=lambda x: x.tn.fillna(0),
-                        s=lambda x: x.s.fillna(0),
-                    )
-                    .rename(
-                        columns={
-                            "exp": "experiment",
-                            "sheet": "sheet",
-                            "oiv": "oiv",
-                            "nomphoto": "image_name",
-                            "s": "sporulation",
-                            "fn": "surface_necrosee",
-                            "n": "necrose",
-                            "sq": "densite_sporulation",
-                            "tn": "taille_necrose",
-                        }
-                    )
-                ).select_dtypes(exclude=object)
-            )["df_dup"]
-        )
+col_sample_df, col_sample_describe = st.columns(2)
+df_smpl = pd.read_csv(sample_csv)
+with col_sample_df:
+    print_dataframe_and_shape(df_smpl)
+
+with col_sample_describe:
+    st.write(df_smpl.drop(["colonne"], axis=1).describe())
 
 col_rej_csv_text, col_rej_csv_hist = st.columns([1, 3])
 
 with col_rej_csv_text:
-    st.markdown(
-        """
-        **Some CSVs where rejected:**
-        - Some are experiment description with no data
-        - Some have no images
-        - Some are corrupted, ie, it was impossible to read them
-        - ...
-        """
-    )
+    st.markdown(got.txt_rejected_csvs)
 
 with col_rej_csv_hist:
-    fig = px.histogram(
-        data_frame=df_result.sort_values(["comment"]),
-        x="comment",
-        color="comment",
-        width=1200,
-        height=400,
-        text_auto=True,
-    ).update_layout(
-        font=dict(
-            family="Courier New, monospace",
-            size=14,
-        ),
-        xaxis=go.XAxis(title="Time", showticklabels=False),
-        xaxis_visible=False,
-    )
-
-    fig.add_annotation(
-        dict(
-            # font=dict(color="yellow", size=15),
-            x=0,
-            y=-0.12,
-            showarrow=False,
-            text=f"From {df_result.shape[0]} sheets available {df_result[df_result.comment == 'success'].shape[0]} were successfully loaded",
-            textangle=0,
-            xanchor="left",
-            xref="paper",
-            yref="paper",
-        )
-    )
-
-    st.plotly_chart(fig)
+    st.plotly_chart(gop.plot_rejected_hist(df_result))
 
 st.markdown("#### Which ones are corrupted")
 
@@ -475,39 +393,12 @@ st.info(
 
 st.markdown("## Inverting the axes")
 
-st.markdown(
-    """
-This has not been successful, were going o try switching from a resistance scale to a susceptibility scale, 
-this allows us to keep all dimensions for all observations.  
-If we invert the axes to have sensitivity scale instead of a resistance scale, 
-this will allow us to include all previously removed NaN contained rows as all OIV 5 rows
-"""
-)
+st.markdown(got.txt_fail)
 
 col_inv_df, con_inv_num_df = st.columns([3, 2])
 
 
-df_inverted = (
-    df_merged.assign(
-        surface_necrosee=lambda x: 10 - x.surface_necrosee,
-        densite_sporulation=lambda x: 10 - x.densite_sporulation,
-        taille_necrose=lambda x: 10 - x.taille_necrose,
-    )
-    .assign(
-        surface_necrosee=lambda x: x.surface_necrosee.fillna(0),
-        densite_sporulation=lambda x: x.densite_sporulation.fillna(0),
-        taille_necrose=lambda x: x.taille_necrose.fillna(0),
-        sporulation=lambda x: x.sporulation.fillna(0),
-    )
-    .drop_duplicates()
-    .sort_values(
-        [
-            "oiv",
-            "experiment",
-            "sheet",
-        ]
-    )
-)
+df_inverted = cache_invert_axis(df_merged)
 
 df_inverted = df_inverted[
     [df_inverted.columns[i] for i in [9, 8, 4, 6, 0, 3, 2, 10, 5, 7, 1]]
@@ -612,70 +503,58 @@ col_oiv_height = 500
 
 with col_oiv_1:
     st.plotly_chart(
-        px.imshow(
-            df_inv_num[df_inv_num.oiv == 1].drop_duplicates().reset_index(drop=True),
-            color_continuous_scale=px.colors.sequential.BuPu,
-            height=col_oiv_height,
+        gop.plot_oiv_homogeneity(
+            df_src=df_inv_num,
+            oiv=1,
             width=col_oiv_width,
-            title="OIV 1",
-        ),
+            height=col_oiv_height,
+        )
     )
 
 with col_oiv_3:
     st.plotly_chart(
-        px.imshow(
-            df_inv_num[df_inv_num.oiv == 3].drop_duplicates().reset_index(drop=True),
-            color_continuous_scale=px.colors.sequential.BuPu,
-            height=col_oiv_height,
+        gop.plot_oiv_homogeneity(
+            df_src=df_inv_num,
+            oiv=3,
             width=col_oiv_width,
-            title="OIV 3",
-        ),
+            height=col_oiv_height,
+        )
     )
 
 with col_oiv_5:
     st.plotly_chart(
-        px.imshow(
-            df_inv_num[df_inv_num.oiv == 5].drop_duplicates().reset_index(drop=True),
-            color_continuous_scale=px.colors.sequential.BuPu,
-            height=col_oiv_height,
+        gop.plot_oiv_homogeneity(
+            df_src=df_inv_num,
+            oiv=5,
             width=col_oiv_width,
-            title="OIV 5",
-        ),
+            height=col_oiv_height,
+        )
     )
 
 col_oiv_7, col_oiv_9, col_oiv_avg = st.columns(3)
 
 with col_oiv_7:
     st.plotly_chart(
-        px.imshow(
-            df_inv_num[df_inv_num.oiv == 7].drop_duplicates().reset_index(drop=True),
-            color_continuous_scale=px.colors.sequential.BuPu,
-            height=col_oiv_height,
+        gop.plot_oiv_homogeneity(
+            df_src=df_inv_num,
+            oiv=7,
             width=col_oiv_width,
-            title="OIV 7",
-        ),
+            height=col_oiv_height,
+        )
     )
 
 with col_oiv_9:
     st.plotly_chart(
-        px.imshow(
-            df_inv_num[df_inv_num.oiv == 9].drop_duplicates().reset_index(drop=True),
-            color_continuous_scale=px.colors.sequential.BuPu,
-            height=col_oiv_height,
+        gop.plot_oiv_homogeneity(
+            df_src=df_inv_num,
+            oiv=9,
             width=col_oiv_width,
-            title="OIV 9",
-        ),
+            height=col_oiv_height,
+        )
     )
 with col_oiv_avg:
     st.plotly_chart(
-        px.imshow(
-            df_inv_num.groupby(["oiv"]).mean().reset_index(drop=False),
-            color_continuous_scale=px.colors.sequential.Viridis,
-            height=col_oiv_height,
-            width=col_oiv_width,
-            title="Average values for all OIVs",
-            text_auto=True,
-        ),
+        gop.plot_avg_by_oiv(df_inv_num, height=col_oiv_height, width=col_oiv_width)
     )
 
 st.markdown("### Models")
@@ -710,67 +589,34 @@ inv_pca, inv_splsda = st.columns([1, 1])
 
 with inv_pca:
     st.markdown("#### PCA")
-
-    pca_data = PCA()
-    x_inv_new = pca_data.fit_transform(Xi)
-
-    fig = px.scatter(
-        x=x_inv_new[:, inv_x_comp],
-        y=x_inv_new[:, inv_y_comp],
-        color=yi.astype(str),
-        height=700,
-        width=800,
-        title="Inverted PCA 2D",
+    st.plotly_chart(
+        gop.plot_model(
+            X=PCA().fit_transform(Xi),
+            x_comp=inv_x_comp,
+            y_comp=inv_y_comp,
+            color=yi.astype(str),
+            width=800,
+            height=700,
+            title="Inverted PCA 2D",
+        )
     )
-    fig.update_traces(
-        marker=dict(size=12, line=dict(width=2, color="DarkSlateGrey"), opacity=0.7),
-        selector=dict(mode="markers"),
-    )
-
-    fig.update_xaxes(
-        range=[
-            x_inv_new[:, inv_x_comp].min() - 0.5,
-            x_inv_new[:, inv_x_comp].max() + 0.5,
-        ]
-    )
-    fig.update_yaxes(
-        range=[
-            x_inv_new[:, inv_y_comp].min() - 0.5,
-            x_inv_new[:, inv_y_comp].max() + 0.5,
-        ]
-    )
-    st.plotly_chart(fig)
 
 with inv_splsda:
     st.markdown("#### sPLSDA")
     pls_data_all_inv = PLSRegression(n_components=Xi.shape[1])
     x_new = pls_data_all_inv.fit(Xi, yi).transform(Xi)
 
-    fig = px.scatter(
-        x=pls_data_all_inv.x_scores_[:, inv_x_comp],
-        y=pls_data_all_inv.x_scores_[:, inv_y_comp],
-        color=yi.astype(str),
-        height=700,
-        width=800,
-        title="Inverted sPLS-DA",
+    st.plotly_chart(
+        gop.plot_model(
+            X=pls_data_all_inv.x_scores_,
+            x_comp=inv_x_comp,
+            y_comp=inv_y_comp,
+            color=yi.astype(str),
+            width=800,
+            height=700,
+            title="Inverted sPLS-DA",
+        )
     )
-    fig.update_traces(
-        marker=dict(size=12, line=dict(width=2, color="DarkSlateGrey"), opacity=0.7),
-        selector=dict(mode="markers"),
-    )
-    fig.update_xaxes(
-        range=[
-            pls_data_all_inv.x_scores_[:, inv_x_comp].min() - 0.5,
-            pls_data_all_inv.x_scores_[:, inv_x_comp].max() + 0.5,
-        ]
-    )
-    fig.update_yaxes(
-        range=[
-            pls_data_all_inv.x_scores_[:, inv_y_comp].min() - 0.5,
-            pls_data_all_inv.x_scores_[:, inv_y_comp].max() + 0.5,
-        ]
-    )
-    st.plotly_chart(fig)
     st.markdown(f"**sPLSDA score**: {pls_data_all_inv.score(Xi, yi)}")
 
 st.markdown("### Check overlapping")
@@ -785,11 +631,12 @@ df_dup = d["df_dup"]
 pairs = d["pairs"]
 qtty = d["count"]
 
-col_dup_df, col_dup_unique, col_dup_count = st.columns([4, 2, 1])
+col_dup_df, col_dup_unique, col_dup_count = st.columns([3, 1, 1])
 
 with col_dup_df:
     st.markdown("#### What unique rows can code as OIV")
     print_dataframe_and_shape(df_dup)
+
 
 with col_dup_unique:
     st.markdown("#### Truly unique rows")
@@ -800,6 +647,14 @@ with col_dup_unique:
 with col_dup_count:
     st.markdown("#### Duplicate count")
     print_dataframe_and_shape(pd.DataFrame(data={"pair": pairs, "count": qtty}))
+
+st.markdown("#### Sheet by sheet unique rows can code as OIV")
+print_dataframe_and_shape(
+    cache_build_sbs_dup_df(df_inverted)
+    .sort_values(["experiment", "sheet"])
+    .reset_index(drop=True)
+    .set_index(["experiment", "sheet"])
+)
 
 
 st.markdown("### Sheet by sheet prediction")
@@ -875,28 +730,14 @@ with sbs_sng_scatter:
     y = df_es.oiv
     X = StandardScaler().fit(X).transform(X)
     es_pls_da = PLSRegression(n_components=X.shape[1]).fit(X, y)
-    fig = px.scatter(
-        x=es_pls_da.x_scores_[:, 0],
-        y=es_pls_da.x_scores_[:, 1],
-        color=y.astype(str),
-        height=700,
-        width=700,
-        title=f"sPLS-DA for experiment {exp} sheet {sheet}score: {es_pls_da.score(X, y)}",
+    st.plotly_chart(
+        gop.plot_model(
+            X=es_pls_da.x_scores_,
+            x_comp=1,
+            y_comp=2,
+            color=y.astype(str),
+            height=700,
+            width=700,
+            title=f"sPLS-DA for experiment {exp} sheet {sheet}score: {es_pls_da.score(X, y)}",
+        )
     )
-    fig.update_traces(
-        marker=dict(size=12, line=dict(width=2, color="DarkSlateGrey"), opacity=0.7),
-        selector=dict(mode="markers"),
-    )
-    fig.update_xaxes(
-        range=[
-            es_pls_da.x_scores_[:, 0].min() - 0.5,
-            es_pls_da.x_scores_[:, 0].max() + 0.5,
-        ]
-    )
-    fig.update_yaxes(
-        range=[
-            es_pls_da.x_scores_[:, 1].min() - 0.5,
-            es_pls_da.x_scores_[:, 1].max() + 0.5,
-        ]
-    )
-    st.plotly_chart(fig)

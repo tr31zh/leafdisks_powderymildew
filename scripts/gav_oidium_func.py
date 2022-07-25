@@ -515,8 +515,8 @@ def build_dup_df(df):
         (7, 9),
     ]:
         tmp_df = pd.merge(df_dict[i], df_dict[j], how="inner").drop_duplicates()
-        tmp_df[f"{i}_{j}"] = True
-        pairs.append(f"{i}_{j}")
+        tmp_df[(i, j)] = True
+        pairs.append((i, j))
         qtty.append(tmp_df.shape[0])
         if tmp_df.shape[0] > 0:
             dup_df_lst.append(tmp_df)
@@ -588,5 +588,83 @@ def build_sbs_plsda(df_src, df_dup):
     return df_sheet_plsda
 
 
-def cache_build_dup_df(df):
-    return build_dup_df(df)
+def build_sbs_dup_df(df_src):
+    return pd.concat(
+        [
+            build_dup_df(
+                df_src[
+                    (
+                        (df_src.experiment == row["experiment"])
+                        & (df_src.sheet == row["sheet"])
+                    )
+                ]
+                .select_dtypes(exclude=object)
+                .drop(["colonne"], axis=1)
+                .drop_duplicates()
+            )["df_dup"].assign(experiment=row["experiment"], sheet=row["sheet"])
+            for _, row in df_src[["experiment", "sheet"]].drop_duplicates().iterrows()
+        ]
+    )
+
+
+def clean_sheet(df_sheet):
+    return (
+        df_sheet[goc.needed_columns]
+        .drop_duplicates()
+        .assign(
+            n=lambda x: x.n.astype("Int64"),
+            oiv=lambda x: x.oiv.astype("Int64"),
+            s=lambda x: x.s.astype("Int64"),
+            fn=lambda x: x.fn.astype("Int64"),
+            sq=lambda x: x.sq.astype("Int64"),
+            tn=lambda x: x.tn.astype("Int64"),
+        )
+        .assign(
+            fn=lambda x: 10 - x.fn,
+            sq=lambda x: 10 - x.sq,
+            tn=lambda x: 10 - x.tn,
+        )
+        .assign(
+            fn=lambda x: x.fn.fillna(0),
+            sq=lambda x: x.sq.fillna(0),
+            tn=lambda x: x.tn.fillna(0),
+            s=lambda x: x.s.fillna(0),
+        )
+        .rename(
+            columns={
+                "exp": "experiment",
+                "sheet": "sheet",
+                "oiv": "oiv",
+                "nomphoto": "image_name",
+                "s": "sporulation",
+                "fn": "surface_necrosee",
+                "n": "necrose",
+                "sq": "densite_sporulation",
+                "tn": "taille_necrose",
+            }
+        )
+    )
+
+
+def invert_axis(df_src):
+    return (
+        df_src.assign(
+            surface_necrosee=lambda x: 10 - x.surface_necrosee,
+            densite_sporulation=lambda x: 10 - x.densite_sporulation,
+            taille_necrose=lambda x: 10 - x.taille_necrose,
+        )
+        .assign(
+            surface_necrosee=lambda x: x.surface_necrosee.fillna(0),
+            densite_sporulation=lambda x: x.densite_sporulation.fillna(0),
+            taille_necrose=lambda x: x.taille_necrose.fillna(0),
+            sporulation=lambda x: x.sporulation.fillna(0),
+        )
+        .drop_duplicates()
+        .sort_values(
+            [
+                "oiv",
+                "experiment",
+                "sheet",
+            ]
+        )
+    )

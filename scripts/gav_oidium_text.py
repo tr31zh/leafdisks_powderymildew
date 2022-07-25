@@ -60,3 +60,33 @@ txt_python_need = f"""
 - Path to individual CSV generation result: {os.path.abspath(gof.path_to_df_result)}
 - Needed columns: {gof.needed_columns}
 """
+
+txt_get_excels = """
+Get all related file's path in the distant server.  
+Experiements are stored by year and by experiment, the excels files with data are Excel classifiers which contain "saisie", 
+we're going to parse all the folders year by year and retrieve the files.
+
+- Files containing DM for domny mildew, ie mildiou, are selected for OIV analysis
+- Files containing PM for powdery mildew, ie oïdium, are discarded
+"""
+
+txt_excel_headers = """
+We look for 2 particular headers, sheets will be discarded if:
+- the header is not found
+- the dataframe is corrupted, ie unable to find images or a column is malformed
+"""
+
+txt_rejected_csvs = """
+**Some CSVs where rejected:**
+- Some are experiment description with no data
+- Some have no images
+- Some are corrupted, ie, it was impossible to read them
+- ...
+"""
+
+txt_fail = """
+This has not been successful, were going o try switching from a resistance scale to a susceptibility scale, 
+this allows us to keep all dimensions for all observations.  
+If we invert the axes to have sensitivity scale instead of a resistance scale, 
+this will allow us to include all previously removed NaN contained rows as all OIV 5 rows
+"""
