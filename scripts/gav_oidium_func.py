@@ -5,12 +5,13 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import pandas_flavor as pf
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.cross_decomposition import PLSRegression
 
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
+# import plotly.graph_objects as go
+# from plotly.subplots import make_subplots
 
 import gav_oidium_const as goc
 
@@ -22,77 +23,6 @@ def check_list_in_list(required_columns, available_columns):
             failures.append(rc)
 
     return True if len(failures) == 0 else failures
-
-
-def plot_variance(df_ev):
-    df_ev = df_ev.assign(cumulative=df_ev["exp_var_per"].cumsum())
-    ev_fig = go.Figure()
-    ev_fig.add_trace(
-        go.Bar(
-            x=df_ev["pc"],
-            y=df_ev["exp_var_per"],
-            name="individual",
-            texttemplate="%{y}",
-            textfont_size=20,
-        )
-    )
-    ev_fig.add_trace(
-        go.Scatter(
-            x=df_ev["pc"],
-            y=df_ev["cumulative"],
-            name="cumulative",
-        )
-    )
-    ev_fig.update_layout(
-        height=700,
-        width=800,
-        title="Explained variance by different principal components",
-        xaxis_title="Principal component",
-        yaxis_title="Explained variance in percent",
-    )
-    return ev_fig
-
-
-def plot_inconsistencies(df, sort_values: bool = True, width=1400, height=1000):
-    columns = [
-        ["sporulation", "densite_sporulation", ""],
-        ["necrose", "surface_necrosee", "taille_necrose"],
-        ["ligne", "colonne", "oiv"],
-    ]
-
-    fig = make_subplots(rows=3, cols=3, subplot_titles=np.array(columns).flatten())
-
-    for idl, l in enumerate(columns):
-        for idc, c in enumerate(l):
-            if not c:
-                continue
-            fig.add_trace(
-                go.Histogram(
-                    x=df[c].sort_values().astype(str)
-                    if sort_values is True
-                    else df[c].astype(str),
-                    texttemplate="%{y}",
-                    textfont_size=20,
-                    name=c,
-                ),
-                row=idl + 1,
-                col=idc + 1,
-            )
-
-    fig.update_layout(
-        height=height,
-        width=width,
-        xaxis_title="Value",
-        yaxis_title="Count",
-        legend=dict(
-            yanchor="top",
-            y=0.99,
-            xanchor="right",
-            x=0.99,
-        ),
-    )
-
-    return fig
 
 
 def get_oiv_cat(df):
@@ -159,9 +89,7 @@ def build_inconsistencies_dataframe(df_source):
     )
     df_inconsistent = (
         df_inconsistent.assign(
-            sporulation_oob=np.where(
-                df_inconsistent.because == "sporulation_oob", 1, 0
-            ),
+            sporulation_oob=np.where(df_inconsistent.because == "sporulation_oob", 1, 0),
             sporulation_ds_inc=np.where(
                 df_inconsistent.because == "sporulation_ds_inc", 1, 0
             ),
@@ -199,7 +127,6 @@ def build_inconsistencies_dataframe(df_source):
 
 def clean_merged_dataframe(df_source):
     checks = consistency_checks(df_src=df_source)
-    # return checks  
     return (
         df_source[
             (
@@ -264,7 +191,7 @@ def copy_excel_files(files, progress_callback):
             shutil.copy(src=file, dst=goc.excel_file_path)
 
 
-def filter_csvs(progress_callback):
+def filter_csvs():
     if os.path.isfile(goc.path_to_df_result):
         return pd.read_csv(goc.path_to_df_result)
     else:
@@ -319,7 +246,7 @@ def filter_csvs(progress_callback):
         ]
 
         for i, lcl_excel_file in enumerate(lcl_excel_files):
-            progress_callback(i, len(lcl_excel_files))
+            # progress_callback(i, len(lcl_excel_files))
             tst_excel_file = pd.ExcelFile(lcl_excel_file)
             for sheet_name in tst_excel_file.sheet_names:
                 df = lower_dataframe(df=tst_excel_file.parse(sheet_name=sheet_name))
@@ -422,13 +349,9 @@ def get_local_csvs():
     ]
 
 
-def build_raw_merged(lcl_csv_files):
-    return pd.concat(
-        [
-            pd.read_csv(filepath)[get_common_columns(lcl_csv_files)]
-            for filepath in lcl_csv_files
-        ]
-    ).rename(
+@pf.register_dataframe_method
+def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
+    return df.rename(
         columns={
             "exp": "experiment",
             "sheet": "sheet",
@@ -441,6 +364,15 @@ def build_raw_merged(lcl_csv_files):
             "tn": "taille_necrose",
         }
     )
+
+
+def build_raw_merged(lcl_csv_files):
+    return pd.concat(
+        [
+            pd.read_csv(filepath)[get_common_columns(lcl_csv_files)]
+            for filepath in lcl_csv_files
+        ]
+    ).rename_columns()
 
 
 def build_dup_df(df):
@@ -586,19 +518,7 @@ def clean_sheet(df_sheet):
             tn=lambda x: x.tn.fillna(0),
             s=lambda x: x.s.fillna(0),
         )
-        .rename(
-            columns={
-                "exp": "experiment",
-                "sheet": "sheet",
-                "oiv": "oiv",
-                "nomphoto": "image_name",
-                "s": "sporulation",
-                "fn": "surface_necrosee",
-                "n": "necrose",
-                "sq": "densite_sporulation",
-                "tn": "taille_necrose",
-            }
-        )
+        .rename_columns()
     )
 
 

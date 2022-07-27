@@ -1,13 +1,26 @@
 import os
 import warnings
+import itertools
 
 import pandas as pd
+import numpy as np
 
 import streamlit as st
+from streamlit_yellowbrick import st_yellowbrick
+
+from scipy import stats
 
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.cross_decomposition import PLSRegression
+from sklearn.cluster import KMeans
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+from yellowbrick.cluster import (
+    KElbowVisualizer,
+    SilhouetteVisualizer,
+    InterclusterDistance,
+)
 
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
@@ -26,7 +39,7 @@ pd.options.display.float_format = "{:4,.2f}".format
 warnings.simplefilter("ignore")
 
 st.set_page_config(
-    page_title="Extaedio",
+    page_title="GAV Oïdium data wrangling",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -44,7 +57,7 @@ def print_dataframe_and_shape(df):
 
 @st.cache
 def plot_variance(df_ev):
-    return gof.plot_variance(df_ev=df_ev)
+    return gop.plot_variance(df_ev=df_ev)
 
 
 def get_oiv_cat(df):
@@ -78,7 +91,7 @@ def copy_excel_files(files):
 
 @st.cache
 def filter_csvs():
-    return gof.filter_csvs(st_progress)
+    return gof.filter_csvs()
 
 
 @st.cache()
@@ -127,7 +140,6 @@ st.markdown("## What is OIV and how do we want to predict it")
 col_desc_oiv, col_desc_variables = st.columns(2)
 
 with col_desc_oiv:
-    st.markdown("### OIV")
     st.markdown(got.txt_oiv_452_spec)
     st.image(os.path.join(goc.datain_path, "images", "OIV_examples.png"))
     st.warning(
@@ -237,6 +249,8 @@ df_corrupted.to_csv(
 st.dataframe(df_corrupted)
 st.info("Info sheets have no data, only experiment descriptors")
 
+clean_steps = {}
+
 st.success("")
 
 st.markdown("### Merge CSVs")
@@ -245,22 +259,32 @@ df_raw_merged = build_raw_merged(lcl_csv_files)
 st.dataframe(df_raw_merged.head(n=100))
 st.markdown(df_raw_merged.shape)
 
-st.write("#### Data consistency check")
-col_data_consistency_spec, col_data_consistency_plot = st.columns([1,3])
-with col_data_consistency_spec:    
+clean_steps["raw_merge"] = (df_raw_merged.shape[0], 0)
+
+col_data_consistency_spec, col_data_consistency_plot = st.columns([1, 3])
+with col_data_consistency_spec:
+    st.write("#### Data consistency check")
     st.markdown(got.txt_oiv_452_spec_req)
 
 with col_data_consistency_plot:
-    st.plotly_chart(gof.plot_inconsistencies(df_raw_merged, sort_values=False, width=1200, height=1000,))
+    st.plotly_chart(
+        gop.plot_inconsistencies(
+            df_raw_merged,
+            sort_values=False,
+            width=1400,
+            height=1000,
+        )
+    )
 
 st.warning("Various rows are inconsistent")
 st.markdown("After removing inconsistent lines we get a new consistent dataframe")
 df_merged = clean_merged_dataframe(df_raw_merged)
+clean_steps["clean_raw_merge"] = (
+    df_merged.shape[0],
+    df_raw_merged.shape[0] - df_merged.shape[0],
+)
 print_dataframe_and_shape(df_merged.head(50))
-# st.write(df_merged)
-# st.dataframe(df_merged.head(50))
-# st.markdown(df_merged.shape)
-st.plotly_chart(gof.plot_inconsistencies(df_merged))
+st.plotly_chart(gop.plot_inconsistencies(df_merged))
 st.info(f"We went from {df_raw_merged.shape[0]} to {df_merged.shape[0]} consistent rows")
 st.write("List of sheets with inconsistent data")
 df_inconsistent = build_inconsistencies_dataframe(df_raw_merged)
@@ -334,7 +358,9 @@ with col_nans:
 st.markdown("### Numeric dataframe")
 
 st.write(
-    "We remove all columns that are not linked to the regression and drop all rows with **NaN** values as they **will not be accepted by the models**"
+    """
+We remove all columns that are not linked to the regression and drop all rows with **NaN** values as they **will not be accepted by the models**
+"""
 )
 
 df_num = (
@@ -353,6 +379,11 @@ df_num_cols = [
     df_num_cols[5],
 ]
 df_num = df_num[df_num_cols].sort_values(["oiv", "sporulation", "necrose"])
+
+clean_steps["numeric_dataframe"] = (
+    df_num.shape[0],
+    df_merged.shape[0] - df_num.shape[0],
+)
 
 col_df_num, col_df_num_balance, col_explain = st.columns(3)
 
@@ -411,9 +442,13 @@ df_inverted = df_inverted[
     [df_inverted.columns[i] for i in [9, 8, 4, 6, 0, 3, 2, 10, 5, 7, 1]]
 ].sort_values(["oiv", "sporulation", "necrose"])
 
-
 df_inv_num = (
     df_inverted.drop(["colonne"], axis=1).select_dtypes(exclude=object).drop_duplicates()
+)
+
+clean_steps["inverted_numeric_dataframe"] = (
+    df_inv_num.shape[0],
+    df_merged.shape[0] - df_inv_num.shape[0],
 )
 
 
@@ -431,6 +466,10 @@ with con_inv_num_df:
 df_inv_num = df_inv_num.sort_values(["oiv", "sporulation", "necrose"])
 
 st.markdown("### Some plots")
+
+st.markdown("#### Evolution of available rows")
+st.plotly_chart(gop.observations_sankey(clean_steps=clean_steps))
+
 col_inv_df_num, col_inv_df_num_balance, col_inv_explain = st.columns(3)
 
 with col_inv_df_num:
@@ -752,3 +791,285 @@ with sbs_sng_scatter:
             axis_title_root="X-variate ",
         )
     )
+
+
+st.markdown("### Removing 'necrose' and 'sporulation")
+st.markdown(
+    """
+Maybe some variables cause problems, maybe some OIVs are too close to each other, how about we can:
+- Select the OIVs in the model
+- Select which variables are used
+"""
+)
+
+col_sel_oiv, col_sel_col, col_sel_target = st.columns([1, 2, 1])
+
+
+with col_sel_oiv:
+    oiv_classes = st.multiselect(
+        label="Select IOV classes in model",
+        options=goc.odd_numbers,
+        default=goc.odd_numbers,
+    )
+
+with col_sel_col:
+    acbo = list(df_inv_num.columns)
+    acbo.remove("oiv")
+    selected_columns = st.multiselect(
+        label="Select columns in model",
+        options=acbo,
+        default=acbo,
+    )
+
+
+df_inv_num_wosn = (
+    df_inv_num[df_inv_num.oiv.isin(oiv_classes)][selected_columns + ["oiv"]]
+    .drop_duplicates()
+    .reset_index(drop=True)
+)
+
+yi_wond = df_inv_num_wosn.oiv
+X_wond = df_inv_num_wosn.drop(["oiv"], axis=1)
+scaler = StandardScaler()
+scaler.fit(X_wond)
+X_wond = scaler.transform(X_wond)
+
+
+inv_pca, inv_splsda = st.columns([1, 1])
+
+with inv_pca:
+    st.markdown("#### PCA")
+    st.plotly_chart(
+        gop.plot_model(
+            X=PCA().fit_transform(X_wond),
+            x_comp=0,
+            y_comp=1,
+            color=yi_wond.astype(str),
+            width=800,
+            height=700,
+            title="Inverted PCA 2D",
+        )
+    )
+
+with inv_splsda:
+    st.markdown("#### sPLSDA")
+    pls_data_all_inv = PLSRegression(n_components=X_wond.shape[1])
+    x_new = pls_data_all_inv.fit(X_wond, yi_wond).transform(X_wond)
+
+    st.plotly_chart(
+        gop.plot_model(
+            X=pls_data_all_inv.x_scores_,
+            x_comp=0,
+            y_comp=1,
+            color=yi_wond.astype(str),
+            width=800,
+            height=700,
+            title=f"Inverted sPLS-DA, score: {pls_data_all_inv.score(X_wond, yi_wond)}",
+            axis_title_root="X-variate ",
+        )
+    )
+
+st.markdown(got.txt_kmeans)
+
+st.markdown(got.txt_kmeans_pca)
+
+X_km = df_inv_num.drop(["oiv"], axis=1).drop_duplicates().reset_index(drop=True)
+
+# scaler = StandardScaler().fit(X_km)
+# Xi = scaler.transform(X_km)
+xkm_pca = PCA()
+x_pca = xkm_pca.fit_transform(X_km)
+
+col_kmeans_pca, col_kmeans_variance = st.columns(2)
+
+with col_kmeans_pca:
+    st.plotly_chart(
+        px.scatter_3d(
+            x=x_pca[:, 0],
+            y=x_pca[:, 1],
+            z=x_pca[:, 2],
+            width=800,
+            height=700,
+            title="PCA",
+        )
+    )
+
+with col_kmeans_variance:
+    st.plotly_chart(
+        gop.plot_variance(
+            df_ev=pd.DataFrame.from_dict(
+                {
+                    "pc": [
+                        f"PC{i}" for i in range(len(xkm_pca.explained_variance_ratio_))
+                    ],
+                    "exp_var_per": xkm_pca.explained_variance_ratio_ * 100,
+                }
+            )
+        )
+    )
+
+st.markdown("It appears that **3** components are enought")
+xkm_pca = PCA(n_components=3)
+x_pca = xkm_pca.fit_transform(X_km)
+
+
+st.markdown(got.txt_kmeans_explore_cluster_count)
+col_km = [st.columns(3), st.columns(3), st.columns(3)]
+col_km = list(itertools.chain(*col_km))
+
+
+# st.write(xkm_pca)
+
+for i, col in enumerate(col_km):
+    with col:
+        nc = i + 2
+        st.markdown(f"###### {nc} classes")
+        km = KMeans(n_clusters=nc, init="k-means++", random_state=42)
+        y_km = km.fit_predict(x_pca).astype(int)
+        fig = px.scatter(
+            data_frame=pd.DataFrame(
+                {
+                    "x": x_pca[:, 0],
+                    "y": x_pca[:, 1],
+                    "color": y_km.astype(str),
+                }
+            ).sort_values(["color"]),
+            x="x",
+            y="y",
+            width=600,
+            height=600,
+            color="color",
+            marginal_x="violin",
+            marginal_y="violin",
+        )
+        fig.update_traces(
+            marker=dict(size=12, line=dict(width=2, color="DarkSlateGrey"), opacity=0.7),
+            selector=dict(mode="markers"),
+        )
+        fig.add_trace(
+            go.Scatter(
+                x=km.cluster_centers_[:, 0],
+                y=km.cluster_centers_[:, 1],
+                name="",
+                mode="markers",
+                marker=go.Marker(symbol="x", size=12, color="black"),
+                showlegend=False,
+            )
+        )
+        st.plotly_chart(fig)
+
+        st.table(
+            pd.DataFrame(
+                {
+                    "count": [y_km[np.where(y_km == i)].size for i in np.unique(y_km)],
+                }
+            ).transpose()
+        )
+
+st.markdown(
+    """
+Visually, it seems that the best class count is 3.
+"""
+)
+
+col_elbow_txt, col_elbow_plot = st.columns(2)
+col_silhouette_txt, col_silhouette_plot = st.columns(2)
+
+with col_elbow_txt:
+    st.markdown(got.txt_kmeans_elbow)
+
+with col_elbow_plot:
+    elbow_model = KMeans(init="k-means++", random_state=42)
+    elb_visualizer = KElbowVisualizer(elbow_model, k=(2, 13))
+    elb_visualizer.fit(x_pca)
+    st_yellowbrick(elb_visualizer)
+
+st.markdown(got.txt_kmeans_silhouette)
+
+col_sil = [st.columns(3), st.columns(3), st.columns(3)]
+col_sil = list(itertools.chain(*col_sil))
+
+for i, col in enumerate(col_sil):
+    with col:
+        nc = i + 2
+        st.markdown(f"###### {nc} classes")
+        silhouette_model = KMeans(init="k-means++", n_clusters=nc, random_state=42)
+        sil_visualizer = SilhouetteVisualizer(silhouette_model, size=(600, 600))
+        sil_visualizer.fit(x_pca)
+        st_yellowbrick(sil_visualizer)
+
+st.markdown(got.txt_kmeans_what)
+
+col_icd = st.columns(3)
+for nc, col in zip([3, 6, 8], col_icd):
+    with col:
+        st.markdown(f"###### {nc} classes")
+        icd_model = KMeans(init="k-means++", n_clusters=nc, random_state=42)
+        icd_visualizer = InterclusterDistance(icd_model, size=(600, 600))
+        icd_visualizer.fit(x_pca)
+        st_yellowbrick(icd_visualizer)
+
+st.markdown(got.txt_kmeans_3D)
+
+col_3dp = st.columns(3)
+for nc, col in zip([3, 6, 8], col_3dp):
+    with col:
+        st.markdown(f"###### {nc} classes")
+        km = KMeans(n_clusters=nc, init="k-means++", random_state=42)
+        y_km = km.fit_predict(x_pca).astype(int)
+        fig = px.scatter_3d(
+            data_frame=pd.DataFrame(
+                {
+                    "x": x_pca[:, 0],
+                    "y": x_pca[:, 1],
+                    "z": x_pca[:, 2],
+                    "color": y_km.astype(str),
+                }
+            ).sort_values(["color"]),
+            x="x",
+            y="y",
+            z="z",
+            width=600,
+            height=600,
+            color="color",
+        )
+        fig.add_trace(
+            go.Scatter3d(
+                x=km.cluster_centers_[:, 0],
+                y=km.cluster_centers_[:, 1],
+                z=km.cluster_centers_[:, 2],
+                name="",
+                mode="markers",
+                marker=go.Marker(symbol="x", size=6, color="black"),
+                showlegend=False,
+            )
+        )
+        st.plotly_chart(fig)
+
+st.write("That's much better, we're going to build some models")
+
+st.markdown(got.txt_noiv_models)
+
+col_noiv_pca = st.columns(3)
+for nc, col in zip([3, 6, 8], col_noiv_pca):
+    with col:
+        st.markdown(f"##### nOIV {nc}")
+        X = df_inv_num.drop(["oiv"], axis=1).drop_duplicates().reset_index(drop=True)
+        y = (
+            KMeans(n_clusters=nc, init="k-means++", random_state=42)
+            .fit_predict(x_pca)
+            .astype(int)
+        )
+        splsda = PLSRegression()
+        y_pred = splsda.fit(X, y).transform(X)
+
+        fig = px.scatter(
+            x=y_pred[:, 0],
+            y=y_pred[:, 1],
+            color=y.astype(str),
+            width=600,
+            height=600,
+        )
+
+        st.plotly_chart(fig)
+        st.markdown(f"**sPLSDA score**: {splsda.score(X, y)}")
