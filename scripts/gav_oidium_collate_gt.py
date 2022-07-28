@@ -21,6 +21,7 @@ from yellowbrick.cluster import (
     SilhouetteVisualizer,
     InterclusterDistance,
 )
+from yellowbrick.classifier import DiscriminationThreshold
 
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
@@ -271,8 +272,8 @@ with col_data_consistency_plot:
         gop.plot_inconsistencies(
             df_raw_merged,
             sort_values=False,
-            width=1400,
-            height=1000,
+            width=goc.large_plot_width,
+            height=goc.large_plot_height,
         )
     )
 
@@ -392,8 +393,8 @@ with col_df_num:
     st.plotly_chart(
         px.imshow(
             df_num.sort_values(["oiv", "necrose", "sporulation"]).reset_index(drop=True),
-            width=500,
-            height=400,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
@@ -404,8 +405,8 @@ with col_df_num_balance:
             x=df_num.oiv.sort_values().astype(str),
             color=df_num.oiv.sort_values().astype(str),
             text_auto=True,
-            width=500,
-            height=400,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
@@ -463,7 +464,16 @@ with con_inv_num_df:
     st.markdown(df_inv_num.shape)
 
 
-df_inv_num = df_inv_num.sort_values(["oiv", "sporulation", "necrose"])
+df_inv_num = df_inv_num.sort_values(
+    [
+        "oiv",
+        "necrose",
+        "taille_necrose",
+        "surface_necrosee",
+        "sporulation",
+        "densite_sporulation",
+    ]
+)
 
 st.markdown("### Some plots")
 
@@ -479,8 +489,8 @@ with col_inv_df_num:
             df_inv_num.sort_values(["oiv", "necrose", "sporulation"]).reset_index(
                 drop=True
             ),
-            width=500,
-            height=400,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
@@ -491,8 +501,8 @@ with col_inv_df_num_balance:
             x=df_inv_num.oiv.sort_values().astype(str),
             color=df_inv_num.oiv.sort_values().astype(str),
             text_auto=True,
-            width=500,
-            height=400,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
@@ -513,8 +523,6 @@ with col_inv_explain:
 
 inv_vio_plot, inv_corr_plot = st.columns([2, 1])
 
-inv_plots_width = 600
-inv_plots_height = 400
 with inv_vio_plot:
     st.markdown("#### Violin plot")
     fig = make_subplots(rows=1, cols=len(df_inv_num.columns))
@@ -525,8 +533,8 @@ with inv_vio_plot:
             col=i + 1,
         )
     fig.update_traces(points="all", jitter=0.3).update_layout(
-        height=inv_plots_height,
-        width=inv_plots_width * 2,
+        height=goc.three_plot_height,
+        width=goc.three_plot_width * 2,
     )
     st.plotly_chart(fig)
 
@@ -536,24 +544,23 @@ with inv_corr_plot:
         px.imshow(
             df_inv_num.drop_duplicates().corr(),
             text_auto=True,
-            height=inv_plots_height,
-            width=inv_plots_width,
+            height=goc.three_plot_height,
+            width=goc.three_plot_width,
         )
     )
 
 st.markdown("### OIV homogeneity")
 
 col_oiv_1, col_oiv_3, col_oiv_5 = st.columns(3)
-col_oiv_width = 500
-col_oiv_height = 500
+
 
 with col_oiv_1:
     st.plotly_chart(
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=1,
-            width=col_oiv_width,
-            height=col_oiv_height,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
@@ -562,8 +569,8 @@ with col_oiv_3:
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=3,
-            width=col_oiv_width,
-            height=col_oiv_height,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
@@ -572,8 +579,8 @@ with col_oiv_5:
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=5,
-            width=col_oiv_width,
-            height=col_oiv_height,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
@@ -584,8 +591,8 @@ with col_oiv_7:
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=7,
-            width=col_oiv_width,
-            height=col_oiv_height,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
@@ -594,19 +601,27 @@ with col_oiv_9:
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=9,
-            width=col_oiv_width,
-            height=col_oiv_height,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 with col_oiv_avg:
     st.plotly_chart(
-        gop.plot_avg_by_oiv(df_inv_num, height=col_oiv_height, width=col_oiv_width)
+        gop.plot_avg_by_oiv(
+            df_inv_num,
+            height=goc.three_plot_height,
+            width=goc.three_plot_width,
+        )
     )
 
 st.markdown("### Models")
 
+st.markdown(got.txt_model_def_pca)
+st.markdown(got.txt_model_def_plsda)
+st.markdown(got.txt_model_def_lda)
+
 Xi = df_inv_num
-yi = df_inv_num.oiv
+yi = df_inv_num.oiv.astype(int)
 Xi = Xi.drop(["oiv"], axis=1)
 scaler = StandardScaler()
 scaler.fit(Xi)
@@ -615,7 +630,7 @@ Xi = scaler.transform(Xi)
 Xi.shape
 
 
-_, inv_x, inv_y, _ = st.columns([1, 1, 1, 1])
+inv_x, inv_y, _ = st.columns(3)
 
 with inv_x:
     inv_x_comp = st.selectbox(
@@ -631,7 +646,7 @@ with inv_y:
         index=1,
     )
 
-inv_pca, inv_splsda = st.columns([1, 1])
+inv_pca, inv_plsda, inv_lda = st.columns(3)
 
 with inv_pca:
     st.markdown("#### PCA")
@@ -641,30 +656,49 @@ with inv_pca:
             x_comp=inv_x_comp - 1,
             y_comp=inv_y_comp - 1,
             color=yi.astype(str),
-            width=800,
-            height=700,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
             title="Inverted PCA 2D",
         )
     )
 
-with inv_splsda:
-    st.markdown("#### sPLSDA")
+with inv_plsda:
+    st.markdown("#### PLS-DA")
     pls_data_all_inv = PLSRegression(n_components=Xi.shape[1])
     x_new = pls_data_all_inv.fit(Xi, yi).transform(Xi)
 
     st.plotly_chart(
         gop.plot_model(
-            X=pls_data_all_inv.x_scores_,
+            X=x_new,
             x_comp=inv_x_comp - 1,
             y_comp=inv_y_comp - 1,
             color=yi.astype(str),
-            width=800,
-            height=700,
-            title="Inverted sPLS-DA",
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
+            title="Inverted PLS-DA",
             axis_title_root="X-variate ",
         )
     )
-    st.markdown(f"**sPLSDA score**: {pls_data_all_inv.score(Xi, yi)}")
+    st.markdown(f"**PLS-DA score**: {pls_data_all_inv.score(Xi, yi)}")
+
+with inv_lda:
+    st.markdown("#### LDA")
+    lda_data_all_inv = LinearDiscriminantAnalysis()
+    x_new = lda_data_all_inv.fit(Xi, yi).transform(Xi)
+
+    st.plotly_chart(
+        gop.plot_model(
+            X=x_new,
+            x_comp=0,
+            y_comp=1,
+            color=yi.astype(str),
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
+            title="Inverted LDA",
+            axis_title_root="X-variate ",
+        )
+    )
+    st.markdown(f"**LDA score**: {lda_data_all_inv.score(Xi, yi)}")
 
 st.markdown("### Check overlapping")
 
@@ -774,7 +808,7 @@ with sbs_sng_dups:
     print_dataframe_and_shape(gof.build_dup_df(df_es)["df_dup"])
 
 with sbs_sng_scatter:
-    st.markdown("#### sPLS-DA")
+    st.markdown("#### PLS-DA")
     X = df_es.drop(["oiv"], axis=1)
     y = df_es.oiv
     X = StandardScaler().fit(X).transform(X)
@@ -785,9 +819,9 @@ with sbs_sng_scatter:
             x_comp=1 - 1,
             y_comp=2 - 1,
             color=y.astype(str),
-            height=700,
-            width=700,
-            title=f"sPLS-DA for experiment {exp} sheet {sheet}score: {es_pls_da.score(X, y)}",
+            height=goc.two_plot_height,
+            width=goc.two_plot_width,
+            title=f"PLS-DA for experiment {exp} sheet {sheet}score: {es_pls_da.score(X, y)}",
             axis_title_root="X-variate ",
         )
     )
@@ -835,7 +869,7 @@ scaler.fit(X_wond)
 X_wond = scaler.transform(X_wond)
 
 
-inv_pca, inv_splsda = st.columns([1, 1])
+inv_pca, inv_plsda = st.columns([1, 1])
 
 with inv_pca:
     st.markdown("#### PCA")
@@ -845,14 +879,14 @@ with inv_pca:
             x_comp=0,
             y_comp=1,
             color=yi_wond.astype(str),
-            width=800,
-            height=700,
+            width=goc.two_plot_width,
+            height=goc.two_plot_height,
             title="Inverted PCA 2D",
         )
     )
 
-with inv_splsda:
-    st.markdown("#### sPLSDA")
+with inv_plsda:
+    st.markdown("#### PLS-DA")
     pls_data_all_inv = PLSRegression(n_components=X_wond.shape[1])
     x_new = pls_data_all_inv.fit(X_wond, yi_wond).transform(X_wond)
 
@@ -862,9 +896,9 @@ with inv_splsda:
             x_comp=0,
             y_comp=1,
             color=yi_wond.astype(str),
-            width=800,
-            height=700,
-            title=f"Inverted sPLS-DA, score: {pls_data_all_inv.score(X_wond, yi_wond)}",
+            width=goc.two_plot_width,
+            height=goc.two_plot_height,
+            title=f"Inverted PLS-DA, score: {pls_data_all_inv.score(X_wond, yi_wond)}",
             axis_title_root="X-variate ",
         )
     )
@@ -888,8 +922,8 @@ with col_kmeans_pca:
             x=x_pca[:, 0],
             y=x_pca[:, 1],
             z=x_pca[:, 2],
-            width=800,
-            height=700,
+            width=goc.two_plot_width,
+            height=goc.two_plot_height,
             title="PCA",
         )
     )
@@ -918,8 +952,6 @@ col_km = [st.columns(3), st.columns(3), st.columns(3)]
 col_km = list(itertools.chain(*col_km))
 
 
-# st.write(xkm_pca)
-
 for i, col in enumerate(col_km):
     with col:
         nc = i + 2
@@ -936,8 +968,8 @@ for i, col in enumerate(col_km):
             ).sort_values(["color"]),
             x="x",
             y="y",
-            width=600,
-            height=600,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
             color="color",
             marginal_x="violin",
             marginal_y="violin",
@@ -1029,8 +1061,8 @@ for nc, col in zip([3, 6, 8], col_3dp):
             x="x",
             y="y",
             z="z",
-            width=600,
-            height=600,
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
             color="color",
         )
         fig.add_trace(
@@ -1048,28 +1080,57 @@ for nc, col in zip([3, 6, 8], col_3dp):
 
 st.write("That's much better, we're going to build some models")
 
-st.markdown(got.txt_noiv_models)
+st.markdown(got.txt_noiv_select_count)
 
-col_noiv_pca = st.columns(3)
-for nc, col in zip([3, 6, 8], col_noiv_pca):
-    with col:
-        st.markdown(f"##### nOIV {nc}")
-        X = df_inv_num.drop(["oiv"], axis=1).drop_duplicates().reset_index(drop=True)
-        y = (
-            KMeans(n_clusters=nc, init="k-means++", random_state=42)
-            .fit_predict(x_pca)
-            .astype(int)
+df_noiv = (
+    df_inv_num.drop(["oiv"], axis=1)
+    .drop_duplicates()
+    .assign(
+        noiv=KMeans(n_clusters=nc, init="k-means++", random_state=42)
+        .fit_predict(x_pca)
+        .astype(int)
+    )
+    .reset_index(drop=True)
+)
+
+col_noiv_data, col_noiv_pca, col_noiv_var = st.columns(3)
+
+with col_noiv_data:
+    st.markdown("##### New dataframe")
+    st.dataframe(df_noiv)
+
+with col_noiv_pca:
+    st.markdown("##### PCA")
+    X = PCA().fit_transform(df_noiv.drop(["noiv"], axis=1))
+    st.plotly_chart(
+        px.scatter_3d(
+            x=X[:, 0],
+            y=X[:, 1],
+            z=X[:, 2],
+            color=df_noiv.noiv.astype(str),
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
+            title="PCA with NOIV",
         )
-        splsda = PLSRegression()
-        y_pred = splsda.fit(X, y).transform(X)
+    )
 
-        fig = px.scatter(
-            x=y_pred[:, 0],
-            y=y_pred[:, 1],
-            color=y.astype(str),
-            width=600,
-            height=600,
+with col_noiv_var:
+    st.markdown("##### Data heatmap")
+    st.plotly_chart(
+        px.imshow(
+            df_noiv.sort_values(
+                [
+                    "noiv",
+                    "necrose",
+                    "taille_necrose",
+                    "surface_necrosee",
+                    "sporulation",
+                    "densite_sporulation",
+                ]
+            ).reset_index(drop=True),
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
+    )
 
-        st.plotly_chart(fig)
-        st.markdown(f"**sPLSDA score**: {splsda.score(X, y)}")
+st.markdown(got.txt_noiv_outcome)

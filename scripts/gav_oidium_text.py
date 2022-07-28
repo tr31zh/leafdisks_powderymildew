@@ -197,14 +197,49 @@ The results are confusing, 6 and 8 are supposed to be the best but they don't lo
 Maybe we should see the data in a 3D projection?
 """
 
-txt_noiv_models = """
-### Models with NOIVs
-From the k-means we now know that it may be better to discriminate our observations with 3
-new classes.
+txt_model_def_pca = """
+#### Principal Component Analysis (PCA)
+&ndash; From [Wikipedia](https://en.wikipedia.org/wiki/Principal_component_analysis)
 
-#### sPLS-DA's with the three new NOIVs
+> The principal components of a collection of points in a real coordinate space are a sequence of {\displaystyle p}p unit vectors, where the {\displaystyle i}i-th vector is the direction of a line that best fits the data while being orthogonal to the first {\displaystyle i-1}i-1 vectors. Here, a best-fitting line is defined as one that minimizes the average squared distance from the points to the line. These directions constitute an orthonormal basis in which different individual dimensions of the data are linearly uncorrelated. Principal component analysis (PCA) is the process of computing the principal components and using them to perform a change of basis on the data, sometimes using only the first few principal components and ignoring the rest.
+
+PCA offers a choice of components
 """
 
-txt_noiv_svm = """
-#### SVM Classification
+txt_model_def_lda = """
+#### Linear discriminant analysis
+&ndash; From [Wikipedia](https://en.wikipedia.org/wiki/Linear_discriminant_analysis)
+Linear discriminant analysis (LDA), normal discriminant analysis (NDA), or discriminant function analysis is a generalization of Fisher's linear discriminant, a method used in statistics and other fields, to find a linear combination of features that characterizes or separates two or more classes of objects or events. The resulting combination may be used as a linear classifier, or, more commonly, for dimensionality reduction before later classification.
+
+> LDA is closely related to analysis of variance (ANOVA) and regression analysis, which also attempt to express one dependent variable as a linear combination of other features or measurements.[1][2] However, ANOVA uses categorical independent variables and a continuous dependent variable, whereas discriminant analysis has continuous independent variables and a categorical dependent variable (i.e. the class label).[3] Logistic regression and probit regression are more similar to LDA than ANOVA is, as they also explain a categorical variable by the values of continuous independent variables. These other methods are preferable in applications where it is not reasonable to assume that the independent variables are normally distributed, which is a fundamental assumption of the LDA method.
+"""
+
+txt_model_def_plsda = """
+#### Partial least squares regression PLS-DA
+&ndash; From [Wikipedia](https://en.wikipedia.org/wiki/Partial_least_squares_regression)
+
+> Partial least squares regression (PLS regression) is a statistical method that bears some relation to principal components regression; instead of finding hyperplanes of maximum variance between the response and independent variables, it finds a linear regression model by projecting the predicted variables and the observable variables to a new space. Because both the X and Y data are projected to new spaces, the PLS family of methods are known as bilinear factor models. Partial least squares discriminant analysis (PLS-DA) is a variant used when the Y is categorical.
+
+In this instance we use a discrete approach called PLS-DA, DA stands for discrete analysis
+PLS-DA offers a choice of components
+"""
+
+txt_noiv_select_count = """
+### Class count selection et models
+
+#### Class count selection
+We have to choose between 3, 6 and 8. We're going to choose 8 since it's the value 
+selected by the **silhouette** method and biologists tend to prefer to have more 
+phenotypes to choose from.
+
+#### Build the new dataframe
+W'ere going to build the new dataframe from the raw data and the labels generated 
+by the pca with 8 classes
+"""
+
+txt_noiv_outcome = """
+### Conclusion
+In conclusion there seems to be a structure within this new dataset but the NOIV label seems to 
+be categorical so there's no biological comparison between NOIV 1 and 8. Wether a rearranging of the NOIVs
+will introduce a biological meaning is yet to be seen.
 """
