@@ -64,11 +64,20 @@ txt_python_need = f"""
 
 txt_get_excels = """
 Get all related file's path in the distant server.  
-Experiements are stored by year and by experiment, the excels files with data are Excel classifiers which contain "saisie", 
+Experiments are stored by year and by experiment, the files containing data are 
+Excel classifiers which contain the word "saisie", 
 we're going to parse all the folders year by year and retrieve the files.
 
-- Files containing DM for domny mildew, ie mildiou, are selected for OIV analysis
+- Files containing DM for downy mildew, ie mildiou, are selected for OIV analysis
 - Files containing PM for powdery mildew, ie oïdium, are discarded
+"""
+
+txt_what_we_want = """
+### The aim of this dashboard
+We want to check if we can predict the OIV from the other variables, on other words is there 
+a link between the variables ond the OIV?
+
+If we can't predict the target value, can we find another way to classify the data?
 """
 
 txt_excel_headers = """
@@ -99,12 +108,35 @@ There's one of multiple cases happening here, but we're only going to analyze 1 
 - The **variables** can't provide any information on the response of the plant to the pathogen, unlikely
 - The **OIV** alone cannot give a good indication of the plant's resistance
 As said we're only going to expand on the second option
+"""
 
-That is why we're going to use k-means as a mean to see if the data can cluster without the **OIV**
-We're going to cluster the data with K-means with a class count going from 2 to 10
+txt_noiv_sel_cut = """
+##### Using a manual cut
+"""
+
+txt_noiv_sel_cut_outcome = """
+One simple way to find a new OIV **"NOIV"** would be to sort the variables and see if there are clusters.
+
+**Method**: 
+- First, to render the visualization easier to understand, we remove "sporulation" and "necrose columns as they are strongly dependent from the others, this removal is only for visualization purposes as we've previously seen that the columns hemp the models.
+- Then we display heat maps of the dataframe with values sorted by all possible combinations of the remaining columns.
+
+The results are not good, hence this method will be discarded.
 """
 
 txt_kmeans_pca = """
+#### K-means
+The next option we're going to explore is **K-means clustreing*** as a mean to see 
+if the data can cluster without the **OIV**
+We're going to cluster the data with K-means with a class count going from 2 to 10
+
+&ndash; *k-means clustering [Wikipedia](https://en.wikipedia.org/wiki/K-means_clustering)
+
+> k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. This results in a partitioning of the data space into Voronoi cells. k-means clustering minimizes within-cluster variances (squared Euclidean distances), but not regular Euclidean distances, which would be the more difficult Weber problem: the mean optimizes squared errors, whereas only the geometric median minimizes Euclidean distances. For instance, better Euclidean solutions can be found using k-medians and k-medoids.
+> The problem is computationally difficult (NP-hard); however, efficient heuristic algorithms converge quickly to a local optimum. These are usually similar to the expectation-maximization algorithm for mixtures of Gaussian distributions via an iterative refinement approach employed by both k-means and Gaussian mixture modeling. They both use cluster centers to model the data; however, k-means clustering tends to find clusters of comparable spatial extent, while the Gaussian mixture model allows clusters to have different shapes.
+> The unsupervised k-means algorithm has a loose relationship to the k-nearest neighbor classifier, a popular supervised machine learning technique for classification that is often confused with k-means due to the name. Applying the 1-nearest neighbor classifier to the cluster centers obtained by k-means classifies new data into the existing clusters. This is known as nearest centroid classifier or Rocchio algorithm.
+
+
 #### PCA
 Since the data has more than 3 dimensions it will be impossible to plot the result 
 of the k-means clustering in a 2 or 3D plot. That is why we start by fitting a PCA to 
@@ -177,7 +209,7 @@ Three results come from the k-means, the elbow and the silhouette:
 
 ##### Intercluster Distance Maps
 To try and find an explanation we're going to check th **Intercluster Distance Maps*** to 
-see if some observations are too far away from the cluster's centers
+see if some clusters are too close to each others
 
 &ndash; *Intercluster Distance Maps, from [YellowBrick](https://www.scikit-yb.org/en/latest/api/cluster/icdm.html)
 
@@ -191,11 +223,13 @@ see if some observations are too far away from the cluster's centers
 > original feature space.
 """
 
-txt_kmeans_3D = """
-##### 3D projections of k-means models
-The results are confusing, 6 and 8 are supposed to be the best but they don't look that good.
-Maybe we should see the data in a 3D projection?
+txt_rem_nec_spo = """
+### Removing 'necrose' and 'sporulation
+Maybe some variables cause problems, maybe some OIVs are too close to each other, how about we can:
+- Select the OIVs in the model
+- Select which variables are used
 """
+
 
 txt_model_def_pca = """
 #### Principal Component Analysis (PCA)
@@ -207,7 +241,7 @@ PCA offers a choice of components
 """
 
 txt_model_def_lda = """
-#### Linear discriminant analysis
+#### Linear discriminant analysis (LDA)
 &ndash; From [Wikipedia](https://en.wikipedia.org/wiki/Linear_discriminant_analysis)
 Linear discriminant analysis (LDA), normal discriminant analysis (NDA), or discriminant function analysis is a generalization of Fisher's linear discriminant, a method used in statistics and other fields, to find a linear combination of features that characterizes or separates two or more classes of objects or events. The resulting combination may be used as a linear classifier, or, more commonly, for dimensionality reduction before later classification.
 
@@ -238,8 +272,29 @@ by the pca with 8 classes
 """
 
 txt_noiv_outcome = """
-### Conclusion
+### Selecting the best NOIV
+We've seen how well each NOIV choice clusters, by using different methods we've find out 
+that either 3, 6 or 8 are the best number of classes. The problem is that this choice 
+only takes into account mathematical criteria and this problem is of a biological concern. 
+This means that all this analyses to find the best class count are not relevant.
+
+#### Finding other ways to choose a NOIV class count
+
+##### Heat maps
+Plotting the hit maps off all possible choices to see if something visually clusters. 
+To render the visual analysis we're going to remove "necrosis" and "sporulation" as they're 
+strongly linked to the other variables, we remove them for visualization purposes, 
+as seen before they are useful when building models.
+
+
 In conclusion there seems to be a structure within this new dataset but the NOIV label seems to 
 be categorical so there's no biological comparison between NOIV 1 and 8. Wether a rearranging of the NOIVs
 will introduce a biological meaning is yet to be seen.
+"""
+
+txt_sbs_dup_txt = """
+Some lines may cade as ma ny as 6 different OIVs, why:
+- Is it because the there's not enough different OIVs?
+- Human error?
+We will add a tool to visualize images with the same point coding different OIVs
 """

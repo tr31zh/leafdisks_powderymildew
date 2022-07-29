@@ -50,7 +50,11 @@ def plot_inconsistencies(df, sort_values: bool = True, width=1400, height=1000):
     return fig
 
 
-def plot_variance(df_ev):
+def plot_variance(
+    df_ev,
+    height=700,
+    width=800,
+):
     df_ev = df_ev.assign(cumulative=df_ev["exp_var_per"].cumsum())
     ev_fig = go.Figure()
     ev_fig.add_trace(
@@ -70,8 +74,8 @@ def plot_variance(df_ev):
         )
     )
     ev_fig.update_layout(
-        height=700,
-        width=800,
+        height=height,
+        width=width,
         title="Explained variance by different principal components",
         xaxis_title="Principal component",
         yaxis_title="Explained variance in percent",
@@ -84,16 +88,17 @@ def plot_rejected_hist(df_src):
         data_frame=df_src.sort_values(["comment"]),
         x="comment",
         color="comment",
-        width=1200,
-        height=400,
+        width=1000,
+        height=600,
         text_auto=True,
     ).update_layout(
         font=dict(
             family="Courier New, monospace",
-            size=14,
+            size=12,
         ),
         xaxis=go.XAxis(title="Time", showticklabels=False),
         xaxis_visible=False,
+        legend=dict(xanchor="center", yanchor="top", y=-0.1, x=0.3),
     )
 
     fig.add_annotation(
@@ -235,7 +240,7 @@ def observations_sankey(clean_steps):
                         "kept after inverted numeric dataframe",  # 5
                         "discarded after inverted numeric dataframe",  # 6
                     ],
-                    x=[0.1, 0.33, 0.33, 0.66, 0.66, 0.99, 0.99],
+                    x=[0.1, 0.33, 0.33, 0.75, 0.70, 0.99, 0.85],
                     y=[0.1, 0.1, 0.8, 0.5, 0.7, 0.1, 0.3],
                 ),
                 link=dict(
@@ -262,6 +267,17 @@ def observations_sankey(clean_steps):
             )
         ]
     )
-    fig.update_layout(width=1400, height=600)
+    fig.update_layout(width=1600, height=600)
 
+    return fig
+
+
+def plot_balance_histogram(labels, color, is_text, width, height):
+    fig = px.histogram(
+        x=labels,
+        color=color,
+        text_auto=is_text,
+        width=width,
+        height=height,
+    )
     return fig

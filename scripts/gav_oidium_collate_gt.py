@@ -134,7 +134,7 @@ with col_target:
 
 with col_explain:
 
-    st.markdown(got.txt_target)
+    st.markdown(got.txt_python_need)
 
 st.markdown("## What is OIV and how do we want to predict it")
 
@@ -154,10 +154,7 @@ with col_desc_variables:
     st.markdown(got.txt_oiv_452_spec_req)
 
 
-st.markdown("### The aim of this dashboard")
-st.markdown(
-    "Can we predict the OIV from the other variables, on other words is there a link between the variables ond the OIV?"
-)
+st.markdown(got.txt_what_we_want)
 
 st.markdown("## Build dataframe")
 
@@ -202,7 +199,6 @@ lcl_csv_files = [
 st.write("Extracted CSVs")
 st.write(lcl_csv_files)
 
-st.write(f"A sample file: {lcl_csv_files[13]}")
 sample_csv = st.selectbox(
     label="Select a CSV to view:",
     options=lcl_csv_files,
@@ -213,41 +209,42 @@ sample_csv = st.selectbox(
 col_sample_df, col_sample_describe = st.columns(2)
 df_smpl = pd.read_csv(sample_csv)
 with col_sample_df:
+    st.markdown("Selected dataframe")
     print_dataframe_and_shape(df_smpl)
 
 with col_sample_describe:
+    st.markdown("Dataframe description, Na values are ignored")
     st.write(df_smpl.drop(["colonne"], axis=1).describe())
 
-col_rej_csv_text, col_rej_csv_hist = st.columns([1, 3])
+col_rej_csv_text, col_rej_csv_hist = st.columns([2, 3])
 
 with col_rej_csv_text:
     st.markdown(got.txt_rejected_csvs)
+    df_corrupted = (
+        df_result[
+            df_result.comment.isin(
+                [
+                    "Corrupted dataframe",
+                    "Corrupted dataframe, failed to retrieve photos",
+                ]
+            )
+        ]
+        .drop(["csv_file_name", "outcome"], axis=1)
+        .reset_index(drop=True)
+    )
+
+    df_corrupted.to_csv(
+        os.path.join(goc.datain_path, "corrupted_excels.csv"),
+        index=False,
+        sep=";",
+    )
+
+    st.markdown("**Which ones are corrupted?**")
+    st.dataframe(df_corrupted)
 
 with col_rej_csv_hist:
     st.plotly_chart(gop.plot_rejected_hist(df_result))
 
-st.markdown("#### Which ones are corrupted")
-
-df_corrupted = (
-    df_result[
-        df_result.comment.isin(
-            [
-                "Corrupted dataframe",
-                "Corrupted dataframe, failed to retrieve photos",
-            ]
-        )
-    ]
-    .drop(["csv_file_name", "outcome"], axis=1)
-    .reset_index(drop=True)
-)
-
-df_corrupted.to_csv(
-    os.path.join(goc.datain_path, "corrupted_excels.csv"),
-    index=False,
-    sep=";",
-)
-
-st.dataframe(df_corrupted)
 st.info("Info sheets have no data, only experiment descriptors")
 
 clean_steps = {}
@@ -336,10 +333,10 @@ with col_balance:
     st.markdown("### Set balance")
 
     st.plotly_chart(
-        px.histogram(
-            x=df_merged.oiv.sort_values().astype(str),
+        gop.plot_balance_histogram(
+            labels=df_merged.oiv.sort_values().astype(str),
             color=df_merged.oiv.sort_values().astype(str),
-            text_auto=True,
+            is_text=True,
             width=1000,
             height=600,
         )
@@ -401,10 +398,10 @@ with col_df_num:
 with col_df_num_balance:
     st.markdown("#### New set balance")
     st.plotly_chart(
-        px.histogram(
-            x=df_num.oiv.sort_values().astype(str),
+        gop.plot_balance_histogram(
+            labels=df_num.oiv.sort_values().astype(str),
             color=df_num.oiv.sort_values().astype(str),
-            text_auto=True,
+            is_text=True,
             width=goc.three_plot_width,
             height=goc.three_plot_height,
         )
@@ -730,12 +727,16 @@ with col_dup_count:
     print_dataframe_and_shape(pd.DataFrame(data={"pair": pairs, "count": qtty}))
 
 st.markdown("#### Sheet by sheet unique rows can code as OIV")
-print_dataframe_and_shape(
-    cache_build_sbs_dup_df(df_inverted)
-    .sort_values(["experiment", "sheet"])
-    .reset_index(drop=True)
-    .set_index(["experiment", "sheet"])
-)
+col_sbs_oiv, col_sbs_txt = st.columns([4, 1])
+with col_sbs_oiv:
+    print_dataframe_and_shape(
+        cache_build_sbs_dup_df(df_inverted)
+        .sort_values(["experiment", "sheet"])
+        .reset_index(drop=True)
+        .set_index(["experiment", "sheet"])
+    )
+with col_sbs_txt:
+    st.markdown(got.txt_sbs_dup_txt)
 
 
 st.markdown("### Sheet by sheet prediction")
@@ -827,14 +828,7 @@ with sbs_sng_scatter:
     )
 
 
-st.markdown("### Removing 'necrose' and 'sporulation")
-st.markdown(
-    """
-Maybe some variables cause problems, maybe some OIVs are too close to each other, how about we can:
-- Select the OIVs in the model
-- Select which variables are used
-"""
-)
+st.markdown(got.txt_rem_nec_spo)
 
 col_sel_oiv, col_sel_col, col_sel_target = st.columns([1, 2, 1])
 
@@ -905,28 +899,63 @@ with inv_plsda:
 
 st.markdown(got.txt_kmeans)
 
-st.markdown(got.txt_kmeans_pca)
-
 X_km = df_inv_num.drop(["oiv"], axis=1).drop_duplicates().reset_index(drop=True)
 
-# scaler = StandardScaler().fit(X_km)
-# Xi = scaler.transform(X_km)
+st.markdown(got.txt_noiv_sel_cut)
+
+colt_cut_plot, col_cut_text = st.columns([3, 1])
+with colt_cut_plot:
+    fig = make_subplots(rows=2, cols=3)
+
+    for (r, c), sort_order in zip(
+        itertools.product([1, 2, 3], [1, 2, 3]),
+        itertools.permutations(
+            ["taille_necrose", "surface_necrosee", "densite_sporulation"]
+        ),
+    ):
+        fig.add_trace(
+            go.Heatmap(
+                z=X_km.drop(["sporulation", "necrose"], axis=1)
+                .sort_values(list(sort_order))
+                .drop_duplicates()
+                .reset_index(drop=True),
+                x=sort_order,
+            ),
+            row=r,
+            col=c,
+        )
+
+    fig.update_layout(
+        xaxis=dict(
+            tickmode="array",
+            tickvals=[0, 1, 2],
+            ticktext=sort_order,
+        ),
+        width=goc.three_plot_width * 2,
+        height=goc.two_plot_height - 50,
+        margin=dict(l=20, r=20, t=20, b=20),
+    )
+
+    st.plotly_chart(fig)
+
+with col_cut_text:
+    st.markdown(got.txt_noiv_sel_cut_outcome)
+
+st.markdown(got.txt_kmeans_pca)
+
 xkm_pca = PCA()
 x_pca = xkm_pca.fit_transform(X_km)
 
-col_kmeans_pca, col_kmeans_variance = st.columns(2)
+col_kmeans_pca, col_kmeans_variance, col_kmeans_loadings = st.columns(3)
 
 with col_kmeans_pca:
-    st.plotly_chart(
-        px.scatter_3d(
-            x=x_pca[:, 0],
-            y=x_pca[:, 1],
-            z=x_pca[:, 2],
-            width=goc.two_plot_width,
-            height=goc.two_plot_height,
-            title="PCA",
-        )
+    fig = px.scatter_3d(
+        x=x_pca[:, 0],
+        y=x_pca[:, 1],
+        z=x_pca[:, 2],
+        title="PCA",
     )
+    st.plotly_chart(fig)
 
 with col_kmeans_variance:
     st.plotly_chart(
@@ -938,11 +967,27 @@ with col_kmeans_variance:
                     ],
                     "exp_var_per": xkm_pca.explained_variance_ratio_ * 100,
                 }
-            )
+            ),
+            width=goc.three_plot_width,
+            height=goc.three_plot_height,
         )
     )
 
-st.markdown("It appears that **3** components are enought")
+with col_kmeans_loadings:
+    df_loadings: pd.DataFrame = pd.DataFrame(
+        xkm_pca.components_.T * xkm_pca.explained_variance_ratio_,
+        columns=[f"PC{i+1}" for i in range(len(xkm_pca.components_))],
+        index=X_km.columns,
+    )
+    fig = df_loadings.T.plot.bar()
+    fig.update_layout(
+        width=goc.three_plot_width,
+        height=goc.three_plot_height,
+        title="Loadings",
+    )
+    st.plotly_chart(fig)
+
+st.markdown("It appears that **3** components are enough")
 xkm_pca = PCA(n_components=3)
 x_pca = xkm_pca.fit_transform(X_km)
 
@@ -958,45 +1003,37 @@ for i, col in enumerate(col_km):
         st.markdown(f"###### {nc} classes")
         km = KMeans(n_clusters=nc, init="k-means++", random_state=42)
         y_km = km.fit_predict(x_pca).astype(int)
-        fig = px.scatter(
+        fig = px.scatter_3d(
             data_frame=pd.DataFrame(
                 {
                     "x": x_pca[:, 0],
                     "y": x_pca[:, 1],
+                    "z": x_pca[:, 2],
                     "color": y_km.astype(str),
                 }
             ).sort_values(["color"]),
             x="x",
             y="y",
+            z="z",
             width=goc.three_plot_width,
             height=goc.three_plot_height,
             color="color",
-            marginal_x="violin",
-            marginal_y="violin",
-        )
-        fig.update_traces(
-            marker=dict(size=12, line=dict(width=2, color="DarkSlateGrey"), opacity=0.7),
-            selector=dict(mode="markers"),
         )
         fig.add_trace(
-            go.Scatter(
+            go.Scatter3d(
                 x=km.cluster_centers_[:, 0],
                 y=km.cluster_centers_[:, 1],
+                z=km.cluster_centers_[:, 2],
                 name="",
                 mode="markers",
-                marker=go.Marker(symbol="x", size=12, color="black"),
+                marker=go.Marker(symbol="x", size=6, color="black"),
                 showlegend=False,
             )
         )
-        st.plotly_chart(fig)
-
-        st.table(
-            pd.DataFrame(
-                {
-                    "count": [y_km[np.where(y_km == i)].size for i in np.unique(y_km)],
-                }
-            ).transpose()
+        fig.update_layout(
+            margin=dict(l=10, r=10, t=10, b=10),
         )
+        st.plotly_chart(fig)
 
 st.markdown(
     """
@@ -1041,96 +1078,45 @@ for nc, col in zip([3, 6, 8], col_icd):
         icd_visualizer.fit(x_pca)
         st_yellowbrick(icd_visualizer)
 
-st.markdown(got.txt_kmeans_3D)
+st.markdown(got.txt_noiv_outcome)
 
-col_3dp = st.columns(3)
-for nc, col in zip([3, 6, 8], col_3dp):
+cols_hm = [st.columns(3), st.columns(3), st.columns(3)]
+cols_hm = list(itertools.chain(*cols_hm))
+
+
+for i, col in enumerate(cols_hm):
     with col:
-        st.markdown(f"###### {nc} classes")
-        km = KMeans(n_clusters=nc, init="k-means++", random_state=42)
-        y_km = km.fit_predict(x_pca).astype(int)
-        fig = px.scatter_3d(
-            data_frame=pd.DataFrame(
-                {
-                    "x": x_pca[:, 0],
-                    "y": x_pca[:, 1],
-                    "z": x_pca[:, 2],
-                    "color": y_km.astype(str),
-                }
-            ).sort_values(["color"]),
-            x="x",
-            y="y",
-            z="z",
-            width=goc.three_plot_width,
-            height=goc.three_plot_height,
-            color="color",
-        )
-        fig.add_trace(
-            go.Scatter3d(
-                x=km.cluster_centers_[:, 0],
-                y=km.cluster_centers_[:, 1],
-                z=km.cluster_centers_[:, 2],
-                name="",
-                mode="markers",
-                marker=go.Marker(symbol="x", size=6, color="black"),
-                showlegend=False,
+        nc = i + 2
+        st.markdown(f"###### Data heatmap for {nc} classes")
+        df_hm = (
+            X_km.assign(
+                noiv=KMeans(n_clusters=nc, init="k-means++", random_state=42)
+                .fit_predict(x_pca)
+                .astype(int)
             )
-        )
-        st.plotly_chart(fig)
-
-st.write("That's much better, we're going to build some models")
-
-st.markdown(got.txt_noiv_select_count)
-
-df_noiv = (
-    df_inv_num.drop(["oiv"], axis=1)
-    .drop_duplicates()
-    .assign(
-        noiv=KMeans(n_clusters=nc, init="k-means++", random_state=42)
-        .fit_predict(x_pca)
-        .astype(int)
-    )
-    .reset_index(drop=True)
-)
-
-col_noiv_data, col_noiv_pca, col_noiv_var = st.columns(3)
-
-with col_noiv_data:
-    st.markdown("##### New dataframe")
-    st.dataframe(df_noiv)
-
-with col_noiv_pca:
-    st.markdown("##### PCA")
-    X = PCA().fit_transform(df_noiv.drop(["noiv"], axis=1))
-    st.plotly_chart(
-        px.scatter_3d(
-            x=X[:, 0],
-            y=X[:, 1],
-            z=X[:, 2],
-            color=df_noiv.noiv.astype(str),
-            width=goc.three_plot_width,
-            height=goc.three_plot_height,
-            title="PCA with NOIV",
-        )
-    )
-
-with col_noiv_var:
-    st.markdown("##### Data heatmap")
-    st.plotly_chart(
-        px.imshow(
-            df_noiv.sort_values(
+            .drop(["sporulation", "necrose"], axis=1)
+            .drop_duplicates()
+            .sort_values(
                 [
                     "noiv",
-                    "necrose",
                     "taille_necrose",
                     "surface_necrosee",
-                    "sporulation",
                     "densite_sporulation",
                 ]
-            ).reset_index(drop=True),
-            width=goc.three_plot_width,
-            height=goc.three_plot_height,
+            )
+            .reset_index(drop=True)
+        )[
+            [
+                "noiv",
+                "taille_necrose",
+                "surface_necrosee",
+                "densite_sporulation",
+            ]
+        ]
+        st.plotly_chart(
+            px.imshow(
+                df_hm,
+                width=goc.three_plot_width,
+                height=goc.three_plot_height,
+            )
         )
-    )
-
-st.markdown(got.txt_noiv_outcome)
