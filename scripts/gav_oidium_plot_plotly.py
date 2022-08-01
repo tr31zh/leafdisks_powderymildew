@@ -9,7 +9,11 @@ import plotly.io as pio
 
 
 def plot_inconsistencies(
-    df, sort_values: bool = True, width=1400, height=1000, title=None
+    df,
+    sort_values: bool = True,
+    width=1400,
+    height=1000,
+    title=None,
 ):
     columns = [
         ["sporulation", "densite_sporulation", ""],
@@ -97,7 +101,7 @@ def plot_rejected_hist(df_src):
     ).update_layout(
         font=dict(
             family="Courier New, monospace",
-            size=12,
+            size=14,
         ),
         xaxis=go.XAxis(title="Time", showticklabels=False),
         xaxis_visible=False,
@@ -107,7 +111,7 @@ def plot_rejected_hist(df_src):
     fig.add_annotation(
         dict(
             # font=dict(color="yellow", size=15),
-            x=0,
+            x=0.1,
             y=-0.12,
             showarrow=False,
             text=f"From {df_src.shape[0]} sheets available {df_src[df_src.comment == 'success'].shape[0]} were successfully loaded",

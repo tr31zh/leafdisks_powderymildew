@@ -1,5 +1,14 @@
 import gav_oidium_const as goc
 
+txt_title = f"{goc.lvl_1_header} Leaf Disk Collate Ground Truth"
+
+txt_lvl2_header_wio = "What is OIV and how do we want to predict it"
+txt_lvl2_header_build_database = "Build dataframe"
+txt_lvl2_header_data_overview = "Data overview"
+txt_lvl2_header_invert_axes = "Inverting the axes"
+txt_lvl2_header_kmeans = "Maybe OIV is not the best way to group observations"
+txt_lvl2_header_conclusion = "Conclusion"
+
 txt_oiv_452_spec_req = f"""
 **From the specifications we now that a clean dataframe has the following rules**:
 - _sporulation_ **must be** 1 ou 0
@@ -23,6 +32,7 @@ txt_about_streamlit = """
 
 In this report we use streamlit instead of notebooks because it can easily deployed into a web page. 
 Streamlit has some particularities:
+- **Click on headers to toggle expand sections.**
 - It's interactive, you will be able to customize plots and interact with the widgets.
 - Interactive plots can be set to full screen by hovering aver them and click on the double arrow that appears top right of the plot.
 - It's slow, be patient.
@@ -129,9 +139,9 @@ We look for 2 particular headers, sheets will be discarded if:
 
 txt_rejected_csvs = """
 **Some CSVs where rejected:**
-- Some are experiment description with no data
+- Some are experiment descriptions with no data
 - Some have no images
-- Some are corrupted, ie, it was impossible to read them
+- Some are corrupted, ie, it was impossible to read them for various reasons
 - ...
 """
 
@@ -143,8 +153,6 @@ this will allow us to include all previously removed NaN contained rows as all O
 """
 
 txt_kmeans = f"""
-{goc.lvl_3_header} Maybe OIV is not the best way to group observations
-
 There's one of multiple cases happening here, but we're only going to analyze 1 and discuss the other. So either:
 - The **variables** can't provide any information on the response of the plant to the pathogen, unlikely
 - The **OIV** alone cannot give a good indication of the plant's resistance
@@ -152,7 +160,7 @@ As said we're only going to expand on the second option
 """
 
 txt_noiv_sel_cut = f"""
-{goc.lvl_4_header} Using a manual cut
+{goc.lvl_3_header} Using a manual cut
 """
 
 txt_noiv_sel_cut_outcome = """
@@ -166,7 +174,7 @@ The results are not good, hence this method will be discarded.
 """
 
 txt_kmeans_pca = f"""
-{goc.lvl_4_header} K-means
+{goc.lvl_3_header} K-means
 The next option we're going to explore is **K-means clustreing*** as a mean to see 
 if the data can cluster without the **OIV**
 We're going to cluster the data with K-means with a class count going from 2 to 10
@@ -178,7 +186,7 @@ We're going to cluster the data with K-means with a class count going from 2 to 
 > The unsupervised k-means algorithm has a loose relationship to the k-nearest neighbor classifier, a popular supervised machine learning technique for classification that is often confused with k-means due to the name. Applying the 1-nearest neighbor classifier to the cluster centers obtained by k-means classifies new data into the existing clusters. This is known as nearest centroid classifier or Rocchio algorithm.
 
 
-{goc.lvl_5_header} PCA
+{goc.lvl_4_header} PCA
 Since the data has more than 3 dimensions it will be impossible to plot the result 
 of the k-means clustering in a 2 or 3D plot. That is why we start by fitting a PCA to 
 the data, then find how many components are needed to explain most of the variability. 
@@ -200,7 +208,7 @@ Finally we will use k-means on the **latent space*** of the PCA
 """
 
 txt_kmeans_elbow = f"""
-{goc.lvl_5_header} Using the elbow method to find the optimal class count
+{goc.lvl_4_header} Using the elbow method to find the optimal class count
 
 &ndash; From [Wikipedia](https://en.wikipedia.org/wiki/Elbow_method_(clustering))
 
@@ -217,7 +225,7 @@ txt_kmeans_elbow = f"""
 """
 
 txt_kmeans_silhouette = f"""
-{goc.lvl_5_header} Using the silhouette method to find the optimal class count
+{goc.lvl_4_header} Using the silhouette method to find the optimal class count
 
 &ndash; From [Wikipedia](https://en.wikipedia.org/wiki/Silhouette_(clustering))
 
@@ -237,18 +245,18 @@ txt_kmeans_silhouette = f"""
 """
 
 txt_kmeans_explore_cluster_count = f"""
-{goc.lvl_5_header} k-means for cluster count 2 to 9
+{goc.lvl_4_header} k-means for cluster count 2 to 9
 As we don't know how many cluster are in the data we're going first to explore a range visually 
 """
 
 txt_kmeans_what = f"""
-{goc.lvl_5_header} What does all this mean and what do we do now
+{goc.lvl_4_header} What does all this mean and what do we do now
 Three results come from the k-means, the elbow and the silhouette:
 - Visually it looks like there are 3 clusters at most that can be distinguished.
 - The elbow method shows 6
 - The silhouette shows a maximum coefficient value for 8 clusters, but there's not a big difference between the counts
 
-{goc.lvl_5_header} Intercluster Distance Maps
+{goc.lvl_4_header} Intercluster Distance Maps
 To try and find an explanation we're going to check th **Intercluster Distance Maps*** to 
 see if some clusters are too close to each others
 
@@ -266,7 +274,7 @@ see if some clusters are too close to each others
 
 txt_rem_nec_spo = f"""
 {goc.lvl_3_header} Removing variables and OIV values
-Maybe some variables cause problems, maybe some OIVs are too close to each other, how about we can:
+Maybe some variables cause problems, maybe some OIVs are too close to each other, this section will let you:
 - Select the OIVs in the model
 - Select which variables are used
 """
@@ -312,25 +320,24 @@ W'ere going to build the new dataframe from the raw data and the labels generate
 by the pca with 8 classes
 """
 
-txt_noiv_outcome = f"""
+txt_noiv_select_oiv = f"""
 {goc.lvl_3_header} Selecting the best NOIV
 We've seen how well each NOIV choice clusters, by using different methods we've find out 
 that either 3, 6 or 8 are the best number of classes. The problem is that this choice 
 only takes into account mathematical criteria and this problem is of a biological concern. 
 This means that all this analyses to find the best class count are not relevant.
 
-{goc.lvl_4_header} Finding other ways to choose a NOIV class count
+{goc.lvl_4_header} Heat maps to help find a class count for a NOIV
 
-{goc.lvl_5_header} Heat maps
 Plotting the hit maps off all possible choices to see if something visually clusters. 
 To render the visual analysis we're going to remove "necrosis" and "sporulation" as they're 
 strongly linked to the other variables, we remove them for visualization purposes, 
 as seen before they are useful when building models.
+"""
 
-
-In conclusion there seems to be a structure within this new dataset but the NOIV label seems to 
-be categorical so there's no biological comparison between NOIV 1 and 8. Wether a rearranging of the NOIVs
-will introduce a biological meaning is yet to be seen.
+txt_km_hm_conclusion = """
+There seems to be a structure within this new dataset but the NOIV label seems to 
+be categorical, ie there's no apparent order within the possible class counts as there are now.
 """
 
 txt_sbs_dup_txt = """
@@ -354,4 +361,28 @@ txt_homogenity_avg_txt = """
 txt_duprate_vs_prediction = """
 There seems to be a link between the amount of proportional duplicated data and the score of the 
 prediction. But the visible importance of the amount of observations available in each sheet seems as important.
+"""
+
+txt_conclusion = f"""
+{goc.lvl_3_header} What we've done
+- Build a dataframe containing all the data in the distant excel files.
+- Show a resistance scale is not well adapted the the new variables.
+- Created a sensitivity scale better suited to our work
+- Shown that the OIV can't be predicted from the variables
+- Tried to find a variable better related to the new variables
+
+{goc.lvl_3_header} What needs to be added to the report
+We need to understand what caused all these difficulties, for that we need:
+- A widget that will help visualize multiple images with the same variables component that predict the same OIV.
+- A widget that will help reorder and select, if possible, a k-means class count that characterizes the interaction between the plant and the pathogen. It will need to display random images from each class.
+
+{goc.lvl_3_header} What we would ike to do outside this report
+In this report we have 5 arbitrary selected variables which help phenotype the different levels of 
+resistance to downy mildew. 
+
+There could be other physical variables that better describe the phenotype, to find these new variables
+we would like to let a panel of experts and neophytes describe and select 
+the variables that they think describe better the different phenotypes, then images will be scored 
+with the selected groups of variables.
+With this new pool of annotations we will try once again predict OIV.
 """
