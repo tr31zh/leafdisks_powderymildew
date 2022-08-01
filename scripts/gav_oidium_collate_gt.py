@@ -3,12 +3,9 @@ import warnings
 import itertools
 
 import pandas as pd
-import numpy as np
 
 import streamlit as st
 from streamlit_yellowbrick import st_yellowbrick
-
-from scipy import stats
 
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
@@ -21,13 +18,10 @@ from yellowbrick.cluster import (
     SilhouetteVisualizer,
     InterclusterDistance,
 )
-from yellowbrick.classifier import DiscriminationThreshold
-
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
-import plotly.io as pio
 
 import gav_oidium_func as gof
 import gav_oidium_const as goc
@@ -125,7 +119,7 @@ def cache_invert_axis(df_src):
     return gof.invert_axis(df_src=df_src)
 
 
-st.markdown("# Leaf Disk Collate Ground Truth")
+st.markdown(f"{goc.lvl_1_header} Leaf Disk Collate Ground Truth")
 
 col_target, col_explain = st.columns(2)
 
@@ -133,10 +127,11 @@ with col_target:
     st.markdown(got.txt_target)
 
 with col_explain:
+    st.markdown(got.txt_libraries)
 
-    st.markdown(got.txt_python_need)
+st.markdown(got.txt_about_streamlit)
 
-st.markdown("## What is OIV and how do we want to predict it")
+st.markdown(f"{goc.lvl_2_header} What is OIV and how do we want to predict it")
 
 col_desc_oiv, col_desc_variables = st.columns(2)
 
@@ -148,20 +143,20 @@ with col_desc_oiv:
     )
 
 with col_desc_variables:
-    st.markdown("### Other variables")
+    st.markdown(f"{goc.lvl_3_header} Other variables")
     st.markdown("Other variables with which we want to predict OIV 452-2")
     st.image(os.path.join(goc.datain_path, "images", "oiv_452-1_desc.png"))
-    st.markdown(got.txt_oiv_452_spec_req)
+    st.markdown(got.txt_oiv_452_spec_header)
 
 
 st.markdown(got.txt_what_we_want)
 
-st.markdown("## Build dataframe")
+st.markdown(f"{goc.lvl_2_header} Build dataframe")
 
 
 lcl_csv_files = get_local_csvs()
 
-st.markdown("### Retrieve distant Excels")
+st.markdown(f"{goc.lvl_3_header} Retrieve distant Excels")
 st.markdown(got.txt_get_excels)
 
 if os.path.isfile(goc.path_to_df_result) is False:
@@ -179,7 +174,7 @@ else:
     st.write("Excel files already parsed")
 st.success("")
 
-st.markdown("### Build CSVs")
+st.markdown(f"{goc.lvl_3_header} Build CSVs")
 
 st.markdown(got.txt_excel_headers)
 
@@ -251,7 +246,7 @@ clean_steps = {}
 
 st.success("")
 
-st.markdown("### Merge CSVs")
+st.markdown(f"{goc.lvl_3_header} Merge CSVs")
 st.markdown("Load all CSVs into one dataframe and show the first 100 rows")
 df_raw_merged = build_raw_merged(lcl_csv_files)
 st.dataframe(df_raw_merged.head(n=100))
@@ -259,32 +254,22 @@ st.markdown(df_raw_merged.shape)
 
 clean_steps["raw_merge"] = (df_raw_merged.shape[0], 0)
 
-col_data_consistency_spec, col_data_consistency_plot = st.columns([1, 3])
-with col_data_consistency_spec:
-    st.write("#### Data consistency check")
-    st.markdown(got.txt_oiv_452_spec_req)
+col_data_inconsistency_spec, col_data_inconsistency_plot = st.columns(2)
+with col_data_inconsistency_spec:
+    st.markdown(got.txt_oiv_452_spec_cs)
+    st.warning("Inconsistent rows will be deleted")
 
-with col_data_consistency_plot:
+with col_data_inconsistency_plot:
     st.plotly_chart(
         gop.plot_inconsistencies(
             df_raw_merged,
             sort_values=False,
-            width=goc.large_plot_width,
-            height=goc.large_plot_height,
+            width=goc.two_plot_width + 100,
+            height=goc.two_plot_height,
         )
     )
 
-st.warning("Various rows are inconsistent")
-st.markdown("After removing inconsistent lines we get a new consistent dataframe")
-df_merged = clean_merged_dataframe(df_raw_merged)
-clean_steps["clean_raw_merge"] = (
-    df_merged.shape[0],
-    df_raw_merged.shape[0] - df_merged.shape[0],
-)
-print_dataframe_and_shape(df_merged.head(50))
-st.plotly_chart(gop.plot_inconsistencies(df_merged))
-st.info(f"We went from {df_raw_merged.shape[0]} to {df_merged.shape[0]} consistent rows")
-st.write("List of sheets with inconsistent data")
+st.write(f"{goc.lvl_5_header} Sheets with inconsistent data")
 df_inconsistent = build_inconsistencies_dataframe(df_raw_merged)
 
 col_inc_data, col_inc_sum = st.columns(2)
@@ -323,15 +308,41 @@ with col_inc_sum:
         )
     )
 
+col_data_consistency_spec, col_data_consistency_plot = st.columns(2)
+
+df_merged = clean_merged_dataframe(df_raw_merged)
+clean_steps["clean_raw_merge"] = (
+    df_merged.shape[0],
+    df_raw_merged.shape[0] - df_merged.shape[0],
+)
+
+with col_data_consistency_spec:
+    st.write(f"{goc.lvl_5_header} Consistent dataframe")
+    st.markdown("New dataframe")
+    print_dataframe_and_shape(df_merged)
+    st.info(
+        f"After removing inconsistent lines we went from {df_raw_merged.shape[0]} to {df_merged.shape[0]} consistent rows"
+    )
+
+with col_data_consistency_plot:
+    st.plotly_chart(
+        gop.plot_inconsistencies(
+            df_merged,
+            width=goc.two_plot_width + 100,
+            height=goc.two_plot_height,
+            title="No visible errors remain in the data",
+        )
+    )
+
+
 st.success("")
 
-st.markdown("## Data overview")
+st.markdown(f"{goc.lvl_2_header} Data overview")
 
 col_balance, col_nans = st.columns([3, 2])
 
 with col_balance:
-    st.markdown("### Set balance")
-
+    st.markdown(f"{goc.lvl_3_header} Set balance")
     st.plotly_chart(
         gop.plot_balance_histogram(
             labels=df_merged.oiv.sort_values().astype(str),
@@ -341,9 +352,10 @@ with col_balance:
             height=600,
         )
     )
+    st.markdown("Set balance looks good")
 
 with col_nans:
-    st.markdown("### NaN values")
+    st.markdown(f"{goc.lvl_3_header} NaN values")
     st.write({c: df_merged[c].isna().sum() for c in df_merged.columns})
     st.write(
         """
@@ -353,7 +365,7 @@ with col_nans:
         """
     )
 
-st.markdown("### Numeric dataframe")
+st.markdown(f"{goc.lvl_3_header} Numeric dataframe")
 
 st.write(
     """
@@ -386,7 +398,7 @@ clean_steps["numeric_dataframe"] = (
 col_df_num, col_df_num_balance, col_explain = st.columns(3)
 
 with col_df_num:
-    st.markdown("#### Heat map")
+    st.markdown(f"{goc.lvl_4_header} Heat map")
     st.plotly_chart(
         px.imshow(
             df_num.sort_values(["oiv", "necrose", "sporulation"]).reset_index(drop=True),
@@ -396,7 +408,7 @@ with col_df_num:
     )
 
 with col_df_num_balance:
-    st.markdown("#### New set balance")
+    st.markdown(f"{goc.lvl_4_header} New set balance")
     st.plotly_chart(
         gop.plot_balance_histogram(
             labels=df_num.oiv.sort_values().astype(str),
@@ -408,7 +420,7 @@ with col_df_num_balance:
     )
 
 with col_explain:
-    st.markdown("#### Result")
+    st.markdown(f"{goc.lvl_4_header} Result")
     st.write(" ")
     st.info(f"There are only {df_num.shape[0]} observations left")
     st.markdown(
@@ -427,7 +439,7 @@ st.info(
 )
 
 
-st.markdown("## Inverting the axes")
+st.markdown(f"{goc.lvl_2_header} Inverting the axes")
 
 st.markdown(got.txt_fail)
 
@@ -451,12 +463,12 @@ clean_steps["inverted_numeric_dataframe"] = (
 
 
 with col_inv_df:
-    st.markdown("### The head of new dataframe")
+    st.markdown(f"{goc.lvl_3_header} The head of new dataframe")
     st.dataframe(df_inverted.head(10))
     st.markdown(df_inverted.shape)
 
 with con_inv_num_df:
-    st.markdown("### The numeric dataframe")
+    st.markdown(f"{goc.lvl_3_header} The numeric dataframe")
     st.dataframe(df_inv_num)
     st.markdown(df_inv_num.shape)
 
@@ -472,15 +484,21 @@ df_inv_num = df_inv_num.sort_values(
     ]
 )
 
-st.markdown("### Some plots")
+st.markdown(f"{goc.lvl_3_header} Some plots")
 
-st.markdown("#### Evolution of available rows")
+st.markdown(f"{goc.lvl_4_header} Evolution of available rows")
 st.plotly_chart(gop.observations_sankey(clean_steps=clean_steps))
+st.markdown(
+    f"""
+We started with {df_raw_merged.shape[0]} annotations and after removing inconsistent data, 
+columns that are not needed and duplicates we end up with {df_inv_num.shape[0]} observations
+"""
+)
 
 col_inv_df_num, col_inv_df_num_balance, col_inv_explain = st.columns(3)
 
 with col_inv_df_num:
-    st.markdown("#### Heat map")
+    st.markdown(f"{goc.lvl_4_header} Heat map")
     st.plotly_chart(
         px.imshow(
             df_inv_num.sort_values(["oiv", "necrose", "sporulation"]).reset_index(
@@ -492,7 +510,7 @@ with col_inv_df_num:
     )
 
 with col_inv_df_num_balance:
-    st.markdown("#### New set balance")
+    st.markdown(f"{goc.lvl_4_header} New set balance")
     st.plotly_chart(
         px.histogram(
             x=df_inv_num.oiv.sort_values().astype(str),
@@ -502,9 +520,10 @@ with col_inv_df_num_balance:
             height=goc.three_plot_height,
         )
     )
+    st.markdown("We still have a somewhat well balanced set")
 
 with col_inv_explain:
-    st.markdown("#### Result")
+    st.markdown(f"{goc.lvl_4_header} Result")
     st.write(" ")
     st.info(
         f"There are {df_inv_num.shape[0]} observations left instead of the previous {df_num.shape[0]}"
@@ -521,7 +540,7 @@ with col_inv_explain:
 inv_vio_plot, inv_corr_plot = st.columns([2, 1])
 
 with inv_vio_plot:
-    st.markdown("#### Violin plot")
+    st.markdown(f"{goc.lvl_4_header} Violin plot")
     fig = make_subplots(rows=1, cols=len(df_inv_num.columns))
     for i, var in enumerate(df_inv_num.columns):
         fig.add_trace(
@@ -536,7 +555,7 @@ with inv_vio_plot:
     st.plotly_chart(fig)
 
 with inv_corr_plot:
-    st.markdown("#### Correlation matrix")
+    st.markdown(f"{goc.lvl_4_header} Correlation matrix")
     st.plotly_chart(
         px.imshow(
             df_inv_num.drop_duplicates().corr(),
@@ -545,10 +564,11 @@ with inv_corr_plot:
             width=goc.three_plot_width,
         )
     )
+    st.markdown("OIV is not as correlated as expected with the other variables")
 
-st.markdown("### OIV homogeneity")
+st.markdown(f"{goc.lvl_3_header} OIV homogeneity")
 
-col_oiv_1, col_oiv_3, col_oiv_5 = st.columns(3)
+col_oiv_1, col_oiv_3, col_oiv_5, col_oiv_homo_txt = st.columns(4)
 
 
 with col_oiv_1:
@@ -556,8 +576,8 @@ with col_oiv_1:
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=1,
-            width=goc.three_plot_width,
-            height=goc.three_plot_height,
+            width=goc.four_plot_width,
+            height=goc.four_plot_height,
         )
     )
 
@@ -566,8 +586,8 @@ with col_oiv_3:
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=3,
-            width=goc.three_plot_width,
-            height=goc.three_plot_height,
+            width=goc.four_plot_width,
+            height=goc.four_plot_height,
         )
     )
 
@@ -576,20 +596,23 @@ with col_oiv_5:
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=5,
-            width=goc.three_plot_width,
-            height=goc.three_plot_height,
+            width=goc.four_plot_width,
+            height=goc.four_plot_height,
         )
     )
 
-col_oiv_7, col_oiv_9, col_oiv_avg = st.columns(3)
+with col_oiv_homo_txt:
+    st.markdown(got.txt_homogenity_txt)
+
+col_oiv_7, col_oiv_9, col_oiv_avg, col_oiv_avg_txt = st.columns(4)
 
 with col_oiv_7:
     st.plotly_chart(
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=7,
-            width=goc.three_plot_width,
-            height=goc.three_plot_height,
+            width=goc.four_plot_width,
+            height=goc.four_plot_height,
         )
     )
 
@@ -598,24 +621,24 @@ with col_oiv_9:
         gop.plot_oiv_homogeneity(
             df_src=df_inv_num,
             oiv=9,
-            width=goc.three_plot_width,
-            height=goc.three_plot_height,
+            width=goc.four_plot_width,
+            height=goc.four_plot_height,
         )
     )
 with col_oiv_avg:
     st.plotly_chart(
         gop.plot_avg_by_oiv(
             df_inv_num,
-            height=goc.three_plot_height,
-            width=goc.three_plot_width,
+            height=goc.four_plot_height,
+            width=goc.four_plot_width,
         )
     )
 
-st.markdown("### Models")
+with col_oiv_avg_txt:
+    st.markdown(got.txt_homogenity_avg_txt)
 
-st.markdown(got.txt_model_def_pca)
-st.markdown(got.txt_model_def_plsda)
-st.markdown(got.txt_model_def_lda)
+st.markdown(f"{goc.lvl_3_header} Models")
+
 
 Xi = df_inv_num
 yi = df_inv_num.oiv.astype(int)
@@ -626,27 +649,35 @@ Xi = scaler.transform(Xi)
 
 Xi.shape
 
-
+inv_pca_txt, inv_plsda_txt, inv_lda_txt = st.columns(3)
+inv_pca, inv_plsda, inv_lda = st.columns(3)
 inv_x, inv_y, _ = st.columns(3)
 
 with inv_x:
     inv_x_comp = st.selectbox(
-        label="Inverted principal component for x axis",
+        label="Inverted principal component for x axis, applies to PCA and PLS-DA",
         options=[i + 1 for i in range(Xi.shape[1] - 1)],
         index=0,
     )
 
 with inv_y:
     inv_y_comp = st.selectbox(
-        label="Inverted principal component for y axis",
+        label="Inverted principal component for y axis, applies to PCA and PLS-DA",
         options=[i + 1 for i in range(Xi.shape[1] - 1)],
         index=1,
     )
 
-inv_pca, inv_plsda, inv_lda = st.columns(3)
+with inv_pca_txt:
+    st.markdown(got.txt_model_def_pca)
+
+with inv_plsda_txt:
+    st.markdown(got.txt_model_def_plsda)
+
+with inv_lda_txt:
+    st.markdown(got.txt_model_def_lda)
 
 with inv_pca:
-    st.markdown("#### PCA")
+
     st.plotly_chart(
         gop.plot_model(
             X=PCA().fit_transform(Xi),
@@ -660,10 +691,8 @@ with inv_pca:
     )
 
 with inv_plsda:
-    st.markdown("#### PLS-DA")
     pls_data_all_inv = PLSRegression(n_components=Xi.shape[1])
     x_new = pls_data_all_inv.fit(Xi, yi).transform(Xi)
-
     st.plotly_chart(
         gop.plot_model(
             X=x_new,
@@ -672,17 +701,14 @@ with inv_plsda:
             color=yi.astype(str),
             width=goc.three_plot_width,
             height=goc.three_plot_height,
-            title="Inverted PLS-DA",
+            title=f"Inverted PLS-DA, score: {pls_data_all_inv.score(Xi, yi)}",
             axis_title_root="X-variate ",
         )
     )
-    st.markdown(f"**PLS-DA score**: {pls_data_all_inv.score(Xi, yi)}")
 
 with inv_lda:
-    st.markdown("#### LDA")
     lda_data_all_inv = LinearDiscriminantAnalysis()
     x_new = lda_data_all_inv.fit(Xi, yi).transform(Xi)
-
     st.plotly_chart(
         gop.plot_model(
             X=x_new,
@@ -691,13 +717,12 @@ with inv_lda:
             color=yi.astype(str),
             width=goc.three_plot_width,
             height=goc.three_plot_height,
-            title="Inverted LDA",
+            title=f"Inverted LDA score: {lda_data_all_inv.score(Xi, yi)}",
             axis_title_root="X-variate ",
         )
     )
-    st.markdown(f"**LDA score**: {lda_data_all_inv.score(Xi, yi)}")
 
-st.markdown("### Check overlapping")
+st.markdown(f"{goc.lvl_3_header} Check overlapping")
 
 st.write(
     "Some observations seem to overlap, we're going to check that one point in the vectorial space codes only one OIV"
@@ -712,22 +737,22 @@ qtty = d["count"]
 col_dup_df, col_dup_unique, col_dup_count = st.columns([3, 1, 1])
 
 with col_dup_df:
-    st.markdown("#### What unique rows can code as OIV")
+    st.markdown(f"{goc.lvl_4_header} What unique rows can code as OIV")
     print_dataframe_and_shape(df_dup)
 
 
 with col_dup_unique:
-    st.markdown("#### Truly unique rows")
+    st.markdown(f"{goc.lvl_4_header} Truly unique rows")
     print_dataframe_and_shape(
         df_inv_num.drop(["oiv"], axis=1).drop_duplicates().reset_index(drop=True)
     )
 
 with col_dup_count:
-    st.markdown("#### Duplicate count")
+    st.markdown(f"{goc.lvl_4_header} Duplicate count")
     print_dataframe_and_shape(pd.DataFrame(data={"pair": pairs, "count": qtty}))
 
-st.markdown("#### Sheet by sheet unique rows can code as OIV")
-col_sbs_oiv, col_sbs_txt = st.columns([4, 1])
+st.markdown(f"{goc.lvl_4_header} Sheet by sheet unique rows can code as OIV")
+col_sbs_oiv, col_sbs_txt = st.columns([5, 2])
 with col_sbs_oiv:
     print_dataframe_and_shape(
         cache_build_sbs_dup_df(df_inverted)
@@ -736,10 +761,11 @@ with col_sbs_oiv:
         .set_index(["experiment", "sheet"])
     )
 with col_sbs_txt:
+    st.warning("Inconsistency with OIV and the vaiables")
     st.markdown(got.txt_sbs_dup_txt)
 
 
-st.markdown("### Sheet by sheet prediction")
+st.markdown(f"{goc.lvl_3_header} Sheet by sheet prediction")
 
 st.markdown(
     f"The prediction is bad at {pls_data_all_inv.score(Xi, yi)}, we try next to predict sheet by sheet to see the results"
@@ -776,13 +802,15 @@ with sbs_plot:
             trendline_color_override="blue",
         )
     )
+st.markdown(got.txt_duprate_vs_prediction)
 
-st.markdown("### Single sheet prediction")
+
+st.markdown(f"{goc.lvl_3_header} Single sheet prediction")
 
 sbs_sng_sel, sbs_sng_dups, sbs_sng_scatter = st.columns([1, 3, 3])
 
 with sbs_sng_sel:
-    st.markdown("#### Sheet selection")
+    st.markdown(f"{goc.lvl_4_header} Sheet selection")
     exp = st.selectbox(
         label="Experiement",
         options=list(df_inverted.experiment.sort_values(ascending=True).unique()),
@@ -803,13 +831,13 @@ df_es = (
 )
 
 with sbs_sng_dups:
-    st.markdown("#### Sheet")
+    st.markdown(f"{goc.lvl_4_header} Sheet")
     print_dataframe_and_shape(df_es)
-    st.markdown("#### Duplicate predictions")
+    st.markdown(f"{goc.lvl_4_header} Duplicate predictions")
     print_dataframe_and_shape(gof.build_dup_df(df_es)["df_dup"])
 
 with sbs_sng_scatter:
-    st.markdown("#### PLS-DA")
+    st.markdown(f"{goc.lvl_4_header} PLS-DA")
     X = df_es.drop(["oiv"], axis=1)
     y = df_es.oiv
     X = StandardScaler().fit(X).transform(X)
@@ -866,7 +894,7 @@ X_wond = scaler.transform(X_wond)
 inv_pca, inv_plsda = st.columns([1, 1])
 
 with inv_pca:
-    st.markdown("#### PCA")
+    st.markdown(f"{goc.lvl_4_header} PCA")
     st.plotly_chart(
         gop.plot_model(
             X=PCA().fit_transform(X_wond),
@@ -880,7 +908,7 @@ with inv_pca:
     )
 
 with inv_plsda:
-    st.markdown("#### PLS-DA")
+    st.markdown(f"{goc.lvl_4_header} PLS-DA")
     pls_data_all_inv = PLSRegression(n_components=X_wond.shape[1])
     x_new = pls_data_all_inv.fit(X_wond, yi_wond).transform(X_wond)
 
@@ -1000,7 +1028,7 @@ col_km = list(itertools.chain(*col_km))
 for i, col in enumerate(col_km):
     with col:
         nc = i + 2
-        st.markdown(f"###### {nc} classes")
+        st.markdown(f"{goc.lvl_6_header} {nc} classes")
         km = KMeans(n_clusters=nc, init="k-means++", random_state=42)
         y_km = km.fit_predict(x_pca).astype(int)
         fig = px.scatter_3d(
@@ -1061,7 +1089,7 @@ col_sil = list(itertools.chain(*col_sil))
 for i, col in enumerate(col_sil):
     with col:
         nc = i + 2
-        st.markdown(f"###### {nc} classes")
+        st.markdown(f"{goc.lvl_6_header} {nc} classes")
         silhouette_model = KMeans(init="k-means++", n_clusters=nc, random_state=42)
         sil_visualizer = SilhouetteVisualizer(silhouette_model, size=(600, 600))
         sil_visualizer.fit(x_pca)
@@ -1072,7 +1100,7 @@ st.markdown(got.txt_kmeans_what)
 col_icd = st.columns(3)
 for nc, col in zip([3, 6, 8], col_icd):
     with col:
-        st.markdown(f"###### {nc} classes")
+        st.markdown(f"{goc.lvl_6_header} {nc} classes")
         icd_model = KMeans(init="k-means++", n_clusters=nc, random_state=42)
         icd_visualizer = InterclusterDistance(icd_model, size=(600, 600))
         icd_visualizer.fit(x_pca)
@@ -1087,7 +1115,7 @@ cols_hm = list(itertools.chain(*cols_hm))
 for i, col in enumerate(cols_hm):
     with col:
         nc = i + 2
-        st.markdown(f"###### Data heatmap for {nc} classes")
+        st.markdown(f"{goc.lvl_6_header} Data heatmap for {nc} classes")
         df_hm = (
             X_km.assign(
                 noiv=KMeans(n_clusters=nc, init="k-means++", random_state=42)

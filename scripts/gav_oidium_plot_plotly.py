@@ -8,7 +8,9 @@ from plotly.subplots import make_subplots
 import plotly.io as pio
 
 
-def plot_inconsistencies(df, sort_values: bool = True, width=1400, height=1000):
+def plot_inconsistencies(
+    df, sort_values: bool = True, width=1400, height=1000, title=None
+):
     columns = [
         ["sporulation", "densite_sporulation", ""],
         ["necrose", "surface_necrosee", "taille_necrose"],
@@ -37,6 +39,7 @@ def plot_inconsistencies(df, sort_values: bool = True, width=1400, height=1000):
     fig.update_layout(
         height=height,
         width=width,
+        title=title,
         xaxis_title="Value",
         yaxis_title="Count",
         legend=dict(
@@ -118,7 +121,7 @@ def plot_rejected_hist(df_src):
     return fig
 
 
-def plot_oiv_homogeneity(df_src, oiv, width, height):
+def plot_oiv_homogeneity(df_src, oiv, width=None, height=None):
     return px.imshow(
         df_src[df_src.oiv == oiv].drop_duplicates().reset_index(drop=True),
         color_continuous_scale=px.colors.sequential.BuPu,
