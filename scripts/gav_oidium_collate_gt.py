@@ -157,6 +157,7 @@ with st.expander(got.txt_lvl2_header_wio, expanded=expand_all):
     col_desc_oiv, col_desc_variables = st.columns(2)
 
     with col_desc_oiv:
+        st.markdown(f"{goc.lvl_3_header} OIV")
         st.markdown(got.txt_oiv_452_spec)
         st.image(os.path.join(goc.datain_path, "images", "OIV_examples.png"))
         st.warning(
@@ -169,6 +170,12 @@ with st.expander(got.txt_lvl2_header_wio, expanded=expand_all):
         st.image(os.path.join(goc.datain_path, "images", "oiv_452-1_desc.png"))
         st.markdown(got.txt_oiv_452_spec_header)
 
+    # st.write(gop.plot_sample_oiv_images(), use_container_width=True)
+    st.plotly_chart(
+        gop.plot_sample_oiv_images(width=1000, height=900), use_container_width=True
+    )
+
+    st.markdown("{goc.lvl_3_header} The aim of this dashboard")
     st.markdown(got.txt_what_we_want)
 
 
@@ -234,18 +241,7 @@ with st.expander(got.txt_lvl2_header_build_database, expanded=expand_all):
 
     with col_rej_csv_text:
         st.markdown(got.txt_rejected_csvs)
-        df_corrupted = (
-            df_result[
-                df_result.comment.isin(
-                    [
-                        "Corrupted dataframe",
-                        "Corrupted dataframe, failed to retrieve photos",
-                    ]
-                )
-            ]
-            .drop(["csv_file_name", "outcome"], axis=1)
-            .reset_index(drop=True)
-        )
+        df_corrupted = gof.sheet_filtering_out_df(df_result)
 
         df_corrupted.to_csv(
             os.path.join(goc.datain_path, "corrupted_excels.csv"),
@@ -257,7 +253,10 @@ with st.expander(got.txt_lvl2_header_build_database, expanded=expand_all):
         st.dataframe(df_corrupted)
 
     with col_rej_csv_hist:
-        st.plotly_chart(gop.plot_rejected_hist(df_result))
+        st.plotly_chart(
+            gop.plot_rejected_hist(df_result),
+            use_container_width=True,
+        )
 
     st.info("Info sheets have no data, only experiment descriptors")
 
@@ -366,7 +365,8 @@ with st.expander(got.txt_lvl2_header_data_overview, expanded=expand_all):
                 is_text=True,
                 width=1000,
                 height=600,
-            )
+            ),
+            use_container_width=True,
         )
         st.markdown("Set balance looks good")
 
@@ -422,7 +422,8 @@ with st.expander(got.txt_lvl2_header_data_overview, expanded=expand_all):
                 ),
                 width=goc.three_plot_width,
                 height=goc.three_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_df_num_balance:
@@ -434,7 +435,8 @@ with st.expander(got.txt_lvl2_header_data_overview, expanded=expand_all):
                 is_text=True,
                 width=goc.three_plot_width,
                 height=goc.three_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_explain:
@@ -503,7 +505,10 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
     st.markdown(f"{goc.lvl_3_header} Some plots")
 
     st.markdown(f"{goc.lvl_4_header} Evolution of available rows")
-    st.plotly_chart(gop.observations_sankey(clean_steps=clean_steps))
+    st.plotly_chart(
+        gop.observations_sankey(clean_steps=clean_steps),
+        use_container_width=True,
+    )
     st.markdown(
         f"""
     We started with {df_raw_merged.shape[0]} annotations and after removing inconsistent data, 
@@ -522,7 +527,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 ),
                 width=goc.three_plot_width,
                 height=goc.three_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_inv_df_num_balance:
@@ -534,7 +540,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 text_auto=True,
                 width=goc.three_plot_width,
                 height=goc.three_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
         st.markdown("We still have a somewhat well balanced set")
 
@@ -567,7 +574,10 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
             height=goc.three_plot_height,
             width=goc.three_plot_width * 2,
         )
-        st.plotly_chart(fig)
+        st.plotly_chart(
+            fig,
+            use_container_width=True,
+        )
 
     with inv_corr_plot:
         st.markdown(f"{goc.lvl_4_header} Correlation matrix")
@@ -577,7 +587,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 text_auto=True,
                 height=goc.three_plot_height,
                 width=goc.three_plot_width,
-            )
+            ),
+            use_container_width=True,
         )
         st.markdown("OIV is not as correlated as expected with the other variables")
 
@@ -592,7 +603,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 oiv=1,
                 width=goc.four_plot_width,
                 height=goc.four_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_oiv_3:
@@ -602,7 +614,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 oiv=3,
                 width=goc.four_plot_width,
                 height=goc.four_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_oiv_5:
@@ -612,7 +625,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 oiv=5,
                 width=goc.four_plot_width,
                 height=goc.four_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_oiv_homo_txt:
@@ -627,7 +641,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 oiv=7,
                 width=goc.four_plot_width,
                 height=goc.four_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_oiv_9:
@@ -637,7 +652,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 oiv=9,
                 width=goc.four_plot_width,
                 height=goc.four_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
     with col_oiv_avg:
         st.plotly_chart(
@@ -645,7 +661,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 df_inv_num,
                 height=goc.four_plot_height,
                 width=goc.four_plot_width,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_oiv_avg_txt:
@@ -700,7 +717,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 width=goc.three_plot_width,
                 height=goc.three_plot_height,
                 title="Inverted PCA 2D",
-            )
+            ),
+            use_container_width=True,
         )
 
     with inv_plsda:
@@ -716,7 +734,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 height=goc.three_plot_height,
                 title=f"Inverted PLS-DA, score: {pls_data_all_inv.score(Xi, yi)}",
                 axis_title_root="X-variate ",
-            )
+            ),
+            use_container_width=True,
         )
 
     with inv_lda:
@@ -732,7 +751,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 height=goc.three_plot_height,
                 title=f"Inverted LDA score: {lda_data_all_inv.score(Xi, yi)}",
                 axis_title_root="X-variate ",
-            )
+            ),
+            use_container_width=True,
         )
 
     st.markdown(f"{goc.lvl_3_header} Check overlapping")
@@ -811,7 +831,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 color_continuous_scale=px.colors.sequential.OrRd,
                 trendline="ols",
                 trendline_color_override="blue",
-            )
+            ),
+            use_container_width=True,
         )
     st.markdown(got.txt_duprate_vs_prediction)
 
@@ -862,7 +883,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 width=goc.two_plot_width,
                 title=f"PLS-DA for experiment {exp} sheet {sheet}score: {es_pls_da.score(X, y)}",
                 axis_title_root="X-variate ",
-            )
+            ),
+            use_container_width=True,
         )
 
     st.markdown(got.txt_rem_nec_spo)
@@ -910,7 +932,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 width=goc.two_plot_width,
                 height=goc.two_plot_height,
                 title="Inverted PCA 2D",
-            )
+            ),
+            use_container_width=True,
         )
 
     with inv_plsda:
@@ -928,7 +951,8 @@ with st.expander(got.txt_lvl2_header_invert_axes, expanded=expand_all):
                 height=goc.two_plot_height,
                 title=f"Inverted PLS-DA, score: {pls_data_all_inv.score(X_wond, yi_wond)}",
                 axis_title_root="X-variate ",
-            )
+            ),
+            use_container_width=True,
         )
 
 with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
@@ -971,7 +995,10 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
             margin=dict(l=20, r=20, t=20, b=20),
         )
 
-        st.plotly_chart(fig)
+        st.plotly_chart(
+            fig,
+            use_container_width=True,
+        )
 
     with col_cut_text:
         st.markdown(got.txt_noiv_sel_cut_outcome)
@@ -990,7 +1017,10 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
             z=x_pca[:, 2],
             title="PCA",
         )
-        st.plotly_chart(fig)
+        st.plotly_chart(
+            fig,
+            use_container_width=True,
+        )
 
     with col_kmeans_variance:
         st.plotly_chart(
@@ -1006,7 +1036,8 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
                 ),
                 width=goc.three_plot_width,
                 height=goc.three_plot_height,
-            )
+            ),
+            use_container_width=True,
         )
 
     with col_kmeans_loadings:
@@ -1021,7 +1052,10 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
             height=goc.three_plot_height,
             title="Loadings",
         )
-        st.plotly_chart(fig)
+        st.plotly_chart(
+            fig,
+            use_container_width=True,
+        )
 
     st.markdown("It appears that **3** components are enough")
     xkm_pca = PCA(n_components=3)
@@ -1067,7 +1101,10 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
             fig.update_layout(
                 margin=dict(l=10, r=10, t=10, b=10),
             )
-            st.plotly_chart(fig)
+            st.plotly_chart(
+                fig,
+                use_container_width=True,
+            )
 
     st.markdown(
         """
@@ -1089,6 +1126,9 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
 
     st.markdown(got.txt_kmeans_silhouette)
 
+    yb_width = 500
+    yb_height = 500
+
     col_sil = [st.columns(3), st.columns(3), st.columns(3)]
     col_sil = list(itertools.chain(*col_sil))
 
@@ -1097,7 +1137,9 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
             nc = i + 2
             st.markdown(f"{goc.lvl_5_header} {nc} classes")
             silhouette_model = KMeans(init="k-means++", n_clusters=nc, random_state=42)
-            sil_visualizer = SilhouetteVisualizer(silhouette_model, size=(600, 600))
+            sil_visualizer = SilhouetteVisualizer(
+                silhouette_model, size=(yb_width, yb_height)
+            )
             sil_visualizer.fit(x_pca)
             st_yellowbrick(sil_visualizer)
 
@@ -1108,7 +1150,7 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
         with col:
             st.markdown(f"{goc.lvl_5_header} {nc} classes")
             icd_model = KMeans(init="k-means++", n_clusters=nc, random_state=42)
-            icd_visualizer = InterclusterDistance(icd_model, size=(600, 600))
+            icd_visualizer = InterclusterDistance(icd_model, size=(yb_width, yb_height))
             icd_visualizer.fit(x_pca)
             st_yellowbrick(icd_visualizer)
 
@@ -1151,7 +1193,8 @@ with st.expander(got.txt_lvl2_header_kmeans, expanded=expand_all):
                     df_hm,
                     width=goc.three_plot_width,
                     height=goc.three_plot_height,
-                )
+                ),
+                use_container_width=True,
             )
     st.markdown(got.txt_km_hm_conclusion)
 

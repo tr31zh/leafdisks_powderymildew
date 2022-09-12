@@ -89,7 +89,9 @@ def build_inconsistencies_dataframe(df_source):
     )
     df_inconsistent = (
         df_inconsistent.assign(
-            sporulation_oob=np.where(df_inconsistent.because == "sporulation_oob", 1, 0),
+            sporulation_oob=np.where(
+                df_inconsistent.because == "sporulation_oob", 1, 0
+            ),
             sporulation_ds_inc=np.where(
                 df_inconsistent.because == "sporulation_ds_inc", 1, 0
             ),
@@ -377,9 +379,11 @@ def build_raw_merged(lcl_csv_files):
 
 def build_dup_df(df):
 
-    df_inverted_dup_check = df.drop(["colonne"], axis=1, errors="ignore").select_dtypes(
-        exclude=object
-    )
+    df_inverted_dup_check = df.drop(
+        ["colonne"],
+        axis=1,
+        errors="ignore",
+    ).select_dtypes(exclude=object)
 
     df_dict = {
         k: df_inverted_dup_check[df_inverted_dup_check.oiv == k].drop(["oiv"], axis=1)
@@ -543,4 +547,19 @@ def invert_axis(df_src):
                 "sheet",
             ]
         )
+    )
+
+
+def sheet_filtering_out_df(df):
+    return (
+        df[
+            df.comment.isin(
+                [
+                    "Corrupted dataframe",
+                    "Corrupted dataframe, failed to retrieve photos",
+                ]
+            )
+        ]
+        .drop(["csv_file_name", "outcome"], axis=1)
+        .reset_index(drop=True)
     )

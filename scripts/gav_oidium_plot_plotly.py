@@ -1,11 +1,71 @@
+import os
+
 import numpy as np
 import pandas as pd
+
+import skimage.io as skio
 
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.io as pio
+
+import gav_oidium_const as goc
+
+
+def plot_sample_oiv_images(width=None, height=None):
+    # return sorted(os.listdir(os.path.join(goc.datain_path, "images", "oiv_samples")))
+    files = [
+        os.path.join(goc.datain_path, "images", "oiv_samples", f)
+        for f in [
+            "smp_oiv_1.png",
+            "smp_oiv_3.png",
+            "smp_oiv_5.png",
+            "smp_oiv_57.png",
+            "smp_oiv_7.png",
+            "smp_oiv_7_tn_diff.png",
+            "smp_oiv_9.png",
+            "smp_oiv_9_adp.png",
+        ]
+    ]
+    # return [os.path.isfile(f) for f in files]
+    titles = [
+        "OIV 1",
+        "OIV 3",
+        "OIV 5",
+        "OIV 5 or 7",
+        "OIV 7",
+        "OIV 7, different necrose size",
+        "OIV 9",
+        "OIV 9 bis",
+    ]
+
+    fig = make_subplots(
+        rows=2,
+        cols=4,
+        subplot_titles=np.array(titles).flatten(),
+        vertical_spacing=0.05,
+        horizontal_spacing=0.05,
+    )
+
+    for idx, f in enumerate(files):
+        fig.add_trace(
+            go.Image(z=skio.imread(f)),
+            row=1 if idx < 4 else 2,
+            col=(idx % 4) + 1,
+        )
+
+    fig.update_xaxes(showticklabels=False).update_yaxes(
+        showticklabels=False
+    ).update_layout(
+        width=width,
+        height=height,
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+    )
+
+    return fig
 
 
 def plot_inconsistencies(
@@ -14,6 +74,7 @@ def plot_inconsistencies(
     width=1400,
     height=1000,
     title=None,
+    move_legend=True,
 ):
     columns = [
         ["sporulation", "densite_sporulation", ""],
@@ -53,6 +114,16 @@ def plot_inconsistencies(
             x=0.99,
         ),
     )
+
+    if move_legend is True:
+        fig.update_layout(
+            legend=dict(
+                yanchor="top",
+                y=0.99,
+                xanchor="right",
+                x=0.99,
+            ),
+        )
 
     return fig
 
@@ -135,7 +206,44 @@ def plot_oiv_homogeneity(df_src, oiv, width=None, height=None):
     )
 
 
-def plot_avg_by_oiv(df_src, width, height):
+def plot_all_homogeneity(df_src, width=None, height=None):
+    oivs = [1, 3, 5, 7, 9]
+    fig = make_subplots(
+        rows=2,
+        cols=3,
+        subplot_titles=[f"OIV {i}" for i in oivs] + ["Average values for all OIV"],
+        vertical_spacing=0.05,
+        horizontal_spacing=0.05,
+    )
+
+    for i in oivs:
+        fig.add_trace(
+            go.Image(
+                z=df_src[df_src.oiv == i].drop_duplicates().reset_index(drop=True)
+            ),
+            row=1 if i in [1, 3, 5] else 2,
+            col=(i % 3) + 1,
+        )
+
+    fig.add_trace(
+        go.Image(z=df_src.groupby(["oiv"]).mean().reset_index(drop=False)),
+        row=2,
+        col=3,
+    )
+
+    fig.update_xaxes(showticklabels=False).update_yaxes(
+        showticklabels=False
+    ).update_layout(
+        width=width,
+        height=height,
+        paper_bgcolor="white",
+        plot_bgcolor="white",
+    )
+
+    return fig
+
+
+def plot_avg_by_oiv(df_src, width=None, height=None):
     return px.imshow(
         df_src.groupby(["oiv"]).mean().reset_index(drop=False),
         color_continuous_scale=px.colors.sequential.Viridis,
@@ -146,14 +254,71 @@ def plot_avg_by_oiv(df_src, width, height):
     )
 
 
+def plot_pca(
+    pca,
+    df,
+    pca_columns,
+    color,
+    title=" ",
+    pcx=0,
+    pcy=1,
+    width=None,
+    height=None,
+    color_discrete_sequence=px.colors.qualitative.Dark2,
+):
+    components = pca.fit_transform(df)
+    loadings = pca.components_.T * np.sqrt(pca.explained_variance_) * 2
+
+    fig = (
+        px.scatter(
+            x=components[:, pcx],
+            y=components[:, pcy],
+            color=color,
+            height=height,
+            width=width,
+            color_discrete_sequence=color_discrete_sequence,
+        )
+        .update_traces(
+            marker=dict(size=12, line=dict(width=2, color="DarkSlateGrey")),
+            selector=dict(mode="markers"),
+        )
+        .update_layout(
+            title=title,
+            xaxis_title=f"PC{pcx + 1}",
+            yaxis_title=f"PC{pcy + 1}",
+        )
+    )
+
+    for i, feature in enumerate(pca_columns):
+        fig.add_shape(
+            type="line",
+            x0=0,
+            y0=0,
+            x1=loadings[i, pcx],
+            y1=loadings[i, pcy],
+            line=dict(width=4),
+        )
+        fig.add_annotation(
+            x=loadings[i, pcx],
+            y=loadings[i, pcy],
+            ax=0,
+            ay=0,
+            xanchor="center",
+            yanchor="bottom",
+            text=feature,
+        )
+
+    return fig
+
+
 def plot_model(
     X,
-    x_comp,
-    y_comp,
     color,
-    width,
-    height,
-    title,
+    x_comp=0,
+    y_comp=1,
+    width=None,
+    height=None,
+    title=None,
     axis_title_root: str = "PC",
     loadings=None,
     column_names=None,
@@ -233,7 +398,7 @@ def plot_model(
     return fig
 
 
-def observations_sankey(clean_steps):
+def observations_sankey(clean_steps, width=1600, height=600):
     fig = go.Figure(
         data=[
             go.Sankey(
@@ -274,12 +439,12 @@ def observations_sankey(clean_steps):
             )
         ]
     )
-    fig.update_layout(width=1600, height=600)
+    fig.update_layout(width=width, height=height)
 
     return fig
 
 
-def plot_balance_histogram(labels, color, is_text, width, height):
+def plot_balance_histogram(labels, color, is_text, width=None, height=None):
     fig = px.histogram(
         x=labels,
         color=color,

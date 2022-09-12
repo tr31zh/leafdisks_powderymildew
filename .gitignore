@@ -133,3 +133,17 @@ dmypy.json
 
 # My files
 */oidium_source_excels/*
+*.DS_Store*
+notebooks/.DS_Store
+data_in/.DS_Store
+data_in/images/.DS_Store
+data_out/.DS_Store
+
+*.html
+
+*.png
+*.bmp
+*.jpg
+*.zip
+
+*/CamVid/*

@@ -10,7 +10,7 @@ txt_lvl2_header_kmeans = "Maybe OIV is not the best way to group observations"
 txt_lvl2_header_conclusion = "Conclusion"
 
 txt_oiv_452_spec_req = f"""
-**From the specifications we now that a clean dataframe has the following rules**:
+From the specifications we now that a clean dataframe has the following rules:
 - _sporulation_ **must be** 1 ou 0
 - if _sporulation_ **is** 0 , _densite_sporulation_ **must be** NaN else it **must be** an odd number
 - _densite_sporulation_ **must be** a number and **not** 0
@@ -23,7 +23,7 @@ txt_oiv_452_spec_req = f"""
 """
 
 txt_oiv_452_spec_header = f"""
-{goc.lvl_3_header} Data specification
+{goc.lvl_3_header} Data constraints
 {txt_oiv_452_spec_req}
 """
 
@@ -50,8 +50,8 @@ txt_oiv_452_spec_cs = f"""
 
 
 txt_oiv_452_spec = f"""
-{goc.lvl_3_header} OIV
-OIV 452-2 is a standard to evaluate resistance to powdery mildew in vine disk leafs
+{goc.lvl_3_header} OIV 452-1
+OIV 452-1 is a standard to evaluate resistance to powdery mildew in vine disk leafs
 
 &ndash; From OIV the 452-2 specification.
 >
@@ -114,7 +114,6 @@ we're going to parse all the folders year by year and retrieve the files.
 """
 
 txt_what_we_want = f"""
-{goc.lvl_3_header} The aim of this dashboard
 From the discussions with people that use OIV we can tell that:
 - Although OIV is a standard, it's difficult to use, this explains why it's seldomly used in publications or research.
 - OIV depends on sporulation and necrosis but most researches only evaluate sporulation.
@@ -138,7 +137,7 @@ We look for 2 particular headers, sheets will be discarded if:
 """
 
 txt_rejected_csvs = """
-**Some CSVs where rejected:**
+Some CSVs where rejected:
 - Some are experiment descriptions with no data
 - Some have no images
 - Some are corrupted, ie, it was impossible to read them for various reasons
@@ -249,13 +248,17 @@ txt_kmeans_explore_cluster_count = f"""
 As we don't know how many cluster are in the data we're going first to explore a range visually 
 """
 
-txt_kmeans_what = f"""
+txt_kmeans_outcome = f"""
 {goc.lvl_4_header} What does all this mean and what do we do now
 Three results come from the k-means, the elbow and the silhouette:
 - Visually it looks like there are 3 clusters at most that can be distinguished.
 - The elbow method shows 6
 - The silhouette shows a maximum coefficient value for 8 clusters, but there's not a big difference between the counts
+The silhouette test shows a problem with the k-means classifiers. All the experiments were biased towards symptomatic 
+disk leafs but all the classes in all the class counts are equaly distributed.
+"""
 
+txt_icdm = f"""
 {goc.lvl_4_header} Intercluster Distance Maps
 To try and find an explanation we're going to check th **Intercluster Distance Maps*** to 
 see if some clusters are too close to each others
@@ -270,6 +273,12 @@ see if some clusters are too close to each others
 > gives a sense of the relative importance of clusters. Note however, that because 
 > two clusters overlap in the 2D space, it does not imply that they overlap in the 
 > original feature space.
+
+"""
+
+txt_kmeans_what = f"""
+{txt_kmeans_outcome}
+{txt_icdm}
 """
 
 txt_rem_nec_spo = f"""
@@ -374,9 +383,14 @@ txt_conclusion = f"""
 {goc.lvl_3_header} What needs to be added to the report
 We need to understand what caused all these difficulties, for that we need:
 - A widget that will help visualize multiple images with the same variables component that predict the same OIV.
-- A widget that will help reorder and select, if possible, a k-means class count that characterizes the interaction between the plant and the pathogen. It will need to display random images from each class.
+- A widget that will help reorder and select, if possible, a k-means class count that characterizes the interaction 
+between the plant and the pathogen. It will need to display random images from each class.
 
-{goc.lvl_3_header} What we would ike to do outside this report
+This stydy has shown the need for a tool that will ensure the consistency of the observations reported, this too will 
+be usefull not only to the members of the GAV team but to all who need to seize multidimensional data. Wether this project 
+should be part of the thesis or not (or as a supervisior) shoud be discussed.
+
+{goc.lvl_3_header} What we would like to do outside this report
 In this report we have 5 arbitrary selected variables which help phenotype the different levels of 
 resistance to downy mildew. 
 
