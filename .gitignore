@@ -147,3 +147,4 @@ data_out/.DS_Store
 *.zip
 
 */CamVid/*
+*/lightning_logs/*

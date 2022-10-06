@@ -25,6 +25,31 @@ def _get_mask_path_from_image(image_name, masks_folder):
     return mask_path
 
 
+def _get_image_path_from_mask(mask_name, images_folder):
+    image_path = images_folder.joinpath(mask_name + ".jpg")
+    return False if image_path.is_file() is False else image_path
+
+
+def check_items_consistency(images_folder, masks_folder=None) -> pd.DataFrame:
+
+    if isinstance(images_folder, Path) is False:
+        images_folder = Path(images_folder)
+    if masks_folder is not None and isinstance(masks_folder, Path) is False:
+        masks_folder = Path(masks_folder)
+
+    df_dict = {}
+    df_dict["miss_mask"] = []
+    df_dict["miss_image"] = []
+    for image_path in images_folder.glob("*"):
+        if _get_mask_path_from_image(image_path.stem, masks_folder) is None:
+            df_dict["miss_mask"].append(image_path)
+    for mask_path in masks_folder.glob("*"):
+        if _get_image_path_from_mask(mask_path.stem, images_folder) is None:
+            df_dict["miss_image"].append(image_path)
+
+    return df_dict
+
+
 def build_items_dataframe(images_folder, masks_folder=None) -> pd.DataFrame:
     if isinstance(images_folder, Path) is False:
         images_folder = Path(images_folder)
@@ -130,20 +155,26 @@ class LeafDeafSegmentationDataset(Dataset):
 
 
 class LeafDeafSegmentationInferenceDataset(Dataset):
-    def __init__(self, image_list, transform, dataframe=None):
+    def __init__(self, image_list, transform, dataframe=None, return_image_size=True):
         self.transform = transform
         self.image_list = image_list
         self.dataframe = dataframe
+        self.return_image_size = return_image_size
 
     def __len__(self):
         return len(self.image_list)
 
     def __getitem__(self, idx):
-        image = open_image(self.image_list[idx])
+        image = self.image_list[idx]
+        if isinstance(image, np.ndarray) is False:
+            image = open_image(self.image_list[idx])
         original_size = tuple(image.shape[:2])
         if self.transform is not None:
             image = self.transform(image=image)["image"]
-        return image, original_size
+        if self.return_image_size is True:
+            return image, original_size
+        else:
+            return image
 
 
 toto = "toto"
