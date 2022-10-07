@@ -118,3 +118,10 @@ def show_masked_image(image, mask, luma=0.3, width=10, height=8):
     plt.axis("off")
     plt.tight_layout()
     plt.show()
+
+
+def build_donot_show(image, figsize=(12, 8)):
+    figure(figsize=figsize, dpi=80)
+    plt.imshow(image)
+    plt.axis("off")
+    plt.tight_layout()
