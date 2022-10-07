@@ -342,6 +342,8 @@ def clean_contours(
         for c in contours
         if c.width / c.height < ar_threshiold and c.height or c.width < ar_threshiold
     ]
+    if len(contours) == 0:
+        return mask
 
     # Remove large or small contours
     threshold_area = sorted(contours, key=lambda x: x.area)[-1].area * size_thrshold

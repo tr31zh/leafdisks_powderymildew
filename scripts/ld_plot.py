@@ -50,8 +50,8 @@ def visualize_augmentations(image, mask, augmentations, fig_height=8):
     _update_axis(axis=ax[0, 0], image=image, title="Source image")
     _update_axis(axis=ax[1, 0], image=mask, title="Source mask")
     for i, aug in enumerate(augmentations):
-        _update_axis(ax[0, i + 1], image=aug["image"])
-        _update_axis(ax[1, i + 1], image=aug["mask"])
+        _update_axis(ax[0, i + 1], image=aug["image"], title=aug["image"].shape)
+        _update_axis(ax[1, i + 1], image=aug["mask"], title=aug["mask"].shape)
 
     plt.tight_layout()
     plt.show()
@@ -68,20 +68,26 @@ def visualize_augmented_item(image, mask, original_image=None, original_mask=Non
     plt.show()
 
 
-def display_images_and_masks_grid(df_img, predicted_masks=None):
+def display_images_and_masks_grid(
+    df_img, predicted_masks=None, fontsize=18, figsize=(8, 8)
+):
     cols = 3 if predicted_masks else 2
     rows = df_img.shape[0]
-    _, ax = plt.subplots(nrows=rows, ncols=cols, figsize=(10, 2 * rows))
+    _, ax = plt.subplots(nrows=rows, ncols=cols, figsize=figsize)
     for i, image_filename in enumerate(df_img.image_name):
         image, mask = ldd.open_image_and_mask(image_filename, df_img)
 
         _update_axis(
-            ax[i, 0] if len(ax.shape) > 1 else ax[0], image=image, title=image_filename
+            ax[i, 0] if len(ax.shape) > 1 else ax[0],
+            image=image,
+            title=image_filename,
+            fontsize=fontsize,
         )
         _update_axis(
             ax[i, 1] if len(ax.shape) > 1 else ax[1],
             image=mask,
             title="Ground truth mask",
+            fontsize=fontsize,
         )
 
         if predicted_masks:

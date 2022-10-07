@@ -152,7 +152,7 @@ def train_and_validate(model, train_dataset, val_dataset, params):
     return model
 
 
-def create_model(params):
-    model = getattr(ternausnet.models, params["model"])(pretrained=True)
-    model = model.to(params["device"])
+def create_model(model_name, device):
+    model = getattr(ternausnet.models, model_name)(pretrained=True)
+    model = model.to(device)
     return model
