@@ -14,6 +14,7 @@ train_images_folder = root_folder.joinpath("ld_sheets", "images")
 train_masks_folder = root_folder.joinpath("ld_sheets", "masks")
 
 una_images_folder = root_folder.joinpath("ld_tmp")
+wot_images_folder = root_folder.joinpath("wot")
 
 
 def _get_mask_path_from_image(image_name, masks_folder):

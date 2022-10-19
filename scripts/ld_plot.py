@@ -28,7 +28,6 @@ def visualize_image(image, title=None, fontsize=18, remove_axis=True, figsize=(8
         remove_axis=remove_axis,
     )
     plt.tight_layout()
-    plt.show()
 
 
 def visualize_item(image, mask, direction="tb", figsize=(8, 8)):

@@ -1,116 +1,132 @@
 ;file;path
-0;Exp16DM01_saisie.xlsx;Z:EXP-2016\Exp16DM01_Test lampes LED\Exp16DM01_saisie.xlsx
-1;Exp16DM02_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM02_CTPS\Exp16DM02_rep1_saisie.xlsx
-2;Exp16DM02_rep2_saisie.xlsx;Z:EXP-2016\Exp16DM02_CTPS\Exp16DM02_rep2_saisie.xlsx
-3;Exp16DM03_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM03_Martell\Exp16DM03_rep1_saisie.xlsx
-4;Exp16DM03_rep2_saisie.xlsx;Z:EXP-2016\Exp16DM03_Martell\Exp16DM03_rep2_saisie.xlsx
-5;Exp16DM03_rep3_saisie.xlsx;Z:EXP-2016\Exp16DM03_Martell\Exp16DM03_rep3_saisie.xlsx
-6;Exp16DM04_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM04_Innovine vitis vinifera\Exp16DM04_rep1_saisie.xlsx
-7;Exp16DM04_rep2_saisie.xlsx;Z:EXP-2016\Exp16DM04_Innovine vitis vinifera\Exp16DM04_rep2_saisie.xlsx
-8;Exp16DM05_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM05_effet taille\Exp16DM05_rep1_saisie.xlsx
-9;Exp16DM05_rep2_saisie.xlsx;Z:EXP-2016\Exp16DM05_effet taille\Exp16DM05_rep2_saisie.xlsx
-10;Exp16DM05_rep3_saisie.xlsx;Z:EXP-2016\Exp16DM05_effet taille\Exp16DM05_rep3_saisie.xlsx
-11;Exp16DM05_rep4_saisie.xlsx;Z:EXP-2016\Exp16DM05_effet taille\Exp16DM05_rep4_saisie.xlsx
-12;Exp16DM05_rep5_saisie.xlsx;Z:EXP-2016\Exp16DM05_effet taille\Exp16DM05_rep5_saisie.xlsx
-13;Exp16DM05_rep6_saisie.xlsx;Z:EXP-2016\Exp16DM05_effet taille\Exp16DM05_rep6_saisie.xlsx
-14;~$Exp16DM05_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM05_effet taille\~$Exp16DM05_rep1_saisie.xlsx
-15;Exp16DM06_saisie.xlsx;Z:EXP-2016\Exp16DM06_CALVI\Exp16DM06_saisie.xlsx
-16;Exp16DM07_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM07_popCordifolia\Exp16DM07_rep1_saisie.xlsx
-17;Exp16DM08_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM08_test pinots\Exp16DM08_rep1_saisie.xlsx
-18;Exp16DM09_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM09_Rpv3.4\Exp16DM09_rep1_saisie.xlsx
-19;Exp16DM10_saisie.xlsx;Z:EXP-2016\Exp16DM10_Innovine vitis silvestris\Exp16DM10_saisie.xlsx
-20;Exp16DM11_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM11_Hybrides AestRup\Exp16DM11_rep1_saisie.xlsx
-21;Exp16DM11_rep2_saisie.xlsx;Z:EXP-2016\Exp16DM11_Hybrides AestRup\Exp16DM11_rep2_saisie.xlsx
-22;Exp16DM12_rep1_saisie.xlsx;Z:EXP-2016\Exp16DM12_V.cordifolia\Exp16DM12_rep1_saisie.xlsx
-23;Exp16DM12_rep2_saisie.xlsx;Z:EXP-2016\Exp16DM12_V.cordifolia\Exp16DM12_rep2_saisie.xlsx
-24;Exp17DM01_inoc1_saisie.xlsx;Z:EXP-2017\Exp17DM01_test concentration inoculum\Exp17DM01_inoc1\Exp17DM01_inoc1_saisie.xlsx
-25;Exp17DM01_inoc2_saisie.xlsx;Z:EXP-2017\Exp17DM01_test concentration inoculum\Exp17DM01_inoc2\Exp17DM01_inoc2_saisie.xlsx
-26;Exp17DM01_inoc3_saisie.xlsx;Z:EXP-2017\Exp17DM01_test concentration inoculum\Exp17DM01_inoc3\Exp17DM01_inoc3_saisie.xlsx
-27;Exp17DM02_inoc1_saisie.xlsx;Z:EXP-2017\Exp17DM02_IDEVI\Exp17DM02_inoc1\Exp17DM02_inoc1_saisie.xlsx
-28;~$Exp17DM02_inoc1_saisie.xlsx;Z:EXP-2017\Exp17DM02_IDEVI\Exp17DM02_inoc1\~$Exp17DM02_inoc1_saisie.xlsx
-29;Exp17DM02_inoc2_saisie.xlsx;Z:EXP-2017\Exp17DM02_IDEVI\Exp17DM02_inoc2\Exp17DM02_inoc2_saisie.xlsx
-30;Exp17DM02_inoc3_saisie.xlsx;Z:EXP-2017\Exp17DM02_IDEVI\Exp17DM02_inoc3\Exp17DM02_inoc3_saisie.xlsx
-31;Exp17DM03_inoc1_saisie.xlsx;Z:EXP-2017\Exp17DM03_pop 44826\Exp17DM03_inoc1\Exp17DM03_inoc1_saisie.xlsx
-32;Exp17DM03_inoc2_saisie.xlsx;Z:EXP-2017\Exp17DM03_pop 44826\Exp17DM03_inoc2\Exp17DM03_inoc2_saisie.xlsx
-33;Exp17DM04_inoc1_saisie.xlsx;Z:EXP-2017\Exp17DM04_Cordifolia\Exp17DM04 Inoc1 et Inoc2 (Resdur)\Exp17DM04_Inoc 1\Exp17DM04_inoc1_saisie.xlsx
-34;Exp17DM04_inoc2_saisie.xlsx;Z:EXP-2017\Exp17DM04_Cordifolia\Exp17DM04 Inoc1 et Inoc2 (Resdur)\Exp17DM04_Inoc 2\Exp17DM04_inoc2_saisie.xlsx
-35;Exp17DM04_inoc4_saisie.xlsx;Z:EXP-2017\Exp17DM04_Cordifolia\Exp17DM04 Inoc3 et Inoc4 (effet souche)\Exp17DM04-Inoc4\Exp17DM04_inoc4_saisie.xlsx
-36;Exp17DM04_inoc3_saisie.xlsx;Z:EXP-2017\Exp17DM04_Cordifolia\Exp17DM04 Inoc3 et Inoc4 (effet souche)\Exp17DM04_Inoc 3\Exp17DM04_inoc3_saisie.xlsx
-37;Exp17DM07_inoc1_saisie.xlsx;Z:EXP-2017\Exp17DM07_Effet QTL\Exp17DM07_inoc1\Exp17DM07_inoc1_saisie.xlsx
-38;Exp17DM08_saisie.xlsx;Z:EXP-2017\Exp17DM08_témoins\Exp17DM08_saisie.xlsx
-39;Exp18DM01_inoc1_saisie.xlsx;Z:EXP-2018\Exp18DM01_CTPS_BNIC\Exp18DM01_inoc1_saisie.xlsx
-40;Exp18DM01_inoc2_saisie.xlsx;Z:EXP-2018\Exp18DM01_CTPS_BNIC\Exp18DM01_inoc2_saisie.xlsx
-41;~$Exp18DM01_inoc1_saisie.xlsx;Z:EXP-2018\Exp18DM01_CTPS_BNIC\~$Exp18DM01_inoc1_saisie.xlsx
-42;Exp18DM02_inoc1_saisie.xlsx;Z:EXP-2018\Exp18DM02_CSxCandicans\Inoc1\Exp18DM02_inoc1_saisie.xlsx
-43;Exp18DM02_inoc2et3_saisie.xlsx;Z:EXP-2018\Exp18DM02_CSxCandicans\Inoc2 et 3\Exp18DM02_inoc2et3_saisie.xlsx
-44;Exp18DM05_saisie.xlsx;Z:EXP-2018\Exp18DM02_CSxCandicans\Exp18DM05_saisie.xlsx
-45;Exp18DM05_saisiebis.xlsx;Z:EXP-2018\Exp18DM02_CSxCandicans\Exp18DM05_saisiebis.xlsx
-46;~$Exp18DM02_inoc1_saisie.xlsx;Z:EXP-2018\Exp18DM02_CSxCandicans\~$Exp18DM02_inoc1_saisie.xlsx
-47;Exp18DM03_saisie.xlsx;Z:EXP-2018\Exp18DM03_Cinerea x Cinerea\Exp18DM03_saisie.xlsx
-48;Exp18DM04_inoc1_saisie.xlsx;Z:EXP-2018\Exp18DM04_pop 50025\Exp18DM04_inoc1_saisie.xlsx
-49;~$Exp18DM04_inoc1_saisie.xlsx;Z:EXP-2018\Exp18DM04_pop 50025\~$Exp18DM04_inoc1_saisie.xlsx
-50;Exp18DM05_saisie_OIV à 4, 5 et 6 dpi.xlsx;Z:EXP-2018\Exp18DM05_sous-pop 50025\Exp18DM05_saisie_OIV à 4, 5 et 6 dpi.xlsx
-51;Exp18DM06_saisie.xlsx;Z:EXP-2018\Exp18DM06_IDEVI\Exp18DM06_saisie.xlsx
-52;Exp18DM07_saisie.xlsx;Z:EXP-2018\Exp18DM07_Bianca\Exp18DM07_saisie.xlsx
-53;Exp18DM10_saisie.xlsx;Z:EXP-2018\Exp18DM10_Effet souche résistances\Exp18DM10_saisie.xlsx
-54;Exp19DM01_saisie.xlsx;Z:EXP-2019\Exp19DM01_IDEVI\Exp19DM01_saisie.xlsx
-55;Exp19DM02_inoc1_saisie.xlsx;Z:EXP-2019\Exp19DM02_CTPS\Exp19DM02_inoc1_saisie.xlsx
-56;Exp19DM02_inoc2_saisie.xlsx;Z:EXP-2019\Exp19DM02_CTPS\Exp19DM02_inoc2_saisie.xlsx
-57;~$Exp19DM02_inoc2_saisie.xlsx;Z:EXP-2019\Exp19DM02_CTPS\~$Exp19DM02_inoc2_saisie.xlsx
-58;Exp19DM03_inoc1_saisie.xlsx;Z:EXP-2019\Exp19DM03_S1 lincecumii\Exp19DM03_inoc1_saisie.xlsx
-59;Exp19DM03_inoc2_saisie.xlsx;Z:EXP-2019\Exp19DM03_S1 lincecumii\Exp19DM03_inoc2_saisie.xlsx
-60;Exp19DM04_inoc1_saisie.xlsx;Z:EXP-2019\Exp19DM04_S1 Cabernet-S\Exp19DM04_inoc1_saisie.xlsx
-61;Exp19DM04_inoc1_saisie_bis.xlsx;Z:EXP-2019\Exp19DM04_S1 Cabernet-S\Exp19DM04_inoc1_saisie_bis.xlsx
-62;Exp19DM04_inoc2_saisie.xlsx;Z:EXP-2019\Exp19DM04_S1 Cabernet-S\Exp19DM04_inoc2_saisie.xlsx
-63;Exp19DM04_inoc2_saisie_bis.xlsx;Z:EXP-2019\Exp19DM04_S1 Cabernet-S\Exp19DM04_inoc2_saisie_bis.xlsx
-64;~$Exp19DM04_inoc2_saisie.xlsx;Z:EXP-2019\Exp19DM04_S1 Cabernet-S\~$Exp19DM04_inoc2_saisie.xlsx
-65;Exp19DM06_inoc1_saisie.xlsx;Z:EXP-2019\Exp19DM06_comparaison spraycompresseur\Exp19DM06_inoc1_saisie.xlsx
-66;Exp19DM06_inoc2_saisie.xlsx;Z:EXP-2019\Exp19DM06_comparaison spraycompresseur\Exp19DM06_inoc2_saisie.xlsx
-67;Exp19DM07_saisie.xlsx;Z:EXP-2019\Exp19DM07_Vassal\Exp19DM07_saisie.xlsx
-68;Exp19DM09_saisie.xlsx;Z:EXP-2019\Exp19DM09_Comparaison souches\Exp19DM09_saisie.xlsx
-69;Exp19DM10_saisie.xlsx;Z:EXP-2019\Exp19DM10_Validation phenotype MCP\Exp19DM10_saisie.xlsx
-70;~$Exp19DM10_saisie.xlsx;Z:EXP-2019\Exp19DM10_Validation phenotype MCP\~$Exp19DM10_saisie.xlsx
-71;Exp20DM01_inoc1_saisie.xlsx;Z:EXP-2020\Exp20DM01_IDEVI\Exp20DM01_inoc1_saisie.xlsx
-72;Exp20DM01_inoc2_saisie.xlsx;Z:EXP-2020\Exp20DM01_IDEVI\Exp20DM01_inoc2_saisie.xlsx
-73;~$Exp20DM01_inoc1_saisie.xlsx;Z:EXP-2020\Exp20DM01_IDEVI\~$Exp20DM01_inoc1_saisie.xlsx
-74;Exp20DM02_inoc1_saisie.xlsx;Z:EXP-2020\Exp20DM02_CTPS\Exp20DM02_inoc1_saisie.xlsx
-75;Exp20DM02_inoc2_saisie.xlsx;Z:EXP-2020\Exp20DM02_CTPS\Exp20DM02_inoc2_saisie.xlsx
-76;Exp20DM03_inoc1_saisie.xlsx;Z:EXP-2020\Exp20DM03_Oberlin\Exp20DM03_inoc1_saisie.xlsx
-77;Exp20DM03_inoc2_saisie.xlsx;Z:EXP-2020\Exp20DM03_Oberlin\Exp20DM03_inoc2_saisie.xlsx
-78;~$Exp20DM03_inoc1_saisie.xlsx;Z:EXP-2020\Exp20DM03_Oberlin\~$Exp20DM03_inoc1_saisie.xlsx
-79;Exp20DM04_inoc1_saisie.xlsx;Z:EXP-2020\Exp20DM04_Vassal\Exp20DM04_inoc1_saisie.xlsx
-80;Exp20DM04_inoc2_saisie.xlsx;Z:EXP-2020\Exp20DM04_Vassal\Exp20DM04_inoc2_saisie.xlsx
-81;Exp21DM01_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM01_CTPS\Exp21DM01_inoc1_saisie.xlsx
-82;Exp21DM01_inoc2_saisie.xlsx;Z:EXP-2021\Exp21DM01_CTPS\Exp21DM01_inoc2_saisie.xlsx
-83;Exp21DM02_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM02_CVC\Exp21DM02_inoc1_saisie.xlsx
-84;Exp21DM02_inoc1_saisie_Rochefort.xlsx;Z:EXP-2021\Exp21DM02_CVC\Exp21DM02_inoc1_saisie_Rochefort.xlsx
-85;Exp21DM02_inoc2_saisie.xlsx;Z:EXP-2021\Exp21DM02_CVC\Exp21DM02_inoc2_saisie.xlsx
-86;Exp21DM03_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM03_DURAVIT\Exp21DM03_inoc1_saisie.xlsx
-87;Exp21DM03_inoc2_saisie.xlsx;Z:EXP-2021\Exp21DM03_DURAVIT\Exp21DM03_inoc2_saisie.xlsx
-88;Exp21DM03_inoc3_saisie.xlsx;Z:EXP-2021\Exp21DM03_DURAVIT\Exp21DM03_inoc3_saisie.xlsx
-89;Exp21DM03_inoc4_saisie.xlsx;Z:EXP-2021\Exp21DM03_DURAVIT\Exp21DM03_inoc4_saisie.xlsx
-90;Exp21DM04_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM04_Oberlin\Exp21DM04_inoc1_saisie.xlsx
-91;Exp21DM04_inoc2_saisie.xlsx;Z:EXP-2021\Exp21DM04_Oberlin\Exp21DM04_inoc2_saisie.xlsx
-92;Exp21DM04_inoc3_saisie.xlsx;Z:EXP-2021\Exp21DM04_Oberlin\Exp21DM04_inoc3_saisie.xlsx
-93;~$Exp21DM04_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM04_Oberlin\~$Exp21DM04_inoc1_saisie.xlsx
-94;Exp21DM05_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM05_RpV2\Exp21DM05_inoc1_saisie.xlsx
-95;Exp21DM05_inoc2_saisie.xlsx;Z:EXP-2021\Exp21DM05_RpV2\Exp21DM05_inoc2_saisie.xlsx
-96;Exp21DM05_inoc3_saisie.xlsx;Z:EXP-2021\Exp21DM05_RpV2\Exp21DM05_inoc3_saisie.xlsx
-97;Exp21DM05_inoc4_saisie.xlsx;Z:EXP-2021\Exp21DM05_RpV2\Exp21DM05_inoc4_saisie.xlsx
-98;Exp21DM07_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM07_VitEst UHA\Exp21DM07_inoc1_saisie.xlsx
-99;Exp21DM07_inoc2_saisie.xlsx;Z:EXP-2021\Exp21DM07_VitEst UHA\Exp21DM07_inoc2_saisie.xlsx
-100;Exp21DM08_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM08_50025\Exp21DM08_inoc1_saisie.xlsx
-101;Exp21DM08_inoc2_saisie.xlsx;Z:EXP-2021\Exp21DM08_50025\Exp21DM08_inoc2_saisie.xlsx
-102;Exp21DM12_saisie.xlsx;Z:EXP-2021\EXP21DM12_inoc3_S1-Cabernet-S\Exp21DM12_saisie.xlsx
-103;Exp21DM13_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM13_Isolats Rpv10\Exp21DM13_inoc1_saisie.xlsx
-104;Exp21DM13_inoc2_saisie.xlsx;Z:EXP-2021\Exp21DM13_Isolats Rpv10\Exp21DM13_inoc2_saisie.xlsx
-105;Exp21DM14_inoc1_saisie.xlsx;Z:EXP-2021\Exp21DM14_Transcriptomique\Exp21DM14_inoc1_saisie.xlsx
-106;Exp22DM01_inoc1_saisie.xlsx;Z:EXP-2022\Exp22DM01_DURAVITVITAE\Exp22DM01_inoc1_saisie.xlsx
-107;Exp22DM02_inoc1_saisie.xlsx;Z:EXP-2022\Exp22DM02_Oberlin\Exp22DM02_inoc1_saisie.xlsx
-108;~$Exp22DM02_inoc1_saisie.xlsx;Z:EXP-2022\Exp22DM02_Oberlin\~$Exp22DM02_inoc1_saisie.xlsx
-109;Exp22DM03_inoc1_saisie.xlsx;Z:EXP-2022\Exp22DM03_Introgression Rpv15\Exp22DM03_inoc1_saisie.xlsx
-110;Exp22DM03_inoc2_saisie.xlsx;Z:EXP-2022\Exp22DM03_Introgression Rpv15\Exp22DM03_inoc2_saisie.xlsx
-111;Exp22DM07_inoc1_saisie.xlsx;Z:EXP-2022\Exp22DM07_Mycorhizes\Exp22DM07_inoc1_saisie.xlsx
-112;Exp22DM08_inoc1_saisie.xlsx;Z:EXP-2022\Exp22DM08_Isolat Freiburg\Exp22DM08_inoc1_saisie.xlsx
-113;Exp22DM08_inoc2_saisie.xlsx;Z:EXP-2022\Exp22DM08_Isolat Freiburg\Exp22DM08_inoc2_saisie.xlsx
-114;ExpAADMXX_saisie.xlsx;Z:modèles fichiers\EXP XX Mildiou\ExpAADMXX_saisie.xlsx
+0;Exp16DM01_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM01_Test lampes LED/Exp16DM01_saisie.xlsx
+1;Exp16DM02_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM02_CTPS/Exp16DM02_rep1_saisie.xlsx
+2;Exp16DM02_rep2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM02_CTPS/Exp16DM02_rep2_saisie.xlsx
+3;Exp16DM03_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM03_Martell/Exp16DM03_rep1_saisie.xlsx
+4;Exp16DM03_rep2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM03_Martell/Exp16DM03_rep2_saisie.xlsx
+5;Exp16DM03_rep3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM03_Martell/Exp16DM03_rep3_saisie.xlsx
+6;Exp16DM04_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM04_Innovine vitis vinifera/Exp16DM04_rep1_saisie.xlsx
+7;Exp16DM04_rep2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM04_Innovine vitis vinifera/Exp16DM04_rep2_saisie.xlsx
+8;Exp16DM05_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM05_effet taille/Exp16DM05_rep1_saisie.xlsx
+9;Exp16DM05_rep2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM05_effet taille/Exp16DM05_rep2_saisie.xlsx
+10;Exp16DM05_rep3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM05_effet taille/Exp16DM05_rep3_saisie.xlsx
+11;Exp16DM05_rep4_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM05_effet taille/Exp16DM05_rep4_saisie.xlsx
+12;Exp16DM05_rep5_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM05_effet taille/Exp16DM05_rep5_saisie.xlsx
+13;Exp16DM05_rep6_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM05_effet taille/Exp16DM05_rep6_saisie.xlsx
+14;~$Exp16DM05_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM05_effet taille/~$Exp16DM05_rep1_saisie.xlsx
+15;Exp16DM06_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM06_CALVI/Exp16DM06_saisie.xlsx
+16;Exp16DM07_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM07_popCordifolia/Exp16DM07_rep1_saisie.xlsx
+17;Exp16DM08_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM08_test pinots/Exp16DM08_rep1_saisie.xlsx
+18;Exp16DM09_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM09_Rpv3.4/Exp16DM09_rep1_saisie.xlsx
+19;Exp16DM10_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM10_Innovine vitis silvestris/Exp16DM10_saisie.xlsx
+20;Exp16DM11_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM11_Hybrides AestRup/Exp16DM11_rep1_saisie.xlsx
+21;Exp16DM11_rep2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM11_Hybrides AestRup/Exp16DM11_rep2_saisie.xlsx
+22;Exp16DM11_rep1_saisie_fichier total_V2.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM11_Hybrides AestRup/Exp16DM11_rep1_saisie_fichier total_V2.xlsx
+23;Exp16DM12_rep1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM12_V.cordifolia/Exp16DM12_rep1_saisie.xlsx
+24;Exp16DM12_rep2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2016/Exp16DM12_V.cordifolia/Exp16DM12_rep2_saisie.xlsx
+25;Exp17DM01_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM01_test concentration inoculum/Exp17DM01_inoc1/Exp17DM01_inoc1_saisie.xlsx
+26;Exp17DM01_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM01_test concentration inoculum/Exp17DM01_inoc2/Exp17DM01_inoc2_saisie.xlsx
+27;Exp17DM01_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM01_test concentration inoculum/Exp17DM01_inoc3/Exp17DM01_inoc3_saisie.xlsx
+28;Exp17DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM02_IDEVI/Exp17DM02_inoc1/Exp17DM02_inoc1_saisie.xlsx
+29;~$Exp17DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM02_IDEVI/Exp17DM02_inoc1/~$Exp17DM02_inoc1_saisie.xlsx
+30;Exp17DM02_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM02_IDEVI/Exp17DM02_inoc2/Exp17DM02_inoc2_saisie.xlsx
+31;Exp17DM02_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM02_IDEVI/Exp17DM02_inoc3/Exp17DM02_inoc3_saisie.xlsx
+32;Exp17DM03_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM03_pop 44826/Exp17DM03_inoc1/Exp17DM03_inoc1_saisie.xlsx
+33;Exp17DM03_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM03_pop 44826/Exp17DM03_inoc2/Exp17DM03_inoc2_saisie.xlsx
+34;Exp17DM04_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM04_Cordifolia/Exp17DM04 Inoc1 et Inoc2 (Resdur)/Exp17DM04_Inoc 1/Exp17DM04_inoc1_saisie.xlsx
+35;Exp17DM04_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM04_Cordifolia/Exp17DM04 Inoc1 et Inoc2 (Resdur)/Exp17DM04_Inoc 2/Exp17DM04_inoc2_saisie.xlsx
+36;Exp17DM04_inoc4_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM04_Cordifolia/Exp17DM04 Inoc3 et Inoc4 (effet souche)/Exp17DM04-Inoc4/Exp17DM04_inoc4_saisie.xlsx
+37;Exp17DM04_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM04_Cordifolia/Exp17DM04 Inoc3 et Inoc4 (effet souche)/Exp17DM04_Inoc 3/Exp17DM04_inoc3_saisie.xlsx
+38;Exp17DM07_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM07_Effet QTL/Exp17DM07_inoc1/Exp17DM07_inoc1_saisie.xlsx
+39;Exp17DM08_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2017/Exp17DM08_témoins/Exp17DM08_saisie.xlsx
+40;Exp18DM01_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM01_CTPS_BNIC/Exp18DM01_inoc1_saisie.xlsx
+41;Exp18DM01_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM01_CTPS_BNIC/Exp18DM01_inoc2_saisie.xlsx
+42;~$Exp18DM01_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM01_CTPS_BNIC/~$Exp18DM01_inoc1_saisie.xlsx
+43;Exp18DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM02_CSxCandicans/Inoc1/Exp18DM02_inoc1_saisie.xlsx
+44;Exp18DM02_inoc2et3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM02_CSxCandicans/Inoc2 et 3/Exp18DM02_inoc2et3_saisie.xlsx
+45;Exp18DM05_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM02_CSxCandicans/Exp18DM05_saisie.xlsx
+46;Exp18DM05_saisiebis.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM02_CSxCandicans/Exp18DM05_saisiebis.xlsx
+47;~$Exp18DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM02_CSxCandicans/~$Exp18DM02_inoc1_saisie.xlsx
+48;Exp18DM03_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM03_Cinerea x Cinerea/Exp18DM03_saisie.xlsx
+49;Exp18DM04_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM04_pop 50025/Exp18DM04_inoc1_saisie.xlsx
+50;~$Exp18DM04_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM04_pop 50025/~$Exp18DM04_inoc1_saisie.xlsx
+51;Exp18DM05_saisie_OIV à 4, 5 et 6 dpi.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM05_sous-pop 50025/Exp18DM05_saisie_OIV à 4, 5 et 6 dpi.xlsx
+52;Exp18DM06_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM06_IDEVI/Exp18DM06_saisie.xlsx
+53;Exp18DM07_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM07_Bianca/Exp18DM07_saisie.xlsx
+54;Exp18DM10_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2018/Exp18DM10_Effet souche résistances/Exp18DM10_saisie.xlsx
+55;Exp19DM01_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM01_IDEVI/Exp19DM01_saisie.xlsx
+56;Exp19DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM02_CTPS/Exp19DM02_inoc1_saisie.xlsx
+57;Exp19DM02_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM02_CTPS/Exp19DM02_inoc2_saisie.xlsx
+58;~$Exp19DM02_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM02_CTPS/~$Exp19DM02_inoc2_saisie.xlsx
+59;Exp19DM03_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM03_S1 lincecumii/Exp19DM03_inoc1_saisie.xlsx
+60;Exp19DM03_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM03_S1 lincecumii/Exp19DM03_inoc2_saisie.xlsx
+61;Exp19DM04_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM04_S1 Cabernet-S./Exp19DM04_inoc1_saisie.xlsx
+62;Exp19DM04_inoc1_saisie_bis.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM04_S1 Cabernet-S./Exp19DM04_inoc1_saisie_bis.xlsx
+63;Exp19DM04_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM04_S1 Cabernet-S./Exp19DM04_inoc2_saisie.xlsx
+64;Exp19DM04_inoc2_saisie_bis.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM04_S1 Cabernet-S./Exp19DM04_inoc2_saisie_bis.xlsx
+65;~$Exp19DM04_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM04_S1 Cabernet-S./~$Exp19DM04_inoc2_saisie.xlsx
+66;Exp19DM06_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM06_comparaison spray:compresseur/Exp19DM06_inoc1_saisie.xlsx
+67;Exp19DM06_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM06_comparaison spray:compresseur/Exp19DM06_inoc2_saisie.xlsx
+68;Exp19DM07_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM07_Vassal/Exp19DM07_saisie.xlsx
+69;Exp19DM09_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM09_Comparaison souches/Exp19DM09_saisie.xlsx
+70;Exp19DM10_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM10_Validation phenotype MCP/Exp19DM10_saisie.xlsx
+71;~$Exp19DM10_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2019/Exp19DM10_Validation phenotype MCP/~$Exp19DM10_saisie.xlsx
+72;Exp20DM01_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM01_IDEVI/Exp20DM01_inoc1_saisie.xlsx
+73;Exp20DM01_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM01_IDEVI/Exp20DM01_inoc2_saisie.xlsx
+74;~$Exp20DM01_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM01_IDEVI/~$Exp20DM01_inoc1_saisie.xlsx
+75;Exp20DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM02_CTPS/Exp20DM02_inoc1_saisie.xlsx
+76;Exp20DM02_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM02_CTPS/Exp20DM02_inoc2_saisie.xlsx
+77;Exp20DM03_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM03_Oberlin/Exp20DM03_inoc1_saisie.xlsx
+78;Exp20DM03_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM03_Oberlin/Exp20DM03_inoc2_saisie.xlsx
+79;~$Exp20DM03_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM03_Oberlin/~$Exp20DM03_inoc1_saisie.xlsx
+80;Exp20DM04_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM04_Vassal/Exp20DM04_inoc1_saisie.xlsx
+81;Exp20DM04_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2020/Exp20DM04_Vassal/Exp20DM04_inoc2_saisie.xlsx
+82;ExpAADMXX_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/modèles fichiers/EXP XX Mildiou/ExpAADMXX_saisie.xlsx
+83;Exp21DM01_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM01_CTPS/Exp21DM01_inoc1_saisie.xlsx
+84;Exp21DM01_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM01_CTPS/Exp21DM01_inoc2_saisie.xlsx
+85;Exp21DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM02_CVC/Exp21DM02_inoc1_saisie.xlsx
+86;Exp21DM02_inoc1_saisie_Rochefort.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM02_CVC/Exp21DM02_inoc1_saisie_Rochefort.xlsx
+87;Exp21DM02_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM02_CVC/Exp21DM02_inoc2_saisie.xlsx
+88;Exp21DM03_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM03_DURAVIT/Exp21DM03_inoc1_saisie.xlsx
+89;Exp21DM03_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM03_DURAVIT/Exp21DM03_inoc2_saisie.xlsx
+90;Exp21DM03_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM03_DURAVIT/Exp21DM03_inoc3_saisie.xlsx
+91;Exp21DM03_inoc4_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM03_DURAVIT/Exp21DM03_inoc4_saisie.xlsx
+92;Exp21DM04_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM04_Oberlin/Exp21DM04_inoc1_saisie.xlsx
+93;Exp21DM04_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM04_Oberlin/Exp21DM04_inoc2_saisie.xlsx
+94;Exp21DM04_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM04_Oberlin/Exp21DM04_inoc3_saisie.xlsx
+95;~$Exp21DM04_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM04_Oberlin/~$Exp21DM04_inoc1_saisie.xlsx
+96;Exp21DM05_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM05_RpV2/Exp21DM05_inoc1_saisie.xlsx
+97;Exp21DM05_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM05_RpV2/Exp21DM05_inoc2_saisie.xlsx
+98;Exp21DM05_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM05_RpV2/Exp21DM05_inoc3_saisie.xlsx
+99;Exp21DM05_inoc4_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM05_RpV2/Exp21DM05_inoc4_saisie.xlsx
+100;Exp21DM07_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM07_VitEst UHA/Exp21DM07_inoc1_saisie.xlsx
+101;Exp21DM07_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM07_VitEst UHA/Exp21DM07_inoc2_saisie.xlsx
+102;Exp21DM08_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM08_50025/Exp21DM08_inoc1_saisie.xlsx
+103;Exp21DM08_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM08_50025/Exp21DM08_inoc2_saisie.xlsx
+104;Exp21DM12_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/EXP21DM12_inoc3_S1-Cabernet-S /Exp21DM12_saisie.xlsx
+105;Exp21DM13_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM13_Isolats Rpv10/Exp21DM13_inoc1_saisie.xlsx
+106;Exp21DM13_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM13_Isolats Rpv10/Exp21DM13_inoc2_saisie.xlsx
+107;Exp21DM14_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2021/Exp21DM14_Transcriptomique/Exp21DM14_inoc1_saisie.xlsx
+108;Exp22DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM02_Oberlin/Exp22DM02_inoc1_saisie.xlsx
+109;~$Exp22DM02_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM02_Oberlin/~$Exp22DM02_inoc1_saisie.xlsx
+110;Exp22DM02_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM02_Oberlin/Exp22DM02_inoc2_saisie.xlsx
+111;Exp22DM02_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM02_Oberlin/Exp22DM02_inoc3_saisie.xlsx
+112;~$Exp22DM02_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM02_Oberlin/~$Exp22DM02_inoc3_saisie.xlsx
+113;Exp22DM03_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM03_Introgression Rpv15/Exp22DM03_inoc2_saisie.xlsx
+114;Exp22DM03_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM03_Introgression Rpv15/Exp22DM03_inoc1_saisie.xlsx
+115;Exp22DM03_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM03_Introgression Rpv15/Exp22DM03_inoc3_saisie.xlsx
+116;Exp22DM07_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM07_Mycorhizes/Exp22DM07_inoc1_saisie.xlsx
+117;Exp22DM08_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM08_Isolat Freiburg/Exp22DM08_inoc1_saisie.xlsx
+118;Exp22DM08_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM08_Isolat Freiburg/Exp22DM08_inoc2_saisie.xlsx
+119;Exp22DM08_inoc1_saisie_V2.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM08_Isolat Freiburg/Exp22DM08_inoc1_saisie_V2.xlsx
+120;Exp22DM08_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM08_Isolat Freiburg/Exp22DM08_inoc3_saisie.xlsx
+121;Exp22DM01_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM01_DURAVIT:VITAE/Exp22DM01_inoc1_saisie.xlsx
+122;Exp22DM01_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM01_DURAVIT:VITAE/Exp22DM01_inoc2_saisie.xlsx
+123;Exp22DM01_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM01_DURAVIT:VITAE/Exp22DM01_inoc3_saisie.xlsx
+124;~$Exp22DM06_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM06_moindre sensibilité/~$Exp22DM06_saisie.xlsx
+125;Exp22DM06_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM06_moindre sensibilité/Exp22DM06_saisie.xlsx
+126;Exp22DM09_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM09_Expression génique/Exp22DM09_saisie.xlsx
+127;Exp22DM11_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM11_Isolats Rpv12 sur Rpv12/Exp22DM11_inoc2_saisie.xlsx
+128;Exp22DM11_inoc1_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM11_Isolats Rpv12 sur Rpv12/Exp22DM11_inoc1_saisie.xlsx
+129;~$Exp22DM11_inoc2_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM11_Isolats Rpv12 sur Rpv12/~$Exp22DM11_inoc2_saisie.xlsx
+130;Exp22DM11_inoc3_saisie.xlsx;/Users/mavi/Code/python/leafdisks_powderymildew/notebooks/../data_in/gav_phenotypage/EXP-2022/Exp22DM11_Isolats Rpv12 sur Rpv12/Exp22DM11_inoc3_saisie.xlsx

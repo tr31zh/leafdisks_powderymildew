@@ -1,10 +1,14 @@
-import os
+from pathlib import Path
 
-datain_path = os.path.join(".", "data_in")
-excel_file_path = os.path.join(datain_path, "oidium_source_excels", "")
-oidium_extracted_csvs_path = os.path.join(datain_path, "oidium_extracted_csvs", "")
-excel_file_list_path = os.path.join(excel_file_path, "excel_list.txt")
-path_to_df_result = os.path.join(datain_path, "extracted_csv_files.csv")
+root_folder = Path(__file__).parent.parent
+
+datain_path = root_folder.joinpath("data_in")
+dataout_path = root_folder.joinpath("data_out")
+excel_file_path = datain_path.joinpath("oidium_source_excels")
+distant_excel_file_path = datain_path.joinpath("gav_phenotypage")
+oidium_extracted_csvs_path = datain_path.joinpath("oidium_extracted_csvs")
+excel_file_list_path = excel_file_path.joinpath("excel_list.txt")
+path_to_df_result = datain_path.joinpath("extracted_csv_files.csv")
 
 odd_numbers = [1, 3, 5, 7, 9]
 needed_columns = ["nomphoto", "oiv", "s", "sq", "n", "fn", "tn", "ligne", "colonne"]

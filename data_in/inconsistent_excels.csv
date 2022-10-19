@@ -10,6 +10,7 @@ Exp16DM07_rep1_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
 Exp16DM08_rep1_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
 Exp16DM09_rep1_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
 Exp16DM11_rep1_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
+Exp16DM11_rep1_saisie_fichier total_V2;Feuil1;1;1;1;0;0;0;0;0;0;0;0
 Exp16DM11_rep2_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
 Exp16DM12_rep1_saisie;fichier total;1;1;0;1;1;1;0;0;0;1;0
 Exp17DM01_inoc1_saisie;fichier total;1;1;1;1;1;1;1;1;1;0;0
@@ -30,13 +31,17 @@ Exp18DM04_inoc1_saisie;4dpi;1;1;1;1;1;1;1;1;1;0;0
 Exp18DM04_inoc1_saisie;5dpi;1;1;1;1;1;1;1;1;1;0;0
 Exp18DM04_inoc1_saisie;6dpi;1;1;1;1;1;1;1;1;1;0;0
 Exp18DM05_saisie;Exp18DM05_saisie_t5;0;0;0;0;0;0;0;0;0;1;0
+Exp18DM05_saisie_OIV à 4, 5 et 6 dpi;Exp18DM05_saisie_t4;0;0;0;1;1;1;0;0;0;0;0
+Exp18DM05_saisiebis;Exp18DM05_saisie_t5;0;0;0;0;0;0;0;0;0;1;0
 Exp18DM06_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
 Exp18DM07_saisie;Feuil1;0;0;0;1;1;1;0;0;0;0;0
 Exp19DM01_saisie;fichier total;1;1;0;1;1;1;0;0;1;0;0
 Exp19DM02_inoc2_saisie;fichier total;1;1;1;1;1;1;0;0;0;0;0
 Exp19DM03_inoc2_saisie;fichier total;0;1;0;1;1;1;0;0;0;0;0
 Exp19DM04_inoc1_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp19DM04_inoc1_saisie_bis;fichier total;0;0;0;0;0;0;0;0;1;0;0
 Exp19DM04_inoc2_saisie;fichier total;0;0;0;1;1;1;0;0;0;0;0
+Exp19DM04_inoc2_saisie_bis;fichier total;0;0;0;0;0;1;0;0;1;0;0
 Exp19DM07_saisie;fichier total;1;1;1;1;1;1;1;1;1;0;0
 Exp20DM01_inoc1_saisie;fichier total;1;1;0;1;1;1;0;0;0;0;0
 Exp20DM01_inoc2_saisie;fichier total;0;1;1;0;0;0;0;0;0;1;1

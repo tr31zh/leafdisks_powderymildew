@@ -7,6 +7,8 @@ import numpy as np
 import pandas as pd
 import pandas_flavor as pf
 
+from tqdm import tqdm
+
 from sklearn.preprocessing import StandardScaler
 from sklearn.cross_decomposition import PLSRegression
 
@@ -129,7 +131,7 @@ def build_inconsistencies_dataframe(df_source):
 
 def clean_merged_dataframe(df_source):
     checks = consistency_checks(df_src=df_source)
-    return (
+    df_clean_merged = (
         df_source[
             (
                 checks["sporulation_oob"]
@@ -156,6 +158,12 @@ def clean_merged_dataframe(df_source):
         )
         .drop_duplicates()
     )
+    df_clean_merged.to_csv(
+        os.path.join(goc.datain_path, "clean_merged.csv"),
+        index=False,
+        sep=";",
+    )
+    return df_clean_merged
 
 
 def get_distant_excels():
@@ -165,7 +173,11 @@ def get_distant_excels():
     else:
         files = [
             os.path.join(root, name)
-            for root, _, files in os.walk("Z:", topdown=False)
+            for root, _, files in os.walk(
+                str(goc.distant_excel_file_path),
+                topdown=False,
+                followlinks=True,
+            )
             for name in files
             if "_saisie" in name
             and "DM" in name
@@ -180,10 +192,9 @@ def get_distant_excels():
     return files
 
 
-def copy_excel_files(files, progress_callback):
-    for i, file in enumerate(files):
+def copy_excel_files(files):
+    for file in tqdm(files):
         file_name = os.path.basename(file)
-        progress_callback(i, len(files))
         if not file_name.startswith("~$") and not os.path.isfile(
             os.path.join(
                 goc.excel_file_path,
@@ -191,6 +202,38 @@ def copy_excel_files(files, progress_callback):
             )
         ):
             shutil.copy(src=file, dst=goc.excel_file_path)
+
+
+def _add_result(
+    df,
+    file,
+    sheet,
+    outcome,
+    comment="success",
+    csv_file_name=np.nan,
+):
+    return df.append(
+        {
+            "file": file,
+            "sheet": sheet,
+            "outcome": outcome,
+            "comment": comment,
+            "csv_file_name": csv_file_name,
+        },
+        ignore_index=True,
+    )
+
+
+def _lower_dataframe(df):
+    try:
+        df.columns = df.columns.str.lower().str.replace(" ", "")
+        for c in df.columns:
+            if c != "nomphoto" and df[c].dtype == object:
+                df[c] = df[c].str.lower().str.replace(" ", "")
+    except:
+        return False
+    else:
+        return df
 
 
 def filter_csvs():
@@ -207,36 +250,6 @@ def filter_csvs():
             ]
         )
 
-        def add_result(
-            df,
-            file,
-            sheet,
-            outcome,
-            comment="success",
-            csv_file_name=np.nan,
-        ):
-            return df.append(
-                {
-                    "file": file,
-                    "sheet": sheet,
-                    "outcome": outcome,
-                    "comment": comment,
-                    "csv_file_name": csv_file_name,
-                },
-                ignore_index=True,
-            )
-
-        def lower_dataframe(df):
-            try:
-                df.columns = df.columns.str.lower().str.replace(" ", "")
-                for c in df.columns:
-                    if c != "nomphoto" and df[c].dtype == object:
-                        df[c] = df[c].str.lower().str.replace(" ", "")
-            except:
-                return False
-            else:
-                return df
-
         lcl_excel_files = [
             os.path.join(root, name)
             for root, _, files in os.walk(
@@ -244,16 +257,17 @@ def filter_csvs():
                 topdown=False,
             )
             for name in files
-            if name.endswith("_saisie.xlsx")
+            if "_saisie" in name
+            and "DM" in name
+            and (name.endswith("xlsx") or name.endswith("xls"))
         ]
 
-        for i, lcl_excel_file in enumerate(lcl_excel_files):
-            # progress_callback(i, len(lcl_excel_files))
+        for lcl_excel_file in tqdm(lcl_excel_files):
             tst_excel_file = pd.ExcelFile(lcl_excel_file)
             for sheet_name in tst_excel_file.sheet_names:
-                df = lower_dataframe(df=tst_excel_file.parse(sheet_name=sheet_name))
+                df = _lower_dataframe(df=tst_excel_file.parse(sheet_name=sheet_name))
                 if df is False:
-                    df_result = add_result(
+                    df_result = _add_result(
                         df=df_result,
                         file=os.path.basename(lcl_excel_file),
                         sheet=sheet_name,
@@ -261,31 +275,36 @@ def filter_csvs():
                         comment="Corrupted dataframe",
                     )
                     continue
-                header_loc = (
-                    df[df == "numinc"].dropna(axis=1, how="all").dropna(how="all")
-                )
-                if header_loc.shape == (0, 0):
+
+                for tag in ["numinc", "num", "rep"]:
+                    if tag in df.columns.to_list():
+                        df = _lower_dataframe(df.iloc[:, df.columns.get_loc(tag) :])
+                        break
                     header_loc = (
-                        df[df == "num"].dropna(axis=1, how="all").dropna(how="all")
-                    )
-                    if header_loc.shape == (0, 0):
-                        df_result = add_result(
-                            df=df_result,
-                            file=os.path.basename(lcl_excel_file),
-                            sheet=sheet_name,
-                            outcome=False,
-                            comment="No header",
+                        lambda x, y: (
+                            x[x == y].dropna(axis=1, how="all").dropna(how="all")
                         )
-                        continue
-                df = lower_dataframe(
-                    df=tst_excel_file.parse(
-                        sheet_name,
-                        skiprows=header_loc.index.item() + 1,
-                        na_values=["", "NA", "na"],
+                    )(df, tag)
+                    if header_loc.shape != (0, 0):
+                        df = _lower_dataframe(
+                            df=tst_excel_file.parse(
+                                sheet_name,
+                                skiprows=header_loc.index.item() + 1,
+                                na_values=["", "NA", "na"],
+                            )
+                        )
+                        break
+                else:
+                    df_result = _add_result(
+                        df=df_result,
+                        file=os.path.basename(lcl_excel_file),
+                        sheet=sheet_name,
+                        outcome=False,
+                        comment="No header",
                     )
-                )
+                    continue
                 if df is False:
-                    df_result = add_result(
+                    df_result = _add_result(
                         df=df_result,
                         file=os.path.basename(lcl_excel_file),
                         sheet=sheet_name,
@@ -311,7 +330,7 @@ def filter_csvs():
                             os.path.join(goc.oidium_extracted_csvs_path, csv_file_name),
                             index=False,
                         )
-                        df_result = add_result(
+                        df_result = _add_result(
                             df=df_result,
                             file=os.path.basename(lcl_excel_file),
                             sheet=sheet_name,
@@ -319,7 +338,7 @@ def filter_csvs():
                             csv_file_name=csv_file_name,
                         )
                     else:
-                        df_result = add_result(
+                        df_result = _add_result(
                             df=df_result,
                             file=os.path.basename(lcl_excel_file),
                             sheet=sheet_name,
@@ -327,7 +346,7 @@ def filter_csvs():
                             comment="Corrupted dataframe, failed to retrieve photos",
                         )
                 else:
-                    df_result = add_result(
+                    df_result = _add_result(
                         df=df_result,
                         file=os.path.basename(lcl_excel_file),
                         sheet=sheet_name,
@@ -335,7 +354,7 @@ def filter_csvs():
                         comment=f"Missing columns: {res}",
                     )
 
-        df_result.to_csv(goc.path_to_df_result, index=False)
+        df_result.sort_values(["file"]).to_csv(goc.path_to_df_result, index=False)
         return df_result
 
 
@@ -369,12 +388,19 @@ def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_raw_merged(lcl_csv_files):
-    return pd.concat(
+    df = pd.concat(
         [
             pd.read_csv(filepath)[get_common_columns(lcl_csv_files)]
             for filepath in lcl_csv_files
         ]
     ).rename_columns()
+    df.to_csv(
+        os.path.join(goc.datain_path, "raw_merged.csv"),
+        index=False,
+        sep=";",
+    )
+
+    return df
 
 
 def build_dup_df(df):

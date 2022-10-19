@@ -3,8 +3,10 @@ from typing import Any, Union
 import numpy as np
 import cv2
 
-from sklearn.cluster import MeanShift, estimate_bandwidth
+from sklearn.cluster import MeanShift
 from scipy.interpolate import splprep, splev
+
+import albumentations as A
 
 
 C_BLACK = (0, 0, 0)
@@ -213,21 +215,6 @@ class ContourWrapper(object):
     def __repr__(self) -> str:
         return self.__str__()
 
-    def smooth(self):
-        x, y = self.contour.T
-        # Convert from numpy arrays to normal arrays
-        x = x.tolist()[0]
-        y = y.tolist()[0]
-        # https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.interpolate.splprep.html
-        tck, u = splprep([x, y], u=None, s=1.0, per=1)
-        # https://docs.scipy.org/doc/numpy-1.10.1/reference/generated/numpy.linspace.html
-        u_new = np.linspace(u.min(), u.max(), 25)
-        # https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.interpolate.splev.html
-        x_new, y_new = splev(u_new, tck, der=0)
-        # Convert it back to numpy format for opencv to be able to display it
-        res_array = [[[int(i[0]), int(i[1])]] for i in zip(x_new, y_new)]
-        return np.asarray(res_array, dtype=np.int32)
-
     @property
     def index(self):
         return f"{self.row}{self.col}"
@@ -272,16 +259,56 @@ class ContourWrapper(object):
             else to_RGB(C_FUCHSIA)
         )
 
+    @property
+    def right(self):
+        return self.left + self.width
 
-def _get_contours(mask, external_only: bool = True):
-    return [
-        ContourWrapper(c)
-        for c in cv2.findContours(
-            mask.copy(),
-            cv2.RETR_EXTERNAL if external_only is True else cv2.RETR_LIST,
-            cv2.CHAIN_APPROX_SIMPLE,
-        )[-2:-1][0]
-    ]
+    @property
+    def bottom(self):
+        return self.top + self.height
+
+
+class ContourList(object):
+    def __init__(self, mask, external_only: bool = True):
+        self._contours = [
+            ContourWrapper(c)
+            for c in cv2.findContours(
+                mask.copy(),
+                cv2.RETR_EXTERNAL if external_only is True else cv2.RETR_LIST,
+                cv2.CHAIN_APPROX_SIMPLE,
+            )[-2:-1][0]
+        ]
+        self._iter_step = 0
+
+    def __getitem__(self, idx):
+        return self._contours[idx]
+
+    def __len__(self):
+        return len(self._contours)
+
+    def __iter__(self):
+        self._iter_step = -1
+        return self
+
+    def __next__(self):
+        if self._iter_step < len(self._contours) - 1:
+            self._iter_step += 1
+            return self._contours[self._iter_step]
+        else:
+            raise StopIteration
+
+    def update_contours(self, contours):
+        self._contours = contours
+
+    def get(self, row: str, col: int) -> ContourWrapper:
+        for contour in self._contours:
+            if contour.row.lower() == row.lower() and contour.col == col:
+                return contour
+        else:
+            return None
+
+    def max_area(self):
+        return sorted(self._contours, key=lambda x: x.area)[-1].area
 
 
 def apply_mask(image, mask, bckg_luma=0.3, draw_contours: int = -1):
@@ -298,7 +325,7 @@ def apply_mask(image, mask, bckg_luma=0.3, draw_contours: int = -1):
     if draw_contours > 0:
         cv2.drawContours(
             res,
-            [c.contour for c in _get_contours(mask, external_only=False)],
+            [c.contour for c in ContourList(mask, external_only=False)],
             -1,
             (255, 0, 255),
             draw_contours,
@@ -310,8 +337,8 @@ def apply_mask(image, mask, bckg_luma=0.3, draw_contours: int = -1):
 def print_contour_threshold(mask, ar_threshiold=1.5, size_thrshold=0.80, canvas=None):
     if canvas is None:
         canvas = np.dstack((mask, mask, mask))
-    contours = _get_contours(mask)
-    max_area = sorted(contours, key=lambda x: x.area)[-1].area * size_thrshold
+    contours = ContourList(mask)
+    max_area = contours.max_area * size_thrshold
 
     for c in contours:
         colour = (
@@ -334,20 +361,24 @@ def clean_contours(
     open_count=0,
     erode_count=0,
 ):
-    contours = _get_contours(mask)
+    contours = ContourList(mask)
 
     # Remove non circular contours
-    contours = [
-        c
-        for c in contours
-        if c.width / c.height < ar_threshiold and c.height or c.width < ar_threshiold
-    ]
+    contours.update_contours(
+        [
+            c
+            for c in contours
+            if c.width / c.height < ar_threshiold
+            and c.height
+            or c.width < ar_threshiold
+        ]
+    )
     if len(contours) == 0:
         return mask
 
     # Remove large or small contours
     threshold_area = sorted(contours, key=lambda x: x.area)[-1].area * size_thrshold
-    contours = [c for c in contours if c.area > threshold_area]
+    contours.update_contours([c for c in contours if c.area > threshold_area])
 
     mask = cv2.drawContours(
         np.zeros_like(mask), [c.contour for c in contours], -1, (255), -1
@@ -368,7 +399,48 @@ def clean_contours(
         )
 
 
-def print_contours_indexs(mask, contours, canvas=None):
+def print_single_contour(
+    mask,
+    contours: ContourList,
+    row,
+    col,
+    canvas=None,
+    rect_thickness=4,
+):
+    if canvas is None:
+        canvas = np.dstack((mask, mask, mask))
+
+    fnt = (cv2.FONT_HERSHEY_SIMPLEX, 0.6)
+    fnt_scale = 1.5
+    fnt_thickness = 3
+
+    c = contours.get(row=row, col=col)
+    if c is None:
+        return canvas
+    padding = 10
+    cv2.rectangle(
+        canvas,
+        (c.left - padding, c.top - padding),
+        (c.right + padding, c.bottom + padding),
+        (0, 255, 255),
+        rect_thickness,
+    )
+    cv2.circle(canvas, (int(c.left), int(c.top)), 40, c.col_color, 80)
+    cv2.circle(canvas, (int(c.left), int(c.top)), 20, c.row_color, 40)
+    cv2.putText(
+        canvas,
+        str(c.index),
+        (int(c.left) - 30, int(c.top) + 10),
+        fnt[0],
+        fnt_scale,
+        (0, 0, 0),
+        fnt_thickness,
+    )
+
+    return canvas
+
+
+def print_contours_indexes(mask, contours, canvas=None):
     if canvas is None:
         canvas = np.dstack((mask, mask, mask))
 
@@ -392,8 +464,22 @@ def print_contours_indexs(mask, contours, canvas=None):
     return canvas
 
 
+def get_leaf_disk(image, contours, row, col, mask=None, padding=0) -> ContourWrapper:
+    c = contours.get(row=row, col=col)
+    if mask is not None:
+        image = cv2.bitwise_and(image, image, mask=erode(mask, kernel_size=15))
+    res = A.crop(
+        image,
+        c.left - padding,
+        c.top - padding,
+        c.right + padding,
+        c.bottom + padding,
+    )
+    return res
+
+
 def index_contours(mask) -> list:
-    contours = _get_contours(mask=mask)
+    contours = ContourList(mask=mask)
 
     X = [[c.cx, 1] for c in contours]
     ms = MeanShift(bandwidth=100, bin_seeding=True)
@@ -415,8 +501,10 @@ def index_contours(mask) -> list:
             min_left = (
                 sorted(cur_lbl_contours, key=lambda x: x.cx)[0].cx - max_width / 2
             )
-            if min_left - prev_min_min > 1.1 * max_width:
+            i = 1
+            while min_left - prev_min_min > i * 1.1 * max_width:
                 inc_labels[label][1] += 1
+                i += 1
             prev_min_min = min_left + max_width
 
         for pos, inc in reversed(inc_labels):
