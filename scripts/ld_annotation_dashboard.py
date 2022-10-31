@@ -677,6 +677,7 @@ def next_image(n_click, current_user, annotation_var_value, projects_name):
         row = item.ligne.to_list()[0]
         col = item.colonne.to_list()[0]
         try:
+            print(image_path)
             img = ldd.open_image(str(image_path))
         except OSError:
             raise PreventUpdate
@@ -798,9 +799,10 @@ def update_variable_list(rb_value, input_var_count):
                 range(6),
                 [
                     "oiv",
-                    "densite_sporulation",
-                    "densite necrose noire",
-                    "densite necrose marron",
+                    "taux de sporulation",
+                    "taux de necrose noire",
+                    "taux de necrose marron",
+                    "taux de sénescence",
                 ],
             )
         ]
