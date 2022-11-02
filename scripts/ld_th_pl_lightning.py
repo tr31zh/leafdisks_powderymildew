@@ -1,6 +1,9 @@
 from pathlib import Path
 from collections import OrderedDict
+
 from pyexpat import model
+
+from rich.progress import track
 
 import numpy as np
 import pandas as pd
@@ -69,7 +72,7 @@ class LeafDiskSegmentation(pl.LightningModule):
         # Model
         self.unet = getattr(ternausnet.models, "UNet11")(
             pretrained=True,
-        ).to(self.selected_device)
+        ).to(g_device)
         self.loss = nn.BCEWithLogitsLoss()
 
         self.save_hyperparameters()
@@ -133,7 +136,7 @@ class LeafDiskSegmentation(pl.LightningModule):
         return self(batch)
 
 
-class LeafDiskPredictor(object):
+class LeafDiskSegmentationPredictor(object):
     def __init__(
         self,
         model=None,
@@ -201,6 +204,10 @@ class LeafDiskPredictor(object):
         self._model = new_model
 
 
+def train_ld_segmenter(model: LeafDiskSegmentation, trainer: Trainer):
+    trainer.fit()
+
+
 def update_overviews(df_test_images):
     if csv_version_overview_path.is_file():
         version_overview = pd.read_csv(csv_version_overview_path).reset_index(drop=True)
@@ -230,41 +237,70 @@ def update_overviews(df_test_images):
         data["image_width"] = []
         data["image_height"] = []
         data["checkpoint_fileName"] = []
+        data["selected_device"] = []
+        data["learning_rate"] = []
+        data["batch_size"] = []
+        data["accumulate_grad_batches"] = []
+        data["max_epochs"] = []
+        data["num_workers"] = []
 
         trainer = Trainer(accelerator="gpu", logger=False)
 
-        for chk in checkpoints:
-            for key, chunk in zip(
-                data.keys(),
-                [chunk.split("=")[1] for chunk in chk.stem.split("-")],
-            ):
-                data[key].append(chunk)
+        for chk in track(checkpoints, description="Testing models"):
+            print(chk)
+            try:
+                model = LeafDiskSegmentation.load_from_checkpoint(chk)
 
-            model = LeafDiskSegmentation.load_from_checkpoint(chk)
-            resizer = model.val_augmentations[0]
-            data["image_width"].append(resizer.width)
-            data["image_height"].append(resizer.height)
-            data["version"].append(chk.parent.parent.stem)
+                for key, chunk in zip(
+                    data.keys(),
+                    [chunk.split("=")[1] for chunk in chk.stem.split("-")],
+                ):
+                    data[key].append(chunk)
 
-            test_result = trainer.test(
-                model,
-                DataLoader(
-                    ldd.LeafDeafSegmentationDataset(
-                        df_img=df_test_images,
-                        transform=model.val_augmentations,
+                resizer = model.val_augmentations[0]
+                data["image_width"].append(resizer.width)
+                data["image_height"].append(resizer.height)
+                data["version"].append(chk.parent.parent.stem)
+
+                test_result = trainer.test(
+                    model,
+                    DataLoader(
+                        ldd.LeafDeafSegmentationDataset(
+                            df_img=df_test_images,
+                            transform=model.val_augmentations,
+                        ),
+                        batch_size=1,
+                        num_workers=1,
+                        pin_memory=True,
                     ),
-                    batch_size=1,
-                    num_workers=1,
-                    pin_memory=True,
-                ),
-            )
-            data["test_loss"].append(list(test_result[0].values())[0])
-            data["checkpoint_fileName"].append(chk)
+                )
+                data["test_loss"].append(list(test_result[0].values())[0])
+                for k in [
+                    "selected_device",
+                    "learning_rate",
+                    "batch_size",
+                    "accumulate_grad_batches",
+                    "max_epochs",
+                    "num_workers",
+                ]:
+                    if hasattr(model, k):
+                        data[k].append(getattr(model, k))
+                    else:
+                        data[k].append(None)
+                data["checkpoint_fileName"].append(chk)
+            except Exception:
+                pass
 
-        version_overview = pd.concat(
-            [version_overview, pd.DataFrame(data=data)]
-        ).sort_values(["test_loss", "version", "step", "val_loss"])
+        try:
+            version_overview = pd.concat([version_overview, pd.DataFrame(data=data)])
+        except:
+            for k in data:
+                print(f"{k}: {len(data[k])}")
+        else:
+            version_overview.to_csv(csv_version_overview_path, index=False)
 
-        version_overview.to_csv(csv_version_overview_path, index=False)
+    version_overview = version_overview.sort_values(
+        ["val_loss", "train_loss", "test_loss", "epoch", "step"]
+    ).reset_index(drop=True)
 
     return version_overview
