@@ -25,7 +25,13 @@ import ld_image as ldi
 import ld_th_pl_lightning as ldpl
 
 
-g_device = "mps" if torch.backends.mps.is_built() is True else "cpu"
+g_device = (
+    "mps"
+    if torch.backends.mps.is_built() is True
+    else "cuda"
+    if torch.backends.cuda.is_built()
+    else "cpu"
+)
 
 
 csv_version_overview_path = Path("../notebooks/lightning_logs").joinpath(
