@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import plotly.io as pio
 
-import gav_oidium_const as goc
+import gav_mildiou_const as goc
 
 
 def plot_sample_oiv_images(width=None, height=None):

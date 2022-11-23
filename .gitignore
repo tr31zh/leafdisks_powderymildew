@@ -132,7 +132,7 @@ dmypy.json
 .pyre/
 
 # My files
-*/oidium_source_excels/*
+*/mildiou_source_excels/*
 *.DS_Store*
 notebooks/.DS_Store
 data_in/.DS_Store

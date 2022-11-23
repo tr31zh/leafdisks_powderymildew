@@ -1,4 +1,4 @@
-import gav_oidium_const as goc
+import gav_mildiou_const as goc
 
 txt_title = f"{goc.lvl_1_header} Leaf Disk Collate Ground Truth"
 
@@ -97,7 +97,7 @@ txt_functions = f"""
 txt_constants = """**Constants**:
 - Path to datain: {os.path.abspath(gof.datain_path)}
 - Path to distant Excel files: {os.path.abspath(gof.excel_file_path)}
-- Path to local EXcel files: {os.path.abspath(gof.oidium_extracted_csvs_path)}
+- Path to local EXcel files: {os.path.abspath(gof.mildiou_extracted_csvs_path)}
 - Path to extracted CSVs: {os.path.abspath(gof.excel_file_list_path)}
 - Path to individual CSV generation result: {os.path.abspath(gof.path_to_df_result)}
 - Needed columns: {gof.needed_columns}

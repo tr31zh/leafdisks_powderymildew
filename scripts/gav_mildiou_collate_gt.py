@@ -23,10 +23,10 @@ import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 
-import gav_oidium_func as gof
-import gav_oidium_const as goc
-import gav_oidium_text as got
-import gav_oidium_plot_plotly as gop
+import gav_mildiou_func as gof
+import gav_mildiou_const as goc
+import gav_mildiou_text as got
+import gav_mildiou_plot_plotly as gop
 
 pd.options.plotting.backend = "plotly"
 pd.options.display.float_format = "{:4,.2f}".format
@@ -193,7 +193,7 @@ with st.expander(got.txt_lvl2_header_build_database, expanded=expand_all):
         st.markdown("Copying files")
         current_pg = st.progress(0)
 
-        copy_excel_files(files)
+        copy_excel_files(files.path.to_list())
 
         current_pg.progress(1.0)
     else:
@@ -213,7 +213,7 @@ with st.expander(got.txt_lvl2_header_build_database, expanded=expand_all):
     current_pg.progress(1.0)
 
     lcl_csv_files = [
-        os.path.join(goc.oidium_extracted_csvs_path, filename)
+        os.path.join(goc.mildiou_extracted_csvs_path, filename)
         for filename in df_result.csv_file_name.dropna().to_list()
     ]
 

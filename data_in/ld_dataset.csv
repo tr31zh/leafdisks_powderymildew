@@ -1,1159 +1,1157 @@
-,surface_necrosee,colonne,oiv,necrose,taille_necrose,ligne,sporulation,image_name,sheet,experiment,densite_sporulation,rep,year,dai,exp_folder
-0,,3.0,1,,,b,1,Exp16DM06_inoc1_T6_P41,fichier total,Exp16DM06,1,NA,16,,EXP-2016
-1,,1.0,1,,,b,1,Exp16DM04_inoc2_T6_P57,6dpi,Exp16DM04,1,inoc2,16,6,EXP-2016
-2,,4.0,1,,,a,1,Exp16DM07_inoc1_T6_P33,fichier total,Exp16DM07,1,inoc1,16,,EXP-2016
-3,,2.0,3,0,,b,1,Exp16DM02_inoc2_T6_P18,fichier total,Exp16DM02,1,inoc2,16,,EXP-2016
-4,,2.0,3,0,,a,1,Exp16DM03_inoc3_T6_P01,fichier total,Exp16DM03,1,inoc3,16,,EXP-2016
-5,,2.0,3,0,,a,1,Exp16DM06_inoc1_T6_P01,fichier total,Exp16DM06,1,NA,16,,EXP-2016
-6,,3.0,5,0,,c,1,Exp16DM10_inoc1_T6_P13,fichier total,Exp16DM10,1,NA,16,,EXP-2016
-7,,1.0,1,,,a,1,Exp16DM01_inoc1_T6_P21,fichier total,Exp16DM01,1,NA,16,,EXP-2016
-8,,1.0,3,,,a,1,Exp16DM04_inoc2_T6_P56,6dpi,Exp16DM04,1,inoc2,16,6,EXP-2016
-9,7,1.0,9,1,9,b,0,Exp16DM03_inoc1_T6_P04,fichier total,Exp16DM03,1,inoc1,16,,EXP-2016
-10,,2.0,3,,,c,1,Exp16DM07_inoc2_T6_P54,fichier total,Exp16DM07,3,inoc2,16,,EXP-2016
-11,,2.0,3,,,c,1,Exp16DM05_inoc2_T6_P14,fichier total,Exp16DM05,3,inoc2,16,,EXP-2016
-12,,1.0,5,,,a,1,Exp16DM04_inoc2_T6_P17,6dpi,Exp16DM04,3,inoc2,16,6,EXP-2016
-13,,1.0,3,,,a,1,Exp16DM06_inoc1_T6_P41,fichier total,Exp16DM06,3,NA,16,,EXP-2016
-14,,1.0,3,0,,a,1,Exp16DM10_inoc1_T6_P15,fichier total,Exp16DM10,3,NA,16,,EXP-2016
-15,,1.0,3,0,,c,1,Exp16DM02_inoc2_T6_P01,fichier total,Exp16DM02,3,inoc2,16,,EXP-2016
-16,,2.0,3,,,c,1,Exp16DM12_inoc1_T6_P03,fichier total,Exp16DM12,3,inoc1,16,,EXP-2016
-17,,1.0,3,0,,b,1,Exp16DM03_inoc3_T6_P03,fichier total,Exp16DM03,3,inoc3,16,,EXP-2016
-18,,3.0,5,0,,c,1,Exp16DM05_inoc6_T6_P10,fichier total,Exp16DM05,3,inoc6,16,,EXP-2016
-19,,1.0,5,,,b,1,Exp16DM06_inoc1_T6_P70,fichier total,Exp16DM06,3,NA,16,,EXP-2016
-20,,1.0,3,0,,a,1,Exp16DM02_inoc2_T6_P03,fichier total,Exp16DM02,5,inoc2,16,,EXP-2016
-21,5,3.0,5,1,5,c,1,Exp16DM07_inoc2_T6_P34,fichier total,Exp16DM07,5,inoc2,16,,EXP-2016
-22,,1.0,5,,,c,1,Exp16DM05_inoc2_T6_P14,fichier total,Exp16DM05,5,inoc2,16,,EXP-2016
-23,,3.0,5,0,,a,1,Exp16DM02-Rep1-P4,fichier total,Exp16DM02,5,inoc1,16,,EXP-2016
-24,9,3.0,3,1,7,c,1,Exp16DM10_inoc1_T6_P03,fichier total,Exp16DM10,5,NA,16,,EXP-2016
-25,,3.0,5,,,c,1,Exp16DM06_inoc1_T6_P32,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-26,,1.0,7,,,c,1,Exp16DM01_inoc1_T6_P19,fichier total,Exp16DM01,5,NA,16,,EXP-2016
-27,,4.0,5,0,,a,1,Exp16DM04_inoc1_T6_P12,6dpi,Exp16DM04,5,inoc1,16,6,EXP-2016
-28,7,3.0,3,1,7,c,1,Exp16DM01_inoc1_T6_P19,fichier total,Exp16DM01,5,NA,16,,EXP-2016
-29,,2.0,3,,,a,1,Exp16DM01_inoc1_T6_P07,fichier total,Exp16DM01,5,NA,16,,EXP-2016
-30,,2.0,7,0,,b,1,Exp16DM02_inoc1_T6_P28,fichier total,Exp16DM02,7,inoc1,16,,EXP-2016
-31,,3.0,7,0,,b,1,Exp16DM03_inoc2_T6_P06,fichier total,Exp16DM03,7,inoc2,16,,EXP-2016
-32,,3.0,7,0,,b,1,Exp16DM03_inoc2_T6_P30,fichier total,Exp16DM03,7,inoc2,16,,EXP-2016
-33,,2.0,7,0,,a,1,Exp16DM02_inoc2_T6_P42,fichier total,Exp16DM02,7,inoc2,16,,EXP-2016
-34,7,4.0,7,1,7,c,1,Exp16DM03_inoc3_T6_P12,fichier total,Exp16DM03,7,inoc3,16,,EXP-2016
-35,,4.0,5,0,,b,1,Exp16DM04_inoc1_T6_P10,6dpi,Exp16DM04,7,inoc1,16,6,EXP-2016
-36,5,3.0,7,1,5,b,1,Exp16DM06_inoc1_T6_P11,fichier total,Exp16DM06,7,NA,16,,EXP-2016
-37,,3.0,5,0,,c,1,Exp16DM02_inoc1_T6_P46,fichier total,Exp16DM02,7,inoc1,16,,EXP-2016
-38,5,3.0,7,1,5,b,1,Exp16DM11_inoc1_T6_P02,fichier_total,Exp16DM11,7,inoc2,16,,EXP-2016
-39,,1.0,7,,,c,1,Exp16DM04_inoc2_T6_P61,6dpi,Exp16DM04,7,inoc2,16,6,EXP-2016
-40,9,2.0,7,1,7,a,1,Exp16DM06_inoc1_T6_P15,fichier total,Exp16DM06,9,NA,16,,EXP-2016
-41,7,3.0,7,1,7,a,1,Exp16DM04_inoc2_T6_P45,6dpi,Exp16DM04,9,inoc2,16,6,EXP-2016
-42,,1.0,7,,,a,1,Exp16DM04_inoc2_T6_P48,6dpi,Exp16DM04,9,inoc2,16,6,EXP-2016
-43,7,1.0,7,1,7,b,1,Exp16DM05_inoc2_T6_P07,fichier total,Exp16DM05,9,inoc2,16,,EXP-2016
-44,,4.0,7,0,,c,1,Exp16DM02_inoc1_T6_P29,fichier total,Exp16DM02,9,inoc1,16,,EXP-2016
-45,,4.0,7,0,,b,1,Exp16DM02_inoc1_T6_P29,fichier total,Exp16DM02,9,inoc1,16,,EXP-2016
-46,7,4.0,7,1,7,b,1,Exp16DM06_inoc1_T6_P29,fichier total,Exp16DM06,9,NA,16,,EXP-2016
-47,5,3.0,7,1,7,b,1,Exp16DM04_inoc1_T6_P32,6dpi,Exp16DM04,9,inoc1,16,6,EXP-2016
-48,7,4.0,7,1,7,c,1,Exp16DM10_inoc1_T6_P16,fichier total,Exp16DM10,9,NA,16,,EXP-2016
-49,7,4.0,7,1,7,b,1,Exp16DM01_inoc1_T6_P07,fichier total,Exp16DM01,9,NA,16,,EXP-2016
-50,5,3.0,5,1,1,c,1,Exp16DM09_inoc1_T6_P15,fichier total,Exp16DM09,3,inoc1,16,,EXP-2016
-51,3,2.0,5,1,1,a,1,Exp16DM06_inoc1_T6_P43,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-52,3,3.0,5,1,1,a,1,Exp16DM03_inoc2_T6_P23,fichier total,Exp16DM03,3,inoc2,16,,EXP-2016
-53,1,4.0,5,1,1,c,1,Exp16DM06_inoc1_T6_P15,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-54,1,4.0,5,1,1,a,1,Exp16DM07_inoc1_T6_P44,fichier total,Exp16DM07,5,inoc1,16,,EXP-2016
-55,3,3.0,5,1,1,c,1,Exp16DM03_inoc3_T6_P08,fichier total,Exp16DM03,5,inoc3,16,,EXP-2016
-56,5,4.0,5,1,1,a,1,Exp16DM03_inoc2_T6_P10,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-57,5,4.0,5,1,1,c,1,Exp16DM03_inoc2_T6_P20,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-58,3,1.0,5,1,1,c,1,Exp16DM03_inoc3_T6_P27,fichier total,Exp16DM03,3,inoc3,16,,EXP-2016
-59,1,3.0,3,1,1,c,1,Exp16DM06_inoc1_T6_P09,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-60,5,4.0,9,1,3,b,,Exp16DM12_inoc1_T6_P08,fichier total,Exp16DM12,,inoc1,16,,EXP-2016
-61,3,1.0,5,1,3,a,1,Exp16DM03_inoc1_T6_P26,fichier total,Exp16DM03,5,inoc1,16,,EXP-2016
-62,3,2.0,5,1,3,a,1,Exp16DM06_inoc1_T6_P13,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-63,3,3.0,3,1,3,b,1,Exp16DM03_inoc1_T6_P25,fichier total,Exp16DM03,5,inoc1,16,,EXP-2016
-64,7,2.0,7,1,3,b,1,Exp16DM09_inoc1_T6_P06,fichier total,Exp16DM09,7,inoc1,16,,EXP-2016
-65,5,3.0,5,1,3,c,1,Exp16DM03_inoc1_T6_P09,fichier total,Exp16DM03,5,inoc1,16,,EXP-2016
-66,5,3.0,5,1,3,a,1,Exp16DM02_inoc2_T6_P43,fichier total,Exp16DM02,5,inoc2,16,,EXP-2016
-67,3,4.0,5,1,3,c,1,Exp16DM03_inoc2_T6_P23,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-68,7,2.0,5,1,3,a,1,Exp16DM03_inoc1_T6_P17,fichier total,Exp16DM03,3,inoc1,16,,EXP-2016
-69,3,2.0,5,1,3,c,1,Exp16DM06_inoc1_T6_P54,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-70,5,1.0,9,1,5,a,0,Exp16DM05_inoc2_T6_P11,fichier total,Exp16DM05,,inoc2,16,,EXP-2016
-71,5,3.0,5,1,5,c,1,Exp16DM07_inoc1_T6_P46,fichier total,Exp16DM07,5,inoc1,16,,EXP-2016
-72,5,2.0,7,1,5,a,1,Exp16DM02-Rep1-P15,fichier total,Exp16DM02,9,inoc1,16,,EXP-2016
-73,7,2.0,7,1,5,b,1,Exp16DM03_inoc1_T6_P02,fichier total,Exp16DM03,7,inoc1,16,,EXP-2016
-74,7,3.0,3,1,5,c,1,Exp16DM11_inoc1_T6_P13,fichier_total,Exp16DM11,3,inoc2,16,,EXP-2016
-75,5,2.0,5,1,5,b,1,Exp16DM07_inoc2_T6_P75,fichier total,Exp16DM07,5,inoc2,16,,EXP-2016
-76,5,3.0,3,1,5,c,1,Exp16DM07_inoc2_T6_P03,fichier total,Exp16DM07,5,inoc2,16,,EXP-2016
-77,7,2.0,7,1,5,b,1,Exp16DM07_inoc2_T6_P34,fichier total,Exp16DM07,5,inoc2,16,,EXP-2016
-78,5,3.0,7,1,5,a,1,Exp16DM07_inoc1_T6_P52,fichier total,Exp16DM07,7,inoc1,16,,EXP-2016
-79,5,2.0,7,1,5,a,1,Exp16DM09_inoc1_T6_P10,fichier total,Exp16DM09,7,inoc1,16,,EXP-2016
-80,7,3.0,5,1,7,c,1,Exp16DM05_inoc6_T6_P05,fichier total,Exp16DM05,5,inoc6,16,,EXP-2016
-81,7,3.0,5,1,7,b,1,Exp16DM11_inoc1_T6_P29,fichier_total,Exp16DM11,3,inoc1,16,,EXP-2016
-82,9,4.0,7,1,7,b,1,Exp16DM03_inoc3_T6_P05,fichier total,Exp16DM03,9,inoc3,16,,EXP-2016
-83,7,4.0,7,1,7,c,1,Exp16DM05_inoc3_T6_P03,fichier total,Exp16DM05,9,inoc3,16,,EXP-2016
-84,7,3.0,7,1,7,a,1,Exp16DM05_inoc4_T6_P09,fichier total,Exp16DM05,9,inoc4,16,,EXP-2016
-85,7,4.0,3,1,7,b,1,Exp16DM03_inoc1_T6_P25,fichier total,Exp16DM03,3,inoc1,16,,EXP-2016
-86,7,2.0,7,1,7,b,1,Exp16DM05_inoc3_T6_P08,fichier total,Exp16DM05,9,inoc3,16,,EXP-2016
-87,7,3.0,7,1,7,c,1,Exp16DM01_inoc1_T6_P32,fichier total,Exp16DM01,7,NA,16,,EXP-2016
-88,5,4.0,7,1,7,c,1,Exp16DM11_inoc1_T6_P16,fichier_total,Exp16DM11,9,inoc2,16,,EXP-2016
-89,7,4.0,7,1,7,a,1,Exp16DM12_inoc1_T6_P01,fichier total,Exp16DM12,9,inoc1,16,,EXP-2016
-90,5,1.0,9,1,9,c,0,Exp16DM02-Rep1-P2,fichier total,Exp16DM02,,inoc1,16,,EXP-2016
-91,9,1.0,9,1,9,a,0,Exp16DM05_inoc5_T6_P04,fichier total,Exp16DM05,,inoc5,16,,EXP-2016
-92,5,1.0,9,1,9,b,0,Exp16DM11_inoc1_T6_P04,fichier_total,Exp16DM11,,inoc2,16,,EXP-2016
-93,5,1.0,9,1,9,c,0,Exp16DM11_inoc1_T6_P04,fichier_total,Exp16DM11,,inoc2,16,,EXP-2016
-94,7,1.0,9,1,9,a,0,Exp16DM02_inoc2_T6_P36,fichier total,Exp16DM02,,inoc2,16,,EXP-2016
-95,7,1.0,9,1,9,a,,Exp16DM12_inoc1_T6_P02,fichier total,Exp16DM12,,inoc1,16,,EXP-2016
-96,9,1.0,9,1,9,a,0,Exp16DM03_inoc2_T6_P16,fichier total,Exp16DM03,,inoc2,16,,EXP-2016
-97,7,1.0,9,1,9,a,0,Exp16DM05_inoc4_T6_P04,fichier total,Exp16DM05,,inoc4,16,,EXP-2016
-98,5,1.0,9,1,9,a,0,Exp16DM03_inoc3_T6_P22,fichier total,Exp16DM03,,inoc3,16,,EXP-2016
-99,5,1.0,9,1,9,b,0,Exp16DM10_inoc1_T6_P02,fichier total,Exp16DM10,,NA,16,,EXP-2016
-100,1,3.0,3,1,3,c,1,Exp16DM06_inoc1_T6_P22,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-101,1,3.0,5,1,3,c,1,Exp16DM06_inoc1_T6_P53,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-102,1,1.0,5,1,1,b,1,Exp16DM06_inoc1_T6_P46,fichier total,Exp16DM06,3,NA,16,,EXP-2016
-103,1,2.0,5,1,1,a,1,Exp16DM06_inoc1_T6_P37,fichier total,Exp16DM06,7,NA,16,,EXP-2016
-104,1,3.0,5,1,1,c,1,Exp16DM06_inoc1_T6_P41,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-105,1,3.0,5,1,3,b,1,Exp16DM06_inoc1_T6_P53,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-106,1,4.0,7,1,1,c,1,Exp16DM06_inoc1_T6_P07,fichier total,Exp16DM06,7,NA,16,,EXP-2016
-107,1,1.0,7,1,1,a,1,Exp16DM11_inoc1_T6_P23,fichier_total,Exp16DM11,7,inoc1,16,,EXP-2016
-108,3,3.0,5,1,5,b,1,Exp16DM06_inoc1_T6_P69,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-109,3,2.0,5,1,1,c,1,Exp16DM03_inoc2_T6_P35,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-110,3,2.0,7,1,5,c,1,Exp16DM02_inoc1_T6_P29,fichier total,Exp16DM02,9,inoc1,16,,EXP-2016
-111,3,3.0,7,1,3,b,1,Exp16DM06_inoc1_T6_P42,fichier total,Exp16DM06,7,NA,16,,EXP-2016
-112,3,4.0,5,1,5,b,1,Exp16DM07_inoc1_T6_P72,fichier total,Exp16DM07,5,inoc1,16,,EXP-2016
-113,3,3.0,5,1,1,c,1,Exp16DM09-Rep1-P21,fichier total,Exp16DM09,5,inoc1,16,,EXP-2016
-114,3,2.0,7,1,3,b,1,Exp16DM03_inoc3_T6_P22,fichier total,Exp16DM03,9,inoc3,16,,EXP-2016
-115,3,1.0,5,1,3,b,1,Exp16DM03_inoc2_T6_P36,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-116,3,4.0,5,1,1,c,1,Exp16DM03_inoc1_T6_P09,fichier total,Exp16DM03,5,inoc1,16,,EXP-2016
-117,3,2.0,7,1,5,b,1,Exp16DM11_inoc1_T6_P21,fichier_total,Exp16DM11,7,inoc2,16,,EXP-2016
-118,5,1.0,9,1,9,b,0,Exp16DM05_inoc1_T6_P02,fichier total,Exp16DM05,,inoc1,16,,EXP-2016
-119,5,1.0,5,1,3,b,1,Exp16DM03_inoc1_T6_P26,fichier total,Exp16DM03,5,inoc1,16,,EXP-2016
-120,5,2.0,5,1,5,c,1,Exp16DM11_inoc1_T6_P07,fichier_total,Exp16DM11,5,inoc2,16,,EXP-2016
-121,5,4.0,7,1,7,c,1,Exp16DM12_inoc1_T6_P03,fichier total,Exp16DM12,9,inoc1,16,,EXP-2016
-122,5,1.0,5,1,5,c,1,Exp16DM07_inoc2_T6_P75,fichier total,Exp16DM07,5,inoc2,16,,EXP-2016
-123,5,2.0,7,1,5,c,1,Exp16DM07_inoc2_T6_P68,fichier total,Exp16DM07,5,inoc2,16,,EXP-2016
-124,5,1.0,5,1,1,b,1,Exp16DM03_inoc1_T6_P08,fichier total,Exp16DM03,3,inoc1,16,,EXP-2016
-125,5,3.0,5,1,1,b,1,Exp16DM03_inoc2_T6_P11,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-126,5,2.0,5,1,3,a,1,Exp16DM06_inoc1_T6_P52,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-127,5,3.0,5,1,3,c,1,Exp16DM03_inoc1_T6_P16,fichier total,Exp16DM03,5,inoc1,16,,EXP-2016
-128,7,3.0,9,1,5,c,0,Exp16DM05_inoc3_T6_P08,fichier total,Exp16DM05,,inoc3,16,,EXP-2016
-129,7,1.0,9,1,9,c,0,Exp16DM09_inoc1_T6_P18,fichier total,Exp16DM09,,inoc1,16,,EXP-2016
-130,7,1.0,5,1,5,c,1,Exp16DM01_inoc1_T6_P12,fichier total,Exp16DM01,5,NA,16,,EXP-2016
-131,7,4.0,9,1,7,b,0,Exp16DM11_inoc1_T6_P20,fichier_total,Exp16DM11,,inoc2,16,,EXP-2016
-132,7,4.0,7,1,7,a,1,Exp16DM06_inoc1_T6_P03,fichier total,Exp16DM06,9,NA,16,,EXP-2016
-133,7,3.0,7,1,5,b,1,Exp16DM02_inoc2_T6_P09,fichier total,Exp16DM02,5,inoc2,16,,EXP-2016
-134,7,4.0,9,1,7,c,0,Exp16DM05_inoc2_T6_P05,fichier total,Exp16DM05,,inoc2,16,,EXP-2016
-135,7,2.0,5,1,7,c,1,Exp16DM04_inoc1_T6_P09,6dpi,Exp16DM04,5,inoc1,16,6,EXP-2016
-136,7,3.0,7,1,7,b,1,Exp16DM01_inoc1_T6_P33,fichier total,Exp16DM01,9,NA,16,,EXP-2016
-137,7,3.0,5,1,5,c,1,Exp16DM01_inoc1_T6_P10,fichier total,Exp16DM01,7,NA,16,,EXP-2016
-138,9,1.0,5,1,7,a,1,Exp16DM03_inoc2_T6_P33,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-139,9,1.0,9,1,5,a,0,Exp16DM12_inoc1_T6_P09,fichier total,Exp16DM12,,inoc1,16,,EXP-2016
-140,9,2.0,7,1,5,b,1,Exp16DM03_inoc1_T6_P06,fichier total,Exp16DM03,7,inoc1,16,,EXP-2016
-141,9,1.0,9,1,7,a,0,Exp16DM05_inoc5_T6_P11,fichier total,Exp16DM05,,inoc5,16,,EXP-2016
-142,9,1.0,9,1,9,c,0,Exp16DM11_inoc1_T6_P17,fichier_total,Exp16DM11,,inoc2,16,,EXP-2016
-143,9,3.0,5,1,7,b,1,Exp16DM12_inoc2_T6_P03,fichier total,Exp16DM12,3,inoc2,16,,EXP-2016
-144,9,1.0,5,1,7,b,1,Exp16DM03_inoc2_T6_P09,fichier total,Exp16DM03,3,inoc2,16,,EXP-2016
-145,9,4.0,7,1,5,b,1,Exp16DM05_inoc6_T6_P08,fichier total,Exp16DM05,5,inoc6,16,,EXP-2016
-146,9,1.0,9,1,7,a,0,Exp16DM06_inoc1_T6_P14,fichier total,Exp16DM06,,NA,16,,EXP-2016
-147,,1.0,1,,,c,1,Exp16DM06_inoc1_T6_P47,fichier total,Exp16DM06,1,NA,16,,EXP-2016
-148,,2.0,1,,,c,1,Exp16DM04_inoc2_T6_P56,6dpi,Exp16DM04,1,inoc2,16,6,EXP-2016
-149,,2.0,1,0,,c,1,Exp16DM02-Rep1-P23,fichier total,Exp16DM02,3,inoc1,16,,EXP-2016
-150,,1.0,1,0,,c,1,Exp16DM10_inoc1_T6_P23,fichier total,Exp16DM10,1,NA,16,,EXP-2016
-151,,2.0,1,,,c,1,Exp16DM07_inoc2_T6_P45,fichier total,Exp16DM07,3,inoc2,16,,EXP-2016
-152,,1.0,1,,,b,1,Exp16DM07_inoc2_T6_P38,fichier total,Exp16DM07,3,inoc2,16,,EXP-2016
-153,,2.0,1,,,a,1,Exp16DM07_inoc2_T6_P47,fichier total,Exp16DM07,5,inoc2,16,,EXP-2016
-154,,3.0,1,,,b,1,Exp16DM04_inoc2_T6_P06,6dpi,Exp16DM04,3,inoc2,16,6,EXP-2016
-155,,1.0,1,,,a,1,Exp16DM06_inoc1_T6_P07,fichier total,Exp16DM06,3,NA,16,,EXP-2016
-156,,1.0,3,0,,a,1,Exp16DM10_inoc1_T6_P12,fichier total,Exp16DM10,3,NA,16,,EXP-2016
-157,,2.0,3,,,a,1,Exp16DM04_inoc2_T6_P32,6dpi,Exp16DM04,3,inoc2,16,6,EXP-2016
-158,,2.0,3,,,a,1,Exp16DM06_inoc1_T6_P63,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-159,,1.0,3,,,b,1,Exp16DM01_inoc1_T6_P03,fichier total,Exp16DM01,5,NA,16,,EXP-2016
-160,,4.0,3,,,c,1,Exp16DM07_inoc1_T6_P77,fichier total,Exp16DM07,5,inoc1,16,,EXP-2016
-161,,2.0,3,,,a,1,Exp16DM07_inoc2_T6_P46,fichier total,Exp16DM07,3,inoc2,16,,EXP-2016
-162,,4.0,3,0,,b,1,Exp16DM05_inoc4_T6_P12,fichier total,Exp16DM05,5,inoc4,16,,EXP-2016
-163,,2.0,3,,,a,1,Exp16DM04_inoc2_T6_P78,6dpi,Exp16DM04,3,inoc2,16,6,EXP-2016
-164,,1.0,3,,,c,1,Exp16DM07_inoc2_T6_P50,fichier total,Exp16DM07,3,inoc2,16,,EXP-2016
-165,,3.0,3,,,b,,Exp16DM08_inoc1_T6_P11,fichier total,Exp16DM08,,inoc1,16,,EXP-2016
-166,7,3.0,5,1,5,b,1,Exp16DM11_inoc1_T6_P18,fichier_total,Exp16DM11,5,inoc1,16,,EXP-2016
-167,,4.0,5,0,,b,1,Exp16DM04_inoc1_T6_P19,6dpi,Exp16DM04,5,inoc1,16,6,EXP-2016
-168,,3.0,5,0,,a,1,Exp16DM05_inoc3_T6_P01,fichier total,Exp16DM05,3,inoc3,16,,EXP-2016
-169,,4.0,5,,,b,1,Exp16DM11_inoc1_T6_P10,fichier_total,Exp16DM11,3,inoc2,16,,EXP-2016
-170,,3.0,5,0,,b,1,Exp16DM02_inoc1_T6_P38,fichier total,Exp16DM02,5,inoc1,16,,EXP-2016
-171,9,4.0,5,1,7,b,1,Exp16DM03_inoc2_T6_P32,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-172,,3.0,5,0,,a,1,Exp16DM03_inoc1_T6_P24,fichier total,Exp16DM03,5,inoc1,16,,EXP-2016
-173,5,2.0,5,1,1,a,1,Exp16DM03_inoc1_T6_P26,fichier total,Exp16DM03,5,inoc1,16,,EXP-2016
-174,,4.0,5,,,c,1,Exp16DM06_inoc1_T6_P36,fichier total,Exp16DM06,5,NA,16,,EXP-2016
-175,,3.0,5,,,a,1,Exp16DM04_inoc2_T6_P42,6dpi,Exp16DM04,3,inoc2,16,6,EXP-2016
-176,7,4.0,7,1,7,b,1,Exp16DM03_inoc2_T6_P05,fichier total,Exp16DM03,9,inoc2,16,,EXP-2016
-177,7,4.0,7,1,7,c,1,Exp16DM03_inoc2_T6_P13,fichier total,Exp16DM03,5,inoc2,16,,EXP-2016
-178,7,3.0,7,1,7,b,1,Exp16DM05_inoc4_T6_P09,fichier total,Exp16DM05,9,inoc4,16,,EXP-2016
-179,,4.0,7,0,,c,1,Exp16DM04_inoc1_T6_P03,6dpi,Exp16DM04,7,inoc1,16,6,EXP-2016
-180,,3.0,7,0,,a,1,Exp16DM02_inoc2_T6_P26,fichier total,Exp16DM02,7,inoc2,16,,EXP-2016
-181,,4.0,7,0,,a,1,Exp16DM02_inoc2_T6_P45,fichier total,Exp16DM02,7,inoc2,16,,EXP-2016
-182,9,3.0,7,1,7,a,1,Exp16DM04_inoc2_T6_P35,6dpi,Exp16DM04,7,inoc2,16,6,EXP-2016
-183,,2.0,7,,,c,1,Exp16DM07_inoc1_T6_P06,fichier total,Exp16DM07,9,inoc1,16,,EXP-2016
-184,5,1.0,7,1,7,b,1,Exp16DM01_inoc1_T6_P15,fichier total,Exp16DM01,7,NA,16,,EXP-2016
-185,5,4.0,7,1,5,c,1,Exp16DM02_inoc2_T6_P14,fichier total,Exp16DM02,9,inoc2,16,,EXP-2016
-186,7,4.0,9,1,7,b,0,Exp16DM05_inoc2_T6_P09,fichier total,Exp16DM05,,inoc2,16,,EXP-2016
-187,7,4.0,9,1,7,a,0,Exp16DM11_inoc1_T6_P20,fichier_total,Exp16DM11,,inoc2,16,,EXP-2016
-188,,3.0,9,0,,a,0,Exp16DM05_inoc6_T6_P08,fichier total,Exp16DM05,,inoc6,16,,EXP-2016
-189,,2.0,9,0,,b,0,Exp16DM05_inoc6_T6_P07,fichier total,Exp16DM05,,inoc6,16,,EXP-2016
-190,,4.0,9,0,,a,0,Exp16DM04_inoc1_T6_P03,6dpi,Exp16DM04,,inoc1,16,6,EXP-2016
-191,9,2.0,9,1,7,b,0,Exp16DM05_inoc1_T6_P37,fichier total,Exp16DM05,,inoc1,16,,EXP-2016
-192,7,2.0,9,1,5,a,,Exp16DM12_inoc1_T6_P10,fichier total,Exp16DM12,,inoc1,16,,EXP-2016
-193,7,1.0,9,1,9,a,0,Exp16DM03_inoc3_T6_P24,fichier total,Exp16DM03,,inoc3,16,,EXP-2016
-194,7,1.0,9,1,9,a,0,Exp16DM03_inoc3_T6_P13,fichier total,Exp16DM03,,inoc3,16,,EXP-2016
-195,5,4.0,9,1,7,c,0,Exp16DM11_inoc1_T6_P03,fichier_total,Exp16DM11,,inoc2,16,,EXP-2016
-196,,2.0,3,0,,b,1,Exp17DM08_inoc1_T6_P02,fichier total,Exp17DM08,1,NA,17,,EXP-2017
-197,,3.0,1,,,c,1,Exp17DM01_inoc2_T6_P21,fichier total,Exp17DM01,1,inoc2,17,,EXP-2017
-198,,3.0,1,,,b,1,Exp17DM01_inoc2_T6_P71,fichier total,Exp17DM01,1,inoc2,17,,EXP-2017
-199,,2.0,1,,,c,1,Exp17DM01_inoc2_T6_P61,fichier total,Exp17DM01,1,inoc2,17,,EXP-2017
-200,,4.0,3,,,c,1,Exp17DM01_inoc2_T6_P25,fichier total,Exp17DM01,1,inoc2,17,,EXP-2017
-201,,2.0,1,,,c,1,Exp17DM04_inoc4_T6_P49,fichier total,Exp17DM04,1,inoc4,17,,EXP-2017
-202,,1.0,3,,,b,1,Exp17DM01_inoc2_T6_P28,fichier total,Exp17DM01,1,inoc2,17,,EXP-2017
-203,,1.0,7,,,b,1,Exp17DM07-Inoc1-T5-P1,5dpi,Exp17DM07,1,inoc1,17,5,EXP-2017
-204,,2.0,3,,,c,1,Exp17DM01_inoc2_T6_P28,fichier total,Exp17DM01,1,inoc2,17,,EXP-2017
-205,,4.0,3,,,b,1,Exp17DM01_inoc2_T6_P70,fichier total,Exp17DM01,1,inoc2,17,,EXP-2017
-206,,1.0,5,0,,a,1,Exp17DM02_inoc3_T6_P40,fichier total,Exp17DM02,3,inoc3,17,,EXP-2017
-207,,4.0,3,,,b,1,Exp17DM04_inoc4_T6_P03,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-208,,2.0,3,,,a,1,Exp17DM02_inoc2_T6_P85,fichier total,Exp17DM02,3,inoc2,17,,EXP-2017
-209,,4.0,5,,,b,1,Exp17DM02_inoc1_T6_P92,fichier total,Exp17DM02,3,inoc1,17,,EXP-2017
-210,,1.0,3,,,a,1,Exp17DM04_inoc4_T6_P41,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-211,,2.0,1,,,b,1,Exp17DM04_inoc4_T6_P09,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-212,,4.0,5,0,,b,1,Exp17DM07_inoc1_T6_P109,6dpi,Exp17DM07,3,inoc1,17,6,EXP-2017
-213,,3.0,3,,,b,1,Exp17DM02_inoc2_T6_P128,fichier total,Exp17DM02,3,inoc2,17,,EXP-2017
-214,,2.0,3,,,a,1,Exp17DM04_inoc4_T6_P07,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-215,,2.0,3,,,c,1,Exp17DM04_inoc1_T6_P14,fichier total,Exp17DM04,3,inoc1,17,,EXP-2017
-216,7,1.0,5,1,5,b,1,Exp17DM01_inoc3_T5_P43,fichier total,Exp17DM01,5,inoc3,17,,EXP-2017
-217,,2.0,3,,,b,1,Exp17DM04_inoc1_T6_P07,fichier total,Exp17DM04,5,inoc1,17,,EXP-2017
-218,,2.0,5,,,a,1,Exp17DM02_inoc1_T6_P18,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-219,,3.0,5,,,c,1,Exp17DM02_inoc1_T6_P63,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-220,,3.0,5,0,,a,1,Exp17DM01_inoc3_T5_P39,fichier total,Exp17DM01,5,inoc3,17,,EXP-2017
-221,,3.0,3,,,a,1,Exp17DM02_inoc2_T6_P51,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-222,,2.0,5,,,b,1,Exp17DM02_inoc2_T6_P41,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-223,7,3.0,5,1,7,a,1,Exp17DM07_inoc1_T6_P05,6dpi,Exp17DM07,5,inoc1,17,6,EXP-2017
-224,5,3.0,5,1,3,c,1,Exp17DM02_inoc1_T6_P31,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-225,,2.0,5,,,a,1,Exp17DM02_inoc2_T6_P11,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-226,,3.0,7,0,,a,1,Exp17DM07_inoc1_T6_P19,6dpi,Exp17DM07,7,inoc1,17,6,EXP-2017
-227,9,4.0,7,1,7,c,1,Exp17DM04_inoc4_T6_P45,fichier total,Exp17DM04,7,inoc4,17,,EXP-2017
-228,,2.0,7,,,a,1,Exp17DM02_inoc2_T6_P02,fichier total,Exp17DM02,7,inoc2,17,,EXP-2017
-229,,3.0,7,0,,c,1,Exp17DM07_inoc1_T6_P34,6dpi,Exp17DM07,7,inoc1,17,6,EXP-2017
-230,9,3.0,7,1,7,c,1,Exp17DM02_inoc1_T6_P08,fichier total,Exp17DM02,7,inoc1,17,,EXP-2017
-231,9,3.0,7,1,5,b,1,Exp17DM02_inoc1_T6_P03,fichier total,Exp17DM02,7,inoc1,17,,EXP-2017
-232,,1.0,7,0,,c,1,Exp17DM02_inoc3_T6_P33,fichier total,Exp17DM02,7,inoc3,17,,EXP-2017
-233,5,3.0,7,1,3,a,1,Exp17DM02_inoc2_T6_P119,fichier total,Exp17DM02,7,inoc2,17,,EXP-2017
-234,,2.0,7,,,b,1,Exp17DM02_inoc2_T6_P39,fichier total,Exp17DM02,7,inoc2,17,,EXP-2017
-235,7,4.0,7,1,3,b,1,Exp17DM07_inoc1_T6_P108,6dpi,Exp17DM07,7,inoc1,17,6,EXP-2017
-236,3,1.0,7,1,7,a,1,Exp17DM02_inoc2_T6_P64,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-237,,2.0,7,,,a,1,Exp17DM07-Inoc1-T5-P14,5dpi,Exp17DM07,9,inoc1,17,5,EXP-2017
-238,7,2.0,7,1,7,c,1,Exp17DM02_inoc2_T6_P101,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-239,7,1.0,7,1,7,b,1,Exp17DM02_inoc3_T6_P36,fichier total,Exp17DM02,9,inoc3,17,,EXP-2017
-240,7,4.0,7,1,7,a,1,Exp17DM02_inoc3_T6_P40,fichier total,Exp17DM02,9,inoc3,17,,EXP-2017
-241,,4.0,7,0,,a,1,Exp17DM07_inoc1_T6_P91,6dpi,Exp17DM07,9,inoc1,17,6,EXP-2017
-242,7,2.0,7,1,7,b,1,Exp17DM01_inoc3_T5_P57,fichier total,Exp17DM01,9,inoc3,17,,EXP-2017
-243,9,1.0,7,1,7,b,1,Exp17DM01_inoc3_T5_P41,fichier total,Exp17DM01,9,inoc3,17,,EXP-2017
-244,3,2.0,7,1,3,b,1,Exp17DM02_inoc2_T6_P54,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-245,5,1.0,7,1,7,a,1,Exp17DM03_inoc1_T6_P12,fichier total,Exp17DM03,9,inoc1,17,,EXP-2017
-246,5,2.0,5,1,1,a,1,Exp17DM01_inoc3_T5_P43,fichier total,Exp17DM01,5,inoc3,17,,EXP-2017
-247,3,2.0,5,1,1,c,1,Exp17DM04_inoc4_T6_P46,fichier total,Exp17DM04,5,inoc4,17,,EXP-2017
-248,3,2.0,5,1,1,c,1,Exp17DM02_inoc2_T6_P52,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-249,3,2.0,7,1,1,a,1,Exp17DM02_inoc1_T6_P45,fichier total,Exp17DM02,7,inoc1,17,,EXP-2017
-250,3,4.0,7,1,1,b,1,Exp17DM03_inoc1_T6_P10,fichier total,Exp17DM03,9,inoc1,17,,EXP-2017
-251,3,2.0,5,1,1,b,1,Exp17DM02_inoc2_T6_P52,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-252,1,2.0,7,1,1,b,1,Exp17DM07_inoc1_T6_P57,6dpi,Exp17DM07,9,inoc1,17,6,EXP-2017
-253,3,3.0,5,1,1,b,1,Exp17DM07_inoc1_T6_P45,6dpi,Exp17DM07,3,inoc1,17,6,EXP-2017
-254,5,1.0,5,1,1,a,1,Exp17DM01_inoc3_T5_P63,fichier total,Exp17DM01,5,inoc3,17,,EXP-2017
-255,3,3.0,3,1,1,b,1,Exp17DM07_inoc1_T6_P94,6dpi,Exp17DM07,5,inoc1,17,6,EXP-2017
-256,3,1.0,7,1,3,a,1,Exp17DM07-Inoc1-T5-P40,5dpi,Exp17DM07,9,inoc1,17,5,EXP-2017
-257,9,1.0,7,1,3,c,1,Exp17DM02_inoc3_T6_P65,fichier total,Exp17DM02,7,inoc3,17,,EXP-2017
-258,7,3.0,7,1,3,a,1,Exp17DM07-Inoc1-T5-P118,5dpi,Exp17DM07,5,inoc1,17,5,EXP-2017
-259,5,3.0,7,1,3,b,1,Exp17DM02_inoc3_T6_P48,fichier total,Exp17DM02,9,inoc3,17,,EXP-2017
-260,3,3.0,5,1,3,b,1,Exp17DM07_inoc1_T6_P33,6dpi,Exp17DM07,5,inoc1,17,6,EXP-2017
-261,5,2.0,7,1,3,c,1,Exp17DM02_inoc2_T6_P04,fichier total,Exp17DM02,7,inoc2,17,,EXP-2017
-262,3,3.0,7,1,3,c,1,Exp17DM02_inoc2_T6_P96,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-263,5,4.0,5,1,3,b,1,Exp17DM01_inoc2_T6_P62,fichier total,Exp17DM01,5,inoc2,17,,EXP-2017
-264,3,2.0,7,1,3,c,1,Exp17DM02_inoc1_T6_P34,fichier total,Exp17DM02,9,inoc1,17,,EXP-2017
-265,3,3.0,7,1,3,a,1,Exp17DM02_inoc2_T6_P96,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-266,9,3.0,9,1,5,a,0,Exp17DM02_inoc3_T6_P17,fichier total,Exp17DM02,,inoc3,17,,EXP-2017
-267,9,2.0,7,1,5,c,1,Exp17DM02_inoc3_T6_P70,fichier total,Exp17DM02,9,inoc3,17,,EXP-2017
-268,5,3.0,7,1,5,b,1,Exp17DM02_inoc2_T6_P105,fichier total,Exp17DM02,7,inoc2,17,,EXP-2017
-269,7,1.0,7,1,5,c,1,Exp17DM07-Inoc1-T5-P117,5dpi,Exp17DM07,7,inoc1,17,5,EXP-2017
-270,5,4.0,7,1,5,b,1,Exp17DM02_inoc1_T6_P34,fichier total,Exp17DM02,9,inoc1,17,,EXP-2017
-271,7,4.0,9,1,5,c,,Exp17DM07-Inoc1-T5-P72,5dpi,Exp17DM07,,inoc1,17,5,EXP-2017
-272,5,3.0,5,1,5,c,1,Exp17DM02_inoc2_T6_P117,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-273,9,4.0,3,1,5,b,1,Exp17DM01_inoc2_T6_P20,fichier total,Exp17DM01,3,inoc2,17,,EXP-2017
-274,7,3.0,3,1,5,a,1,Exp17DM04_inoc2_T6_P09,fichier total,Exp17DM04,5,inoc2,17,,EXP-2017
-275,5,4.0,7,1,5,a,1,Exp17DM01_inoc2_T6_P68,fichier total,Exp17DM01,9,inoc2,17,,EXP-2017
-276,3,1.0,7,1,7,c,1,Exp17DM02_inoc2_T6_P117,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-277,7,4.0,7,1,7,a,1,Exp17DM07_inoc1_T6_P62,6dpi,Exp17DM07,9,inoc1,17,6,EXP-2017
-278,7,3.0,3,1,7,a,1,Exp17DM02_inoc1_T6_P16,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-279,9,3.0,7,1,7,a,1,Exp17DM02_inoc1_T6_P09,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-280,9,4.0,7,1,7,a,1,Exp17DM07-Inoc1-T5-P5,5dpi,Exp17DM07,9,inoc1,17,5,EXP-2017
-281,7,3.0,7,1,7,a,1,Exp17DM08_inoc1_T6_P05,fichier total,Exp17DM08,9,NA,17,,EXP-2017
-282,7,2.0,7,1,7,b,1,Exp17DM01_inoc3_T5_P03,fichier total,Exp17DM01,9,inoc3,17,,EXP-2017
-283,9,4.0,7,1,7,c,1,Exp17DM02_inoc3_T6_P11,fichier total,Exp17DM02,9,inoc3,17,,EXP-2017
-284,7,4.0,7,1,7,b,1,Exp17DM02_inoc2_T6_P01,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-285,7,2.0,7,1,7,a,1,Exp17DM02_inoc3_T6_P64,fichier total,Exp17DM02,7,inoc3,17,,EXP-2017
-286,5,2.0,9,1,9,a,0,Exp17DM02_inoc3_T6_P32,fichier total,Exp17DM02,,inoc3,17,,EXP-2017
-287,9,1.0,9,1,9,b,0,Exp17DM03_inoc1_T6_P09,fichier total,Exp17DM03,,inoc1,17,,EXP-2017
-288,7,1.0,9,1,9,c,0,Exp17DM02_inoc3_T6_P06,fichier total,Exp17DM02,,inoc3,17,,EXP-2017
-289,7,3.0,9,1,9,b,0,Exp17DM08_inoc1_T6_P06,fichier total,Exp17DM08,,NA,17,,EXP-2017
-290,5,1.0,9,1,9,c,0,Exp17DM04_inoc4_T6_P46,fichier total,Exp17DM04,,inoc4,17,,EXP-2017
-291,9,1.0,9,1,9,c,0,Exp17DM02_inoc1_T6_P53,fichier total,Exp17DM02,,inoc1,17,,EXP-2017
-292,7,1.0,9,1,9,a,0,Exp17DM02_inoc3_T6_P04,fichier total,Exp17DM02,,inoc3,17,,EXP-2017
-293,9,1.0,7,1,9,b,1,Exp17DM02_inoc1_T6_P88,fichier total,Exp17DM02,7,inoc1,17,,EXP-2017
-294,3,4.0,9,1,9,a,0,Exp17DM04_inoc4_T6_P29,fichier total,Exp17DM04,,inoc4,17,,EXP-2017
-295,7,4.0,9,1,9,a,0,Exp17DM02_inoc3_T6_P53,fichier total,Exp17DM02,,inoc3,17,,EXP-2017
-296,1,1.0,7,1,1,b,1,Exp17DM07_inoc1_T6_P57,6dpi,Exp17DM07,9,inoc1,17,6,EXP-2017
-297,3,4.0,9,1,9,c,0,Exp17DM04_inoc4_T6_P29,fichier total,Exp17DM04,,inoc4,17,,EXP-2017
-298,3,3.0,3,1,,b,1,Exp17DM07_inoc1_T6_P91,6dpi,Exp17DM07,3,inoc1,17,6,EXP-2017
-299,3,3.0,7,1,3,a,1,Exp17DM02_inoc1_T6_P28,fichier total,Exp17DM02,7,inoc1,17,,EXP-2017
-300,3,2.0,5,1,1,b,1,Exp17DM02_inoc3_T6_P43,fichier total,Exp17DM02,3,inoc3,17,,EXP-2017
-301,3,2.0,7,1,3,b,1,Exp17DM02_inoc3_T6_P23,fichier total,Exp17DM02,5,inoc3,17,,EXP-2017
-302,3,4.0,7,1,3,a,1,Exp17DM02_inoc2_T6_P79,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-303,3,3.0,7,1,3,b,1,Exp17DM02_inoc2_T6_P96,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-304,3,3.0,3,1,1,a,1,Exp17DM07_inoc1_T6_P16,6dpi,Exp17DM07,5,inoc1,17,6,EXP-2017
-305,3,1.0,9,1,9,c,0,Exp17DM07_inoc1_T6_P04,6dpi,Exp17DM07,,inoc1,17,6,EXP-2017
-306,3,1.0,7,1,7,c,1,Exp17DM02_inoc2_T6_P21,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-307,5,1.0,9,1,3,a,0,Exp17DM07_inoc1_T6_P09,6dpi,Exp17DM07,,inoc1,17,6,EXP-2017
-308,5,4.0,9,1,5,c,0,Exp17DM02_inoc3_T6_P31,fichier total,Exp17DM02,,inoc3,17,,EXP-2017
-309,5,2.0,7,1,7,a,1,Exp17DM02_inoc3_T6_P10,fichier total,Exp17DM02,7,inoc3,17,,EXP-2017
-310,5,1.0,7,1,5,b,1,Exp17DM02_inoc1_T6_P92,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-311,5,4.0,7,1,7,b,1,Exp17DM04_inoc2_T6_P15,fichier total,Exp17DM04,9,inoc2,17,,EXP-2017
-312,5,3.0,5,1,5,a,1,Exp17DM02_inoc3_T6_P56,fichier total,Exp17DM02,5,inoc3,17,,EXP-2017
-313,5,4.0,7,1,1,a,1,Exp17DM01_inoc3_T5_P64,fichier total,Exp17DM01,5,inoc3,17,,EXP-2017
-314,5,1.0,7,1,5,a,1,Exp17DM02_inoc1_T6_P92,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-315,5,3.0,5,1,5,b,1,Exp17DM04_inoc2_T6_P15,fichier total,Exp17DM04,7,inoc2,17,,EXP-2017
-316,5,1.0,7,1,7,b,1,Exp17DM02_inoc2_T6_P13,fichier total,Exp17DM02,7,inoc2,17,,EXP-2017
-317,7,4.0,7,1,7,b,1,Exp17DM01_inoc2_T6_P37,fichier total,Exp17DM01,7,inoc2,17,,EXP-2017
-318,7,4.0,7,1,7,a,1,Exp17DM07-Inoc1-T5-P56,5dpi,Exp17DM07,9,inoc1,17,5,EXP-2017
-319,7,3.0,5,1,7,b,1,Exp17DM07_inoc1_T6_P04,6dpi,Exp17DM07,7,inoc1,17,6,EXP-2017
-320,7,2.0,5,1,5,c,1,Exp17DM02_inoc1_T6_P14,fichier total,Exp17DM02,3,inoc1,17,,EXP-2017
-321,7,3.0,7,1,7,a,1,Exp17DM01_inoc2_T6_P70,fichier total,Exp17DM01,9,inoc2,17,,EXP-2017
-322,7,2.0,9,1,3,a,0,Exp17DM02_inoc2_T6_P105,fichier total,Exp17DM02,,inoc2,17,,EXP-2017
-323,7,2.0,7,1,5,b,1,Exp17DM02_inoc1_T6_P84,fichier total,Exp17DM02,9,inoc1,17,,EXP-2017
-324,7,1.0,7,1,5,a,1,Exp17DM02_inoc1_T6_P20,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-325,7,1.0,7,1,5,b,1,Exp17DM02_inoc2_T6_P101,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-326,7,2.0,7,1,5,a,1,Exp17DM01_inoc2_T6_P31,fichier total,Exp17DM01,7,inoc2,17,,EXP-2017
-327,9,1.0,7,1,7,c,1,Exp17DM01_inoc3_T5_P14,fichier total,Exp17DM01,9,inoc3,17,,EXP-2017
-328,9,3.0,9,1,7,b,0,Exp17DM01_inoc2_T6_P07,fichier total,Exp17DM01,,inoc2,17,,EXP-2017
-329,9,4.0,7,1,7,b,1,Exp17DM02_inoc3_T6_P11,fichier total,Exp17DM02,9,inoc3,17,,EXP-2017
-330,9,2.0,9,1,5,a,0,Exp17DM07_inoc1_T6_P43,6dpi,Exp17DM07,,inoc1,17,6,EXP-2017
-331,9,1.0,7,1,3,b,1,Exp17DM02_inoc3_T6_P65,fichier total,Exp17DM02,7,inoc3,17,,EXP-2017
-332,9,1.0,9,1,7,c,0,Exp17DM02_inoc2_T6_P19,fichier total,Exp17DM02,,inoc2,17,,EXP-2017
-333,9,3.0,9,1,9,b,0,Exp17DM01_inoc3_T5_P01,fichier total,Exp17DM01,,inoc3,17,,EXP-2017
-334,9,3.0,9,1,7,a,0,Exp17DM02_inoc2_T6_P60,fichier total,Exp17DM02,,inoc2,17,,EXP-2017
-335,9,1.0,7,1,7,c,1,Exp17DM02_inoc3_T6_P10,fichier total,Exp17DM02,7,inoc3,17,,EXP-2017
-336,9,1.0,7,1,5,b,1,Exp17DM01_inoc2_T6_P16,fichier total,Exp17DM01,9,inoc2,17,,EXP-2017
-337,,2.0,1,,,c,1,Exp17DM01_inoc2_T6_P67,fichier total,Exp17DM01,1,inoc2,17,,EXP-2017
-338,,3.0,1,0,,c,1,Exp17DM02_inoc3_T6_P68,fichier total,Exp17DM02,1,inoc3,17,,EXP-2017
-339,,1.0,1,,,b,1,Exp17DM04_inoc4_T6_P41,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-340,,4.0,1,,,c,1,Exp17DM04_inoc4_T6_P51,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-341,,4.0,1,0,,a,1,Exp17DM07_inoc1_T6_P66,6dpi,Exp17DM07,3,inoc1,17,6,EXP-2017
-342,,1.0,1,0,,b,1,Exp17DM03_inoc1_T6_P03,fichier total,Exp17DM03,3,inoc1,17,,EXP-2017
-343,,3.0,1,0,,a,1,Exp17DM07_inoc1_T6_P66,6dpi,Exp17DM07,3,inoc1,17,6,EXP-2017
-344,,4.0,1,,,b,1,Exp17DM04_inoc4_T6_P40,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-345,,1.0,1,,,b,1,Exp17DM01_inoc2_T6_P15,fichier total,Exp17DM01,5,inoc2,17,,EXP-2017
-346,,1.0,1,,,a,1,Exp17DM04_inoc4_T6_P10,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-347,,4.0,3,,,a,1,Exp17DM04_inoc2_T6_P08,fichier total,Exp17DM04,3,inoc2,17,,EXP-2017
-348,,3.0,3,,,a,1,Exp17DM01_inoc2_T6_P59,fichier total,Exp17DM01,3,inoc2,17,,EXP-2017
-349,,3.0,3,,,a,1,Exp17DM02_inoc1_T6_P54,fichier total,Exp17DM02,3,inoc1,17,,EXP-2017
-350,,1.0,3,,,a,1,Exp17DM04_inoc4_T6_P59,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-351,,1.0,3,0,,c,1,Exp17DM07_inoc1_T6_P70,6dpi,Exp17DM07,5,inoc1,17,6,EXP-2017
-352,,3.0,3,0,,b,1,Exp17DM01_inoc3_T5_P23,fichier total,Exp17DM01,5,inoc3,17,,EXP-2017
-353,,3.0,3,,,b,1,Exp17DM04_inoc2_T6_P16,fichier total,Exp17DM04,1,inoc2,17,,EXP-2017
-354,,1.0,3,,,a,1,Exp17DM04_inoc4_T6_P23,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-355,,2.0,3,,,c,1,Exp17DM07-Inoc1-T5-P77,5dpi,Exp17DM07,3,inoc1,17,5,EXP-2017
-356,,4.0,3,,,b,1,Exp17DM02_inoc1_T6_P84,fichier total,Exp17DM02,5,inoc1,17,,EXP-2017
-357,,3.0,5,,,c,1,Exp17DM02_inoc2_T6_P73,fichier total,Exp17DM02,3,inoc2,17,,EXP-2017
-358,3,2.0,5,1,1,c,1,Exp17DM02_inoc3_T6_P21,fichier total,Exp17DM02,5,inoc3,17,,EXP-2017
-359,9,1.0,5,1,7,b,1,Exp17DM01_inoc3_T5_P49,fichier total,Exp17DM01,5,inoc3,17,,EXP-2017
-360,,3.0,5,0,,a,1,Exp17DM01_inoc3_T5_P17,fichier total,Exp17DM01,5,inoc3,17,,EXP-2017
-361,,1.0,5,,,b,1,Exp17DM04_inoc4_T6_P20,fichier total,Exp17DM04,3,inoc4,17,,EXP-2017
-362,,4.0,5,,,c,1,Exp17DM02_inoc2_T6_P108,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-363,,2.0,5,0,,a,1,Exp17DM07_inoc1_T6_P59,6dpi,Exp17DM07,5,inoc1,17,6,EXP-2017
-364,,1.0,5,,,c,1,Exp17DM02_inoc2_T6_P99,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-365,,1.0,5,,,c,1,Exp17DM07-Inoc1-T5-P29,5dpi,Exp17DM07,5,inoc1,17,5,EXP-2017
-366,,3.0,5,,,b,1,Exp17DM02_inoc2_T6_P104,fichier total,Exp17DM02,5,inoc2,17,,EXP-2017
-367,,4.0,7,,,a,1,Exp17DM07-Inoc1-T5-P103,5dpi,Exp17DM07,5,inoc1,17,5,EXP-2017
-368,,3.0,7,,,a,1,Exp17DM01_inoc2_T6_P57,fichier total,Exp17DM01,9,inoc2,17,,EXP-2017
-369,7,2.0,7,1,5,c,1,Exp17DM02_inoc3_T6_P08,fichier total,Exp17DM02,9,inoc3,17,,EXP-2017
-370,7,4.0,7,1,7,a,1,Exp17DM02_inoc1_T6_P21,fichier total,Exp17DM02,9,inoc1,17,,EXP-2017
-371,9,4.0,7,1,7,a,1,Exp17DM07_inoc1_T6_P64,6dpi,Exp17DM07,7,inoc1,17,6,EXP-2017
-372,,1.0,7,,,a,1,Exp17DM01_inoc2_T6_P33,fichier total,Exp17DM01,5,inoc2,17,,EXP-2017
-373,,2.0,7,,,c,1,Exp17DM07-Inoc1-T5-P64,5dpi,Exp17DM07,5,inoc1,17,5,EXP-2017
-374,9,3.0,7,1,5,b,1,Exp17DM02_inoc3_T6_P54,fichier total,Exp17DM02,9,inoc3,17,,EXP-2017
-375,7,2.0,7,1,5,b,1,Exp17DM02_inoc2_T6_P86,fichier total,Exp17DM02,9,inoc2,17,,EXP-2017
-376,5,3.0,7,1,5,b,1,Exp17DM02_inoc1_T6_P04,fichier total,Exp17DM02,7,inoc1,17,,EXP-2017
-377,9,4.0,9,1,7,a,0,Exp17DM07_inoc1_T6_P25,6dpi,Exp17DM07,,inoc1,17,6,EXP-2017
-378,9,1.0,9,1,7,a,0,Exp17DM02_inoc2_T6_P121,fichier total,Exp17DM02,,inoc2,17,,EXP-2017
-379,,4.0,9,0,,b,0,Exp17DM02_inoc2_T6_P120,fichier total,Exp17DM02,,inoc2,17,,EXP-2017
-380,7,1.0,9,1,7,c,0,Exp17DM01_inoc3_T5_P56,fichier total,Exp17DM01,,inoc3,17,,EXP-2017
-381,,2.0,9,,,b,,Exp17DM07-Inoc1-T5-P9,5dpi,Exp17DM07,,inoc1,17,5,EXP-2017
-382,5,1.0,9,1,9,b,0,Exp17DM07-Inoc1-T5-P4,5dpi,Exp17DM07,,inoc1,17,5,EXP-2017
-383,,1.0,9,0,,b,0,Exp17DM07_inoc1_T6_P69,6dpi,Exp17DM07,,inoc1,17,6,EXP-2017
-384,,2.0,9,0,,b,0,Exp17DM02_inoc2_T6_P22,fichier total,Exp17DM02,,inoc2,17,,EXP-2017
-385,7,3.0,9,1,7,c,0,Exp17DM07_inoc1_T6_P14,6dpi,Exp17DM07,,inoc1,17,6,EXP-2017
-386,,3.0,9,0,,c,0,Exp17DM02_inoc2_T6_P30,fichier total,Exp17DM02,,inoc2,17,,EXP-2017
-387,,1.0,3,0,,b,1,Exp18DM02_inoc2_T6_P01,fichier total,Exp18DM02,1,inoc2et3,18,,EXP-2018
-388,,3.0,3,,,a,1,Exp18DM06_inoc1_T6_P94,fichier total,Exp18DM06,1,NA,18,,EXP-2018
-389,,4.0,3,0,,c,1,Exp18DM01_inoc1_T6_P09,fichier total,Exp18DM01,1,inoc1,18,,EXP-2018
-390,,4.0,1,0,,b,1,Exp18DM02_inoc2_T6_P07,fichier total,Exp18DM02,1,inoc2et3,18,,EXP-2018
-391,,2.0,1,0,,b,1,Exp18DM03_inoc1_T6_P01,fichier total,Exp18DM03,1,NA,18,,EXP-2018
-392,,1.0,3,0,,a,1,Exp18DM02_inoc3_T6_P60,fichier total,Exp18DM02,1,inoc2et3,18,,EXP-2018
-393,,2.0,5,,,a,1,Exp18DM06_inoc1_T6_P99,fichier total,Exp18DM06,1,NA,18,,EXP-2018
-394,,1.0,3,0,,a,1,Exp18DM01_inoc1_T6_P12,fichier total,Exp18DM01,1,inoc2,18,,EXP-2018
-395,,1.0,3,0,,c,1,Exp18DM02_inoc3_T6_P60,fichier total,Exp18DM02,1,inoc2et3,18,,EXP-2018
-396,,2.0,1,0,,b,1,Exp18DM10_inoc1_T6_P49,fichier total,Exp18DM10,1,NA,18,,EXP-2018
-397,,4.0,3,0,,a,1,Exp18DM05_inoc1_T4_P69,4dpi,Exp18DM05,3,NA,18,4,EXP-2018
-398,,1.0,3,0,,a,1,Exp18DM01_inoc1_T6_P38,fichier total,Exp18DM01,3,inoc2,18,,EXP-2018
-399,,1.0,3,0,,a,1,Exp18DM10_inoc1_T6_P52,fichier total,Exp18DM10,3,NA,18,,EXP-2018
-400,,3.0,3,0,,c,1,Exp18DM05_inoc1_T4_P05,4dpi,Exp18DM05,3,NA,18,4,EXP-2018
-401,7,4.0,5,1,5,a,1,Exp18DM05_inoc1_T6_P39,6dpi,Exp18DM05,3,NA,18,6,EXP-2018
-402,,1.0,3,0,,c,1,Exp18DM01_inoc1_T6_P14,fichier total,Exp18DM01,3,inoc1,18,,EXP-2018
-403,,1.0,3,0,,c,1,Exp18DM10_inoc1_T6_P47,fichier total,Exp18DM10,3,NA,18,,EXP-2018
-404,,3.0,5,0,,b,1,Exp18DM05_inoc1_T5_P01,5dpi,Exp18DM05,3,NA,18,5,EXP-2018
-405,,2.0,3,0,,c,1,Exp18DM02_inoc3_T6_P61,fichier total,Exp18DM02,3,inoc2et3,18,,EXP-2018
-406,,1.0,3,0,,c,1,Exp18DM01_inoc1_T6_P38,fichier total,Exp18DM01,3,inoc2,18,,EXP-2018
-407,,3.0,5,0,,a,1,Exp18DM02_inoc1_T6_P20,fichier total,Exp18DM02,5,inoc1,18,,EXP-2018
-408,,2.0,5,0,,a,1,Exp18DM02_inoc3_T6_P62,fichier total,Exp18DM02,5,inoc2et3,18,,EXP-2018
-409,,3.0,7,,,b,1,Exp18DM06_inoc1_T6_P67,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-410,,3.0,3,0,,b,1,Exp18DM02_inoc2_T6_P10,fichier total,Exp18DM02,5,inoc2et3,18,,EXP-2018
-411,,1.0,3,0,,c,1,Exp18DM05_inoc1_T4_P34,4dpi,Exp18DM05,5,NA,18,4,EXP-2018
-412,,2.0,7,0,,c,1,Exp18DM01_inoc1_T6_P05,fichier total,Exp18DM01,5,inoc1,18,,EXP-2018
-413,,1.0,5,0,,b,1,Exp18DM05_inoc1_T4_P70,4dpi,Exp18DM05,5,NA,18,4,EXP-2018
-414,3,2.0,3,1,1,b,1,Exp18DM01_inoc1_T6_P17,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-415,,4.0,5,,,b,1,Exp18DM07_inoc1_T6_P08,6dpi,Exp18DM07,5,NA,18,6,EXP-2018
-416,9,3.0,5,1,7,b,1,Exp18DM06_inoc1_T6_P02,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-417,7,1.0,7,1,5,c,1,Exp18DM06_inoc1_T6_P49,fichier total,Exp18DM06,7,NA,18,,EXP-2018
-418,5,2.0,7,1,7,a,1,Exp18DM06_inoc1_T6_P57,fichier total,Exp18DM06,7,NA,18,,EXP-2018
-419,,1.0,7,0,,c,1,Exp18DM05_inoc1_T4_P26,4dpi,Exp18DM05,7,NA,18,4,EXP-2018
-420,,1.0,7,0,,b,1,Exp18DM02_inoc1_T6_P12,fichier total,Exp18DM02,7,inoc1,18,,EXP-2018
-421,5,2.0,7,1,1,b,1,Exp18DM01_inoc1_T6_P06,fichier total,Exp18DM01,7,inoc2,18,,EXP-2018
-422,,4.0,7,0,,b,1,Exp18DM02_inoc1_T6_P29,fichier total,Exp18DM02,7,inoc1,18,,EXP-2018
-423,7,2.0,7,1,5,b,1,Exp18DM01_inoc1_T6_P10,fichier total,Exp18DM01,7,inoc1,18,,EXP-2018
-424,,2.0,7,0,,a,1,Exp18DM05_inoc1_T5_P71,5dpi,Exp18DM05,7,NA,18,5,EXP-2018
-425,,4.0,7,0,,c,1,Exp18DM02_inoc2_T6_P34,fichier total,Exp18DM02,7,inoc2et3,18,,EXP-2018
-426,,4.0,7,,,b,1,Exp18DM06_inoc1_T6_P59,fichier total,Exp18DM06,7,NA,18,,EXP-2018
-427,,4.0,7,0,,c,1,Exp18DM05_inoc1_T4_P27,4dpi,Exp18DM05,9,NA,18,4,EXP-2018
-428,,1.0,7,0,,b,1,Exp18DM02_inoc1_T6_P38,fichier total,Exp18DM02,9,inoc1,18,,EXP-2018
-429,,3.0,7,,,a,1,Exp18DM06_inoc1_T6_P58,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-430,3,1.0,7,1,5,b,1,Exp18DM05_inoc1_T6_P35,6dpi,Exp18DM05,9,NA,18,6,EXP-2018
-431,5,4.0,7,1,3,b,1,Exp18DM06_inoc1_T6_P76,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-432,5,2.0,7,1,7,c,1,Exp18DM05_inoc1_T6_P02,6dpi,Exp18DM05,9,NA,18,6,EXP-2018
-433,,4.0,7,0,,c,1,Exp18DM02_inoc1_T6_P32,fichier total,Exp18DM02,9,inoc1,18,,EXP-2018
-434,7,2.0,7,1,5,a,1,Exp18DM01_inoc1_T6_P35,fichier total,Exp18DM01,9,inoc1,18,,EXP-2018
-435,,4.0,7,0,,a,1,Exp18DM06_inoc1_T6_P67,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-436,,3.0,7,0,,c,1,Exp18DM02_inoc1_T6_P41,fichier total,Exp18DM02,9,inoc1,18,,EXP-2018
-437,3,2.0,5,1,1,b,1,Exp18DM06_inoc1_T6_P18,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-438,3,4.0,3,1,1,c,1,Exp18DM06_inoc1_T6_P99,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-439,3,2.0,5,1,1,c,1,Exp18DM06_inoc1_T6_P18,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-440,5,2.0,7,1,1,c,1,Exp18DM01_inoc1_T6_P02,fichier total,Exp18DM01,7,inoc2,18,,EXP-2018
-441,3,3.0,3,1,1,b,1,Exp18DM01_inoc1_T6_P24,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-442,5,4.0,3,1,1,c,1,Exp18DM06_inoc1_T6_P69,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-443,1,2.0,3,1,1,c,1,Exp18DM01_inoc1_T6_P28,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-444,3,3.0,3,1,1,c,1,Exp18DM01_inoc1_T6_P11,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-445,3,2.0,5,1,1,a,1,Exp18DM01_inoc1_T6_P11,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-446,3,2.0,5,1,1,a,1,Exp18DM01_inoc1_T6_P17,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-447,3,2.0,7,1,3,b,1,Exp18DM01_inoc1_T6_P26,fichier total,Exp18DM01,5,inoc1,18,,EXP-2018
-448,5,2.0,7,1,3,a,1,Exp18DM01_inoc1_T6_P04,fichier total,Exp18DM01,7,inoc2,18,,EXP-2018
-449,5,1.0,5,1,3,c,1,Exp18DM02_inoc2_T6_P35,fichier total,Exp18DM02,5,inoc2et3,18,,EXP-2018
-450,5,1.0,7,1,3,a,1,Exp18DM02_inoc2_T6_P28,fichier total,Exp18DM02,7,inoc2et3,18,,EXP-2018
-451,7,4.0,5,1,3,c,1,Exp18DM06_inoc1_T6_P22,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-452,5,4.0,5,1,3,a,1,Exp18DM06_inoc1_T6_P73,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-453,7,2.0,7,1,3,c,1,Exp18DM01_inoc1_T6_P13,fichier total,Exp18DM01,7,inoc1,18,,EXP-2018
-454,3,2.0,9,1,3,c,0,Exp18DM06_inoc1_T6_P09,fichier total,Exp18DM06,,NA,18,,EXP-2018
-455,5,4.0,5,1,3,b,1,Exp18DM02_inoc3_T6_P40,fichier total,Exp18DM02,5,inoc2et3,18,,EXP-2018
-456,3,4.0,5,1,3,b,1,Exp18DM06_inoc1_T6_P37,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-457,7,3.0,7,1,5,a,1,Exp18DM01_inoc1_T6_P12,fichier total,Exp18DM01,7,inoc1,18,,EXP-2018
-458,5,1.0,7,1,5,b,1,Exp18DM06_inoc1_T6_P43,fichier total,Exp18DM06,7,NA,18,,EXP-2018
-459,5,4.0,7,1,5,b,1,Exp18DM01_inoc1_T6_P10,fichier total,Exp18DM01,7,inoc2,18,,EXP-2018
-460,5,2.0,7,1,5,c,1,Exp18DM05_inoc1_T5_P34,5dpi,Exp18DM05,9,NA,18,5,EXP-2018
-461,7,1.0,7,1,5,a,1,Exp18DM05_inoc1_T4_P05,4dpi,Exp18DM05,9,NA,18,4,EXP-2018
-462,5,4.0,7,1,5,a,1,Exp18DM06_inoc1_T6_P46,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-463,7,2.0,7,1,5,c,1,Exp18DM06_inoc1_T6_P92,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-464,7,1.0,7,1,5,c,1,Exp18DM05_inoc1_T6_P05,6dpi,Exp18DM05,7,NA,18,6,EXP-2018
-465,5,3.0,5,1,5,a,1,Exp18DM01_inoc1_T6_P32,fichier total,Exp18DM01,5,inoc1,18,,EXP-2018
-466,7,2.0,7,1,5,c,1,Exp18DM01_inoc1_T6_P09,fichier total,Exp18DM01,7,inoc1,18,,EXP-2018
-467,7,3.0,7,1,7,b,1,Exp18DM05_inoc1_T4_P33,4dpi,Exp18DM05,9,NA,18,4,EXP-2018
-468,9,2.0,9,1,7,c,0,Exp18DM05_inoc1_T4_P06,4dpi,Exp18DM05,,NA,18,4,EXP-2018
-469,5,4.0,7,1,7,a,1,Exp18DM01_inoc1_T6_P31,fichier total,Exp18DM01,9,inoc2,18,,EXP-2018
-470,7,4.0,9,1,7,b,0,Exp18DM06_inoc1_T6_P01,fichier total,Exp18DM06,,NA,18,,EXP-2018
-471,7,4.0,3,1,7,a,1,Exp18DM10_inoc1_T6_P24,fichier total,Exp18DM10,3,NA,18,,EXP-2018
-472,7,1.0,9,1,7,c,0,Exp18DM05_inoc1_T6_P04,6dpi,Exp18DM05,,NA,18,6,EXP-2018
-473,9,2.0,9,1,7,a,0,Exp18DM05_inoc1_T4_P06,4dpi,Exp18DM05,,NA,18,4,EXP-2018
-474,9,1.0,9,1,7,c,0,Exp18DM06_inoc1_T6_P20,fichier total,Exp18DM06,,NA,18,,EXP-2018
-475,7,1.0,3,1,7,c,1,Exp18DM02_inoc3_T6_P43,fichier total,Exp18DM02,3,inoc2et3,18,,EXP-2018
-476,9,4.0,9,1,7,b,0,Exp18DM06_inoc1_T6_P12,fichier total,Exp18DM06,,NA,18,,EXP-2018
-477,7,3.0,9,1,9,c,0,Exp18DM05_inoc1_T4_P06,4dpi,Exp18DM05,,NA,18,4,EXP-2018
-478,7,3.0,9,1,9,c,0,Exp18DM05_inoc1_T5_P06,5dpi,Exp18DM05,,NA,18,5,EXP-2018
-479,5,1.0,9,1,9,c,0,Exp18DM02_inoc1_T6_P06,fichier total,Exp18DM02,,inoc1,18,,EXP-2018
-480,9,1.0,9,1,9,a,0,Exp18DM01_inoc1_T6_P32,fichier total,Exp18DM01,,inoc2,18,,EXP-2018
-481,5,2.0,9,1,9,a,0,Exp18DM02_inoc3_T6_P42,fichier total,Exp18DM02,,inoc2et3,18,,EXP-2018
-482,7,1.0,9,1,9,a,0,Exp18DM02_inoc2_T6_P02,fichier total,Exp18DM02,,inoc2et3,18,,EXP-2018
-483,3,1.0,9,1,9,b,0,Exp18DM06_inoc1_T6_P53,fichier total,Exp18DM06,,NA,18,,EXP-2018
-484,5,3.0,9,1,9,c,0,Exp18DM06_inoc1_T6_P06,fichier total,Exp18DM06,,NA,18,,EXP-2018
-485,9,1.0,9,1,9,b,0,Exp18DM01_inoc1_T6_P17,fichier total,Exp18DM01,,inoc1,18,,EXP-2018
-486,9,1.0,9,1,9,c,0,Exp18DM05_inoc1_T5_P02,5dpi,Exp18DM05,,NA,18,5,EXP-2018
-487,1,3.0,5,1,1,a,1,Exp18DM01_inoc1_T6_P24,fichier total,Exp18DM01,3,inoc2,18,,EXP-2018
-488,1,1.0,5,1,1,c,1,Exp18DM06_inoc1_T6_P23,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-489,1,2.0,7,1,1,a,1,Exp18DM01_inoc1_T6_P08,fichier total,Exp18DM01,7,inoc2,18,,EXP-2018
-490,1,2.0,7,1,1,b,1,Exp18DM01_inoc1_T6_P08,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-491,1,4.0,7,1,1,a,1,Exp18DM06_inoc1_T6_P48,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-492,1,2.0,5,1,1,c,1,Exp18DM01_inoc1_T6_P08,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-493,1,1.0,5,1,1,a,1,Exp18DM06_inoc1_T6_P23,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-494,1,4.0,7,1,1,b,1,Exp18DM06_inoc1_T6_P48,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-495,1,1.0,5,1,1,b,1,Exp18DM06_inoc1_T6_P23,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-496,3,2.0,3,1,1,b,1,Exp18DM01_inoc1_T6_P30,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-497,3,2.0,9,1,3,a,0,Exp18DM06_inoc1_T6_P09,fichier total,Exp18DM06,,NA,18,,EXP-2018
-498,3,1.0,7,1,5,c,1,Exp18DM06_inoc1_T6_P68,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-499,3,2.0,5,1,3,b,1,Exp18DM05_inoc1_T4_P71,4dpi,Exp18DM05,5,NA,18,4,EXP-2018
-500,3,2.0,9,1,9,c,0,Exp18DM06_inoc1_T6_P55,fichier total,Exp18DM06,,NA,18,,EXP-2018
-501,3,2.0,7,1,1,b,1,Exp18DM05_inoc1_T5_P33,5dpi,Exp18DM05,5,NA,18,5,EXP-2018
-502,3,2.0,3,1,1,c,1,Exp18DM01_inoc1_T6_P34,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-503,3,4.0,7,1,3,a,1,Exp18DM06_inoc1_T6_P71,fichier total,Exp18DM06,7,NA,18,,EXP-2018
-504,3,4.0,7,1,3,b,1,Exp18DM06_inoc1_T6_P71,fichier total,Exp18DM06,7,NA,18,,EXP-2018
-505,3,4.0,5,1,3,a,1,Exp18DM06_inoc1_T6_P37,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-506,5,1.0,9,1,9,b,0,Exp18DM02_inoc3_T6_P39,fichier total,Exp18DM02,,inoc2et3,18,,EXP-2018
-507,5,4.0,7,1,5,b,1,Exp18DM06_inoc1_T6_P100,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-508,5,4.0,3,1,1,b,1,Exp18DM06_inoc1_T6_P69,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-509,5,2.0,5,1,5,a,1,Exp18DM02_inoc1_T6_P14,fichier total,Exp18DM02,5,inoc1,18,,EXP-2018
-510,5,2.0,7,1,3,c,1,Exp18DM06_inoc1_T6_P60,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-511,5,2.0,7,1,5,b,1,Exp18DM06_inoc1_T6_P12,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-512,5,4.0,5,1,5,b,1,Exp18DM01_inoc1_T6_P07,fichier total,Exp18DM01,5,inoc1,18,,EXP-2018
-513,5,2.0,9,1,7,a,0,Exp18DM05_inoc1_T5_P02,5dpi,Exp18DM05,,NA,18,5,EXP-2018
-514,5,4.0,7,1,7,c,1,Exp18DM01_inoc1_T6_P31,fichier total,Exp18DM01,9,inoc2,18,,EXP-2018
-515,5,3.0,5,1,7,c,1,Exp18DM02_inoc2_T6_P10,fichier total,Exp18DM02,5,inoc2et3,18,,EXP-2018
-516,7,1.0,9,1,9,b,0,Exp18DM01_inoc1_T6_P30,fichier total,Exp18DM01,,inoc1,18,,EXP-2018
-517,7,3.0,7,1,5,a,1,Exp18DM05_inoc1_T4_P02,4dpi,Exp18DM05,7,NA,18,4,EXP-2018
-518,7,3.0,7,1,5,a,1,Exp18DM01_inoc1_T6_P13,fichier total,Exp18DM01,9,inoc1,18,,EXP-2018
-519,7,4.0,7,1,7,c,1,Exp18DM03_inoc1_T6_P03,fichier total,Exp18DM03,9,NA,18,,EXP-2018
-520,7,3.0,9,1,9,a,0,Exp18DM05_inoc1_T5_P06,5dpi,Exp18DM05,,NA,18,5,EXP-2018
-521,7,4.0,7,1,7,a,1,Exp18DM01_inoc1_T6_P03,fichier total,Exp18DM01,9,inoc2,18,,EXP-2018
-522,7,3.0,5,1,5,a,1,Exp18DM02_inoc1_T6_P39,fichier total,Exp18DM02,5,inoc1,18,,EXP-2018
-523,7,4.0,7,1,7,c,1,Exp18DM05_inoc1_T6_P70,6dpi,Exp18DM05,7,NA,18,6,EXP-2018
-524,7,1.0,3,1,7,a,1,Exp18DM10_inoc1_T6_P26,fichier total,Exp18DM10,3,NA,18,,EXP-2018
-525,7,3.0,9,1,9,c,0,Exp18DM10_inoc1_T6_P32,fichier total,Exp18DM10,,NA,18,,EXP-2018
-526,9,2.0,7,1,7,a,1,Exp18DM07_inoc1_T6_P03,6dpi,Exp18DM07,9,NA,18,6,EXP-2018
-527,9,3.0,7,1,5,b,1,Exp18DM01_inoc1_T6_P22,fichier total,Exp18DM01,7,inoc1,18,,EXP-2018
-528,9,4.0,9,1,7,c,0,Exp18DM06_inoc1_T6_P25,fichier total,Exp18DM06,,NA,18,,EXP-2018
-529,9,2.0,7,1,5,b,1,Exp18DM01_inoc1_T6_P09,fichier total,Exp18DM01,5,inoc1,18,,EXP-2018
-530,9,3.0,5,1,7,a,1,Exp18DM06_inoc1_T6_P02,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-531,9,1.0,9,1,7,a,0,Exp18DM02_inoc2_T6_P17,fichier total,Exp18DM02,,inoc2et3,18,,EXP-2018
-532,9,4.0,9,1,5,c,0,Exp18DM06_inoc1_T6_P42,fichier total,Exp18DM06,,NA,18,,EXP-2018
-533,9,1.0,7,1,7,a,1,Exp18DM01_inoc1_T6_P08,fichier total,Exp18DM01,9,inoc1,18,,EXP-2018
-534,9,1.0,7,1,7,a,1,Exp18DM05_inoc1_T4_P40,4dpi,Exp18DM05,9,NA,18,4,EXP-2018
-535,9,1.0,9,1,9,c,0,Exp18DM05_inoc1_T4_P04,4dpi,Exp18DM05,,NA,18,4,EXP-2018
-536,,2.0,1,,,a,1,Exp18DM06_inoc1_T6_P54,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-537,,2.0,1,,,c,1,Exp18DM07_inoc1_T6_P01,6dpi,Exp18DM07,3,NA,18,6,EXP-2018
-538,,4.0,1,0,,a,1,Exp18DM05_inoc1_T5_P70,5dpi,Exp18DM05,3,NA,18,5,EXP-2018
-539,,1.0,1,,,b,1,Exp18DM06_inoc1_T6_P73,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-540,,1.0,1,,,c,1,Exp18DM06_inoc1_T6_P78,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-541,,1.0,1,0,,b,1,Exp18DM10_inoc1_T6_P35,fichier total,Exp18DM10,3,NA,18,,EXP-2018
-542,,3.0,1,0,,a,1,Exp18DM10_inoc1_T6_P37,fichier total,Exp18DM10,3,NA,18,,EXP-2018
-543,,4.0,1,0,,c,1,Exp18DM02_inoc3_T6_P68,fichier total,Exp18DM02,3,inoc2et3,18,,EXP-2018
-544,,2.0,1,0,,a,1,Exp18DM02_inoc3_T6_P70,fichier total,Exp18DM02,3,inoc2et3,18,,EXP-2018
-545,,1.0,3,0,,b,1,Exp18DM10_inoc1_T6_P51,fichier total,Exp18DM10,1,NA,18,,EXP-2018
-546,,4.0,3,0,,a,1,Exp18DM02_inoc3_T6_P69,fichier total,Exp18DM02,3,inoc2et3,18,,EXP-2018
-547,,1.0,3,,,c,1,Exp18DM06_inoc1_T6_P37,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-548,,1.0,3,0,,b,1,Exp18DM10_inoc1_T6_P21,fichier total,Exp18DM10,3,NA,18,,EXP-2018
-549,,1.0,3,0,,c,1,Exp18DM10_inoc1_T6_P26,fichier total,Exp18DM10,5,NA,18,,EXP-2018
-550,,3.0,3,0,,a,1,Exp18DM02_inoc3_T6_P42,fichier total,Exp18DM02,3,inoc2et3,18,,EXP-2018
-551,,1.0,3,0,,b,1,Exp18DM02_inoc1_T6_P18,fichier total,Exp18DM02,3,inoc1,18,,EXP-2018
-552,,1.0,3,0,,a,1,Exp18DM02_inoc3_T6_P67,fichier total,Exp18DM02,1,inoc2et3,18,,EXP-2018
-553,,3.0,3,,,a,1,Exp18DM06_inoc1_T6_P09,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-554,,2.0,3,0,,b,1,Exp18DM02_inoc2_T6_P19,fichier total,Exp18DM02,5,inoc2et3,18,,EXP-2018
-555,,1.0,5,0,,b,1,Exp18DM02_inoc1_T6_P13,fichier total,Exp18DM02,5,inoc1,18,,EXP-2018
-556,5,4.0,5,1,3,c,1,Exp18DM02_inoc3_T6_P40,fichier total,Exp18DM02,5,inoc2et3,18,,EXP-2018
-557,,2.0,5,0,,c,1,Exp18DM01_inoc1_T6_P20,fichier total,Exp18DM01,5,inoc2,18,,EXP-2018
-558,,1.0,5,,,a,1,Exp18DM06_inoc1_T6_P35,fichier total,Exp18DM06,1,NA,18,,EXP-2018
-559,5,1.0,5,1,7,b,1,Exp18DM06_inoc1_T6_P36,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-560,,4.0,5,0,,c,1,Exp18DM05_inoc1_T6_P05,6dpi,Exp18DM05,1,NA,18,6,EXP-2018
-561,,4.0,5,0,,a,1,Exp18DM05_inoc1_T5_P39,5dpi,Exp18DM05,5,NA,18,5,EXP-2018
-562,,4.0,5,,,a,1,Exp18DM06_inoc1_T6_P91,fichier total,Exp18DM06,3,NA,18,,EXP-2018
-563,5,1.0,5,1,5,c,1,Exp18DM02_inoc2_T6_P23,fichier total,Exp18DM02,5,inoc2et3,18,,EXP-2018
-564,,4.0,5,0,,a,1,Exp18DM10_inoc1_T6_P12,fichier total,Exp18DM10,5,NA,18,,EXP-2018
-565,7,4.0,7,1,7,c,1,Exp18DM05_inoc1_T4_P70,4dpi,Exp18DM05,7,NA,18,4,EXP-2018
-566,,3.0,7,0,,a,1,Exp18DM06_inoc1_T6_P38,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-567,,2.0,7,0,,b,1,Exp18DM10_inoc1_T6_P26,fichier total,Exp18DM10,7,NA,18,,EXP-2018
-568,7,2.0,7,1,7,b,1,Exp18DM06_inoc1_T6_P06,fichier total,Exp18DM06,9,NA,18,,EXP-2018
-569,,4.0,7,0,,a,1,Exp18DM02_inoc1_T6_P22,fichier total,Exp18DM02,7,inoc1,18,,EXP-2018
-570,5,1.0,7,1,5,a,1,Exp18DM05_inoc1_T5_P31,5dpi,Exp18DM05,5,NA,18,5,EXP-2018
-571,,1.0,7,,,a,1,Exp18DM06_inoc1_T6_P81,fichier total,Exp18DM06,5,NA,18,,EXP-2018
-572,7,1.0,7,1,5,a,1,Exp18DM01_inoc1_T6_P39,fichier total,Exp18DM01,5,inoc1,18,,EXP-2018
-573,7,1.0,9,1,9,c,0,Exp18DM02_inoc3_T6_P40,fichier total,Exp18DM02,,inoc2et3,18,,EXP-2018
-574,,4.0,9,0,,c,0,Exp18DM02_inoc1_T6_P38,fichier total,Exp18DM02,,inoc1,18,,EXP-2018
-575,9,2.0,9,1,9,a,0,Exp18DM05_inoc1_T5_P40,5dpi,Exp18DM05,,NA,18,5,EXP-2018
-576,3,1.0,9,1,9,c,0,Exp18DM06_inoc1_T6_P53,fichier total,Exp18DM06,,NA,18,,EXP-2018
-577,,2.0,9,0,,b,0,Exp18DM03_inoc1_T6_P52,fichier total,Exp18DM03,,NA,18,,EXP-2018
-578,9,4.0,9,1,7,a,0,Exp18DM06_inoc1_T6_P47,fichier total,Exp18DM06,,NA,18,,EXP-2018
-579,9,1.0,9,1,9,a,0,Exp18DM01_inoc1_T6_P06,fichier total,Exp18DM01,,inoc1,18,,EXP-2018
-580,7,1.0,9,1,9,a,0,Exp18DM03_inoc1_T6_P04,fichier total,Exp18DM03,,NA,18,,EXP-2018
-581,7,4.0,9,1,5,a,0,Exp18DM01_inoc1_T6_P16,fichier total,Exp18DM01,,inoc2,18,,EXP-2018
-582,,4.0,9,0,,b,0,Exp18DM03_inoc1_T6_P50,fichier total,Exp18DM03,,NA,18,,EXP-2018
-583,,4.0,3,,,a,1,Exp19DM04_inoc1_T6_P02,fichier total,Exp19DM04,1,inoc1,19,,EXP-2019
-584,,1.0,,0,,a,1,Exp19DM04_inoc1_T6_P35,fichier total,Exp19DM04,1,inoc1,19,,EXP-2019
-585,,3.0,1,0,,b,1,Exp19DM02_inoc1_T6_P35,fichier total,Exp19DM02,1,inoc1,19,,EXP-2019
-586,,3.0,5,0,,a,1,Exp19DM04_inoc1_T6_P16,fichier total,Exp19DM04,1,inoc1,19,,EXP-2019
-587,,1.0,3,0,,a,1,Exp19DM03_inoc1_T7_P05,fichier total,Exp19DM03,1,inoc1,19,,EXP-2019
-588,,1.0,3,0,,a,1,Exp19DM02_inoc2_T6_P32,fichier total,Exp19DM02,1,inoc2,19,,EXP-2019
-589,,4.0,1,,,a,1,Exp19DM03_inoc2_T7_P24,fichier total,Exp19DM03,1,inoc2,19,,EXP-2019
-590,,3.0,3,,,c,1,Exp19DM04_inoc2_T6_P06,fichier total,Exp19DM04,1,inoc2,19,,EXP-2019
-591,,3.0,1,0,,b,1,Exp19DM02_inoc2_T6_P03,fichier total,Exp19DM02,1,inoc2,19,,EXP-2019
-592,,2.0,3,0,,b,1,Exp19DM04_inoc1_T6_P07,fichier total,Exp19DM04,1,inoc1,19,,EXP-2019
-593,,1.0,1,,,c,1,Exp19DM04_inoc2_T6_P43,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-594,,1.0,3,,,c,1,Exp19DM03_inoc2_T7_P12,fichier total,Exp19DM03,3,inoc2,19,,EXP-2019
-595,,1.0,3,,,b,1,Exp19DM04_inoc1_T6_P16,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-596,,2.0,,0,,c,1,Exp19DM04_inoc1_T6_P13,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-597,,2.0,1,,,c,1,Exp19DM03_inoc2_T7_P26,fichier total,Exp19DM03,3,inoc2,19,,EXP-2019
-598,,3.0,1,,,c,1,Exp19DM03_inoc2_T7_P08,fichier total,Exp19DM03,3,inoc2,19,,EXP-2019
-599,,2.0,1,,,a,1,Exp19DM03_inoc2_T7_P22,fichier total,Exp19DM03,3,inoc2,19,,EXP-2019
-600,,4.0,3,0,,a,1,Exp19DM04_inoc1_T6_P46,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-601,,3.0,1,,,a,1,Exp19DM04_inoc2_T6_P32,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-602,,4.0,1,,,a,1,Exp19DM03_inoc2_T7_P18,fichier total,Exp19DM03,3,inoc2,19,,EXP-2019
-603,3,2.0,5,1,1,b,1,Exp19DM02_inoc1_T6_P26,fichier total,Exp19DM02,5,inoc1,19,,EXP-2019
-604,,2.0,5,,,b,1,Exp19DM04_inoc2_T6_P48,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-605,,4.0,3,0,,c,1,Exp19DM02_inoc2_T6_P15,fichier total,Exp19DM02,5,inoc2,19,,EXP-2019
-606,7,3.0,5,1,7,c,1,Exp19DM06_inoc2_T6_P07,fichier total,Exp19DM06,5,inoc2,19,,EXP-2019
-607,5,4.0,5,1,3,a,1,Exp19DM02_inoc2_T6_P09,fichier total,Exp19DM02,5,inoc2,19,,EXP-2019
-608,7,2.0,5,1,7,a,1,Exp19DM03_inoc2_T7_P25,fichier total,Exp19DM03,5,inoc2,19,,EXP-2019
-609,,2.0,5,0,,a,1,Exp19DM03_inoc1_T7_P27,fichier total,Exp19DM03,5,inoc1,19,,EXP-2019
-610,,3.0,3,0,,c,1,Exp19DM06_inoc2_T6_P02,fichier total,Exp19DM06,5,inoc2,19,,EXP-2019
-611,,1.0,5,0,,b,1,Exp19DM09_inoc1_T4_P10,4dpi,Exp19DM09,5,NA,19,4,EXP-2019
-612,3,1.0,7,1,5,b,1,Exp19DM02_inoc1_T6_P12,fichier total,Exp19DM02,5,inoc1,19,,EXP-2019
-613,,1.0,5,,5,b,1,Exp19DM04_inoc2_T6_P49,fichier total,Exp19DM04,7,inoc2,19,,EXP-2019
-614,5,3.0,7,1,7,c,1,Exp19DM03_inoc1_T7_P15,fichier total,Exp19DM03,7,inoc1,19,,EXP-2019
-615,7,4.0,7,1,7,a,1,Exp19DM04_inoc2_T6_P01,fichier total,Exp19DM04,7,inoc2,19,,EXP-2019
-616,,1.0,7,0,,a,1,Exp19DM03_inoc1_T7_P22,fichier total,Exp19DM03,7,inoc1,19,,EXP-2019
-617,5,2.0,7,1,7,c,1,Exp19DM02_inoc2_T6_P34,fichier total,Exp19DM02,7,inoc2,19,,EXP-2019
-618,,1.0,7,0,,a,1,Exp19DM09_inoc1_T4_P02,4dpi,Exp19DM09,7,NA,19,4,EXP-2019
-619,3,2.0,7,1,3,a,1,Exp19DM02_inoc1_T6_P02,fichier total,Exp19DM02,7,inoc1,19,,EXP-2019
-620,,1.0,7,,,c,1,Exp19DM04_inoc2_T6_P30,fichier total,Exp19DM04,7,inoc2,19,,EXP-2019
-621,7,1.0,7,,7,c,1,Exp19DM04_inoc1_T6_P05,fichier total,Exp19DM04,7,inoc1,19,,EXP-2019
-622,3,2.0,5,1,1,a,1,Exp19DM02_inoc1_T6_P08,fichier total,Exp19DM02,7,inoc1,19,,EXP-2019
-623,7,1.0,7,1,7,c,1,Exp19DM03_inoc1_T7_P06,fichier total,Exp19DM03,9,inoc1,19,,EXP-2019
-624,5,1.0,7,1,7,a,1,Exp19DM02_inoc2_T6_P12,fichier total,Exp19DM02,9,inoc2,19,,EXP-2019
-625,7,1.0,7,,7,a,1,Exp19DM04_inoc1_T6_P04,fichier total,Exp19DM04,9,inoc1,19,,EXP-2019
-626,5,4.0,7,1,7,b,1,Exp19DM02_inoc2_T6_P01,fichier total,Exp19DM02,9,inoc2,19,,EXP-2019
-627,5,3.0,7,1,5,a,1,Exp19DM02_inoc1_T6_P04,fichier total,Exp19DM02,9,inoc1,19,,EXP-2019
-628,7,2.0,7,1,7,b,1,Exp19DM09_inoc1_T4_P07,4dpi,Exp19DM09,9,NA,19,4,EXP-2019
-629,7,1.0,7,1,7,c,1,Exp19DM03_inoc2_T7_P06,fichier total,Exp19DM03,9,inoc2,19,,EXP-2019
-630,7,1.0,7,1,7,c,1,Exp19DM06_inoc2_T6_P04,fichier total,Exp19DM06,9,inoc2,19,,EXP-2019
-631,7,2.0,7,1,7,a,1,Exp19DM02_inoc1_T6_P06,fichier total,Exp19DM02,9,inoc1,19,,EXP-2019
-632,9,2.0,7,1,7,c,1,Exp19DM09_inoc1_T4_P12,4dpi,Exp19DM09,9,NA,19,4,EXP-2019
-633,3,2.0,5,1,1,c,1,Exp19DM02_inoc1_T6_P26,fichier total,Exp19DM02,5,inoc1,19,,EXP-2019
-634,1,4.0,1,1,1,c,1,Exp19DM04_inoc2_T6_P23,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-635,9,3.0,5,,1,b,1,Exp19DM04_inoc1_T6_P09,fichier total,Exp19DM04,5,inoc1,19,,EXP-2019
-636,3,4.0,3,,1,c,1,Exp19DM04_inoc1_T6_P26,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-637,1,4.0,3,1,1,b,1,Exp19DM04_inoc2_T6_P24,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-638,1,4.0,,1,1,c,1,Exp19DM04_inoc2_T6_P32,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-639,1,1.0,3,1,1,a,1,Exp19DM04_inoc2_T6_P22,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-640,3,4.0,3,1,1,a,1,Exp19DM02_inoc2_T6_P22,fichier total,Exp19DM02,1,inoc2,19,,EXP-2019
-641,5,2.0,5,1,1,b,1,Exp19DM02_inoc2_T6_P32,fichier total,Exp19DM02,5,inoc2,19,,EXP-2019
-642,1,2.0,,1,1,a,1,Exp19DM04_inoc2_T6_P32,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-643,3,2.0,3,1,3,a,1,Exp19DM02_inoc1_T6_P20,fichier total,Exp19DM02,3,inoc1,19,,EXP-2019
-644,3,2.0,3,1,3,c,1,Exp19DM02_inoc1_T6_P20,fichier total,Exp19DM02,3,inoc1,19,,EXP-2019
-645,5,2.0,3,1,3,c,1,Exp19DM04_inoc2_T6_P18,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-646,3,2.0,3,1,3,c,1,Exp19DM03_inoc1_T7_P13,fichier total,Exp19DM03,3,inoc1,19,,EXP-2019
-647,7,4.0,5,1,3,a,1,Exp19DM02_inoc2_T6_P33,fichier total,Exp19DM02,5,inoc2,19,,EXP-2019
-648,5,2.0,,1,3,b,1,Exp19DM04_inoc1_T6_P19,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-649,5,2.0,,1,3,b,1,Exp19DM04_inoc1_T6_P30,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-650,5,3.0,9,1,3,c,0,Exp19DM09_inoc1_T4_P11,4dpi,Exp19DM09,,NA,19,4,EXP-2019
-651,7,1.0,5,1,3,c,1,Exp19DM02_inoc1_T6_P18,fichier total,Exp19DM02,3,inoc1,19,,EXP-2019
-652,5,4.0,5,1,3,b,1,Exp19DM02_inoc2_T6_P33,fichier total,Exp19DM02,5,inoc2,19,,EXP-2019
-653,7,3.0,7,1,5,a,1,Exp19DM06_inoc2_T6_P04,fichier total,Exp19DM06,9,inoc2,19,,EXP-2019
-654,3,4.0,5,1,5,a,1,Exp19DM02_inoc1_T6_P10,fichier total,Exp19DM02,7,inoc1,19,,EXP-2019
-655,3,4.0,5,1,5,a,1,Exp19DM03_inoc1_T7_P13,fichier total,Exp19DM03,5,inoc1,19,,EXP-2019
-656,5,3.0,7,1,5,b,1,Exp19DM03_inoc1_T7_P38,fichier total,Exp19DM03,9,inoc1,19,,EXP-2019
-657,5,3.0,7,1,5,a,1,Exp19DM03_inoc1_T7_P38,fichier total,Exp19DM03,9,inoc1,19,,EXP-2019
-658,5,3.0,3,1,5,a,1,Exp19DM04_inoc2_T6_P01,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-659,,2.0,5,,5,c,1,Exp19DM04_inoc2_T6_P02,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-660,7,3.0,7,1,5,c,1,Exp19DM06_inoc2_T6_P04,fichier total,Exp19DM06,9,inoc2,19,,EXP-2019
-661,3,1.0,5,1,5,b,1,Exp19DM03_inoc2_T7_P34,fichier total,Exp19DM03,5,inoc2,19,,EXP-2019
-662,5,3.0,5,1,5,c,1,Exp19DM03_inoc1_T7_P33,fichier total,Exp19DM03,5,inoc1,19,,EXP-2019
-663,7,4.0,7,1,7,b,1,Exp19DM03_inoc2_T7_P01,fichier total,Exp19DM03,9,inoc2,19,,EXP-2019
-664,9,3.0,7,1,7,a,1,Exp19DM09_inoc1_T4_P01,4dpi,Exp19DM09,9,NA,19,4,EXP-2019
-665,5,1.0,7,1,7,c,1,Exp19DM02_inoc2_T6_P12,fichier total,Exp19DM02,9,inoc2,19,,EXP-2019
-666,9,4.0,5,1,7,b,1,Exp19DM09_inoc1_T4_P05,4dpi,Exp19DM09,5,NA,19,4,EXP-2019
-667,7,1.0,7,1,7,a,1,Exp19DM06_inoc2_T6_P10,fichier total,Exp19DM06,7,inoc2,19,,EXP-2019
-668,7,3.0,7,1,7,c,1,Exp19DM06_inoc2_T6_P06,fichier total,Exp19DM06,9,inoc2,19,,EXP-2019
-669,7,2.0,5,1,7,b,1,Exp19DM04_inoc1_T6_P24,fichier total,Exp19DM04,5,inoc1,19,,EXP-2019
-670,9,4.0,7,1,7,a,1,Exp19DM02_inoc1_T6_P25,fichier total,Exp19DM02,7,inoc1,19,,EXP-2019
-671,9,4.0,5,1,7,c,1,Exp19DM02_inoc1_T6_P27,fichier total,Exp19DM02,3,inoc1,19,,EXP-2019
-672,9,1.0,,1,7,a,1,Exp19DM04_inoc1_T6_P55,fichier total,Exp19DM04,5,inoc1,19,,EXP-2019
-673,5,2.0,9,1,9,c,0,Exp19DM06_inoc2_T6_P04,fichier total,Exp19DM06,,inoc2,19,,EXP-2019
-674,9,1.0,9,,9,c,0,Exp19DM04_inoc1_T6_P02,fichier total,Exp19DM04,,inoc1,19,,EXP-2019
-675,7,3.0,9,1,9,b,0,Exp19DM02_inoc1_T6_P30,fichier total,Exp19DM02,,inoc1,19,,EXP-2019
-676,7,2.0,9,1,9,a,0,Exp19DM02_inoc2_T6_P16,fichier total,Exp19DM02,,inoc2,19,,EXP-2019
-677,9,3.0,9,1,9,a,0,Exp19DM02_inoc1_T6_P18,fichier total,Exp19DM02,,inoc1,19,,EXP-2019
-678,5,2.0,5,1,9,c,1,Exp19DM03_inoc1_T7_P12,fichier total,Exp19DM03,5,inoc1,19,,EXP-2019
-679,7,4.0,9,1,9,c,0,Exp19DM03_inoc2_T7_P03,fichier total,Exp19DM03,,inoc2,19,,EXP-2019
-680,7,2.0,9,1,9,b,0,Exp19DM02_inoc2_T6_P28,fichier total,Exp19DM02,,inoc2,19,,EXP-2019
-681,7,2.0,7,1,9,c,1,Exp19DM03_inoc1_T7_P11,fichier total,Exp19DM03,9,inoc1,19,,EXP-2019
-682,5,1.0,7,1,9,b,1,Exp19DM03_inoc1_T7_P15,fichier total,Exp19DM03,9,inoc1,19,,EXP-2019
-683,1,3.0,1,1,,a,1,Exp19DM04_inoc2_T6_P12,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-684,1,4.0,3,1,1,c,1,Exp19DM04_inoc2_T6_P24,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-685,1,2.0,1,1,,a,1,Exp19DM04_inoc2_T6_P12,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-686,1,4.0,1,1,1,c,1,Exp19DM04_inoc2_T6_P11,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-687,1,2.0,5,,1,c,1,Exp19DM02_inoc2_T6_P14,fichier total,Exp19DM02,5,inoc2,19,,EXP-2019
-688,1,3.0,,1,3,b,1,Exp19DM04_inoc2_T6_P33,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-689,1,3.0,3,1,1,a,1,Exp19DM04_inoc1_T6_P24,fichier total,Exp19DM04,5,inoc1,19,,EXP-2019
-690,1,4.0,1,1,3,c,1,Exp19DM04_inoc2_T6_P17,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-691,1,1.0,1,1,3,a,1,Exp19DM04_inoc1_T6_P14,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-692,1,4.0,1,1,1,a,1,Exp19DM04_inoc2_T6_P23,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-693,3,1.0,5,1,5,b,1,Exp19DM03_inoc1_T7_P32,fichier total,Exp19DM03,7,inoc1,19,,EXP-2019
-694,3,4.0,3,1,1,c,1,Exp19DM02_inoc2_T6_P22,fichier total,Exp19DM02,1,inoc2,19,,EXP-2019
-695,3,3.0,,1,3,b,1,Exp19DM04_inoc2_T6_P46,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-696,3,3.0,1,1,3,b,1,Exp19DM04_inoc2_T6_P40,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-697,3,3.0,7,1,5,c,1,Exp19DM02_inoc2_T6_P08,fichier total,Exp19DM02,7,inoc2,19,,EXP-2019
-698,3,2.0,7,1,5,b,1,Exp19DM02_inoc2_T6_P10,fichier total,Exp19DM02,7,inoc2,19,,EXP-2019
-699,3,2.0,,1,3,b,1,Exp19DM04_inoc2_T6_P38,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-700,3,4.0,3,1,3,c,1,Exp19DM04_inoc1_T6_P26,fichier total,Exp19DM04,1,inoc1,19,,EXP-2019
-701,3,2.0,7,1,5,a,1,Exp19DM02_inoc2_T6_P10,fichier total,Exp19DM02,7,inoc2,19,,EXP-2019
-702,3,4.0,5,1,5,b,1,Exp19DM02_inoc1_T6_P22,fichier total,Exp19DM02,5,inoc1,19,,EXP-2019
-703,5,4.0,,1,3,a,1,Exp19DM04_inoc1_T6_P24,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-704,5,2.0,5,1,7,b,1,Exp19DM03_inoc1_T7_P35,fichier total,Exp19DM03,7,inoc1,19,,EXP-2019
-705,5,1.0,9,1,9,a,0,Exp19DM02_inoc1_T6_P14,fichier total,Exp19DM02,,inoc1,19,,EXP-2019
-706,5,4.0,5,1,5,b,1,Exp19DM02_inoc2_T6_P03,fichier total,Exp19DM02,5,inoc2,19,,EXP-2019
-707,5,3.0,5,1,3,b,1,Exp19DM02_inoc1_T6_P16,fichier total,Exp19DM02,5,inoc1,19,,EXP-2019
-708,5,4.0,7,1,3,a,1,Exp19DM02_inoc2_T6_P34,fichier total,Exp19DM02,7,inoc2,19,,EXP-2019
-709,5,1.0,5,1,3,b,1,Exp19DM03_inoc1_T7_P41,fichier total,Exp19DM03,3,inoc1,19,,EXP-2019
-710,5,2.0,5,1,3,a,1,Exp19DM03_inoc2_T7_P31,fichier total,Exp19DM03,5,inoc2,19,,EXP-2019
-711,5,4.0,5,1,7,c,1,Exp19DM02_inoc1_T6_P03,fichier total,Exp19DM02,3,inoc1,19,,EXP-2019
-712,5,3.0,1,1,3,c,1,Exp19DM04_inoc2_T6_P29,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-713,7,4.0,3,1,7,c,1,Exp19DM04_inoc2_T6_P03,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-714,7,3.0,7,1,7,a,1,Exp19DM06_inoc2_T6_P12,fichier total,Exp19DM06,9,inoc2,19,,EXP-2019
-715,7,3.0,5,1,7,a,1,Exp19DM03_inoc1_T7_P07,fichier total,Exp19DM03,5,inoc1,19,,EXP-2019
-716,7,3.0,,1,7,a,1,Exp19DM04_inoc1_T6_P09,fichier total,Exp19DM04,5,inoc1,19,,EXP-2019
-717,7,2.0,5,1,7,b,1,Exp19DM03_inoc2_T7_P25,fichier total,Exp19DM03,5,inoc2,19,,EXP-2019
-718,7,4.0,9,1,9,c,0,Exp19DM06_inoc2_T6_P12,fichier total,Exp19DM06,,inoc2,19,,EXP-2019
-719,7,3.0,7,1,7,b,1,Exp19DM06_inoc2_T6_P10,fichier total,Exp19DM06,9,inoc2,19,,EXP-2019
-720,7,2.0,5,1,7,b,1,Exp19DM02_inoc1_T6_P30,fichier total,Exp19DM02,5,inoc1,19,,EXP-2019
-721,7,2.0,7,1,7,b,1,Exp19DM09_inoc1_T4_P06,4dpi,Exp19DM09,7,NA,19,4,EXP-2019
-722,7,3.0,7,1,7,a,1,Exp19DM03_inoc2_T7_P24,fichier total,Exp19DM03,7,inoc2,19,,EXP-2019
-723,9,1.0,7,1,5,b,1,Exp19DM06_inoc2_T6_P05,fichier total,Exp19DM06,9,inoc2,19,,EXP-2019
-724,9,4.0,5,,7,a,1,Exp19DM04_inoc1_T6_P03,fichier total,Exp19DM04,5,inoc1,19,,EXP-2019
-725,9,1.0,9,1,9,c,0,Exp19DM04_inoc2_T6_P02,fichier total,Exp19DM04,,inoc2,19,,EXP-2019
-726,9,2.0,7,1,7,b,1,Exp19DM09_inoc1_T4_P12,4dpi,Exp19DM09,9,NA,19,4,EXP-2019
-727,9,1.0,7,1,5,a,1,Exp19DM06_inoc2_T6_P05,fichier total,Exp19DM06,7,inoc2,19,,EXP-2019
-728,9,4.0,9,,7,b,0,Exp19DM04_inoc1_T6_P01,fichier total,Exp19DM04,,inoc1,19,,EXP-2019
-729,9,3.0,7,1,7,c,1,Exp19DM09_inoc1_T4_P02,4dpi,Exp19DM09,9,NA,19,4,EXP-2019
-730,9,3.0,7,1,7,b,1,Exp19DM09_inoc1_T4_P02,4dpi,Exp19DM09,9,NA,19,4,EXP-2019
-731,9,2.0,9,1,9,b,0,Exp19DM02_inoc2_T6_P04,fichier total,Exp19DM02,,inoc2,19,,EXP-2019
-732,9,3.0,7,1,7,c,1,Exp19DM03_inoc1_T7_P26,fichier total,Exp19DM03,9,inoc1,19,,EXP-2019
-733,,3.0,1,0,,b,1,Exp19DM02_inoc2_T6_P05,fichier total,Exp19DM02,1,inoc2,19,,EXP-2019
-734,,1.0,1,0,,a,1,Exp19DM04_inoc2_T6_P46,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-735,,1.0,1,0,,b,1,Exp19DM03_inoc1_T7_P36,fichier total,Exp19DM03,3,inoc1,19,,EXP-2019
-736,,2.0,1,,,a,1,Exp19DM04_inoc1_T6_P20,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-737,5,3.0,1,1,3,c,1,Exp19DM04_inoc2_T6_P14,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-738,3,4.0,1,1,3,c,1,Exp19DM04_inoc2_T6_P46,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-739,,3.0,1,,,b,1,Exp19DM03_inoc2_T7_P39,fichier total,Exp19DM03,3,inoc2,19,,EXP-2019
-740,,3.0,1,0,,a,1,Exp19DM04_inoc2_T6_P21,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-741,,3.0,1,,,c,1,Exp19DM03_inoc2_T7_P37,fichier total,Exp19DM03,1,inoc2,19,,EXP-2019
-742,,2.0,1,0,,c,1,Exp19DM03_inoc1_T7_P39,fichier total,Exp19DM03,3,inoc1,19,,EXP-2019
-743,,2.0,3,,,b,1,Exp19DM04_inoc2_T6_P41,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-744,,2.0,3,0,,a,1,Exp19DM04_inoc2_T6_P58,fichier total,Exp19DM04,1,inoc2,19,,EXP-2019
-745,,1.0,3,0,,c,1,Exp19DM04_inoc1_T6_P39,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-746,,2.0,3,,,c,1,Exp19DM04_inoc1_T6_P54,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-747,,2.0,3,0,,b,1,Exp19DM02_inoc1_T6_P14,fichier total,Exp19DM02,3,inoc1,19,,EXP-2019
-748,,2.0,3,0,,b,1,Exp19DM04_inoc1_T6_P45,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-749,,2.0,3,0,,a,1,Exp19DM04_inoc2_T6_P47,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-750,,1.0,3,0,,c,1,Exp19DM09_inoc1_T4_P05,4dpi,Exp19DM09,3,NA,19,4,EXP-2019
-751,,1.0,3,,,b,1,Exp19DM04_inoc2_T6_P48,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-752,,4.0,3,,,b,1,Exp19DM04_inoc1_T6_P12,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-753,5,2.0,5,1,3,c,1,Exp19DM02_inoc2_T6_P08,fichier total,Exp19DM02,5,inoc2,19,,EXP-2019
-754,,4.0,5,0,,a,1,Exp19DM04_inoc1_T6_P34,fichier total,Exp19DM04,5,inoc1,19,,EXP-2019
-755,,3.0,5,0,,a,1,Exp19DM02_inoc1_T6_P32,fichier total,Exp19DM02,5,inoc1,19,,EXP-2019
-756,,1.0,5,,,b,1,Exp19DM04_inoc1_T6_P13,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-757,,3.0,5,,,b,1,Exp19DM04_inoc1_T6_P34,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-758,,2.0,5,,,c,1,Exp19DM04_inoc2_T6_P47,fichier total,Exp19DM04,3,inoc2,19,,EXP-2019
-759,,2.0,5,,,c,1,Exp19DM04_inoc2_T6_P50,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-760,,2.0,5,0,,c,1,Exp19DM04_inoc2_T6_P09,fichier total,Exp19DM04,5,inoc2,19,,EXP-2019
-761,,2.0,5,,,c,1,Exp19DM04_inoc1_T6_P18,fichier total,Exp19DM04,3,inoc1,19,,EXP-2019
-762,7,3.0,7,1,7,b,1,Exp19DM02_inoc1_T6_P08,fichier total,Exp19DM02,9,inoc1,19,,EXP-2019
-763,7,1.0,7,1,7,a,1,Exp19DM02_inoc2_T6_P05,fichier total,Exp19DM02,9,inoc2,19,,EXP-2019
-764,7,4.0,7,1,7,b,1,Exp19DM04_inoc2_T6_P01,fichier total,Exp19DM04,7,inoc2,19,,EXP-2019
-765,,1.0,7,0,,b,1,Exp19DM09_inoc1_T4_P07,4dpi,Exp19DM09,7,NA,19,4,EXP-2019
-766,7,1.0,7,1,7,a,1,Exp19DM03_inoc2_T7_P24,fichier total,Exp19DM03,5,inoc2,19,,EXP-2019
-767,,1.0,7,0,,c,1,Exp19DM03_inoc2_T7_P19,fichier total,Exp19DM03,7,inoc2,19,,EXP-2019
-768,3,4.0,7,1,5,a,1,Exp19DM02_inoc2_T6_P10,fichier total,Exp19DM02,7,inoc2,19,,EXP-2019
-769,7,4.0,7,1,7,c,1,Exp19DM06_inoc2_T6_P07,fichier total,Exp19DM06,7,inoc2,19,,EXP-2019
-770,7,1.0,7,,7,b,1,Exp19DM04_inoc1_T6_P04,fichier total,Exp19DM04,9,inoc1,19,,EXP-2019
-771,7,2.0,9,1,9,b,0,Exp19DM02_inoc2_T6_P16,fichier total,Exp19DM02,,inoc2,19,,EXP-2019
-772,,1.0,9,,9,c,0,Exp19DM04_inoc2_T6_P02,fichier total,Exp19DM04,,inoc2,19,,EXP-2019
-773,,1.0,9,,9,b,0,Exp19DM04_inoc2_T6_P02,fichier total,Exp19DM04,,inoc2,19,,EXP-2019
-774,,1.0,9,,9,b,0,Exp19DM04_inoc2_T6_P03,fichier total,Exp19DM04,,inoc2,19,,EXP-2019
-775,7,1.0,9,1,9,b,0,Exp19DM06_inoc2_T6_P08,fichier total,Exp19DM06,,inoc2,19,,EXP-2019
-776,7,1.0,9,1,9,b,0,Exp19DM02_inoc1_T6_P02,fichier total,Exp19DM02,,inoc1,19,,EXP-2019
-777,9,1.0,9,1,7,a,0,Exp19DM09_inoc1_T4_P09,4dpi,Exp19DM09,,NA,19,4,EXP-2019
-778,9,4.0,9,,7,c,0,Exp19DM04_inoc1_T6_P01,fichier total,Exp19DM04,,inoc1,19,,EXP-2019
-779,7,1.0,9,1,7,b,0,Exp19DM02_inoc2_T6_P26,fichier total,Exp19DM02,,inoc2,19,,EXP-2019
-780,9,1.0,9,,9,c,0,Exp19DM04_inoc1_T6_P03,fichier total,Exp19DM04,,inoc1,19,,EXP-2019
-781,,2.0,1,0,,b,1,Exp20DM01_inoc2_T6_P28,fichier total,Exp20DM01,1,inoc2,20,,EXP-2020
-782,,2.0,3,0,,b,1,Exp20DM02_inoc2_T6_P01,fichier total,Exp20DM02,1,inoc2,20,,EXP-2020
-783,,3.0,3,0,,b,1,Exp20DM02_inoc2_T6_P11,fichier total,Exp20DM02,1,inoc2,20,,EXP-2020
-784,,4.0,1,0,,c,1,Exp20DM02_inoc2_T6_P41,fichier total,Exp20DM02,1,inoc2,20,,EXP-2020
-785,,1.0,1,0,,c,1,Exp20DM02_inoc1_T6_P01,fichier total,Exp20DM02,1,inoc1,20,,EXP-2020
-786,,3.0,,0,,c,1,Exp20DM04_inoc1_T6_P05,fichier total,Exp20DM04,1,inoc1,20,,EXP-2020
-787,,4.0,3,0,,b,1,Exp20DM02_inoc2_T6_P05,fichier total,Exp20DM02,1,inoc2,20,,EXP-2020
-788,,3.0,3,0,,a,1,Exp20DM02_inoc2_T6_P05,fichier total,Exp20DM02,1,inoc2,20,,EXP-2020
-789,,2.0,,0,,c,1,Exp20DM04_inoc1_T6_P31,fichier total,Exp20DM04,1,inoc1,20,,EXP-2020
-790,,3.0,3,0,,a,1,Exp20DM02_inoc1_T6_P26,fichier total,Exp20DM02,1,inoc1,20,,EXP-2020
-791,,1.0,1,0,,a,1,Exp20DM01_inoc2_T6_P03,fichier total,Exp20DM01,3,inoc2,20,,EXP-2020
-792,,4.0,3,0,,b,1,Exp20DM04_inoc1_T6_P35,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-793,,4.0,3,0,,c,1,Exp20DM02_inoc2_T6_P03,fichier total,Exp20DM02,3,inoc2,20,,EXP-2020
-794,,3.0,,0,,b,1,Exp20DM04_inoc1_T6_P33,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-795,,2.0,3,0,,b,1,Exp20DM04_inoc1_T6_P17,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-796,,2.0,3,0,,a,1,Exp20DM04_inoc1_T6_P16,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-797,,4.0,3,0,,b,1,Exp20DM02_inoc1_T6_P22,fichier total,Exp20DM02,3,inoc1,20,,EXP-2020
-798,,3.0,1,0,,b,1,Exp20DM02_inoc2_T6_P37,fichier total,Exp20DM02,3,inoc2,20,,EXP-2020
-799,5,3.0,3,1,3,a,1,Exp20DM01_inoc2_T6_P37,fichier total,Exp20DM01,3,inoc2,20,,EXP-2020
-800,5,1.0,,1,3,b,1,Exp20DM04_inoc1_T6_P37,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-801,,4.0,5,0,,a,1,Exp20DM01_inoc2_T6_P10,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-802,,2.0,3,0,,a,1,Exp20DM01_inoc2_T6_P38,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-803,,2.0,3,0,,c,1,Exp20DM01_inoc2_T6_P46,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-804,,2.0,3,0,,c,1,Exp20DM01_inoc2_T6_P38,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-805,7,1.0,5,1,7,c,1,Exp20DM02_inoc1_T6_P21,fichier total,Exp20DM02,5,inoc1,20,,EXP-2020
-806,5,1.0,5,1,5,c,1,Exp20DM02_inoc1_T6_P45,fichier total,Exp20DM02,5,inoc1,20,,EXP-2020
-807,3,4.0,7,1,5,b,1,Exp20DM03_inoc1_T6_P07,fichier total,Exp20DM03,5,inoc1,20,,EXP-2020
-808,,2.0,5,0,,b,1,Exp20DM02_inoc2_T6_P41,fichier total,Exp20DM02,5,inoc2,20,,EXP-2020
-809,,3.0,5,0,,c,1,Exp20DM01_inoc2_T6_P39,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-810,,3.0,1,0,,a,1,Exp20DM02_inoc2_T6_P04,fichier total,Exp20DM02,5,inoc2,20,,EXP-2020
-811,7,1.0,5,1,5,b,1,Exp20DM02_inoc2_T6_P45,fichier total,Exp20DM02,7,inoc2,20,,EXP-2020
-812,5,1.0,7,1,7,c,1,Exp20DM02_inoc1_T6_P19,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-813,3,4.0,7,1,5,a,1,Exp20DM01_inoc2_T6_P46,fichier total,Exp20DM01,7,inoc2,20,,EXP-2020
-814,,3.0,5,0,,a,1,Exp20DM04_inoc1_T6_P02,fichier total,Exp20DM04,7,inoc1,20,,EXP-2020
-815,7,1.0,7,1,5,a,1,Exp20DM01_inoc2_T6_P05,fichier total,Exp20DM01,7,inoc2,20,,EXP-2020
-816,5,1.0,7,1,7,b,1,Exp20DM03_inoc2_T6_P20,fichier total,Exp20DM03,7,inoc2,20,,EXP-2020
-817,7,4.0,7,1,7,b,1,Exp20DM03_inoc2_T6_P15,fichier total,Exp20DM03,7,inoc2,20,,EXP-2020
-818,3,4.0,7,1,5,b,1,Exp20DM02_inoc1_T6_P09,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-819,3,4.0,7,1,5,b,1,Exp20DM01_inoc2_T6_P46,fichier total,Exp20DM01,7,inoc2,20,,EXP-2020
-820,7,1.0,7,1,7,c,1,Exp20DM03_inoc1_T6_P05,fichier total,Exp20DM03,7,inoc1,20,,EXP-2020
-821,7,4.0,7,1,7,a,1,Exp20DM02_inoc1_T6_P31,fichier total,Exp20DM02,9,inoc1,20,,EXP-2020
-822,9,3.0,7,1,7,b,1,Exp20DM01_inoc2_T6_P07,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-823,5,2.0,7,1,5,a,1,Exp20DM02_inoc2_T6_P42,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-824,5,2.0,7,1,5,c,1,Exp20DM01_inoc2_T6_P11,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-825,9,4.0,7,1,7,b,1,Exp20DM02_inoc2_T6_P28,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-826,,4.0,7,0,,a,1,Exp20DM02_inoc2_T6_P27,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-827,9,4.0,7,1,7,a,1,Exp20DM01_inoc2_T6_P01,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-828,7,4.0,7,1,7,c,1,Exp20DM02_inoc2_T6_P22,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-829,9,3.0,7,1,7,a,1,Exp20DM02_inoc1_T6_P43,fichier total,Exp20DM02,9,inoc1,20,,EXP-2020
-830,7,4.0,7,1,7,c,1,Exp20DM04_inoc1_T6_P01,fichier total,Exp20DM04,9,inoc1,20,,EXP-2020
-831,3,4.0,1,1,1,c,1,Exp20DM02_inoc1_T6_P29,fichier total,Exp20DM02,3,inoc1,20,,EXP-2020
-832,3,2.0,5,1,1,b,1,Exp20DM01_inoc2_T6_P22,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-833,5,3.0,1,1,1,b,1,Exp20DM02_inoc1_T6_P38,fichier total,Exp20DM02,3,inoc1,20,,EXP-2020
-834,5,3.0,1,1,1,a,1,Exp20DM02_inoc1_T6_P41,fichier total,Exp20DM02,3,inoc1,20,,EXP-2020
-835,3,3.0,,1,1,a,1,Exp20DM04_inoc1_T6_P08,fichier total,Exp20DM04,5,inoc1,20,,EXP-2020
-836,3,2.0,5,1,1,a,1,Exp20DM01_inoc2_T6_P22,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-837,5,1.0,3,1,1,b,1,Exp20DM02_inoc1_T6_P25,fichier total,Exp20DM02,1,inoc1,20,,EXP-2020
-838,5,4.0,3,1,1,a,1,Exp20DM02_inoc1_T6_P29,fichier total,Exp20DM02,3,inoc1,20,,EXP-2020
-839,3,1.0,3,1,1,a,1,Exp20DM02_inoc1_T6_P25,fichier total,Exp20DM02,1,inoc1,20,,EXP-2020
-840,5,1.0,3,1,1,c,1,Exp20DM02_inoc1_T6_P25,fichier total,Exp20DM02,1,inoc1,20,,EXP-2020
-841,5,1.0,,1,3,b,1,Exp20DM04_inoc1_T6_P27,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-842,5,1.0,9,1,3,a,0,Exp20DM02_inoc2_T6_P08,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-843,5,1.0,,1,3,a,1,Exp20DM04_inoc1_T6_P37,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-844,3,2.0,5,1,3,c,1,Exp20DM02_inoc1_T6_P37,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-845,7,1.0,9,1,3,b,0,Exp20DM02_inoc2_T6_P12,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-846,9,2.0,7,1,3,c,1,Exp20DM02_inoc2_T6_P14,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-847,5,2.0,3,1,3,a,1,Exp20DM02_inoc1_T6_P22,fichier total,Exp20DM02,3,inoc1,20,,EXP-2020
-848,5,4.0,7,1,3,c,1,Exp20DM03_inoc1_T6_P12,fichier total,Exp20DM03,7,inoc1,20,,EXP-2020
-849,9,2.0,7,1,3,a,1,Exp20DM02_inoc2_T6_P14,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-850,7,1.0,9,1,5,a,0,Exp20DM01_inoc2_T6_P22,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-851,9,2.0,3,1,5,a,1,Exp20DM04_inoc1_T6_P11,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-852,7,3.0,7,1,5,b,1,Exp20DM02_inoc1_T6_P10,fichier total,Exp20DM02,9,inoc1,20,,EXP-2020
-853,7,3.0,9,1,5,a,0,Exp20DM02_inoc2_T6_P43,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-854,3,4.0,7,1,5,a,1,Exp20DM03_inoc1_T6_P07,fichier total,Exp20DM03,5,inoc1,20,,EXP-2020
-855,7,4.0,7,1,5,c,1,Exp20DM02_inoc2_T6_P09,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-856,5,4.0,7,1,5,c,1,Exp20DM02_inoc2_T6_P43,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-857,5,4.0,7,1,5,b,1,Exp20DM01_inoc2_T6_P40,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-858,7,1.0,9,1,5,b,0,Exp20DM02_inoc2_T6_P42,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-859,7,3.0,7,1,5,b,1,Exp20DM02_inoc1_T6_P44,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-860,7,2.0,7,1,7,a,1,Exp20DM02_inoc2_T6_P21,fichier total,Exp20DM02,7,inoc2,20,,EXP-2020
-861,7,3.0,7,1,7,c,1,Exp20DM02_inoc1_T6_P29,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-862,5,1.0,7,1,7,c,1,Exp20DM03_inoc2_T6_P18,fichier total,Exp20DM03,7,inoc2,20,,EXP-2020
-863,9,3.0,7,1,7,b,1,Exp20DM02_inoc1_T6_P28,fichier total,Exp20DM02,9,inoc1,20,,EXP-2020
-864,7,2.0,7,1,7,c,1,Exp20DM01_inoc2_T6_P12,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-865,7,3.0,7,1,7,b,1,Exp20DM02_inoc2_T6_P10,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-866,7,1.0,9,1,7,a,0,Exp20DM02_inoc2_T6_P38,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-867,9,2.0,9,1,7,a,0,Exp20DM01_inoc2_T6_P53,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-868,9,1.0,7,1,7,a,1,Exp20DM02_inoc1_T6_P07,fichier total,Exp20DM02,9,inoc1,20,,EXP-2020
-869,7,2.0,9,1,7,c,0,Exp20DM02_inoc2_T6_P38,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-870,5,3.0,9,1,9,b,0,Exp20DM02_inoc1_T6_P21,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-871,7,3.0,9,1,9,a,0,Exp20DM01_inoc2_T6_P33,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-872,7,3.0,9,1,9,b,0,Exp20DM01_inoc2_T6_P33,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-873,7,2.0,9,1,9,a,0,Exp20DM04_inoc1_T6_P04,fichier total,Exp20DM04,,inoc1,20,,EXP-2020
-874,3,1.0,9,1,9,c,0,Exp20DM02_inoc1_T6_P17,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-875,5,3.0,9,1,9,c,0,Exp20DM02_inoc1_T6_P21,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-876,7,2.0,9,1,9,a,0,Exp20DM02_inoc1_T6_P19,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-877,9,2.0,9,1,9,c,0,Exp20DM04_inoc1_T6_P24,fichier total,Exp20DM04,,inoc1,20,,EXP-2020
-878,3,2.0,9,1,9,c,0,Exp20DM02_inoc1_T6_P34,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-879,9,2.0,9,1,9,a,0,Exp20DM04_inoc1_T6_P24,fichier total,Exp20DM04,,inoc1,20,,EXP-2020
-880,3,1.0,9,1,9,b,0,Exp20DM02_inoc1_T6_P17,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-881,3,1.0,9,1,5,a,0,Exp20DM01_inoc2_T6_P14,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-882,3,2.0,9,1,9,a,0,Exp20DM02_inoc1_T6_P34,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-883,3,3.0,5,1,5,a,1,Exp20DM03_inoc1_T6_P07,fichier total,Exp20DM03,5,inoc1,20,,EXP-2020
-884,3,2.0,5,1,5,b,1,Exp20DM01_inoc2_T6_P48,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-885,3,4.0,5,1,3,a,1,Exp20DM01_inoc2_T6_P47,fichier total,Exp20DM01,7,inoc2,20,,EXP-2020
-886,3,1.0,7,1,5,c,1,Exp20DM01_inoc2_T6_P14,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-887,3,3.0,9,1,9,a,0,Exp20DM02_inoc1_T6_P36,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-888,5,4.0,3,1,5,a,1,Exp20DM04_inoc1_T6_P11,fichier total,Exp20DM04,5,inoc1,20,,EXP-2020
-889,5,3.0,5,1,5,b,1,Exp20DM01_inoc2_T6_P21,fichier total,Exp20DM01,5,inoc2,20,,EXP-2020
-890,5,2.0,7,1,7,c,1,Exp20DM02_inoc1_T6_P21,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-891,5,2.0,5,1,3,b,1,Exp20DM02_inoc1_T6_P37,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-892,5,3.0,7,1,5,c,1,Exp20DM01_inoc2_T6_P23,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-893,5,4.0,7,1,7,a,1,Exp20DM03_inoc2_T6_P15,fichier total,Exp20DM03,9,inoc2,20,,EXP-2020
-894,5,1.0,7,1,7,a,1,Exp20DM02_inoc1_T6_P34,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-895,5,1.0,7,1,5,b,1,Exp20DM01_inoc2_T6_P15,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-896,5,1.0,5,1,5,c,1,Exp20DM02_inoc2_T6_P10,fichier total,Exp20DM02,5,inoc2,20,,EXP-2020
-897,7,1.0,9,1,3,c,0,Exp20DM02_inoc2_T6_P12,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-898,7,2.0,5,1,7,a,1,Exp20DM02_inoc1_T6_P40,fichier total,Exp20DM02,5,inoc1,20,,EXP-2020
-899,7,1.0,9,1,7,a,0,Exp20DM02_inoc1_T6_P41,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-900,7,2.0,7,1,7,b,1,Exp20DM02_inoc1_T6_P36,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-901,7,1.0,5,1,7,c,1,Exp20DM02_inoc2_T6_P13,fichier total,Exp20DM02,5,inoc2,20,,EXP-2020
-902,7,4.0,7,1,7,a,1,Exp20DM02_inoc2_T6_P37,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-903,7,4.0,9,1,7,b,0,Exp20DM01_inoc2_T6_P13,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-904,7,2.0,7,1,7,c,1,Exp20DM02_inoc1_T6_P39,fichier total,Exp20DM02,5,inoc1,20,,EXP-2020
-905,7,1.0,7,1,5,c,1,Exp20DM02_inoc2_T6_P33,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-906,9,2.0,9,1,7,c,1,Exp20DM01_inoc2_T6_P02,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-907,9,3.0,9,1,7,c,0,Exp20DM02_inoc1_T6_P14,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-908,9,1.0,9,1,5,c,0,Exp20DM01_inoc2_T6_P46,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-909,9,4.0,7,1,7,b,1,Exp20DM01_inoc2_T6_P28,fichier total,Exp20DM01,7,inoc2,20,,EXP-2020
-910,9,2.0,9,1,9,b,0,Exp20DM02_inoc2_T6_P04,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-911,9,1.0,9,1,7,a,0,Exp20DM02_inoc1_T6_P26,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-912,9,2.0,9,1,7,b,0,Exp20DM02_inoc2_T6_P23,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-913,9,3.0,7,1,7,c,1,Exp20DM01_inoc2_T6_P07,fichier total,Exp20DM01,7,inoc2,20,,EXP-2020
-914,,2.0,1,0,,b,1,Exp20DM01_inoc2_T6_P51,fichier total,Exp20DM01,1,inoc2,20,,EXP-2020
-915,,4.0,1,0,,c,1,Exp20DM01_inoc2_T6_P39,fichier total,Exp20DM01,3,inoc2,20,,EXP-2020
-916,,1.0,1,0,,b,1,Exp20DM02_inoc2_T6_P31,fichier total,Exp20DM02,3,inoc2,20,,EXP-2020
-917,,2.0,1,0,,c,,Exp20DM04_inoc2_T6_P30,fichier total,Exp20DM04,,inoc2,20,,EXP-2020
-918,,2.0,1,0,,a,1,Exp20DM03_inoc1_T6_P01,fichier total,Exp20DM03,3,inoc1,20,,EXP-2020
-919,3,3.0,1,1,1,c,1,Exp20DM02_inoc1_T6_P41,fichier total,Exp20DM02,3,inoc1,20,,EXP-2020
-920,,1.0,1,0,,c,,Exp20DM04_inoc2_T6_P12,fichier total,Exp20DM04,,inoc2,20,,EXP-2020
-921,,1.0,1,0,,c,1,Exp20DM02_inoc1_T6_P37,fichier total,Exp20DM02,3,inoc1,20,,EXP-2020
-922,,3.0,1,0,,b,1,Exp20DM04_inoc1_T6_P36,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-923,,2.0,1,0,,b,1,Exp20DM02_inoc2_T6_P28,fichier total,Exp20DM02,3,inoc2,20,,EXP-2020
-924,,1.0,3,0,,a,1,Exp20DM04_inoc1_T6_P38,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-925,,3.0,3,1,,b,,Exp20DM04_inoc2_T6_P14,fichier total,Exp20DM04,,inoc2,20,,EXP-2020
-926,,4.0,3,0,,a,1,Exp20DM01_inoc2_T6_P37,fichier total,Exp20DM01,3,inoc2,20,,EXP-2020
-927,,2.0,3,0,,a,1,Exp20DM04_inoc1_T6_P21,fichier total,Exp20DM04,3,inoc1,20,,EXP-2020
-928,,3.0,3,0,,c,,Exp20DM04_inoc2_T6_P03,fichier total,Exp20DM04,,inoc2,20,,EXP-2020
-929,,2.0,3,0,,b,1,Exp20DM02_inoc2_T6_P31,fichier total,Exp20DM02,1,inoc2,20,,EXP-2020
-930,,3.0,3,0,,b,,Exp20DM01_inoc1_T6_P41,fichier total,Exp20DM01,,inoc1,20,,EXP-2020
-931,,2.0,3,0,,c,,Exp20DM04_inoc2_T6_P35,fichier total,Exp20DM04,,inoc2,20,,EXP-2020
-932,,1.0,3,0,,c,1,Exp20DM03_inoc1_T6_P01,fichier total,Exp20DM03,3,inoc1,20,,EXP-2020
-933,5,1.0,5,1,5,b,1,Exp20DM02_inoc2_T6_P07,fichier total,Exp20DM02,5,inoc2,20,,EXP-2020
-934,,1.0,5,1,,c,,Exp20DM01_inoc1_T6_P34,fichier total,Exp20DM01,,inoc1,20,,EXP-2020
-935,,4.0,5,1,,b,,Exp20DM01_inoc1_T6_P17,fichier total,Exp20DM01,,inoc1,20,,EXP-2020
-936,,3.0,5,0,,a,,Exp20DM04_inoc2_T6_P16,fichier total,Exp20DM04,,inoc2,20,,EXP-2020
-937,,1.0,5,0,,b,1,Exp20DM02_inoc2_T6_P30,fichier total,Exp20DM02,5,inoc2,20,,EXP-2020
-938,,1.0,5,0,,a,1,Exp20DM04_inoc1_T6_P05,fichier total,Exp20DM04,5,inoc1,20,,EXP-2020
-939,,3.0,5,0,,b,1,Exp20DM04_inoc1_T6_P09,fichier total,Exp20DM04,5,inoc1,20,,EXP-2020
-940,,3.0,5,0,,a,,Exp20DM04_inoc2_T6_P32,fichier total,Exp20DM04,,inoc2,20,,EXP-2020
-941,,2.0,5,0,,c,1,Exp20DM01_inoc2_T6_P24,fichier total,Exp20DM01,3,inoc2,20,,EXP-2020
-942,,2.0,7,1,,a,,Exp20DM01_inoc1_T6_P06,fichier total,Exp20DM01,,inoc1,20,,EXP-2020
-943,9,3.0,7,1,7,a,1,Exp20DM02_inoc2_T6_P25,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-944,5,1.0,7,1,5,c,1,Exp20DM01_inoc2_T6_P11,fichier total,Exp20DM01,9,inoc2,20,,EXP-2020
-945,5,2.0,7,1,7,b,1,Exp20DM02_inoc1_T6_P21,fichier total,Exp20DM02,7,inoc1,20,,EXP-2020
-946,,4.0,7,0,,c,1,Exp20DM02_inoc2_T6_P42,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-947,,3.0,7,0,,c,,Exp20DM01_inoc1_T6_P07,fichier total,Exp20DM01,,inoc1,20,,EXP-2020
-948,,3.0,7,1,,c,,Exp20DM01_inoc1_T6_P17,fichier total,Exp20DM01,,inoc1,20,,EXP-2020
-949,7,1.0,7,1,5,b,1,Exp20DM02_inoc2_T6_P33,fichier total,Exp20DM02,9,inoc2,20,,EXP-2020
-950,7,2.0,7,1,3,a,1,Exp20DM02_inoc1_T6_P44,fichier total,Exp20DM02,9,inoc1,20,,EXP-2020
-951,,3.0,7,1,,b,,Exp20DM01_inoc1_T6_P10,fichier total,Exp20DM01,,inoc1,20,,EXP-2020
-952,5,2.0,9,1,3,b,0,Exp20DM02_inoc2_T6_P12,fichier total,Exp20DM02,,inoc2,20,,EXP-2020
-953,9,3.0,9,1,7,b,0,Exp20DM01_inoc2_T6_P36,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-954,5,1.0,9,1,5,a,0,Exp20DM02_inoc1_T6_P08,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-955,,4.0,9,1,,c,,Exp20DM01_inoc1_T6_P45,fichier total,Exp20DM01,,inoc1,20,,EXP-2020
-956,5,2.0,9,1,9,b,0,Exp20DM03_inoc2_T6_P19,fichier total,Exp20DM03,,inoc2,20,,EXP-2020
-957,5,4.0,9,1,7,a,0,Exp20DM01_inoc2_T6_P20,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-958,9,4.0,9,1,7,a,0,Exp20DM02_inoc1_T6_P27,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-959,9,3.0,9,1,7,a,0,Exp20DM02_inoc1_T6_P25,fichier total,Exp20DM02,,inoc1,20,,EXP-2020
-960,9,1.0,9,1,9,a,0,Exp20DM01_inoc2_T6_P02,fichier total,Exp20DM01,,inoc2,20,,EXP-2020
-961,,2.0,1,0,,b,1,Exp21DM12_inoc3_T6_P44,6dpi,Exp21DM12,1,NA,21,6,EXP-2021
-962,,3.0,3,0,,a,1,Exp21DM03_inoc3_T6_P31,6dpi,Exp21DM03,1,inoc3,21,6,EXP-2021
-963,,2.0,1,0,,c,1,Exp21DM03_inoc2_T6_P27,6dpi,Exp21DM03,1,inoc2,21,6,EXP-2021
-964,,4.0,3,0,,b,1,Exp21DM05_inoc3_T6_P05,6dpi,Exp21DM05,1,inoc3,21,6,EXP-2021
-965,,1.0,1,0,,c,1,Exp21DM03_inoc3_T6_P33,6dpi,Exp21DM03,1,inoc3,21,6,EXP-2021
-966,,2.0,1,0,,a,1,Exp21DM13_inoc2_T6_P33,6dpi,Exp21DM13,1,inoc2,21,6,EXP-2021
-967,,1.0,3,0,,a,1,Exp21DM13_inoc2_T6_P27,6dpi,Exp21DM13,1,inoc2,21,6,EXP-2021
-968,,1.0,1,0,,c,1,Exp21DM13_inoc2_T6_P52,6dpi,Exp21DM13,1,inoc2,21,6,EXP-2021
-969,,4.0,1,0,,a,1,Exp21DM13_inoc2_T6_P33,6dpi,Exp21DM13,1,inoc2,21,6,EXP-2021
-970,,2.0,1,0,,a,1,Exp21DM03_inoc3_T6_P03,6dpi,Exp21DM03,1,inoc3,21,6,EXP-2021
-971,,1.0,5,0,,a,1,Exp21DM13_inoc2_T6_P34,6dpi,Exp21DM13,3,inoc2,21,6,EXP-2021
-972,3,3.0,5,1,3,a,1,Exp21DM02_inoc1_T6_P20,6dpi,Exp21DM02,3,inoc1,21,6,EXP-2021
-973,,2.0,3,0,,b,1,Exp21DM03_inoc3_T4_P01,4dpi,Exp21DM03,3,inoc3,21,4,EXP-2021
-974,,1.0,5,0,,a,1,Exp21DM12_inoc3_T6_P50,6dpi,Exp21DM12,3,NA,21,6,EXP-2021
-975,,1.0,1,0,,a,1,Exp21DM02_inoc1_T6_P43,6dpi,Exp21DM02,3,inoc1,21,6,EXP-2021
-976,,4.0,5,0,,c,1,Exp21DM12_inoc3_T4_P17,4dpi,Exp21DM12,3,NA,21,4,EXP-2021
-977,,1.0,3,0,,c,1,Exp21DM03_inoc4_T6_P12,6dpi,Exp21DM03,3,inoc4,21,6,EXP-2021
-978,,3.0,3,0,,b,1,Exp21DM01_inoc1_T6_P14,6dpi,Exp21DM01,3,inoc1,21,6,EXP-2021
-979,,3.0,3,0,,a,1,Exp21DM12_inoc3_T6_P44,6dpi,Exp21DM12,3,NA,21,6,EXP-2021
-980,,4.0,1,0,,c,1,Exp21DM03_inoc1_T6_P37,fichier total,Exp21DM03,3,inoc1,21,,EXP-2021
-981,,4.0,5,0,,b,1,Exp21DM13_inoc1_T4_P21,4dpi,Exp21DM13,5,inoc1,21,4,EXP-2021
-982,,4.0,5,0,,b,1,Exp21DM03_inoc3_T4_P17,4dpi,Exp21DM03,5,inoc3,21,4,EXP-2021
-983,,3.0,5,0,,b,1,Exp21DM12_inoc3_T4_P48,4dpi,Exp21DM12,5,NA,21,4,EXP-2021
-984,,4.0,3,0,,a,1,Exp21DM03_inoc4_T4_P22,4dpi,Exp21DM03,5,inoc4,21,4,EXP-2021
-985,,4.0,5,0,,c,1,Exp21DM01_inoc1_T6_P43,6dpi,Exp21DM01,5,inoc1,21,6,EXP-2021
-986,,2.0,7,0,,a,1,Exp21DM12_inoc3_T3_P09,3dpi,Exp21DM12,5,NA,21,3,EXP-2021
-987,7,3.0,5,1,5,c,1,Exp21DM02_inoc2_T6_P02,6dpi,Exp21DM02,5,inoc2,21,6,EXP-2021
-988,,1.0,1,0,,b,1,Exp21DM07_inoc1_T6_P01,fichier total,Exp21DM07,5,inoc1,21,,EXP-2021
-989,,4.0,3,0,,c,1,Exp21DM12_inoc3_T4_P13,4dpi,Exp21DM12,5,NA,21,4,EXP-2021
-990,,3.0,5,0,,c,1,Exp21DM03_inoc4_T4_P22,4dpi,Exp21DM03,5,inoc4,21,4,EXP-2021
-991,,4.0,7,0,,c,1,Exp21DM03_inoc2_T3_P30,3dpi,Exp21DM03,7,inoc2,21,3,EXP-2021
-992,,3.0,7,0,,b,1,Exp21DM12_inoc3_T3_P45,3dpi,Exp21DM12,7,NA,21,3,EXP-2021
-993,,4.0,7,0,,b,1,Exp21DM04_inoc2_T3_P11,3dpi,Exp21DM04,7,inoc2,21,3,EXP-2021
-994,,1.0,7,0,,b,1,Exp21DM12_inoc3_T3_P58,3dpi,Exp21DM12,7,NA,21,3,EXP-2021
-995,,4.0,7,0,,b,1,Exp21DM12_inoc3_T3_P29,3dpi,Exp21DM12,7,NA,21,3,EXP-2021
-996,,2.0,7,0,,b,1,Exp21DM12_inoc3_T3_P31,3dpi,Exp21DM12,7,NA,21,3,EXP-2021
-997,,2.0,7,0,,a,1,Exp21DM12_inoc3_T3_P47,3dpi,Exp21DM12,7,NA,21,3,EXP-2021
-998,7,4.0,7,1,5,a,1,Exp21DM03_inoc4_T4_P03,4dpi,Exp21DM03,7,inoc4,21,4,EXP-2021
-999,,3.0,7,0,,b,1,Exp21DM03_inoc4_T4_P24,4dpi,Exp21DM03,7,inoc4,21,4,EXP-2021
-1000,5,1.0,7,1,5,b,1,Exp21DM01_inoc1_T6_P07,6dpi,Exp21DM01,7,inoc1,21,6,EXP-2021
-1001,7,4.0,7,1,7,c,1,Exp21DM01_inoc1_T6_P17,6dpi,Exp21DM01,9,inoc1,21,6,EXP-2021
-1002,,1.0,7,0,,b,1,Exp21DM05_inoc1_T3_P08,3dpi,Exp21DM05,9,inoc1,21,3,EXP-2021
-1003,,2.0,7,0,,b,1,Exp21DM03_inoc2_T3_P32,3dpi,Exp21DM03,9,inoc2,21,3,EXP-2021
-1004,,3.0,7,0,,b,1,Exp21DM04_inoc2_T3_P05,3dpi,Exp21DM04,9,inoc2,21,3,EXP-2021
-1005,5,4.0,7,1,5,b,1,Exp21DM13_inoc2_T6_P17,6dpi,Exp21DM13,9,inoc2,21,6,EXP-2021
-1006,9,1.0,7,1,7,c,1,Exp21DM03_inoc3_T6_P04,6dpi,Exp21DM03,9,inoc3,21,6,EXP-2021
-1007,,1.0,7,0,,b,1,Exp21DM12_inoc3_T3_P59,3dpi,Exp21DM12,9,NA,21,3,EXP-2021
-1008,3,2.0,7,1,5,a,1,Exp21DM01_inoc2_T6_P27,6dpi,Exp21DM01,9,inoc2,21,6,EXP-2021
-1009,5,1.0,7,1,7,b,1,Exp21DM13_inoc2_T6_P22,6dpi,Exp21DM13,9,inoc2,21,6,EXP-2021
-1010,5,1.0,7,1,7,b,1,Exp21DM13_inoc1_T3_P13,3dpi,Exp21DM13,9,inoc1,21,3,EXP-2021
-1011,7,2.0,1,1,1,a,1,Exp21DM03_inoc4_T6_P08,6dpi,Exp21DM03,5,inoc4,21,6,EXP-2021
-1012,3,2.0,3,1,1,a,1,Exp21DM04_inoc2_T6_P13,6dpi,Exp21DM04,3,inoc2,21,6,EXP-2021
-1013,3,3.0,5,1,1,b,1,Exp21DM04_inoc2_T6_P18,6dpi,Exp21DM04,5,inoc2,21,6,EXP-2021
-1014,1,3.0,3,1,1,c,1,Exp21DM04_inoc2_T6_P17,6dpi,Exp21DM04,3,inoc2,21,6,EXP-2021
-1015,1,3.0,3,1,1,a,1,Exp21DM04_inoc2_T6_P17,6dpi,Exp21DM04,3,inoc2,21,6,EXP-2021
-1016,3,4.0,1,1,1,c,1,Exp21DM04_inoc2_T6_P09,6dpi,Exp21DM04,3,inoc2,21,6,EXP-2021
-1017,3,1.0,3,1,1,b,1,Exp21DM04_inoc2_T6_P18,6dpi,Exp21DM04,3,inoc2,21,6,EXP-2021
-1018,3,3.0,3,1,1,a,1,Exp21DM04_inoc2_T6_P18,6dpi,Exp21DM04,3,inoc2,21,6,EXP-2021
-1019,3,2.0,3,1,1,a,1,Exp21DM04_inoc2_T6_P17,6dpi,Exp21DM04,5,inoc2,21,6,EXP-2021
-1020,3,1.0,3,1,1,a,1,Exp21DM04_inoc2_T6_P18,6dpi,Exp21DM04,3,inoc2,21,6,EXP-2021
-1021,3,4.0,3,1,3,b,1,Exp21DM04_inoc2_T6_P19,6dpi,Exp21DM04,5,inoc2,21,6,EXP-2021
-1022,5,3.0,9,1,3,b,0,Exp21DM01_inoc2_T6_P25,6dpi,Exp21DM01,,inoc2,21,6,EXP-2021
-1023,7,3.0,7,1,3,c,1,Exp21DM02_inoc2_T6_P41,6dpi,Exp21DM02,9,inoc2,21,6,EXP-2021
-1024,5,3.0,9,1,3,c,0,Exp21DM01_inoc2_T6_P07,6dpi,Exp21DM01,,inoc2,21,6,EXP-2021
-1025,5,4.0,5,1,3,c,1,Exp21DM02_inoc1_T6_P39,6dpi,Exp21DM02,7,inoc1,21,6,EXP-2021
-1026,1,1.0,5,1,3,a,1,Exp21DM04_inoc2_T6_P19,6dpi,Exp21DM04,5,inoc2,21,6,EXP-2021
-1027,5,1.0,7,1,3,a,1,Exp21DM01_inoc1_T6_P27,6dpi,Exp21DM01,9,inoc1,21,6,EXP-2021
-1028,3,3.0,9,1,3,b,0,Exp21DM01_inoc1_T6_P13,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1029,5,3.0,5,1,3,c,1,Exp21DM01_inoc2_T6_P01,6dpi,Exp21DM01,5,inoc2,21,6,EXP-2021
-1030,5,1.0,5,1,3,c,1,Exp21DM05_inoc1_T6_P08,6dpi,Exp21DM05,3,inoc1,21,6,EXP-2021
-1031,3,2.0,7,1,5,c,1,Exp21DM04_inoc2_T6_P21,6dpi,Exp21DM04,9,inoc2,21,6,EXP-2021
-1032,9,1.0,7,1,5,b,1,Exp21DM12_inoc3_T4_P25,4dpi,Exp21DM12,5,NA,21,4,EXP-2021
-1033,5,1.0,7,1,5,c,1,Exp21DM13_inoc2_T6_P25,6dpi,Exp21DM13,9,inoc2,21,6,EXP-2021
-1034,5,2.0,7,1,5,a,1,Exp21DM13_inoc2_T6_P12,6dpi,Exp21DM13,5,inoc2,21,6,EXP-2021
-1035,7,3.0,7,1,5,c,1,Exp21DM01_inoc2_T6_P24,6dpi,Exp21DM01,7,inoc2,21,6,EXP-2021
-1036,7,4.0,9,1,5,a,0,Exp21DM01_inoc1_T6_P11,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1037,7,1.0,7,1,5,a,1,Exp21DM02_inoc1_T6_P13,6dpi,Exp21DM02,9,inoc1,21,6,EXP-2021
-1038,5,1.0,9,1,5,b,0,Exp21DM05_inoc1_T3_P07,3dpi,Exp21DM05,,inoc1,21,3,EXP-2021
-1039,7,4.0,7,1,5,c,1,Exp21DM13_inoc2_T6_P37,6dpi,Exp21DM13,5,inoc2,21,6,EXP-2021
-1040,5,4.0,5,1,5,c,1,Exp21DM12_inoc3_T4_P56,4dpi,Exp21DM12,5,NA,21,4,EXP-2021
-1041,7,1.0,5,1,7,a,1,Exp21DM13_inoc1_T4_P24,4dpi,Exp21DM13,3,inoc1,21,4,EXP-2021
-1042,7,4.0,5,1,7,c,1,Exp21DM02_inoc1_T6_P19,6dpi,Exp21DM02,7,inoc1,21,6,EXP-2021
-1043,7,2.0,7,1,7,b,1,Exp21DM01_inoc2_T6_P12,6dpi,Exp21DM01,9,inoc2,21,6,EXP-2021
-1044,9,1.0,9,1,7,c,0,Exp21DM01_inoc2_T6_P03,6dpi,Exp21DM01,,inoc2,21,6,EXP-2021
-1045,9,4.0,9,1,7,a,0,Exp21DM07_inoc1_T6_P10,fichier total,Exp21DM07,,inoc1,21,,EXP-2021
-1046,7,1.0,7,1,7,c,1,Exp21DM03_inoc4_T6_P04,6dpi,Exp21DM03,9,inoc4,21,6,EXP-2021
-1047,7,3.0,9,1,7,c,0,Exp21DM07_inoc1_T6_P08,fichier total,Exp21DM07,,inoc1,21,,EXP-2021
-1048,9,4.0,5,1,7,c,1,Exp21DM05_inoc1_T6_P03,6dpi,Exp21DM05,5,inoc1,21,6,EXP-2021
-1049,9,2.0,7,1,7,c,1,Exp21DM13_inoc1_T4_P26,4dpi,Exp21DM13,7,inoc1,21,4,EXP-2021
-1050,3,3.0,9,1,7,a,0,Exp21DM13_inoc2_T6_P17,6dpi,Exp21DM13,,inoc2,21,6,EXP-2021
-1051,7,2.0,9,1,9,a,0,Exp21DM05_inoc1_T3_P05,3dpi,Exp21DM05,,inoc1,21,3,EXP-2021
-1052,9,1.0,9,1,9,b,0,Exp21DM12_inoc3_T3_P08,3dpi,Exp21DM12,,NA,21,3,EXP-2021
-1053,3,1.0,9,1,9,c,0,Exp21DM01_inoc1_T6_P33,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1054,9,2.0,9,1,9,b,0,Exp21DM04_inoc2_T3_P05,3dpi,Exp21DM04,,inoc2,21,3,EXP-2021
-1055,7,1.0,9,1,9,c,0,Exp21DM03_inoc4_T6_P02,6dpi,Exp21DM03,,inoc4,21,6,EXP-2021
-1056,5,1.0,9,1,9,c,0,Exp21DM05_inoc1_T3_P03,3dpi,Exp21DM05,,inoc1,21,3,EXP-2021
-1057,9,1.0,9,1,9,c,0,Exp21DM02_inoc2_T6_P22,6dpi,Exp21DM02,,inoc2,21,6,EXP-2021
-1058,9,1.0,9,1,9,a,0,Exp21DM13_inoc1_T4_P21,4dpi,Exp21DM13,,inoc1,21,4,EXP-2021
-1059,9,1.0,9,1,9,b,0,Exp21DM12_inoc3_T3_P03,3dpi,Exp21DM12,,NA,21,3,EXP-2021
-1060,9,2.0,9,1,9,b,0,Exp21DM12_inoc3_T3_P05,3dpi,Exp21DM12,,NA,21,3,EXP-2021
-1061,1,4.0,3,1,1,b,1,Exp21DM03_inoc4_T6_P12,6dpi,Exp21DM03,5,inoc4,21,6,EXP-2021
-1062,1,2.0,9,1,3,c,0,Exp21DM01_inoc1_T6_P23,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1063,1,4.0,5,1,1,c,1,Exp21DM03_inoc4_T6_P12,6dpi,Exp21DM03,5,inoc4,21,6,EXP-2021
-1064,1,4.0,5,1,1,c,1,Exp21DM03_inoc4_T6_P07,6dpi,Exp21DM03,7,inoc4,21,6,EXP-2021
-1065,1,4.0,1,1,1,a,1,Exp21DM03_inoc4_T6_P12,6dpi,Exp21DM03,5,inoc4,21,6,EXP-2021
-1066,1,4.0,5,1,1,a,1,Exp21DM03_inoc4_T6_P07,6dpi,Exp21DM03,7,inoc4,21,6,EXP-2021
-1067,1,1.0,5,1,3,b,1,Exp21DM04_inoc2_T6_P19,6dpi,Exp21DM04,5,inoc2,21,6,EXP-2021
-1068,1,3.0,5,1,1,a,1,Exp21DM04_inoc2_T6_P19,6dpi,Exp21DM04,5,inoc2,21,6,EXP-2021
-1069,3,4.0,9,1,5,b,0,Exp21DM05_inoc1_T6_P07,6dpi,Exp21DM05,,inoc1,21,6,EXP-2021
-1070,3,2.0,9,1,3,a,0,Exp21DM01_inoc1_T6_P27,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1071,3,1.0,9,1,9,c,0,Exp21DM02_inoc1_T6_P18,6dpi,Exp21DM02,,inoc1,21,6,EXP-2021
-1072,3,1.0,9,1,9,c,0,Exp21DM01_inoc1_T6_P18,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1073,3,4.0,7,1,7,a,1,Exp21DM13_inoc2_T6_P15,6dpi,Exp21DM13,7,inoc2,21,6,EXP-2021
-1074,3,3.0,9,1,9,b,0,Exp21DM01_inoc1_T6_P37,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1075,3,1.0,5,1,1,b,1,Exp21DM02_inoc1_T6_P31,6dpi,Exp21DM02,5,inoc1,21,6,EXP-2021
-1076,3,4.0,5,1,1,a,1,Exp21DM04_inoc2_T6_P13,6dpi,Exp21DM04,5,inoc2,21,6,EXP-2021
-1077,3,2.0,9,1,9,a,0,Exp21DM05_inoc3_T6_P05,6dpi,Exp21DM05,,inoc3,21,6,EXP-2021
-1078,3,1.0,9,1,9,c,0,Exp21DM04_inoc2_T6_P02,6dpi,Exp21DM04,,inoc2,21,6,EXP-2021
-1079,5,4.0,5,1,5,c,1,Exp21DM02_inoc1_T6_P08,6dpi,Exp21DM02,5,inoc1,21,6,EXP-2021
-1080,5,2.0,7,1,5,a,1,Exp21DM13_inoc2_T6_P24,6dpi,Exp21DM13,7,inoc2,21,6,EXP-2021
-1081,5,1.0,9,1,5,b,0,Exp21DM01_inoc2_T6_P43,6dpi,Exp21DM01,,inoc2,21,6,EXP-2021
-1082,5,3.0,7,1,7,c,1,Exp21DM13_inoc2_T6_P10,6dpi,Exp21DM13,9,inoc2,21,6,EXP-2021
-1083,5,1.0,7,1,7,c,1,Exp21DM02_inoc2_T6_P34,6dpi,Exp21DM02,9,inoc2,21,6,EXP-2021
-1084,5,2.0,9,1,9,a,0,Exp21DM05_inoc1_T6_P05,6dpi,Exp21DM05,,inoc1,21,6,EXP-2021
-1085,5,1.0,7,1,5,b,1,Exp21DM04_inoc2_T6_P21,6dpi,Exp21DM04,9,inoc2,21,6,EXP-2021
-1086,5,3.0,9,1,3,a,0,Exp21DM01_inoc1_T6_P44,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1087,5,3.0,9,1,3,a,0,Exp21DM01_inoc2_T6_P40,6dpi,Exp21DM01,,inoc2,21,6,EXP-2021
-1088,5,1.0,9,1,5,b,0,Exp21DM12_inoc3_T3_P27,3dpi,Exp21DM12,,NA,21,3,EXP-2021
-1089,7,2.0,9,1,9,b,0,Exp21DM03_inoc3_T6_P05,6dpi,Exp21DM03,,inoc3,21,6,EXP-2021
-1090,7,4.0,3,1,5,b,1,Exp21DM12_inoc3_T6_P40,6dpi,Exp21DM12,3,NA,21,6,EXP-2021
-1091,7,3.0,7,1,5,a,1,Exp21DM02_inoc1_T6_P02,6dpi,Exp21DM02,5,inoc1,21,6,EXP-2021
-1092,7,1.0,9,1,7,a,0,Exp21DM02_inoc1_T6_P09,6dpi,Exp21DM02,,inoc1,21,6,EXP-2021
-1093,7,3.0,7,1,5,a,1,Exp21DM02_inoc2_T6_P24,6dpi,Exp21DM02,9,inoc2,21,6,EXP-2021
-1094,7,1.0,7,1,5,a,1,Exp21DM01_inoc2_T6_P05,6dpi,Exp21DM01,5,inoc2,21,6,EXP-2021
-1095,7,4.0,9,1,7,a,0,Exp21DM04_inoc2_T3_P18,3dpi,Exp21DM04,,inoc2,21,3,EXP-2021
-1096,7,1.0,9,1,9,b,0,Exp21DM13_inoc1_T3_P06,3dpi,Exp21DM13,,inoc1,21,3,EXP-2021
-1097,7,3.0,7,1,7,b,1,Exp21DM01_inoc2_T6_P09,6dpi,Exp21DM01,9,inoc2,21,6,EXP-2021
-1098,7,2.0,7,1,5,a,1,Exp21DM13_inoc2_T6_P23,6dpi,Exp21DM13,5,inoc2,21,6,EXP-2021
-1099,9,4.0,5,1,7,b,1,Exp21DM05_inoc1_T6_P03,6dpi,Exp21DM05,5,inoc1,21,6,EXP-2021
-1100,9,3.0,9,1,9,c,0,Exp21DM13_inoc1_T4_P08,4dpi,Exp21DM13,,inoc1,21,4,EXP-2021
-1101,9,2.0,7,1,7,b,1,Exp21DM13_inoc2_T6_P11,6dpi,Exp21DM13,9,inoc2,21,6,EXP-2021
-1102,9,4.0,7,1,7,c,1,Exp21DM13_inoc1_T4_P19,4dpi,Exp21DM13,9,inoc1,21,4,EXP-2021
-1103,9,4.0,9,1,7,a,0,Exp21DM02_inoc2_T6_P01,6dpi,Exp21DM02,,inoc2,21,6,EXP-2021
-1104,9,3.0,9,1,7,b,0,Exp21DM13_inoc1_T3_P08,3dpi,Exp21DM13,,inoc1,21,3,EXP-2021
-1105,9,1.0,9,1,9,c,0,Exp21DM13_inoc1_T4_P03,4dpi,Exp21DM13,,inoc1,21,4,EXP-2021
-1106,9,4.0,7,1,7,a,1,Exp21DM03_inoc4_T6_P01,6dpi,Exp21DM03,9,inoc4,21,6,EXP-2021
-1107,9,3.0,9,1,9,b,0,Exp21DM05_inoc1_T6_P07,6dpi,Exp21DM05,,inoc1,21,6,EXP-2021
-1108,9,2.0,9,1,7,c,0,Exp21DM01_inoc2_T6_P06,6dpi,Exp21DM01,,inoc2,21,6,EXP-2021
-1109,,4.0,1,0,,b,1,Exp21DM01_inoc1_T6_P36,6dpi,Exp21DM01,1,inoc1,21,6,EXP-2021
-1110,,3.0,1,0,,b,1,Exp21DM03_inoc2_T6_P25,6dpi,Exp21DM03,3,inoc2,21,6,EXP-2021
-1111,,3.0,1,0,,b,1,Exp21DM01_inoc1_T6_P36,6dpi,Exp21DM01,1,inoc1,21,6,EXP-2021
-1112,,1.0,1,0,,c,1,Exp21DM04_inoc2_T6_P01,6dpi,Exp21DM04,1,inoc2,21,6,EXP-2021
-1113,,4.0,1,0,,c,1,Exp21DM13_inoc2_T6_P5,6dpi,Exp21DM13,3,inoc2,21,6,EXP-2021
-1114,,3.0,1,0,,b,1,Exp21DM03_inoc1_T6_P42,fichier total,Exp21DM03,3,inoc1,21,,EXP-2021
-1115,,4.0,1,0,,b,1,Exp21DM03_inoc2_T6_P05,6dpi,Exp21DM03,3,inoc2,21,6,EXP-2021
-1116,,2.0,1,0,,c,1,Exp21DM04_inoc2_T6_P19,6dpi,Exp21DM04,3,inoc2,21,6,EXP-2021
-1117,,3.0,1,0,,b,1,Exp21DM02_inoc1_T6_P36,6dpi,Exp21DM02,1,inoc1,21,6,EXP-2021
-1118,,2.0,1,0,,c,1,Exp21DM03_inoc2_T6_P29,6dpi,Exp21DM03,3,inoc2,21,6,EXP-2021
-1119,,3.0,3,0,,a,1,Exp21DM03_inoc2_T6_P03,6dpi,Exp21DM03,3,inoc2,21,6,EXP-2021
-1120,,2.0,3,0,,b,1,Exp21DM03_inoc3_T4_P30,4dpi,Exp21DM03,3,inoc3,21,4,EXP-2021
-1121,,2.0,3,0,,a,1,Exp21DM03_inoc3_T6_P44,6dpi,Exp21DM03,3,inoc3,21,6,EXP-2021
-1122,,1.0,3,0,,c,1,Exp21DM02_inoc2_T6_P15,6dpi,Exp21DM02,1,inoc2,21,6,EXP-2021
-1123,,2.0,3,0,,a,1,Exp21DM12_inoc3_T6_P55,6dpi,Exp21DM12,3,NA,21,6,EXP-2021
-1124,,4.0,3,0,,c,1,Exp21DM13_inoc1_T4_P14,4dpi,Exp21DM13,3,inoc1,21,4,EXP-2021
-1125,,4.0,3,0,,c,1,Exp21DM03_inoc1_T6_P44,fichier total,Exp21DM03,3,inoc1,21,,EXP-2021
-1126,,4.0,3,0,,a,1,Exp21DM12_inoc3_T6_P53,6dpi,Exp21DM12,1,NA,21,6,EXP-2021
-1127,,3.0,3,0,,a,1,Exp21DM12_inoc3_T4_P20,4dpi,Exp21DM12,5,NA,21,4,EXP-2021
-1128,,2.0,3,0,,c,1,Exp21DM03_inoc4_T6_P14,6dpi,Exp21DM03,3,inoc4,21,6,EXP-2021
-1129,,1.0,5,0,,c,1,Exp21DM01_inoc1_T6_P44,6dpi,Exp21DM01,7,inoc1,21,6,EXP-2021
-1130,7,4.0,5,1,5,c,1,Exp21DM12_inoc3_T6_P03,6dpi,Exp21DM12,3,NA,21,6,EXP-2021
-1131,,3.0,5,0,,b,1,Exp21DM12_inoc3_T4_P08,4dpi,Exp21DM12,3,NA,21,4,EXP-2021
-1132,,3.0,5,0,,a,1,Exp21DM02_inoc2_T6_P32,6dpi,Exp21DM02,7,inoc2,21,6,EXP-2021
-1133,5,4.0,5,1,5,b,1,Exp21DM01_inoc1_T6_P08,6dpi,Exp21DM01,5,inoc1,21,6,EXP-2021
-1134,,4.0,5,0,,b,1,Exp21DM12_inoc3_T3_P53,3dpi,Exp21DM12,5,NA,21,3,EXP-2021
-1135,,3.0,5,0,,c,1,Exp21DM01_inoc2_T6_P32,6dpi,Exp21DM01,5,inoc2,21,6,EXP-2021
-1136,,1.0,5,0,,a,1,Exp21DM12_inoc3_T6_P40,6dpi,Exp21DM12,5,NA,21,6,EXP-2021
-1137,,1.0,5,0,,a,1,Exp21DM02_inoc1_T6_P03,6dpi,Exp21DM02,5,inoc1,21,6,EXP-2021
-1138,9,2.0,5,1,9,c,1,Exp21DM13_inoc1_T4_P10,4dpi,Exp21DM13,3,inoc1,21,4,EXP-2021
-1139,,3.0,7,0,,a,1,Exp21DM12_inoc3_T4_P54,4dpi,Exp21DM12,5,NA,21,4,EXP-2021
-1140,7,3.0,7,1,5,b,1,Exp21DM13_inoc1_T3_P10,3dpi,Exp21DM13,7,inoc1,21,3,EXP-2021
-1141,,1.0,7,0,,c,1,Exp21DM01_inoc1_T6_P46,6dpi,Exp21DM01,7,inoc1,21,6,EXP-2021
-1142,,1.0,7,0,,a,1,Exp21DM12_inoc3_T3_P39,3dpi,Exp21DM12,7,NA,21,3,EXP-2021
-1143,5,4.0,7,1,3,b,1,Exp21DM02_inoc2_T6_P14,6dpi,Exp21DM02,7,inoc2,21,6,EXP-2021
-1144,,3.0,7,0,,c,1,Exp21DM12_inoc3_T3_P36,3dpi,Exp21DM12,5,NA,21,3,EXP-2021
-1145,7,1.0,7,1,5,b,1,Exp21DM13_inoc2_T6_P38,6dpi,Exp21DM13,5,inoc2,21,6,EXP-2021
-1146,,1.0,7,0,,b,1,Exp21DM13_inoc1_T4_P25,4dpi,Exp21DM13,9,inoc1,21,4,EXP-2021
-1147,3,4.0,7,1,7,c,1,Exp21DM13_inoc2_T6_P15,6dpi,Exp21DM13,7,inoc2,21,6,EXP-2021
-1148,7,1.0,7,1,5,c,1,Exp21DM01_inoc2_T6_P07,6dpi,Exp21DM01,7,inoc2,21,6,EXP-2021
-1149,7,2.0,9,1,5,c,0,Exp21DM04_inoc2_T3_P09,3dpi,Exp21DM04,,inoc2,21,3,EXP-2021
-1150,,3.0,9,0,,c,0,Exp21DM12_inoc3_T3_P30,3dpi,Exp21DM12,,NA,21,3,EXP-2021
-1151,3,4.0,9,1,3,a,0,Exp21DM01_inoc1_T6_P29,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1152,5,1.0,9,1,7,b,0,Exp21DM13_inoc2_T6_P5,6dpi,Exp21DM13,,inoc2,21,6,EXP-2021
-1153,,1.0,9,0,,a,0,Exp21DM07_inoc1_T6_P21,fichier total,Exp21DM07,,inoc1,21,,EXP-2021
-1154,,2.0,9,0,,a,0,Exp21DM03_inoc2_T3_P28,3dpi,Exp21DM03,,inoc2,21,3,EXP-2021
-1155,,1.0,9,0,,c,0,Exp21DM04_inoc2_T3_P09,3dpi,Exp21DM04,,inoc2,21,3,EXP-2021
-1156,7,2.0,9,1,5,a,0,Exp21DM01_inoc2_T6_P15,6dpi,Exp21DM01,,inoc1,21,6,EXP-2021
-1157,7,2.0,9,1,7,c,0,Exp21DM07_inoc1_T6_P21,fichier total,Exp21DM07,,inoc1,21,,EXP-2021
+,sporulation,oiv,densite_sporulation,experiment,ligne,image_name,surface_necrosee,colonne,sheet,necrose,taille_necrose,rep,year,dai,exp_folder
+0,1,3,1,Exp16DM05,a,Exp16DM05_inoc1_T6_P05,,3.0,fichier total,0,,inoc1,16,,EXP-2016
+1,1,3,1,Exp16DM01,b,Exp16DM01_inoc1_T6_P09,,2.0,fichier total,,,NA,16,,EXP-2016
+2,1,3,1,Exp16DM04,c,Exp16DM04_inoc2_T6_P59,,1.0,6dpi,,,inoc2,16,6,EXP-2016
+3,1,1,1,Exp16DM06,b,Exp16DM06_inoc1_T6_P63,,3.0,fichier total,,,NA,16,,EXP-2016
+4,1,1,1,Exp16DM03,b,Exp16DM03_inoc1_T6_P23,,2.0,fichier total,0,,inoc1,16,,EXP-2016
+5,1,3,1,Exp16DM04,b,Exp16DM04_inoc2_T6_P73,,2.0,6dpi,,,inoc2,16,6,EXP-2016
+6,1,1,1,Exp16DM10,b,Exp16DM10_inoc1_T6_P05,,2.0,fichier total,0,,NA,16,,EXP-2016
+7,1,5,1,Exp16DM04,c,Exp16DM04_inoc2_T6_P66,,3.0,6dpi,,,inoc2,16,6,EXP-2016
+8,1,5,1,Exp16DM01,c,Exp16DM01_inoc1_T6_P25,,3.0,fichier total,,,NA,16,,EXP-2016
+9,1,3,1,Exp16DM12,b,Exp16DM12_inoc1_T6_P09,,2.0,fichier total,,,inoc1,16,,EXP-2016
+10,1,5,3,Exp16DM03,b,Exp16DM03_inoc2_T6_P12,9,1.0,fichier total,1,7,inoc2,16,,EXP-2016
+11,1,3,3,Exp16DM03,c,Exp16DM03_inoc2_T6_P05,,1.0,fichier total,0,,inoc2,16,,EXP-2016
+12,1,3,3,Exp16DM07,c,Exp16DM07_inoc1_T6_P49,,1.0,fichier total,,,inoc1,16,,EXP-2016
+13,1,1,3,Exp16DM11,a,Exp16DM11_inoc1_T6_P05,,2.0,fichier_total,,,inoc1,16,,EXP-2016
+14,1,3,3,Exp16DM02,b,Exp16DM02_inoc1_T6_P14,,2.0,fichier total,0,,inoc1,16,,EXP-2016
+15,1,3,3,Exp16DM11,b,Exp16DM11_inoc1_T6_P13,7,3.0,fichier_total,1,5,inoc2,16,,EXP-2016
+16,1,5,3,Exp16DM04,c,Exp16DM04_inoc2_T6_P48,,3.0,6dpi,,,inoc2,16,6,EXP-2016
+17,1,3,3,Exp16DM04,b,Exp16DM04_inoc2_T6_P07,,4.0,6dpi,,,inoc2,16,6,EXP-2016
+18,1,5,3,Exp16DM03,b,Exp16DM03_inoc1_T6_P01,,1.0,fichier total,0,,inoc1,16,,EXP-2016
+19,1,3,3,Exp16DM11,c,Exp16DM11_inoc1_T6_P16,,2.0,fichier_total,,,inoc2,16,,EXP-2016
+20,1,3,5,Exp16DM07,c,Exp16DM07_inoc1_T6_P35,,1.0,fichier total,,,inoc1,16,,EXP-2016
+21,1,5,5,Exp16DM06,a,Exp16DM06_inoc1_T6_P30,5,2.0,fichier total,1,1,NA,16,,EXP-2016
+22,1,5,5,Exp16DM11,c,Exp16DM11_inoc1_T6_P14,3,3.0,fichier_total,1,5,inoc1,16,,EXP-2016
+23,1,3,5,Exp16DM02,b,Exp16DM02_inoc1_T6_P19,,3.0,fichier total,0,,inoc1,16,,EXP-2016
+24,1,5,5,Exp16DM06,a,Exp16DM06_inoc1_T6_P52,5,2.0,fichier total,1,3,NA,16,,EXP-2016
+25,1,5,5,Exp16DM02,b,Exp16DM02_inoc2_T6_P23,,4.0,fichier total,0,,inoc2,16,,EXP-2016
+26,1,5,5,Exp16DM02,a,Exp16DM02_inoc1_T6_P31,,3.0,fichier total,0,,inoc1,16,,EXP-2016
+27,1,3,5,Exp16DM10,b,Exp16DM10_inoc1_T6_P22,,2.0,fichier total,0,,NA,16,,EXP-2016
+28,1,5,5,Exp16DM06,a,Exp16DM06_inoc1_T6_P60,,2.0,fichier total,,,NA,16,,EXP-2016
+29,1,5,5,Exp16DM07,b,Exp16DM07_inoc1_T6_P64,,2.0,fichier total,,,inoc1,16,,EXP-2016
+30,1,7,7,Exp16DM02,c,Exp16DM02_inoc2_T6_P11,,3.0,fichier total,0,,inoc2,16,,EXP-2016
+31,1,7,7,Exp16DM04,b,Exp16DM04_inoc2_T6_P40,7,2.0,6dpi,1,7,inoc2,16,6,EXP-2016
+32,1,7,7,Exp16DM02,c,Exp16DM02_inoc1_T6_P36,,2.0,fichier total,0,,inoc1,16,,EXP-2016
+33,1,7,7,Exp16DM01,c,Exp16DM01_inoc1_T6_P12,7,2.0,fichier total,1,7,NA,16,,EXP-2016
+34,1,7,7,Exp16DM07,c,Exp16DM07_inoc1_T6_P69,,2.0,fichier total,,,inoc1,16,,EXP-2016
+35,1,7,7,Exp16DM02,b,Exp16DM02_inoc2_T6_P14,,2.0,fichier total,0,,inoc2,16,,EXP-2016
+36,1,7,7,Exp16DM11,b,Exp16DM11_inoc1_T6_P04,5,3.0,fichier_total,1,5,inoc2,16,,EXP-2016
+37,1,5,7,Exp16DM06,b,Exp16DM06_inoc1_T6_P54,,3.0,fichier total,,,NA,16,,EXP-2016
+38,1,5,7,Exp16DM02,c,Exp16DM02_inoc2_T6_P14,,1.0,fichier total,0,,inoc2,16,,EXP-2016
+39,1,5,7,Exp16DM02,c,Exp16DM02_inoc2_T6_P13,,1.0,fichier total,0,,inoc2,16,,EXP-2016
+40,1,7,9,Exp16DM07,c,Exp16DM07_inoc2_T6_P32,7,1.0,fichier total,1,7,inoc2,16,,EXP-2016
+41,1,7,9,Exp16DM04,a,Exp16DM04_inoc1_T6_P09,9,1.0,6dpi,1,7,inoc1,16,6,EXP-2016
+42,1,7,9,Exp16DM02,c,Exp16DM02_inoc1_T6_P30,,2.0,fichier total,0,,inoc1,16,,EXP-2016
+43,1,7,9,Exp16DM02,b,Exp16DM02_inoc1_T6_P50,,2.0,fichier total,0,,inoc1,16,,EXP-2016
+44,1,7,9,Exp16DM05,b,Exp16DM05_inoc4_T6_P05,7,4.0,fichier total,1,7,inoc4,16,,EXP-2016
+45,1,7,9,Exp16DM03,c,Exp16DM03_inoc2_T6_P03,7,4.0,fichier total,1,7,inoc2,16,,EXP-2016
+46,1,7,9,Exp16DM02,b,Exp16DM02_inoc1_T6_P28,,3.0,fichier total,0,,inoc1,16,,EXP-2016
+47,1,7,9,Exp16DM11,b,Exp16DM11_inoc1_T6_P16,5,4.0,fichier_total,1,7,inoc2,16,,EXP-2016
+48,1,7,9,Exp16DM11,c,Exp16DM11_inoc1_T6_P09,7,4.0,fichier_total,1,7,inoc1,16,,EXP-2016
+49,1,7,9,Exp16DM05,b,Exp16DM05_inoc2_T6_P13,7,2.0,fichier total,1,7,inoc2,16,,EXP-2016
+50,1,5,3,Exp16DM06,b,Exp16DM06_inoc1_T6_P46,1,1.0,fichier total,1,1,NA,16,,EXP-2016
+51,1,5,5,Exp16DM07,c,Exp16DM07_inoc1_T6_P44,1,4.0,fichier total,1,1,inoc1,16,,EXP-2016
+52,1,5,7,Exp16DM02,a,Exp16DM02_inoc2_T6_P19,3,2.0,fichier total,1,1,inoc2,16,,EXP-2016
+53,1,5,5,Exp16DM03,c,Exp16DM03_inoc2_T6_P35,3,2.0,fichier total,1,1,inoc2,16,,EXP-2016
+54,1,5,5,Exp16DM03,b,Exp16DM03_inoc2_T6_P08,5,3.0,fichier total,1,1,inoc2,16,,EXP-2016
+55,1,5,5,Exp16DM03,b,Exp16DM03_inoc2_T6_P08,5,4.0,fichier total,1,1,inoc2,16,,EXP-2016
+56,1,3,3,Exp16DM03,a,Exp16DM03_inoc3_T6_P26,3,1.0,fichier total,1,1,inoc3,16,,EXP-2016
+57,1,5,3,Exp16DM03,c,Exp16DM03_inoc2_T6_P22,3,2.0,fichier total,1,1,inoc2,16,,EXP-2016
+58,1,3,1,Exp16DM03,a,Exp16DM03_inoc3_T6_P17,5,3.0,fichier total,1,1,inoc3,16,,EXP-2016
+59,1,5,5,Exp16DM03,a,Exp16DM03_inoc2_T6_P31,3,1.0,fichier total,1,1,inoc2,16,,EXP-2016
+60,1,3,3,Exp16DM02,a,Exp16DM02_inoc2_T6_P18,5,3.0,fichier total,1,3,inoc2,16,,EXP-2016
+61,1,5,3,Exp16DM03,c,Exp16DM03_inoc1_T6_P26,3,2.0,fichier total,1,3,inoc1,16,,EXP-2016
+62,1,5,5,Exp16DM06,c,Exp16DM06_inoc1_T6_P08,3,3.0,fichier total,1,3,NA,16,,EXP-2016
+63,1,5,5,Exp16DM03,c,Exp16DM03_inoc2_T6_P28,3,2.0,fichier total,1,3,inoc2,16,,EXP-2016
+64,1,5,3,Exp16DM03,c,Exp16DM03_inoc3_T6_P25,5,3.0,fichier total,1,3,inoc3,16,,EXP-2016
+65,1,5,5,Exp16DM11,c,Exp16DM11_inoc1_T6_P10,3,1.0,fichier_total,1,3,inoc1,16,,EXP-2016
+66,1,7,7,Exp16DM03,b,Exp16DM03_inoc1_T6_P07,3,3.0,fichier total,1,3,inoc1,16,,EXP-2016
+67,1,5,5,Exp16DM03,b,Exp16DM03_inoc1_T6_P16,5,2.0,fichier total,1,3,inoc1,16,,EXP-2016
+68,1,5,5,Exp16DM11,a,Exp16DM11_inoc1_T6_P12,7,4.0,fichier_total,1,3,inoc1,16,,EXP-2016
+69,1,7,9,Exp16DM12,b,Exp16DM12_inoc1_T6_P12,7,3.0,fichier total,1,3,inoc1,16,,EXP-2016
+70,1,5,3,Exp16DM11,b,Exp16DM11_inoc1_T6_P25,9,1.0,fichier_total,1,5,inoc2,16,,EXP-2016
+71,1,7,9,Exp16DM03,a,Exp16DM03_inoc3_T6_P06,5,2.0,fichier total,1,5,inoc3,16,,EXP-2016
+72,1,5,5,Exp16DM07,b,Exp16DM07_inoc1_T6_P34,3,3.0,fichier total,1,5,inoc1,16,,EXP-2016
+73,1,3,5,Exp16DM05,b,Exp16DM05_inoc6_T6_P03,7,3.0,fichier total,1,5,inoc6,16,,EXP-2016
+74,1,5,5,Exp16DM07,c,Exp16DM07_inoc1_T6_P43,5,1.0,fichier total,1,5,inoc1,16,,EXP-2016
+75,1,5,3,Exp16DM01,a,Exp16DM01_inoc1_T6_P20,7,2.0,fichier total,1,5,NA,16,,EXP-2016
+76,1,7,5,Exp16DM01,b,Exp16DM01_inoc1_T6_P32,5,1.0,fichier total,1,5,NA,16,,EXP-2016
+77,1,5,5,Exp16DM02,b,Exp16DM02_inoc2_T6_P37,3,4.0,fichier total,1,5,inoc2,16,,EXP-2016
+78,1,5,5,Exp16DM07,b,Exp16DM07_inoc1_T6_P71,3,3.0,fichier total,1,5,inoc1,16,,EXP-2016
+79,1,7,5,Exp16DM07,b,Exp16DM07_inoc2_T6_P36,7,1.0,fichier total,1,5,inoc2,16,,EXP-2016
+80,1,7,9,Exp16DM05,b,Exp16DM05_inoc1_T6_P39,5,3.0,fichier total,1,7,inoc1,16,,EXP-2016
+81,1,7,7,Exp16DM05,c,Exp16DM05_inoc6_T6_P11,9,4.0,fichier total,1,7,inoc6,16,,EXP-2016
+82,1,5,7,Exp16DM06,b,Exp16DM06_inoc1_T6_P45,3,3.0,fichier total,1,7,NA,16,,EXP-2016
+83,1,7,9,Exp16DM03,c,Exp16DM03_inoc1_T6_P10,9,4.0,fichier total,1,7,inoc1,16,,EXP-2016
+84,0,9,,Exp16DM05,a,Exp16DM05_inoc5_T6_P08,9,3.0,fichier total,1,7,inoc5,16,,EXP-2016
+85,1,7,9,Exp16DM03,a,Exp16DM03_inoc3_T6_P05,9,4.0,fichier total,1,7,inoc3,16,,EXP-2016
+86,1,7,5,Exp16DM05,a,Exp16DM05_inoc3_T6_P09,5,3.0,fichier total,1,7,inoc3,16,,EXP-2016
+87,1,5,3,Exp16DM03,a,Exp16DM03_inoc1_T6_P16,7,4.0,fichier total,1,7,inoc1,16,,EXP-2016
+88,1,5,5,Exp16DM11,a,Exp16DM11_inoc1_T6_P27,7,4.0,fichier_total,1,7,inoc2,16,,EXP-2016
+89,1,3,5,Exp16DM01,c,Exp16DM01_inoc1_T6_P19,7,3.0,fichier total,1,7,NA,16,,EXP-2016
+90,0,9,,Exp16DM02,a,Exp16DM02_inoc2_T6_P04,5,1.0,fichier total,1,9,inoc2,16,,EXP-2016
+91,0,9,,Exp16DM06,a,Exp16DM06_inoc1_T6_P50,5,1.0,fichier total,1,9,NA,16,,EXP-2016
+92,,9,,Exp16DM11,b,Exp16DM11_inoc1_T6_P21,3,1.0,fichier_total,1,9,inoc1,16,,EXP-2016
+93,0,9,,Exp16DM05,c,Exp16DM05_inoc5_T6_P04,9,1.0,fichier total,1,9,inoc5,16,,EXP-2016
+94,0,9,,Exp16DM09,b,Exp16DM09_inoc1_T6_P18,7,1.0,fichier total,1,9,inoc1,16,,EXP-2016
+95,,9,,Exp16DM07,c,Exp16DM07_inoc1_T6_P06,3,1.0,fichier total,1,9,inoc1,16,,EXP-2016
+96,0,9,,Exp16DM03,a,Exp16DM03_inoc1_T6_P13,9,1.0,fichier total,1,9,inoc1,16,,EXP-2016
+97,0,9,,Exp16DM02,a,Exp16DM02_inoc1_T6_P06,5,1.0,fichier total,1,9,inoc1,16,,EXP-2016
+98,1,5,5,Exp16DM10,a,Exp16DM10_inoc1_T6_P19,9,1.0,fichier total,1,9,NA,16,,EXP-2016
+99,0,9,,Exp16DM11,a,Exp16DM11_inoc1_T6_P21,7,1.0,fichier_total,1,9,inoc2,16,,EXP-2016
+100,1,7,7,Exp16DM11,b,Exp16DM11_inoc1_T6_P23,1,1.0,fichier_total,1,1,inoc1,16,,EXP-2016
+101,1,5,7,Exp16DM06,a,Exp16DM06_inoc1_T6_P37,1,2.0,fichier total,1,1,NA,16,,EXP-2016
+102,1,3,5,Exp16DM06,c,Exp16DM06_inoc1_T6_P09,1,3.0,fichier total,1,1,NA,16,,EXP-2016
+103,1,7,7,Exp16DM06,c,Exp16DM06_inoc1_T6_P07,1,4.0,fichier total,1,1,NA,16,,EXP-2016
+104,1,5,5,Exp16DM06,c,Exp16DM06_inoc1_T6_P41,1,3.0,fichier total,1,1,NA,16,,EXP-2016
+105,1,5,5,Exp16DM07,a,Exp16DM07_inoc1_T6_P44,1,4.0,fichier total,1,1,inoc1,16,,EXP-2016
+106,1,5,5,Exp16DM11,c,Exp16DM11_inoc1_T6_P23,1,1.0,fichier_total,1,1,inoc1,16,,EXP-2016
+107,1,5,5,Exp16DM06,c,Exp16DM06_inoc1_T6_P53,1,3.0,fichier total,1,3,NA,16,,EXP-2016
+108,1,7,7,Exp16DM02,a,Exp16DM02_inoc1_T6_P32,3,4.0,fichier total,1,3,inoc1,16,,EXP-2016
+109,0,9,,Exp16DM03,c,Exp16DM03_inoc1_T6_P24,3,1.0,fichier total,1,9,inoc1,16,,EXP-2016
+110,1,5,5,Exp16DM09,c,Exp16DM09_inoc1_T6_P16,3,2.0,fichier total,1,1,inoc1,16,,EXP-2016
+111,1,5,5,Exp16DM04,a,Exp16DM04_inoc2_T6_P40,3,1.0,6dpi,1,3,inoc2,16,6,EXP-2016
+112,1,5,5,Exp16DM06,b,Exp16DM06_inoc1_T6_P69,3,3.0,fichier total,1,5,NA,16,,EXP-2016
+113,,9,,Exp16DM11,c,Exp16DM11_inoc1_T6_P17,3,1.0,fichier_total,1,9,inoc1,16,,EXP-2016
+114,1,7,5,Exp16DM11,c,Exp16DM11_inoc1_T6_P12,3,4.0,fichier_total,1,5,inoc2,16,,EXP-2016
+115,1,5,3,Exp16DM03,c,Exp16DM03_inoc1_T6_P07,3,1.0,fichier total,1,1,inoc1,16,,EXP-2016
+116,1,5,5,Exp16DM06,a,Exp16DM06_inoc1_T6_P28,3,2.0,fichier total,1,3,NA,16,,EXP-2016
+117,1,5,5,Exp16DM09,b,Exp16DM09_inoc1_T6_P18,5,2.0,fichier total,1,1,inoc1,16,,EXP-2016
+118,1,5,5,Exp16DM03,a,Exp16DM03_inoc1_T6_P10,5,3.0,fichier total,1,5,inoc1,16,,EXP-2016
+119,1,7,9,Exp16DM09,c,Exp16DM09_inoc1_T6_P08,5,1.0,fichier total,1,5,inoc1,16,,EXP-2016
+120,1,7,9,Exp16DM09,c,Exp16DM09_inoc1_T6_P08,5,2.0,fichier total,1,5,inoc1,16,,EXP-2016
+121,0,9,,Exp16DM03,b,Exp16DM03_inoc2_T6_P04,5,1.0,fichier total,1,9,inoc2,16,,EXP-2016
+122,0,9,,Exp16DM12,a,Exp16DM12_inoc2_T6_P15,5,2.0,fichier total,1,7,inoc2,16,,EXP-2016
+123,1,7,7,Exp16DM05,c,Exp16DM05_inoc5_T6_P09,5,3.0,fichier total,1,7,inoc5,16,,EXP-2016
+124,0,9,,Exp16DM07,a,Exp16DM07_inoc2_T6_P03,5,4.0,fichier total,1,7,inoc2,16,,EXP-2016
+125,0,9,,Exp16DM12,a,Exp16DM12_inoc2_T6_P06,5,1.0,fichier total,1,9,inoc2,16,,EXP-2016
+126,1,5,5,Exp16DM07,c,Exp16DM07_inoc2_T6_P41,5,3.0,fichier total,1,5,inoc2,16,,EXP-2016
+127,1,7,9,Exp16DM12,b,Exp16DM12_inoc2_T6_P01,7,4.0,fichier total,1,7,inoc2,16,,EXP-2016
+128,1,7,9,Exp16DM05,b,Exp16DM05_inoc4_T6_P10,7,4.0,fichier total,1,7,inoc4,16,,EXP-2016
+129,1,7,5,Exp16DM03,a,Exp16DM03_inoc2_T6_P13,7,4.0,fichier total,1,7,inoc2,16,,EXP-2016
+130,0,9,,Exp16DM11,a,Exp16DM11_inoc1_T6_P20,7,4.0,fichier_total,1,7,inoc2,16,,EXP-2016
+131,1,5,5,Exp16DM04,a,Exp16DM04_inoc2_T6_P05,7,1.0,6dpi,1,5,inoc2,16,6,EXP-2016
+132,1,5,5,Exp16DM04,c,Exp16DM04_inoc1_T6_P09,7,2.0,6dpi,1,7,inoc1,16,6,EXP-2016
+133,0,9,,Exp16DM10,c,Exp16DM10_inoc1_T6_P06,7,1.0,fichier total,1,9,NA,16,,EXP-2016
+134,1,7,9,Exp16DM06,b,Exp16DM06_inoc1_T6_P53,7,4.0,fichier total,1,7,NA,16,,EXP-2016
+135,1,3,3,Exp16DM01,b,Exp16DM01_inoc1_T6_P16,7,3.0,fichier total,1,5,NA,16,,EXP-2016
+136,0,9,,Exp16DM03,b,Exp16DM03_inoc3_T6_P04,7,2.0,fichier total,1,5,inoc3,16,,EXP-2016
+137,1,5,3,Exp16DM11,b,Exp16DM11_inoc1_T6_P01,9,3.0,fichier_total,1,7,inoc1,16,,EXP-2016
+138,1,5,5,Exp16DM05,c,Exp16DM05_inoc1_T6_P39,9,2.0,fichier total,1,5,inoc1,16,,EXP-2016
+139,1,5,5,Exp16DM03,a,Exp16DM03_inoc2_T6_P33,9,1.0,fichier total,1,7,inoc2,16,,EXP-2016
+140,0,9,,Exp16DM06,c,Exp16DM06_inoc1_T6_P09,9,2.0,fichier total,1,7,NA,16,,EXP-2016
+141,1,7,7,Exp16DM09,a,Exp16DM09_inoc1_T6_P03,9,4.0,fichier total,1,7,inoc1,16,,EXP-2016
+142,1,5,5,Exp16DM05,a,Exp16DM05_inoc1_T6_P39,9,2.0,fichier total,1,5,inoc1,16,,EXP-2016
+143,0,9,,Exp16DM03,c,Exp16DM03_inoc1_T6_P13,9,1.0,fichier total,1,9,inoc1,16,,EXP-2016
+144,0,9,,Exp16DM04,a,Exp16DM04_inoc2_T6_P40,9,2.0,6dpi,1,9,inoc2,16,6,EXP-2016
+145,,9,,Exp16DM04,a,Exp16DM04_inoc2_T6_P21,9,2.0,6dpi,1,9,inoc2,16,6,EXP-2016
+146,0,9,,Exp16DM05,b,Exp16DM05_inoc5_T6_P13,9,3.0,fichier total,1,7,inoc5,16,,EXP-2016
+147,1,1,1,Exp16DM04,b,Exp16DM04_inoc2_T6_P55,,4.0,6dpi,,,inoc2,16,6,EXP-2016
+148,1,1,3,Exp16DM07,a,Exp16DM07_inoc2_T6_P38,,1.0,fichier total,,,inoc2,16,,EXP-2016
+149,1,1,5,Exp16DM07,a,Exp16DM07_inoc2_T6_P48,,2.0,fichier total,,,inoc2,16,,EXP-2016
+150,1,1,3,Exp16DM12,b,Exp16DM12_inoc1_T6_P03,,2.0,fichier total,,,inoc1,16,,EXP-2016
+151,,1,,Exp16DM08,b,Exp16DM08_inoc1_T6_P22,,2.0,fichier total,,,inoc1,16,,EXP-2016
+152,1,1,1,Exp16DM06,c,Exp16DM06_inoc1_T6_P08,,2.0,fichier total,,,NA,16,,EXP-2016
+153,,1,,Exp16DM08,b,Exp16DM08_inoc1_T6_P21,,3.0,fichier total,,,inoc1,16,,EXP-2016
+154,1,1,1,Exp16DM10,c,Exp16DM10_inoc1_T6_P20,,2.0,fichier total,0,,NA,16,,EXP-2016
+155,1,1,3,Exp16DM02,c,Exp16DM02_inoc1_T6_P23,,1.0,fichier total,0,,inoc1,16,,EXP-2016
+156,1,1,1,Exp16DM01,a,Exp16DM01_inoc1_T6_P31,,3.0,fichier total,,,NA,16,,EXP-2016
+157,1,3,3,Exp16DM06,b,Exp16DM06_inoc1_T6_P07,,3.0,fichier total,,,NA,16,,EXP-2016
+158,1,3,5,Exp16DM11,b,Exp16DM11_inoc1_T6_P07,,3.0,fichier_total,,,inoc1,16,,EXP-2016
+159,1,3,5,Exp16DM04,b,Exp16DM04_inoc1_T6_P10,,3.0,6dpi,0,,inoc1,16,6,EXP-2016
+160,1,3,5,Exp16DM03,a,Exp16DM03_inoc3_T6_P03,,1.0,fichier total,0,,inoc3,16,,EXP-2016
+161,1,3,3,Exp16DM07,a,Exp16DM07_inoc1_T6_P47,,3.0,fichier total,,,inoc1,16,,EXP-2016
+162,1,3,3,Exp16DM04,a,Exp16DM04_inoc2_T6_P52,,3.0,6dpi,,,inoc2,16,6,EXP-2016
+163,1,3,5,Exp16DM06,a,Exp16DM06_inoc1_T6_P64,,2.0,fichier total,,,NA,16,,EXP-2016
+164,1,3,1,Exp16DM11,b,Exp16DM11_inoc1_T6_P13,,1.0,fichier_total,,,inoc1,16,,EXP-2016
+165,1,3,5,Exp16DM07,a,Exp16DM07_inoc1_T6_P70,,3.0,fichier total,,,inoc1,16,,EXP-2016
+166,1,3,5,Exp16DM04,b,Exp16DM04_inoc1_T6_P06,,1.0,6dpi,0,,inoc1,16,6,EXP-2016
+167,1,5,5,Exp16DM04,b,Exp16DM04_inoc2_T6_P67,,2.0,6dpi,,,inoc2,16,6,EXP-2016
+168,1,5,5,Exp16DM03,a,Exp16DM03_inoc2_T6_P26,,3.0,fichier total,0,,inoc2,16,,EXP-2016
+169,1,5,5,Exp16DM07,a,Exp16DM07_inoc2_T6_P34,5,3.0,fichier total,1,5,inoc2,16,,EXP-2016
+170,1,5,5,Exp16DM04,b,Exp16DM04_inoc2_T6_P22,,1.0,6dpi,,,inoc2,16,6,EXP-2016
+171,1,5,5,Exp16DM07,a,Exp16DM07_inoc1_T6_P58,,1.0,fichier total,,,inoc1,16,,EXP-2016
+172,1,5,5,Exp16DM07,b,Exp16DM07_inoc2_T6_P46,,1.0,fichier total,,,inoc2,16,,EXP-2016
+173,1,5,5,Exp16DM11,a,Exp16DM11_inoc1_T6_P08,5,3.0,fichier_total,1,5,inoc2,16,,EXP-2016
+174,1,5,3,Exp16DM03,a,Exp16DM03_inoc1_T6_P26,5,4.0,fichier total,1,3,inoc1,16,,EXP-2016
+175,1,5,5,Exp16DM02,c,Exp16DM02_inoc2_T6_P23,,1.0,fichier total,0,,inoc2,16,,EXP-2016
+176,1,5,5,Exp16DM04,c,Exp16DM04_inoc2_T6_P64,,4.0,6dpi,,,inoc2,16,6,EXP-2016
+177,1,7,9,Exp16DM12,c,Exp16DM12_inoc1_T6_P12,5,3.0,fichier total,1,3,inoc1,16,,EXP-2016
+178,1,7,9,Exp16DM02,a,Exp16DM02_inoc1_T6_P42,7,3.0,fichier total,1,7,inoc1,16,,EXP-2016
+179,1,7,9,Exp16DM02,a,Exp16DM02_inoc1_T6_P29,,4.0,fichier total,0,,inoc1,16,,EXP-2016
+180,1,7,7,Exp16DM11,a,Exp16DM11_inoc1_T6_P04,5,3.0,fichier_total,1,5,inoc2,16,,EXP-2016
+181,1,7,9,Exp16DM03,c,Exp16DM03_inoc3_T6_P19,5,4.0,fichier total,1,7,inoc3,16,,EXP-2016
+182,1,7,7,Exp16DM05,c,Exp16DM05_inoc2_T6_P13,,1.0,fichier total,0,,inoc2,16,,EXP-2016
+183,1,7,7,Exp16DM02,a,Exp16DM02_inoc1_T6_P35,,1.0,fichier total,0,,inoc1,16,,EXP-2016
+184,1,7,9,Exp16DM03,a,Exp16DM03_inoc2_T6_P05,7,4.0,fichier total,1,7,inoc2,16,,EXP-2016
+185,1,7,9,Exp16DM05,c,Exp16DM05_inoc4_T6_P12,7,1.0,fichier total,1,7,inoc4,16,,EXP-2016
+186,1,7,5,Exp16DM11,a,Exp16DM11_inoc1_T6_P14,7,1.0,fichier_total,1,7,inoc2,16,,EXP-2016
+187,0,9,,Exp16DM04,a,Exp16DM04_inoc2_T6_P41,9,2.0,6dpi,1,9,inoc2,16,6,EXP-2016
+188,0,9,,Exp16DM05,c,Exp16DM05_inoc4_T6_P11,5,1.0,fichier total,1,5,inoc4,16,,EXP-2016
+189,0,9,,Exp16DM05,c,Exp16DM05_inoc6_T6_P11,,2.0,fichier total,0,,inoc6,16,,EXP-2016
+190,,9,,Exp16DM12,a,Exp16DM12_inoc1_T6_P12,7,4.0,fichier total,1,5,inoc1,16,,EXP-2016
+191,0,9,,Exp16DM11,c,Exp16DM11_inoc1_T6_P19,,1.0,fichier_total,0,,inoc2,16,,EXP-2016
+192,0,9,,Exp16DM07,c,Exp16DM07_inoc2_T6_P05,5,4.0,fichier total,1,7,inoc2,16,,EXP-2016
+193,,9,,Exp16DM12,c,Exp16DM12_inoc1_T6_P09,9,1.0,fichier total,1,5,inoc1,16,,EXP-2016
+194,0,9,,Exp16DM04,b,Exp16DM04_inoc1_T6_P29,,2.0,6dpi,0,,inoc1,16,6,EXP-2016
+195,0,9,,Exp16DM11,a,Exp16DM11_inoc1_T6_P03,5,4.0,fichier_total,1,7,inoc2,16,,EXP-2016
+196,1,5,1,Exp17DM01,a,Exp17DM01_inoc2_T6_P05,,3.0,fichier total,,,inoc2,17,,EXP-2017
+197,1,3,1,Exp17DM01,a,Exp17DM01_inoc2_T6_P43,,3.0,fichier total,,,inoc2,17,,EXP-2017
+198,1,1,1,Exp17DM01,b,Exp17DM01_inoc2_T6_P35,,3.0,fichier total,,,inoc2,17,,EXP-2017
+199,1,1,1,Exp17DM04,b,Exp17DM04_inoc1_T6_P08,,1.0,fichier total,,,inoc1,17,,EXP-2017
+200,1,3,1,Exp17DM04,a,Exp17DM04_inoc1_T6_P15,,2.0,fichier total,,,inoc1,17,,EXP-2017
+201,1,1,1,Exp17DM01,b,Exp17DM01_inoc2_T6_P23,,3.0,fichier total,,,inoc2,17,,EXP-2017
+202,1,3,1,Exp17DM01,a,Exp17DM01_inoc2_T6_P28,,2.0,fichier total,,,inoc2,17,,EXP-2017
+203,1,3,1,Exp17DM07,c,Exp17DM07_inoc1_T6_P87,,1.0,6dpi,0,,inoc1,17,6,EXP-2017
+204,1,1,1,Exp17DM04,c,Exp17DM04_inoc1_T6_P14,,3.0,fichier total,,,inoc1,17,,EXP-2017
+205,1,3,1,Exp17DM01,b,Exp17DM01_inoc2_T6_P70,,4.0,fichier total,,,inoc2,17,,EXP-2017
+206,1,3,3,Exp17DM02,c,Exp17DM02_inoc2_T6_P92,,2.0,fichier total,,,inoc2,17,,EXP-2017
+207,1,5,3,Exp17DM07,a,Exp17DM07_inoc1_T6_P79,,4.0,6dpi,0,,inoc1,17,6,EXP-2017
+208,1,1,3,Exp17DM07,b,Exp17DM07_inoc1_T6_P39,,3.0,6dpi,0,,inoc1,17,6,EXP-2017
+209,1,5,3,Exp17DM02,c,Exp17DM02_inoc1_T6_P58,,3.0,fichier total,,,inoc1,17,,EXP-2017
+210,1,3,3,Exp17DM01,a,Exp17DM01_inoc2_T6_P57,,4.0,fichier total,,,inoc2,17,,EXP-2017
+211,1,3,3,Exp17DM02,b,Exp17DM02_inoc3_T6_P73,,4.0,fichier total,0,,inoc3,17,,EXP-2017
+212,1,3,3,Exp17DM04,c,Exp17DM04_inoc4_T6_P03,,4.0,fichier total,,,inoc4,17,,EXP-2017
+213,1,3,3,Exp17DM04,b,Exp17DM04_inoc1_T6_P11,,4.0,fichier total,,,inoc1,17,,EXP-2017
+214,1,3,3,Exp17DM02,a,Exp17DM02_inoc2_T6_P93,,4.0,fichier total,,,inoc2,17,,EXP-2017
+215,1,3,3,Exp17DM07,c,Exp17DM07_inoc1_T6_P84,,4.0,6dpi,0,,inoc1,17,6,EXP-2017
+216,1,3,5,Exp17DM07,b,Exp17DM07_inoc1_T6_P87,,1.0,6dpi,0,,inoc1,17,6,EXP-2017
+217,1,5,5,Exp17DM02,c,Exp17DM02_inoc2_T6_P101,,3.0,fichier total,,,inoc2,17,,EXP-2017
+218,1,5,5,Exp17DM01,b,Exp17DM01_inoc3_T5_P12,,1.0,fichier total,0,,inoc3,17,,EXP-2017
+219,1,7,5,Exp17DM01,b,Exp17DM01_inoc2_T6_P52,9,3.0,fichier total,1,5,inoc2,17,,EXP-2017
+220,1,3,5,Exp17DM02,b,Exp17DM02_inoc2_T6_P33,,3.0,fichier total,,,inoc2,17,,EXP-2017
+221,1,5,5,Exp17DM04,c,Exp17DM04_inoc4_T6_P56,,4.0,fichier total,,,inoc4,17,,EXP-2017
+222,1,7,5,Exp17DM02,b,Exp17DM02_inoc2_T6_P27,5,4.0,fichier total,1,5,inoc2,17,,EXP-2017
+223,1,5,5,Exp17DM04,a,Exp17DM04_inoc1_T6_P22,,3.0,fichier total,,,inoc1,17,,EXP-2017
+224,1,5,5,Exp17DM02,c,Exp17DM02_inoc2_T6_P42,,3.0,fichier total,,,inoc2,17,,EXP-2017
+225,1,5,5,Exp17DM01,b,Exp17DM01_inoc3_T5_P10,,2.0,fichier total,0,,inoc3,17,,EXP-2017
+226,1,7,7,Exp17DM02,c,Exp17DM02_inoc2_T6_P34,5,4.0,fichier total,1,3,inoc2,17,,EXP-2017
+227,1,7,7,Exp17DM02,a,Exp17DM02_inoc3_T6_P59,,4.0,fichier total,0,,inoc3,17,,EXP-2017
+228,1,7,7,Exp17DM01,a,Exp17DM01_inoc2_T6_P19,7,4.0,fichier total,1,5,inoc2,17,,EXP-2017
+229,1,7,7,Exp17DM02,a,Exp17DM02_inoc2_T6_P18,5,2.0,fichier total,1,3,inoc2,17,,EXP-2017
+230,1,5,7,Exp17DM02,b,Exp17DM02_inoc1_T6_P16,,1.0,fichier total,,,inoc1,17,,EXP-2017
+231,1,7,7,Exp17DM02,b,Exp17DM02_inoc2_T6_P44,5,3.0,fichier total,1,3,inoc2,17,,EXP-2017
+232,1,7,7,Exp17DM02,b,Exp17DM02_inoc2_T6_P84,5,2.0,fichier total,1,3,inoc2,17,,EXP-2017
+233,1,7,7,Exp17DM07,b,Exp17DM07_inoc1_T6_P70,,3.0,6dpi,0,,inoc1,17,6,EXP-2017
+234,1,7,7,Exp17DM02,c,Exp17DM02_inoc2_T6_P27,7,1.0,fichier total,1,5,inoc2,17,,EXP-2017
+235,1,7,7,Exp17DM07,a,Exp17DM07_inoc1_T6_P55,9,2.0,6dpi,1,5,inoc1,17,6,EXP-2017
+236,1,7,9,Exp17DM02,a,Exp17DM02_inoc1_T6_P71,,2.0,fichier total,0,,inoc1,17,,EXP-2017
+237,1,7,9,Exp17DM07,c,Exp17DM07-Inoc1-T5-P38,,2.0,5dpi,,,inoc1,17,5,EXP-2017
+238,1,7,9,Exp17DM07,a,Exp17DM07-Inoc1-T5-P34,,2.0,5dpi,,,inoc1,17,5,EXP-2017
+239,1,7,9,Exp17DM02,a,Exp17DM02_inoc2_T6_P93,5,3.0,fichier total,1,3,inoc2,17,,EXP-2017
+240,1,7,9,Exp17DM02,a,Exp17DM02_inoc2_T6_P93,,1.0,fichier total,,,inoc2,17,,EXP-2017
+241,1,7,9,Exp17DM07,a,Exp17DM07_inoc1_T6_P19,,4.0,6dpi,0,,inoc1,17,6,EXP-2017
+242,1,7,9,Exp17DM07,a,Exp17DM07-Inoc1-T5-P11,,1.0,5dpi,,,inoc1,17,5,EXP-2017
+243,1,7,9,Exp17DM02,b,Exp17DM02_inoc1_T6_P10,3,4.0,fichier total,1,5,inoc1,17,,EXP-2017
+244,1,7,9,Exp17DM07,b,Exp17DM07-Inoc1-T5-P11,,1.0,5dpi,,,inoc1,17,5,EXP-2017
+245,1,7,9,Exp17DM02,a,Exp17DM02_inoc1_T6_P41,7,1.0,fichier total,1,5,inoc1,17,,EXP-2017
+246,1,7,7,Exp17DM02,c,Exp17DM02_inoc1_T6_P16,3,1.0,fichier total,1,1,inoc1,17,,EXP-2017
+247,1,7,7,Exp17DM03,b,Exp17DM03_inoc1_T6_P07,3,3.0,fichier total,1,1,inoc1,17,,EXP-2017
+248,1,3,3,Exp17DM07,b,Exp17DM07_inoc1_T6_P91,3,2.0,6dpi,1,1,inoc1,17,6,EXP-2017
+249,1,5,5,Exp17DM07,a,Exp17DM07_inoc1_T6_P39,3,1.0,6dpi,1,1,inoc1,17,6,EXP-2017
+250,1,7,9,Exp17DM03,a,Exp17DM03_inoc1_T6_P13,3,3.0,fichier total,1,1,inoc1,17,,EXP-2017
+251,1,7,9,Exp17DM04,c,Exp17DM04_inoc4_T6_P30,7,1.0,fichier total,1,1,inoc4,17,,EXP-2017
+252,1,5,5,Exp17DM07,b,Exp17DM07_inoc1_T6_P45,3,4.0,6dpi,1,1,inoc1,17,6,EXP-2017
+253,1,5,5,Exp17DM07,c,Exp17DM07_inoc1_T6_P37,3,3.0,6dpi,1,1,inoc1,17,6,EXP-2017
+254,1,5,5,Exp17DM07,c,Exp17DM07_inoc1_T6_P37,3,4.0,6dpi,1,1,inoc1,17,6,EXP-2017
+255,1,5,5,Exp17DM07,c,Exp17DM07_inoc1_T6_P91,3,3.0,6dpi,1,1,inoc1,17,6,EXP-2017
+256,0,9,,Exp17DM02,c,Exp17DM02_inoc3_T6_P45,5,2.0,fichier total,1,3,inoc3,17,,EXP-2017
+257,1,7,7,Exp17DM07,b,Exp17DM07_inoc1_T6_P18,5,2.0,6dpi,1,3,inoc1,17,6,EXP-2017
+258,1,7,9,Exp17DM02,a,Exp17DM02_inoc2_T6_P100,5,2.0,fichier total,1,3,inoc2,17,,EXP-2017
+259,1,7,7,Exp17DM02,a,Exp17DM02_inoc2_T6_P91,5,2.0,fichier total,1,3,inoc2,17,,EXP-2017
+260,1,7,9,Exp17DM07,b,Exp17DM07-Inoc1-T5-P114,5,4.0,5dpi,1,3,inoc1,17,5,EXP-2017
+261,1,7,9,Exp17DM02,b,Exp17DM02_inoc3_T6_P51,5,2.0,fichier total,1,3,inoc3,17,,EXP-2017
+262,1,7,9,Exp17DM01,c,Exp17DM01_inoc2_T6_P57,5,4.0,fichier total,1,3,inoc2,17,,EXP-2017
+263,1,7,9,Exp17DM02,b,Exp17DM02_inoc2_T6_P87,9,3.0,fichier total,1,3,inoc2,17,,EXP-2017
+264,,9,,Exp17DM07,b,Exp17DM07-Inoc1-T5-P117,9,3.0,5dpi,1,3,inoc1,17,5,EXP-2017
+265,1,7,9,Exp17DM07,c,Exp17DM07-Inoc1-T5-P115,5,1.0,5dpi,1,3,inoc1,17,5,EXP-2017
+266,1,7,7,Exp17DM02,b,Exp17DM02_inoc1_T6_P45,5,3.0,fichier total,1,5,inoc1,17,,EXP-2017
+267,1,7,9,Exp17DM02,c,Exp17DM02_inoc1_T6_P45,5,1.0,fichier total,1,5,inoc1,17,,EXP-2017
+268,1,5,5,Exp17DM04,c,Exp17DM04_inoc1_T6_P20,5,1.0,fichier total,1,5,inoc1,17,,EXP-2017
+269,1,7,7,Exp17DM02,b,Exp17DM02_inoc1_T6_P11,7,3.0,fichier total,1,5,inoc1,17,,EXP-2017
+270,1,5,5,Exp17DM04,c,Exp17DM04_inoc1_T6_P16,5,3.0,fichier total,1,5,inoc1,17,,EXP-2017
+271,0,9,,Exp17DM03,b,Exp17DM03_inoc1_T6_P09,7,3.0,fichier total,1,5,inoc1,17,,EXP-2017
+272,1,5,5,Exp17DM01,c,Exp17DM01_inoc2_T6_P29,9,1.0,fichier total,1,5,inoc2,17,,EXP-2017
+273,1,7,9,Exp17DM01,b,Exp17DM01_inoc2_T6_P58,7,1.0,fichier total,1,5,inoc2,17,,EXP-2017
+274,1,7,7,Exp17DM08,b,Exp17DM08_inoc1_T6_P02,5,3.0,fichier total,1,5,NA,17,,EXP-2017
+275,1,5,5,Exp17DM04,a,Exp17DM04_inoc2_T6_P03,5,3.0,fichier total,1,5,inoc2,17,,EXP-2017
+276,1,7,9,Exp17DM01,c,Exp17DM01_inoc3_T5_P14,9,1.0,fichier total,1,7,inoc3,17,,EXP-2017
+277,1,3,3,Exp17DM02,b,Exp17DM02_inoc1_T6_P29,9,3.0,fichier total,1,7,inoc1,17,,EXP-2017
+278,1,7,9,Exp17DM01,a,Exp17DM01_inoc3_T5_P68,7,4.0,fichier total,1,7,inoc3,17,,EXP-2017
+279,1,7,5,Exp17DM02,c,Exp17DM02_inoc1_T6_P16,7,3.0,fichier total,1,7,inoc1,17,,EXP-2017
+280,1,5,5,Exp17DM02,b,Exp17DM02_inoc2_T6_P85,9,4.0,fichier total,1,7,inoc2,17,,EXP-2017
+281,1,7,7,Exp17DM07,c,Exp17DM07_inoc1_T6_P73,7,3.0,6dpi,1,7,inoc1,17,6,EXP-2017
+282,1,7,9,Exp17DM07,a,Exp17DM07-Inoc1-T5-P74,9,4.0,5dpi,1,7,inoc1,17,5,EXP-2017
+283,1,7,9,Exp17DM01,b,Exp17DM01_inoc3_T5_P09,7,2.0,fichier total,1,7,inoc3,17,,EXP-2017
+284,0,9,,Exp17DM07,c,Exp17DM07_inoc1_T6_P13,7,4.0,6dpi,1,7,inoc1,17,6,EXP-2017
+285,1,7,9,Exp17DM07,b,Exp17DM07-Inoc1-T5-P81,7,3.0,5dpi,1,7,inoc1,17,5,EXP-2017
+286,0,9,,Exp17DM02,b,Exp17DM02_inoc3_T6_P46,7,2.0,fichier total,1,9,inoc3,17,,EXP-2017
+287,0,9,,Exp17DM03,a,Exp17DM03_inoc1_T6_P02,7,1.0,fichier total,1,9,inoc1,17,,EXP-2017
+288,1,7,9,Exp17DM02,b,Exp17DM02_inoc2_T6_P16,9,3.0,fichier total,1,9,inoc2,17,,EXP-2017
+289,1,7,9,Exp17DM01,c,Exp17DM01_inoc3_T5_P50,9,4.0,fichier total,1,9,inoc3,17,,EXP-2017
+290,0,9,,Exp17DM03,a,Exp17DM03_inoc1_T6_P04,7,1.0,fichier total,1,9,inoc1,17,,EXP-2017
+291,0,9,,Exp17DM02,a,Exp17DM02_inoc3_T6_P09,7,2.0,fichier total,1,9,inoc3,17,,EXP-2017
+292,0,9,,Exp17DM04,c,Exp17DM04_inoc2_T6_P02,5,1.0,fichier total,1,9,inoc2,17,,EXP-2017
+293,0,9,,Exp17DM07,b,Exp17DM07-Inoc1-T5-P2,7,1.0,5dpi,1,9,inoc1,17,5,EXP-2017
+294,0,9,,Exp17DM02,b,Exp17DM02_inoc3_T6_P28,9,3.0,fichier total,1,9,inoc3,17,,EXP-2017
+295,0,9,,Exp17DM02,a,Exp17DM02_inoc2_T6_P04,5,1.0,fichier total,1,9,inoc2,17,,EXP-2017
+296,1,7,9,Exp17DM07,b,Exp17DM07_inoc1_T6_P57,1,1.0,6dpi,1,1,inoc1,17,6,EXP-2017
+297,1,7,9,Exp17DM07,b,Exp17DM07_inoc1_T6_P57,1,2.0,6dpi,1,1,inoc1,17,6,EXP-2017
+298,1,5,5,Exp17DM02,b,Exp17DM02_inoc3_T6_P36,3,4.0,fichier total,1,3,inoc3,17,,EXP-2017
+299,1,7,7,Exp17DM03,c,Exp17DM03_inoc1_T6_P07,3,3.0,fichier total,1,1,inoc1,17,,EXP-2017
+300,1,5,5,Exp17DM01,c,Exp17DM01_inoc3_T5_P70,3,1.0,fichier total,1,1,inoc3,17,,EXP-2017
+301,1,7,7,Exp17DM02,b,Exp17DM02_inoc2_T6_P50,3,1.0,fichier total,1,7,inoc2,17,,EXP-2017
+302,1,7,7,Exp17DM02,c,Exp17DM02_inoc1_T6_P36,3,2.0,fichier total,1,5,inoc1,17,,EXP-2017
+303,1,7,7,Exp17DM02,b,Exp17DM02_inoc3_T6_P29,3,4.0,fichier total,1,5,inoc3,17,,EXP-2017
+304,0,9,,Exp17DM04,a,Exp17DM04_inoc4_T6_P29,3,4.0,fichier total,1,9,inoc4,17,,EXP-2017
+305,1,7,9,Exp17DM02,b,Exp17DM02_inoc1_T6_P46,3,4.0,fichier total,1,3,inoc1,17,,EXP-2017
+306,0,9,,Exp17DM07,a,Exp17DM07_inoc1_T6_P04,3,1.0,6dpi,1,9,inoc1,17,6,EXP-2017
+307,0,9,,Exp17DM02,a,Exp17DM02_inoc3_T6_P62,3,1.0,fichier total,1,3,inoc3,17,,EXP-2017
+308,1,7,9,Exp17DM03,c,Exp17DM03_inoc1_T6_P03,5,4.0,fichier total,1,7,inoc1,17,,EXP-2017
+309,0,9,,Exp17DM02,b,Exp17DM02_inoc1_T6_P49,5,1.0,fichier total,1,9,inoc1,17,,EXP-2017
+310,,9,,Exp17DM07,c,Exp17DM07-Inoc1-T5-P116,5,4.0,5dpi,1,3,inoc1,17,5,EXP-2017
+311,1,5,5,Exp17DM02,b,Exp17DM02_inoc2_T6_P65,5,3.0,fichier total,1,3,inoc2,17,,EXP-2017
+312,0,9,,Exp17DM01,a,Exp17DM01_inoc2_T6_P19,5,2.0,fichier total,1,7,inoc2,17,,EXP-2017
+313,0,9,,Exp17DM04,c,Exp17DM04_inoc1_T6_P33,5,1.0,fichier total,1,9,inoc1,17,,EXP-2017
+314,1,7,9,Exp17DM02,c,Exp17DM02_inoc2_T6_P32,5,3.0,fichier total,1,3,inoc2,17,,EXP-2017
+315,1,7,7,Exp17DM02,a,Exp17DM02_inoc1_T6_P45,5,4.0,fichier total,1,5,inoc1,17,,EXP-2017
+316,1,5,5,Exp17DM02,b,Exp17DM02_inoc3_T6_P15,5,3.0,fichier total,1,5,inoc3,17,,EXP-2017
+317,0,9,,Exp17DM01,b,Exp17DM01_inoc3_T5_P21,5,3.0,fichier total,1,5,inoc3,17,,EXP-2017
+318,0,9,,Exp17DM01,a,Exp17DM01_inoc2_T6_P61,7,1.0,fichier total,1,7,inoc2,17,,EXP-2017
+319,1,5,5,Exp17DM01,b,Exp17DM01_inoc3_T5_P56,7,2.0,fichier total,1,7,inoc3,17,,EXP-2017
+320,1,3,3,Exp17DM02,b,Exp17DM02_inoc2_T6_P77,7,1.0,fichier total,1,7,inoc2,17,,EXP-2017
+321,1,5,5,Exp17DM04,c,Exp17DM04_inoc1_T6_P10,7,1.0,fichier total,1,5,inoc1,17,,EXP-2017
+322,1,7,9,Exp17DM07,b,Exp17DM07-Inoc1-T5-P57,7,3.0,5dpi,1,7,inoc1,17,5,EXP-2017
+323,0,9,,Exp17DM02,a,Exp17DM02_inoc1_T6_P04,7,1.0,fichier total,1,9,inoc1,17,,EXP-2017
+324,1,7,7,Exp17DM02,c,Exp17DM02_inoc3_T6_P71,7,3.0,fichier total,1,3,inoc3,17,,EXP-2017
+325,1,7,9,Exp17DM02,a,Exp17DM02_inoc2_T6_P55,7,4.0,fichier total,1,7,inoc2,17,,EXP-2017
+326,1,7,5,Exp17DM02,a,Exp17DM02_inoc2_T6_P21,7,4.0,fichier total,1,3,inoc2,17,,EXP-2017
+327,1,7,5,Exp17DM07,a,Exp17DM07_inoc1_T6_P107,7,3.0,6dpi,1,3,inoc1,17,6,EXP-2017
+328,,9,,Exp17DM07,a,Exp17DM07-Inoc1-T5-P34,9,4.0,5dpi,1,7,inoc1,17,5,EXP-2017
+329,0,9,,Exp17DM02,c,Exp17DM02_inoc1_T6_P32,9,2.0,fichier total,1,5,inoc1,17,,EXP-2017
+330,1,7,9,Exp17DM03,b,Exp17DM03_inoc1_T6_P05,9,4.0,fichier total,1,7,inoc1,17,,EXP-2017
+331,1,7,9,Exp17DM01,b,Exp17DM01_inoc3_T5_P27,9,2.0,fichier total,1,7,inoc3,17,,EXP-2017
+332,0,9,,Exp17DM02,b,Exp17DM02_inoc1_T6_P01,9,4.0,fichier total,1,7,inoc1,17,,EXP-2017
+333,1,5,5,Exp17DM02,c,Exp17DM02_inoc1_T6_P20,9,1.0,fichier total,1,5,inoc1,17,,EXP-2017
+334,1,7,9,Exp17DM01,c,Exp17DM01_inoc3_T5_P50,9,1.0,fichier total,1,7,inoc3,17,,EXP-2017
+335,0,9,,Exp17DM02,a,Exp17DM02_inoc1_T6_P01,9,4.0,fichier total,1,7,inoc1,17,,EXP-2017
+336,1,5,5,Exp17DM02,a,Exp17DM02_inoc1_T6_P07,9,1.0,fichier total,1,7,inoc1,17,,EXP-2017
+337,1,7,7,Exp17DM01,b,Exp17DM01_inoc3_T5_P01,9,1.0,fichier total,1,7,inoc3,17,,EXP-2017
+338,1,1,3,Exp17DM01,c,Exp17DM01_inoc2_T6_P31,,2.0,fichier total,,,inoc2,17,,EXP-2017
+339,1,1,1,Exp17DM01,c,Exp17DM01_inoc3_T5_P70,,2.0,fichier total,0,,inoc3,17,,EXP-2017
+340,1,1,3,Exp17DM04,a,Exp17DM04_inoc4_T6_P10,,2.0,fichier total,,,inoc4,17,,EXP-2017
+341,1,1,3,Exp17DM04,a,Exp17DM04_inoc2_T6_P28,,4.0,fichier total,,,inoc2,17,,EXP-2017
+342,1,1,3,Exp17DM01,b,Exp17DM01_inoc3_T5_P72,,1.0,fichier total,0,,inoc3,17,,EXP-2017
+343,1,1,3,Exp17DM02,a,Exp17DM02_inoc2_T6_P84,,1.0,fichier total,,,inoc2,17,,EXP-2017
+344,1,1,3,Exp17DM03,a,Exp17DM03_inoc1_T6_P07,,4.0,fichier total,0,,inoc1,17,,EXP-2017
+345,1,1,3,Exp17DM04,b,Exp17DM04_inoc4_T6_P51,,4.0,fichier total,,,inoc4,17,,EXP-2017
+346,1,1,3,Exp17DM04,c,Exp17DM04_inoc4_T6_P49,,4.0,fichier total,,,inoc4,17,,EXP-2017
+347,1,3,5,Exp17DM02,a,Exp17DM02_inoc1_T6_P80,,4.0,fichier total,,,inoc1,17,,EXP-2017
+348,1,3,3,Exp17DM07,b,Exp17DM07_inoc1_T6_P101,,1.0,6dpi,0,,inoc1,17,6,EXP-2017
+349,1,3,3,Exp17DM04,a,Exp17DM04_inoc4_T6_P13,,1.0,fichier total,,,inoc4,17,,EXP-2017
+350,1,3,3,Exp17DM04,c,Exp17DM04_inoc2_T6_P18,,2.0,fichier total,,,inoc2,17,,EXP-2017
+351,1,3,5,Exp17DM02,b,Exp17DM02_inoc1_T6_P54,,2.0,fichier total,,,inoc1,17,,EXP-2017
+352,1,3,3,Exp17DM04,a,Exp17DM04_inoc1_T6_P27,,2.0,fichier total,,,inoc1,17,,EXP-2017
+353,1,3,3,Exp17DM04,a,Exp17DM04_inoc4_T6_P39,,1.0,fichier total,,,inoc4,17,,EXP-2017
+354,1,3,3,Exp17DM02,b,Exp17DM02_inoc3_T6_P40,,3.0,fichier total,0,,inoc3,17,,EXP-2017
+355,1,3,3,Exp17DM07,a,Exp17DM07-Inoc1-T5-P42,,3.0,5dpi,,,inoc1,17,5,EXP-2017
+356,1,3,5,Exp17DM04,b,Exp17DM04_inoc2_T6_P08,,1.0,fichier total,,,inoc2,17,,EXP-2017
+357,1,5,5,Exp17DM07,a,Exp17DM07_inoc1_T6_P83,,1.0,6dpi,0,,inoc1,17,6,EXP-2017
+358,1,5,3,Exp17DM02,a,Exp17DM02_inoc1_T6_P91,,4.0,fichier total,,,inoc1,17,,EXP-2017
+359,1,5,5,Exp17DM07,b,Exp17DM07_inoc1_T6_P96,7,2.0,6dpi,1,7,inoc1,17,6,EXP-2017
+360,1,5,3,Exp17DM07,a,Exp17DM07_inoc1_T6_P84,,1.0,6dpi,0,,inoc1,17,6,EXP-2017
+361,1,5,5,Exp17DM02,a,Exp17DM02_inoc2_T6_P27,5,2.0,fichier total,1,3,inoc2,17,,EXP-2017
+362,1,5,7,Exp17DM07,b,Exp17DM07_inoc1_T6_P105,,3.0,6dpi,0,,inoc1,17,6,EXP-2017
+363,1,5,5,Exp17DM04,a,Exp17DM04_inoc2_T6_P20,,3.0,fichier total,,,inoc2,17,,EXP-2017
+364,1,5,3,Exp17DM02,b,Exp17DM02_inoc1_T6_P61,,2.0,fichier total,,,inoc1,17,,EXP-2017
+365,1,5,3,Exp17DM07,b,Exp17DM07-Inoc1-T5-P96,,3.0,5dpi,,,inoc1,17,5,EXP-2017
+366,1,5,5,Exp17DM02,a,Exp17DM02_inoc1_T6_P43,,1.0,fichier total,,,inoc1,17,,EXP-2017
+367,1,7,7,Exp17DM02,c,Exp17DM02_inoc2_T6_P133,7,1.0,fichier total,1,5,inoc2,17,,EXP-2017
+368,1,7,9,Exp17DM07,c,Exp17DM07-Inoc1-T5-P67,,1.0,5dpi,,,inoc1,17,5,EXP-2017
+369,1,7,5,Exp17DM07,b,Exp17DM07-Inoc1-T5-P33,3,4.0,5dpi,1,5,inoc1,17,5,EXP-2017
+370,1,7,7,Exp17DM02,b,Exp17DM02_inoc2_T6_P34,5,4.0,fichier total,1,3,inoc2,17,,EXP-2017
+371,1,7,5,Exp17DM04,a,Exp17DM04_inoc4_T6_P02,3,2.0,fichier total,1,1,inoc4,17,,EXP-2017
+372,1,7,9,Exp17DM02,b,Exp17DM02_inoc3_T6_P71,3,2.0,fichier total,1,3,inoc3,17,,EXP-2017
+373,1,7,7,Exp17DM02,c,Exp17DM02_inoc1_T6_P83,9,4.0,fichier total,1,7,inoc1,17,,EXP-2017
+374,1,7,7,Exp17DM07,c,Exp17DM07-Inoc1-T5-P17,,1.0,5dpi,,,inoc1,17,5,EXP-2017
+375,1,7,9,Exp17DM02,a,Exp17DM02_inoc2_T6_P101,7,2.0,fichier total,1,7,inoc2,17,,EXP-2017
+376,1,7,9,Exp17DM01,c,Exp17DM01_inoc2_T6_P28,9,1.0,fichier total,1,5,inoc2,17,,EXP-2017
+377,0,9,,Exp17DM07,c,Exp17DM07_inoc1_T6_P118,7,4.0,6dpi,1,5,inoc1,17,6,EXP-2017
+378,0,9,,Exp17DM02,a,Exp17DM02_inoc2_T6_P81,,4.0,fichier total,0,,inoc2,17,,EXP-2017
+379,0,9,,Exp17DM01,c,Exp17DM01_inoc2_T6_P11,7,3.0,fichier total,1,7,inoc2,17,,EXP-2017
+380,,9,,Exp17DM07,b,Exp17DM07-Inoc1-T5-P33,,2.0,5dpi,,,inoc1,17,5,EXP-2017
+381,0,9,,Exp17DM02,b,Exp17DM02_inoc3_T6_P34,,1.0,fichier total,0,,inoc3,17,,EXP-2017
+382,0,9,,Exp17DM07,b,Exp17DM07_inoc1_T6_P58,,3.0,6dpi,0,,inoc1,17,6,EXP-2017
+383,,9,,Exp17DM07,a,Exp17DM07-Inoc1-T5-P51,,4.0,5dpi,,,inoc1,17,5,EXP-2017
+384,0,9,,Exp17DM02,c,Exp17DM02_inoc2_T6_P53,,4.0,fichier total,0,,inoc2,17,,EXP-2017
+385,0,9,,Exp17DM07,a,Exp17DM07_inoc1_T6_P18,,2.0,6dpi,0,,inoc1,17,6,EXP-2017
+386,1,3,1,Exp18DM06,a,Exp18DM06_inoc1_T6_P94,,3.0,fichier total,,,NA,18,,EXP-2018
+387,1,3,1,Exp18DM01,b,Exp18DM01_inoc1_T6_P14,,1.0,fichier total,0,,inoc2,18,,EXP-2018
+388,1,3,1,Exp18DM05,b,Exp18DM05_inoc1_T6_P71,,1.0,6dpi,0,,NA,18,6,EXP-2018
+389,1,3,1,Exp18DM02,a,Exp18DM02_inoc2_T6_P03,,2.0,fichier total,0,,inoc2et3,18,,EXP-2018
+390,1,3,1,Exp18DM01,c,Exp18DM01_inoc1_T6_P10,,3.0,fichier total,0,,inoc1,18,,EXP-2018
+391,1,1,1,Exp18DM03,a,Exp18DM03_inoc1_T6_P01,,1.0,fichier total,0,,NA,18,,EXP-2018
+392,1,3,1,Exp18DM05,b,Exp18DM05_inoc1_T4_P41,,2.0,4dpi,0,,NA,18,4,EXP-2018
+393,1,3,1,Exp18DM06,a,Exp18DM06_inoc1_T6_P83,,3.0,fichier total,,,NA,18,,EXP-2018
+394,1,1,1,Exp18DM06,b,Exp18DM06_inoc1_T6_P93,,2.0,fichier total,,,NA,18,,EXP-2018
+395,1,1,1,Exp18DM02,b,Exp18DM02_inoc1_T6_P20,,1.0,fichier total,0,,inoc1,18,,EXP-2018
+396,1,3,3,Exp18DM10,b,Exp18DM10_inoc1_T6_P37,,4.0,fichier total,0,,NA,18,,EXP-2018
+397,1,1,3,Exp18DM10,b,Exp18DM10_inoc1_T6_P49,,3.0,fichier total,0,,NA,18,,EXP-2018
+398,1,3,3,Exp18DM07,c,Exp18DM07_inoc1_T6_P03,,1.0,6dpi,,,NA,18,6,EXP-2018
+399,1,3,3,Exp18DM01,b,Exp18DM01_inoc1_T6_P31,,2.0,fichier total,0,,inoc1,18,,EXP-2018
+400,1,3,3,Exp18DM07,b,Exp18DM07_inoc1_T6_P14,,2.0,6dpi,,,NA,18,6,EXP-2018
+401,1,5,3,Exp18DM05,a,Exp18DM05_inoc1_T4_P39,,3.0,4dpi,0,,NA,18,4,EXP-2018
+402,1,1,3,Exp18DM02,c,Exp18DM02_inoc3_T6_P52,,3.0,fichier total,0,,inoc2et3,18,,EXP-2018
+403,1,1,3,Exp18DM06,a,Exp18DM06_inoc1_T6_P32,,2.0,fichier total,,,NA,18,,EXP-2018
+404,1,3,3,Exp18DM05,b,Exp18DM05_inoc1_T4_P41,,3.0,4dpi,0,,NA,18,4,EXP-2018
+405,1,1,3,Exp18DM02,a,Exp18DM02_inoc1_T6_P15,,3.0,fichier total,0,,inoc1,18,,EXP-2018
+406,1,3,5,Exp18DM01,b,Exp18DM01_inoc1_T6_P22,,4.0,fichier total,0,,inoc1,18,,EXP-2018
+407,1,7,5,Exp18DM01,b,Exp18DM01_inoc1_T6_P33,5,2.0,fichier total,1,5,inoc1,18,,EXP-2018
+408,1,5,5,Exp18DM05,a,Exp18DM05_inoc1_T4_P41,,4.0,4dpi,0,,NA,18,4,EXP-2018
+409,1,3,5,Exp18DM01,a,Exp18DM01_inoc1_T6_P27,,3.0,fichier total,0,,inoc1,18,,EXP-2018
+410,1,3,5,Exp18DM10,c,Exp18DM10_inoc1_T6_P19,,3.0,fichier total,0,,NA,18,,EXP-2018
+411,1,7,5,Exp18DM05,a,Exp18DM05_inoc1_T6_P02,,3.0,6dpi,0,,NA,18,6,EXP-2018
+412,1,5,5,Exp18DM10,c,Exp18DM10_inoc1_T6_P08,,1.0,fichier total,0,,NA,18,,EXP-2018
+413,1,5,5,Exp18DM06,b,Exp18DM06_inoc1_T6_P25,,1.0,fichier total,,,NA,18,,EXP-2018
+414,1,5,5,Exp18DM06,b,Exp18DM06_inoc1_T6_P96,5,1.0,fichier total,1,7,NA,18,,EXP-2018
+415,1,5,5,Exp18DM10,a,Exp18DM10_inoc1_T6_P42,,2.0,fichier total,0,,NA,18,,EXP-2018
+416,1,7,7,Exp18DM02,c,Exp18DM02_inoc1_T6_P24,,2.0,fichier total,0,,inoc1,18,,EXP-2018
+417,1,7,7,Exp18DM02,b,Exp18DM02_inoc1_T6_P42,,3.0,fichier total,0,,inoc1,18,,EXP-2018
+418,1,7,7,Exp18DM05,a,Exp18DM05_inoc1_T6_P40,7,1.0,6dpi,1,7,NA,18,6,EXP-2018
+419,1,7,7,Exp18DM02,a,Exp18DM02_inoc1_T6_P39,,4.0,fichier total,0,,inoc1,18,,EXP-2018
+420,1,7,7,Exp18DM02,c,Exp18DM02_inoc1_T6_P26,,2.0,fichier total,0,,inoc1,18,,EXP-2018
+421,1,7,7,Exp18DM01,a,Exp18DM01_inoc1_T6_P11,7,4.0,fichier total,1,7,inoc2,18,,EXP-2018
+422,1,7,7,Exp18DM01,c,Exp18DM01_inoc1_T6_P12,3,4.0,fichier total,1,3,inoc2,18,,EXP-2018
+423,1,7,7,Exp18DM10,c,Exp18DM10_inoc1_T6_P05,7,1.0,fichier total,1,7,NA,18,,EXP-2018
+424,1,7,7,Exp18DM02,b,Exp18DM02_inoc3_T6_P38,7,4.0,fichier total,1,7,inoc2et3,18,,EXP-2018
+425,1,7,7,Exp18DM01,a,Exp18DM01_inoc1_T6_P02,9,3.0,fichier total,1,7,inoc1,18,,EXP-2018
+426,1,7,9,Exp18DM06,c,Exp18DM06_inoc1_T6_P32,7,1.0,fichier total,1,7,NA,18,,EXP-2018
+427,1,7,9,Exp18DM01,a,Exp18DM01_inoc1_T6_P27,9,4.0,fichier total,1,7,inoc1,18,,EXP-2018
+428,1,7,9,Exp18DM06,b,Exp18DM06_inoc1_T6_P30,5,3.0,fichier total,1,5,NA,18,,EXP-2018
+429,1,7,9,Exp18DM05,c,Exp18DM05_inoc1_T5_P40,5,1.0,5dpi,1,7,NA,18,5,EXP-2018
+430,1,7,9,Exp18DM03,c,Exp18DM03_inoc1_T6_P48,,1.0,fichier total,0,,NA,18,,EXP-2018
+431,1,7,9,Exp18DM02,a,Exp18DM02_inoc2_T6_P32,5,1.0,fichier total,1,7,inoc2et3,18,,EXP-2018
+432,1,7,9,Exp18DM06,b,Exp18DM06_inoc1_T6_P83,7,4.0,fichier total,1,3,NA,18,,EXP-2018
+433,1,7,9,Exp18DM01,b,Exp18DM01_inoc1_T6_P03,9,4.0,fichier total,1,7,inoc1,18,,EXP-2018
+434,1,7,9,Exp18DM06,c,Exp18DM06_inoc1_T6_P30,5,3.0,fichier total,1,5,NA,18,,EXP-2018
+435,1,7,9,Exp18DM05,b,Exp18DM05_inoc1_T4_P42,7,2.0,4dpi,1,7,NA,18,4,EXP-2018
+436,1,3,3,Exp18DM01,c,Exp18DM01_inoc1_T6_P24,3,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+437,1,3,3,Exp18DM01,a,Exp18DM01_inoc1_T6_P24,3,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+438,1,7,7,Exp18DM02,c,Exp18DM02_inoc2_T6_P08,3,4.0,fichier total,1,1,inoc2et3,18,,EXP-2018
+439,1,7,7,Exp18DM02,a,Exp18DM02_inoc2_T6_P08,3,4.0,fichier total,1,1,inoc2et3,18,,EXP-2018
+440,1,3,5,Exp18DM05,c,Exp18DM05_inoc1_T4_P67,5,2.0,4dpi,1,1,NA,18,4,EXP-2018
+441,1,5,5,Exp18DM05,a,Exp18DM05_inoc1_T5_P35,5,3.0,5dpi,1,1,NA,18,5,EXP-2018
+442,1,7,7,Exp18DM01,b,Exp18DM01_inoc1_T6_P06,5,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+443,1,5,5,Exp18DM01,b,Exp18DM01_inoc1_T6_P15,3,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+444,1,7,5,Exp18DM01,b,Exp18DM01_inoc1_T6_P08,1,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+445,1,3,5,Exp18DM01,c,Exp18DM01_inoc1_T6_P17,3,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+446,1,7,7,Exp18DM01,a,Exp18DM01_inoc1_T6_P10,5,4.0,fichier total,1,3,inoc1,18,,EXP-2018
+447,1,5,5,Exp18DM05,b,Exp18DM05_inoc1_T6_P69,5,2.0,6dpi,1,3,NA,18,6,EXP-2018
+448,1,7,5,Exp18DM06,a,Exp18DM06_inoc1_T6_P76,5,2.0,fichier total,1,3,NA,18,,EXP-2018
+449,1,5,5,Exp18DM05,c,Exp18DM05_inoc1_T4_P27,5,1.0,4dpi,1,3,NA,18,4,EXP-2018
+450,1,7,5,Exp18DM01,a,Exp18DM01_inoc1_T6_P07,5,3.0,fichier total,1,3,inoc1,18,,EXP-2018
+451,1,5,5,Exp18DM05,b,Exp18DM05_inoc1_T4_P31,5,1.0,4dpi,1,3,NA,18,4,EXP-2018
+452,1,7,5,Exp18DM06,c,Exp18DM06_inoc1_T6_P76,5,2.0,fichier total,1,3,NA,18,,EXP-2018
+453,1,7,7,Exp18DM02,c,Exp18DM02_inoc3_T6_P48,5,3.0,fichier total,1,3,inoc2et3,18,,EXP-2018
+454,1,7,7,Exp18DM02,b,Exp18DM02_inoc2_T6_P16,3,1.0,fichier total,1,3,inoc2et3,18,,EXP-2018
+455,1,5,5,Exp18DM01,c,Exp18DM01_inoc1_T6_P08,7,2.0,fichier total,1,3,inoc1,18,,EXP-2018
+456,1,7,9,Exp18DM06,a,Exp18DM06_inoc1_T6_P25,5,2.0,fichier total,1,5,NA,18,,EXP-2018
+457,0,9,,Exp18DM06,c,Exp18DM06_inoc1_T6_P30,7,1.0,fichier total,1,5,NA,18,,EXP-2018
+458,0,9,,Exp18DM06,a,Exp18DM06_inoc1_T6_P14,7,1.0,fichier total,1,5,NA,18,,EXP-2018
+459,1,7,9,Exp18DM06,a,Exp18DM06_inoc1_T6_P72,5,2.0,fichier total,1,5,NA,18,,EXP-2018
+460,1,5,5,Exp18DM10,a,Exp18DM10_inoc1_T6_P11,7,2.0,fichier total,1,5,NA,18,,EXP-2018
+461,1,7,9,Exp18DM06,a,Exp18DM06_inoc1_T6_P66,5,1.0,fichier total,1,5,NA,18,,EXP-2018
+462,1,7,9,Exp18DM06,a,Exp18DM06_inoc1_T6_P73,5,3.0,fichier total,1,5,NA,18,,EXP-2018
+463,1,3,3,Exp18DM02,b,Exp18DM02_inoc3_T6_P53,7,1.0,fichier total,1,5,inoc2et3,18,,EXP-2018
+464,1,7,9,Exp18DM01,c,Exp18DM01_inoc1_T6_P36,5,2.0,fichier total,1,5,inoc1,18,,EXP-2018
+465,1,7,9,Exp18DM05,c,Exp18DM05_inoc1_T4_P28,5,2.0,4dpi,1,5,NA,18,4,EXP-2018
+466,1,5,5,Exp18DM10,b,Exp18DM10_inoc1_T6_P28,7,2.0,fichier total,1,7,NA,18,,EXP-2018
+467,1,7,7,Exp18DM05,c,Exp18DM05_inoc1_T6_P70,7,4.0,6dpi,1,7,NA,18,6,EXP-2018
+468,1,7,9,Exp18DM07,b,Exp18DM07_inoc1_T6_P02,9,3.0,6dpi,1,7,NA,18,6,EXP-2018
+469,1,3,3,Exp18DM10,b,Exp18DM10_inoc1_T6_P11,7,1.0,fichier total,1,7,NA,18,,EXP-2018
+470,1,3,3,Exp18DM10,a,Exp18DM10_inoc1_T6_P13,7,1.0,fichier total,1,7,NA,18,,EXP-2018
+471,0,9,,Exp18DM02,c,Exp18DM02_inoc2_T6_P17,9,1.0,fichier total,1,7,inoc2et3,18,,EXP-2018
+472,1,7,9,Exp18DM07,b,Exp18DM07_inoc1_T6_P01,7,4.0,6dpi,1,7,NA,18,6,EXP-2018
+473,0,9,,Exp18DM05,a,Exp18DM05_inoc1_T4_P06,9,2.0,4dpi,1,7,NA,18,4,EXP-2018
+474,1,3,3,Exp18DM10,a,Exp18DM10_inoc1_T6_P24,7,4.0,fichier total,1,7,NA,18,,EXP-2018
+475,1,7,9,Exp18DM06,c,Exp18DM06_inoc1_T6_P29,7,3.0,fichier total,1,7,NA,18,,EXP-2018
+476,1,7,9,Exp18DM05,b,Exp18DM05_inoc1_T4_P27,9,3.0,4dpi,1,9,NA,18,4,EXP-2018
+477,0,9,,Exp18DM01,a,Exp18DM01_inoc1_T6_P02,7,1.0,fichier total,1,9,inoc2,18,,EXP-2018
+478,0,9,,Exp18DM05,c,Exp18DM05_inoc1_T5_P42,7,3.0,5dpi,1,9,NA,18,5,EXP-2018
+479,0,9,,Exp18DM10,b,Exp18DM10_inoc1_T6_P02,7,1.0,fichier total,1,9,NA,18,,EXP-2018
+480,0,9,,Exp18DM10,c,Exp18DM10_inoc1_T6_P02,7,1.0,fichier total,1,9,NA,18,,EXP-2018
+481,0,9,,Exp18DM05,b,Exp18DM05_inoc1_T4_P38,9,1.0,4dpi,1,9,NA,18,4,EXP-2018
+482,0,9,,Exp18DM01,a,Exp18DM01_inoc1_T6_P06,9,1.0,fichier total,1,9,inoc1,18,,EXP-2018
+483,0,9,,Exp18DM05,a,Exp18DM05_inoc1_T5_P38,9,1.0,5dpi,1,9,NA,18,5,EXP-2018
+484,0,9,,Exp18DM05,a,Exp18DM05_inoc1_T6_P04,5,2.0,6dpi,1,9,NA,18,6,EXP-2018
+485,0,9,,Exp18DM01,b,Exp18DM01_inoc1_T6_P30,9,1.0,fichier total,1,9,inoc2,18,,EXP-2018
+486,1,5,5,Exp18DM06,c,Exp18DM06_inoc1_T6_P23,1,1.0,fichier total,1,1,NA,18,,EXP-2018
+487,1,5,3,Exp18DM01,a,Exp18DM01_inoc1_T6_P24,1,3.0,fichier total,1,1,inoc2,18,,EXP-2018
+488,1,5,5,Exp18DM06,b,Exp18DM06_inoc1_T6_P23,1,1.0,fichier total,1,1,NA,18,,EXP-2018
+489,1,5,5,Exp18DM06,a,Exp18DM06_inoc1_T6_P23,1,1.0,fichier total,1,1,NA,18,,EXP-2018
+490,1,3,5,Exp18DM01,a,Exp18DM01_inoc1_T6_P28,1,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+491,1,7,7,Exp18DM01,a,Exp18DM01_inoc1_T6_P08,1,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+492,1,7,9,Exp18DM06,c,Exp18DM06_inoc1_T6_P48,1,4.0,fichier total,1,1,NA,18,,EXP-2018
+493,1,3,5,Exp18DM01,c,Exp18DM01_inoc1_T6_P28,1,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+494,1,7,9,Exp18DM06,b,Exp18DM06_inoc1_T6_P48,1,4.0,fichier total,1,1,NA,18,,EXP-2018
+495,1,5,5,Exp18DM01,c,Exp18DM01_inoc1_T6_P08,1,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+496,1,5,5,Exp18DM06,b,Exp18DM06_inoc1_T6_P101,3,4.0,fichier total,1,5,NA,18,,EXP-2018
+497,1,7,9,Exp18DM06,a,Exp18DM06_inoc1_T6_P33,3,4.0,fichier total,1,3,NA,18,,EXP-2018
+498,1,5,5,Exp18DM05,a,Exp18DM05_inoc1_T6_P35,3,3.0,6dpi,1,1,NA,18,6,EXP-2018
+499,1,7,5,Exp18DM06,c,Exp18DM06_inoc1_T6_P68,3,1.0,fichier total,1,5,NA,18,,EXP-2018
+500,1,7,9,Exp18DM02,c,Exp18DM02_inoc2_T6_P17,3,2.0,fichier total,1,5,inoc2et3,18,,EXP-2018
+501,1,7,7,Exp18DM01,c,Exp18DM01_inoc1_T6_P10,3,4.0,fichier total,1,3,inoc1,18,,EXP-2018
+502,1,3,5,Exp18DM01,b,Exp18DM01_inoc1_T6_P30,3,2.0,fichier total,1,1,inoc2,18,,EXP-2018
+503,1,7,9,Exp18DM06,b,Exp18DM06_inoc1_T6_P50,3,4.0,fichier total,1,5,NA,18,,EXP-2018
+504,0,9,,Exp18DM06,c,Exp18DM06_inoc1_T6_P55,3,2.0,fichier total,1,9,NA,18,,EXP-2018
+505,1,5,5,Exp18DM01,b,Exp18DM01_inoc1_T6_P39,3,1.0,fichier total,1,3,inoc2,18,,EXP-2018
+506,0,9,,Exp18DM06,a,Exp18DM06_inoc1_T6_P40,5,1.0,fichier total,1,5,NA,18,,EXP-2018
+507,1,7,9,Exp18DM05,c,Exp18DM05_inoc1_T4_P40,5,1.0,4dpi,1,7,NA,18,4,EXP-2018
+508,1,7,9,Exp18DM05,c,Exp18DM05_inoc1_T4_P34,5,2.0,4dpi,1,5,NA,18,4,EXP-2018
+509,1,7,5,Exp18DM05,c,Exp18DM05_inoc1_T5_P33,5,1.0,5dpi,1,1,NA,18,5,EXP-2018
+510,1,7,7,Exp18DM05,a,Exp18DM05_inoc1_T6_P42,5,2.0,6dpi,1,7,NA,18,6,EXP-2018
+511,1,5,5,Exp18DM01,a,Exp18DM01_inoc1_T6_P12,5,3.0,fichier total,1,5,inoc2,18,,EXP-2018
+512,1,7,7,Exp18DM02,b,Exp18DM02_inoc3_T6_P48,5,3.0,fichier total,1,3,inoc2et3,18,,EXP-2018
+513,1,5,3,Exp18DM06,c,Exp18DM06_inoc1_T6_P36,5,1.0,fichier total,1,7,NA,18,,EXP-2018
+514,1,7,7,Exp18DM06,c,Exp18DM06_inoc1_T6_P43,5,1.0,fichier total,1,5,NA,18,,EXP-2018
+515,1,7,9,Exp18DM05,c,Exp18DM05_inoc1_T4_P01,7,4.0,4dpi,1,7,NA,18,4,EXP-2018
+516,1,7,5,Exp18DM02,b,Exp18DM02_inoc2_T6_P18,7,4.0,fichier total,1,5,inoc2et3,18,,EXP-2018
+517,1,7,9,Exp18DM05,c,Exp18DM05_inoc1_T6_P04,7,3.0,6dpi,1,5,NA,18,6,EXP-2018
+518,1,7,7,Exp18DM05,a,Exp18DM05_inoc1_T6_P32,7,1.0,6dpi,1,5,NA,18,6,EXP-2018
+519,1,7,9,Exp18DM06,b,Exp18DM06_inoc1_T6_P04,7,1.0,fichier total,1,7,NA,18,,EXP-2018
+520,1,7,7,Exp18DM02,a,Exp18DM02_inoc2_T6_P27,7,1.0,fichier total,1,3,inoc2et3,18,,EXP-2018
+521,0,9,,Exp18DM02,c,Exp18DM02_inoc1_T6_P02,7,1.0,fichier total,1,9,inoc1,18,,EXP-2018
+522,1,7,7,Exp18DM05,c,Exp18DM05_inoc1_T6_P05,7,1.0,6dpi,1,5,NA,18,6,EXP-2018
+523,0,9,,Exp18DM10,b,Exp18DM10_inoc1_T6_P04,7,3.0,fichier total,1,7,NA,18,,EXP-2018
+524,0,9,,Exp18DM02,b,Exp18DM02_inoc2_T6_P05,7,2.0,fichier total,1,9,inoc2et3,18,,EXP-2018
+525,1,7,9,Exp18DM02,c,Exp18DM02_inoc1_T6_P05,9,4.0,fichier total,1,7,inoc1,18,,EXP-2018
+526,0,9,,Exp18DM06,a,Exp18DM06_inoc1_T6_P21,9,2.0,fichier total,1,7,NA,18,,EXP-2018
+527,0,9,,Exp18DM06,b,Exp18DM06_inoc1_T6_P42,9,4.0,fichier total,1,5,NA,18,,EXP-2018
+528,1,7,9,Exp18DM06,b,Exp18DM06_inoc1_T6_P09,9,4.0,fichier total,1,5,NA,18,,EXP-2018
+529,1,5,3,Exp18DM01,a,Exp18DM01_inoc1_T6_P12,9,1.0,fichier total,1,3,inoc1,18,,EXP-2018
+530,1,7,9,Exp18DM01,b,Exp18DM01_inoc1_T6_P18,9,4.0,fichier total,1,7,inoc1,18,,EXP-2018
+531,1,7,9,Exp18DM01,a,Exp18DM01_inoc1_T6_P03,9,4.0,fichier total,1,7,inoc1,18,,EXP-2018
+532,0,9,,Exp18DM05,c,Exp18DM05_inoc1_T6_P02,9,1.0,6dpi,1,9,NA,18,6,EXP-2018
+533,1,1,1,Exp18DM02,a,Exp18DM02_inoc1_T6_P01,,2.0,fichier total,0,,inoc1,18,,EXP-2018
+534,1,1,3,Exp18DM06,a,Exp18DM06_inoc1_T6_P03,,2.0,fichier total,,,NA,18,,EXP-2018
+535,1,1,3,Exp18DM01,b,Exp18DM01_inoc1_T6_P05,,3.0,fichier total,0,,inoc2,18,,EXP-2018
+536,1,1,3,Exp18DM10,c,Exp18DM10_inoc1_T6_P27,,2.0,fichier total,0,,NA,18,,EXP-2018
+537,1,1,3,Exp18DM02,c,Exp18DM02_inoc2_T6_P07,,3.0,fichier total,0,,inoc2et3,18,,EXP-2018
+538,1,1,3,Exp18DM02,a,Exp18DM02_inoc2_T6_P13,,4.0,fichier total,0,,inoc2et3,18,,EXP-2018
+539,1,1,3,Exp18DM02,c,Exp18DM02_inoc3_T6_P58,,1.0,fichier total,0,,inoc2et3,18,,EXP-2018
+540,1,1,3,Exp18DM06,a,Exp18DM06_inoc1_T6_P39,,4.0,fichier total,,,NA,18,,EXP-2018
+541,1,1,1,Exp18DM06,b,Exp18DM06_inoc1_T6_P93,,1.0,fichier total,,,NA,18,,EXP-2018
+542,1,1,3,Exp18DM05,b,Exp18DM05_inoc1_T4_P70,,4.0,4dpi,0,,NA,18,4,EXP-2018
+543,1,3,3,Exp18DM02,c,Exp18DM02_inoc2_T6_P31,,3.0,fichier total,0,,inoc2et3,18,,EXP-2018
+544,1,3,3,Exp18DM10,c,Exp18DM10_inoc1_T6_P47,,4.0,fichier total,0,,NA,18,,EXP-2018
+545,1,3,3,Exp18DM06,a,Exp18DM06_inoc1_T6_P65,,2.0,fichier total,,,NA,18,,EXP-2018
+546,1,3,5,Exp18DM01,a,Exp18DM01_inoc1_T6_P18,,3.0,fichier total,0,,inoc2,18,,EXP-2018
+547,1,3,5,Exp18DM06,b,Exp18DM06_inoc1_T6_P18,,4.0,fichier total,,,NA,18,,EXP-2018
+548,1,3,5,Exp18DM05,c,Exp18DM05_inoc1_T6_P71,,3.0,6dpi,0,,NA,18,6,EXP-2018
+549,1,3,3,Exp18DM07,c,Exp18DM07_inoc1_T6_P02,,4.0,6dpi,,,NA,18,6,EXP-2018
+550,1,3,5,Exp18DM05,a,Exp18DM05_inoc1_T4_P34,,2.0,4dpi,0,,NA,18,4,EXP-2018
+551,1,3,3,Exp18DM05,b,Exp18DM05_inoc1_T4_P34,,2.0,4dpi,0,,NA,18,4,EXP-2018
+552,1,3,3,Exp18DM05,c,Exp18DM05_inoc1_T6_P70,,1.0,6dpi,0,,NA,18,6,EXP-2018
+553,1,5,5,Exp18DM02,a,Exp18DM02_inoc2_T6_P33,,4.0,fichier total,0,,inoc2et3,18,,EXP-2018
+554,1,5,5,Exp18DM05,c,Exp18DM05_inoc1_T5_P35,5,3.0,5dpi,1,3,NA,18,5,EXP-2018
+555,1,5,5,Exp18DM06,a,Exp18DM06_inoc1_T6_P96,,4.0,fichier total,,,NA,18,,EXP-2018
+556,1,5,5,Exp18DM05,c,Exp18DM05_inoc1_T6_P35,3,2.0,6dpi,1,3,NA,18,6,EXP-2018
+557,1,5,5,Exp18DM05,b,Exp18DM05_inoc1_T4_P32,,1.0,4dpi,0,,NA,18,4,EXP-2018
+558,1,5,5,Exp18DM05,a,Exp18DM05_inoc1_T4_P34,5,3.0,4dpi,1,3,NA,18,4,EXP-2018
+559,1,5,5,Exp18DM02,a,Exp18DM02_inoc2_T6_P35,,2.0,fichier total,0,,inoc2et3,18,,EXP-2018
+560,1,5,5,Exp18DM02,b,Exp18DM02_inoc2_T6_P24,,1.0,fichier total,0,,inoc2et3,18,,EXP-2018
+561,1,5,5,Exp18DM02,a,Exp18DM02_inoc2_T6_P22,,2.0,fichier total,0,,inoc2et3,18,,EXP-2018
+562,1,5,5,Exp18DM06,a,Exp18DM06_inoc1_T6_P88,,3.0,fichier total,,,NA,18,,EXP-2018
+563,1,7,7,Exp18DM02,a,Exp18DM02_inoc2_T6_P37,,1.0,fichier total,0,,inoc2et3,18,,EXP-2018
+564,1,7,9,Exp18DM01,c,Exp18DM01_inoc1_T6_P08,9,1.0,fichier total,1,7,inoc1,18,,EXP-2018
+565,1,7,9,Exp18DM06,b,Exp18DM06_inoc1_T6_P83,7,1.0,fichier total,1,7,NA,18,,EXP-2018
+566,1,7,9,Exp18DM06,b,Exp18DM06_inoc1_T6_P06,7,2.0,fichier total,1,7,NA,18,,EXP-2018
+567,1,7,9,Exp18DM02,a,Exp18DM02_inoc1_T6_P24,,3.0,fichier total,0,,inoc1,18,,EXP-2018
+568,1,7,7,Exp18DM02,c,Exp18DM02_inoc1_T6_P19,,1.0,fichier total,0,,inoc1,18,,EXP-2018
+569,1,7,7,Exp18DM02,b,Exp18DM02_inoc1_T6_P16,,3.0,fichier total,0,,inoc1,18,,EXP-2018
+570,1,7,5,Exp18DM01,a,Exp18DM01_inoc1_T6_P26,,2.0,fichier total,0,,inoc2,18,,EXP-2018
+571,1,7,5,Exp18DM02,a,Exp18DM02_inoc1_T6_P37,,1.0,fichier total,0,,inoc1,18,,EXP-2018
+572,1,7,5,Exp18DM01,a,Exp18DM01_inoc1_T6_P38,,3.0,fichier total,0,,inoc2,18,,EXP-2018
+573,0,9,,Exp18DM06,b,Exp18DM06_inoc1_T6_P02,7,1.0,fichier total,1,9,NA,18,,EXP-2018
+574,0,9,,Exp18DM06,c,Exp18DM06_inoc1_T6_P24,5,3.0,fichier total,1,5,NA,18,,EXP-2018
+575,0,9,,Exp18DM03,c,Exp18DM03_inoc1_T6_P51,,2.0,fichier total,0,,NA,18,,EXP-2018
+576,0,9,,Exp18DM05,a,Exp18DM05_inoc1_T5_P42,7,3.0,5dpi,1,9,NA,18,5,EXP-2018
+577,0,9,,Exp18DM02,a,Exp18DM02_inoc1_T6_P04,7,1.0,fichier total,1,9,inoc1,18,,EXP-2018
+578,0,9,,Exp18DM01,a,Exp18DM01_inoc1_T6_P32,9,2.0,fichier total,1,7,inoc1,18,,EXP-2018
+579,0,9,,Exp18DM03,b,Exp18DM03_inoc1_T6_P49,,2.0,fichier total,0,,NA,18,,EXP-2018
+580,0,9,,Exp18DM05,b,Exp18DM05_inoc1_T4_P42,7,3.0,4dpi,1,9,NA,18,4,EXP-2018
+581,0,9,,Exp18DM01,a,Exp18DM01_inoc1_T6_P30,7,1.0,fichier total,1,9,inoc1,18,,EXP-2018
+582,1,3,1,Exp19DM02,b,Exp19DM02_inoc2_T6_P19,,2.0,fichier total,0,,inoc2,19,,EXP-2019
+583,1,1,1,Exp19DM03,a,Exp19DM03_inoc2_T7_P34,,3.0,fichier total,,,inoc2,19,,EXP-2019
+584,1,3,1,Exp19DM02,a,Exp19DM02_inoc2_T6_P35,,2.0,fichier total,0,,inoc2,19,,EXP-2019
+585,1,3,1,Exp19DM04,b,Exp19DM04_inoc1_T6_P33,,2.0,fichier total,0,,inoc1,19,,EXP-2019
+586,1,3,1,Exp19DM04,c,Exp19DM04_inoc1_T6_P02,,4.0,fichier total,,,inoc1,19,,EXP-2019
+587,1,1,1,Exp19DM04,b,Exp19DM04_inoc2_T6_P25,,4.0,fichier total,,,inoc2,19,,EXP-2019
+588,1,3,1,Exp19DM04,c,Exp19DM04_inoc2_T6_P37,,3.0,fichier total,,,inoc2,19,,EXP-2019
+589,1,1,1,Exp19DM02,b,Exp19DM02_inoc1_T6_P09,,3.0,fichier total,0,,inoc1,19,,EXP-2019
+590,1,3,1,Exp19DM04,a,Exp19DM04_inoc2_T6_P56,,1.0,fichier total,0,,inoc2,19,,EXP-2019
+591,1,1,1,Exp19DM04,b,Exp19DM04_inoc1_T6_P36,,3.0,fichier total,0,,inoc1,19,,EXP-2019
+592,1,1,3,Exp19DM03,c,Exp19DM03_inoc2_T7_P40,,3.0,fichier total,,,inoc2,19,,EXP-2019
+593,1,3,3,Exp19DM03,c,Exp19DM03_inoc2_T7_P13,,1.0,fichier total,,,inoc2,19,,EXP-2019
+594,1,3,3,Exp19DM04,a,Exp19DM04_inoc1_T6_P44,,2.0,fichier total,,,inoc1,19,,EXP-2019
+595,1,3,3,Exp19DM04,a,Exp19DM04_inoc1_T6_P34,,2.0,fichier total,,,inoc1,19,,EXP-2019
+596,1,1,3,Exp19DM04,c,Exp19DM04_inoc1_T6_P22,,2.0,fichier total,0,,inoc1,19,,EXP-2019
+597,1,3,3,Exp19DM02,b,Exp19DM02_inoc1_T6_P13,,1.0,fichier total,0,,inoc1,19,,EXP-2019
+598,1,3,3,Exp19DM04,c,Exp19DM04_inoc2_T6_P26,,3.0,fichier total,,,inoc2,19,,EXP-2019
+599,1,1,3,Exp19DM03,b,Exp19DM03_inoc2_T7_P21,,2.0,fichier total,,,inoc2,19,,EXP-2019
+600,1,3,3,Exp19DM04,c,Exp19DM04_inoc1_T6_P12,,4.0,fichier total,,,inoc1,19,,EXP-2019
+601,1,1,3,Exp19DM03,a,Exp19DM03_inoc2_T7_P39,,1.0,fichier total,,,inoc2,19,,EXP-2019
+602,1,5,5,Exp19DM02,b,Exp19DM02_inoc2_T6_P30,,2.0,fichier total,0,,inoc2,19,,EXP-2019
+603,1,5,5,Exp19DM02,a,Exp19DM02_inoc2_T6_P19,,3.0,fichier total,0,,inoc2,19,,EXP-2019
+604,1,5,5,Exp19DM02,a,Exp19DM02_inoc2_T6_P08,5,2.0,fichier total,1,3,inoc2,19,,EXP-2019
+605,1,5,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P24,,4.0,fichier total,,,inoc2,19,,EXP-2019
+606,1,5,5,Exp19DM03,a,Exp19DM03_inoc2_T7_P12,,2.0,fichier total,,,inoc2,19,,EXP-2019
+607,1,7,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P08,,1.0,fichier total,,,inoc2,19,,EXP-2019
+608,1,3,5,Exp19DM03,a,Exp19DM03_inoc1_T7_P14,,4.0,fichier total,0,,inoc1,19,,EXP-2019
+609,1,5,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P31,,4.0,fichier total,,,inoc2,19,,EXP-2019
+610,1,3,5,Exp19DM04,a,Exp19DM04_inoc1_T6_P12,,3.0,fichier total,,,inoc1,19,,EXP-2019
+611,1,5,5,Exp19DM02,c,Exp19DM02_inoc2_T6_P26,3,2.0,fichier total,1,3,inoc2,19,,EXP-2019
+612,1,5,7,Exp19DM02,c,Exp19DM02_inoc1_T6_P10,3,4.0,fichier total,1,5,inoc1,19,,EXP-2019
+613,1,5,7,Exp19DM02,c,Exp19DM02_inoc1_T6_P16,7,1.0,fichier total,1,7,inoc1,19,,EXP-2019
+614,1,7,7,Exp19DM02,c,Exp19DM02_inoc2_T6_P09,9,4.0,fichier total,1,7,inoc2,19,,EXP-2019
+615,1,7,7,Exp19DM04,c,Exp19DM04_inoc1_T6_P05,7,1.0,fichier total,,7,inoc1,19,,EXP-2019
+616,1,7,7,Exp19DM02,c,Exp19DM02_inoc1_T6_P18,7,2.0,fichier total,1,7,inoc1,19,,EXP-2019
+617,1,5,7,Exp19DM02,b,Exp19DM02_inoc1_T6_P08,3,2.0,fichier total,1,1,inoc1,19,,EXP-2019
+618,1,7,7,Exp19DM06,b,Exp19DM06_inoc2_T6_P10,7,1.0,fichier total,1,7,inoc2,19,,EXP-2019
+619,1,7,7,Exp19DM09,b,Exp19DM09_inoc1_T4_P02,,1.0,4dpi,0,,NA,19,4,EXP-2019
+620,1,7,7,Exp19DM02,c,Exp19DM02_inoc1_T6_P02,3,2.0,fichier total,1,3,inoc1,19,,EXP-2019
+621,1,7,7,Exp19DM04,b,Exp19DM04_inoc2_T6_P08,7,1.0,fichier total,1,7,inoc2,19,,EXP-2019
+622,1,7,9,Exp19DM04,a,Exp19DM04_inoc1_T6_P04,7,1.0,fichier total,1,7,inoc1,19,,EXP-2019
+623,1,7,9,Exp19DM04,b,Exp19DM04_inoc1_T6_P01,7,4.0,fichier total,1,7,inoc1,19,,EXP-2019
+624,1,7,9,Exp19DM03,c,Exp19DM03_inoc1_T7_P38,5,3.0,fichier total,1,5,inoc1,19,,EXP-2019
+625,1,7,9,Exp19DM09,b,Exp19DM09_inoc1_T4_P07,,3.0,4dpi,0,,NA,19,4,EXP-2019
+626,1,7,9,Exp19DM09,b,Exp19DM09_inoc1_T4_P04,5,2.0,4dpi,1,7,NA,19,4,EXP-2019
+627,1,7,9,Exp19DM04,a,Exp19DM04_inoc1_T6_P05,7,1.0,fichier total,1,7,inoc1,19,,EXP-2019
+628,1,7,9,Exp19DM02,a,Exp19DM02_inoc2_T6_P11,5,4.0,fichier total,1,7,inoc2,19,,EXP-2019
+629,1,7,9,Exp19DM04,b,Exp19DM04_inoc1_T6_P04,7,1.0,fichier total,,7,inoc1,19,,EXP-2019
+630,1,7,9,Exp19DM09,a,Exp19DM09_inoc1_T4_P11,3,2.0,4dpi,1,7,NA,19,4,EXP-2019
+631,1,7,9,Exp19DM03,b,Exp19DM03_inoc2_T7_P06,7,1.0,fichier total,1,7,inoc2,19,,EXP-2019
+632,1,,5,Exp19DM04,b,Exp19DM04_inoc2_T6_P32,3,2.0,fichier total,1,1,inoc2,19,,EXP-2019
+633,1,5,5,Exp19DM04,b,Exp19DM04_inoc1_T6_P09,9,3.0,fichier total,,1,inoc1,19,,EXP-2019
+634,1,5,7,Exp19DM06,a,Exp19DM06_inoc2_T6_P08,7,2.0,fichier total,1,1,inoc2,19,,EXP-2019
+635,1,,5,Exp19DM04,b,Exp19DM04_inoc2_T6_P32,1,4.0,fichier total,1,1,inoc2,19,,EXP-2019
+636,1,5,5,Exp19DM02,c,Exp19DM02_inoc1_T6_P26,3,2.0,fichier total,1,1,inoc1,19,,EXP-2019
+637,1,5,5,Exp19DM02,b,Exp19DM02_inoc1_T6_P34,5,4.0,fichier total,1,1,inoc1,19,,EXP-2019
+638,1,5,5,Exp19DM04,a,Exp19DM04_inoc1_T6_P09,9,3.0,fichier total,,1,inoc1,19,,EXP-2019
+639,1,,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P24,1,4.0,fichier total,1,1,inoc2,19,,EXP-2019
+640,1,,5,Exp19DM04,c,Exp19DM04_inoc2_T6_P32,1,4.0,fichier total,1,1,inoc2,19,,EXP-2019
+641,1,3,3,Exp19DM04,c,Exp19DM04_inoc1_T6_P26,3,4.0,fichier total,,1,inoc1,19,,EXP-2019
+642,1,5,5,Exp19DM02,b,Exp19DM02_inoc2_T6_P09,5,4.0,fichier total,1,3,inoc2,19,,EXP-2019
+643,1,3,5,Exp19DM04,c,Exp19DM04_inoc2_T6_P57,3,3.0,fichier total,1,3,inoc2,19,,EXP-2019
+644,1,,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P14,3,1.0,fichier total,1,3,inoc2,19,,EXP-2019
+645,1,,3,Exp19DM04,a,Exp19DM04_inoc2_T6_P04,3,2.0,fichier total,1,3,inoc2,19,,EXP-2019
+646,1,3,3,Exp19DM04,b,Exp19DM04_inoc1_T6_P21,1,1.0,fichier total,1,3,inoc1,19,,EXP-2019
+647,1,3,5,Exp19DM04,b,Exp19DM04_inoc2_T6_P12,5,4.0,fichier total,1,3,inoc2,19,,EXP-2019
+648,1,3,5,Exp19DM04,b,Exp19DM04_inoc2_T6_P36,3,1.0,fichier total,1,3,inoc2,19,,EXP-2019
+649,1,5,5,Exp19DM03,c,Exp19DM03_inoc1_T7_P08,5,1.0,fichier total,1,3,inoc1,19,,EXP-2019
+650,1,5,7,Exp19DM02,b,Exp19DM02_inoc2_T6_P28,3,3.0,fichier total,1,3,inoc2,19,,EXP-2019
+651,1,3,5,Exp19DM04,c,Exp19DM04_inoc1_T6_P25,5,3.0,fichier total,1,3,inoc1,19,,EXP-2019
+652,1,5,5,Exp19DM03,c,Exp19DM03_inoc2_T7_P36,3,2.0,fichier total,1,5,inoc2,19,,EXP-2019
+653,1,3,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P01,5,3.0,fichier total,1,5,inoc2,19,,EXP-2019
+654,1,3,3,Exp19DM02,c,Exp19DM02_inoc1_T6_P06,7,1.0,fichier total,1,5,inoc1,19,,EXP-2019
+655,1,5,5,Exp19DM02,a,Exp19DM02_inoc1_T6_P23,5,4.0,fichier total,1,5,inoc1,19,,EXP-2019
+656,1,5,5,Exp19DM03,c,Exp19DM03_inoc2_T7_P07,5,4.0,fichier total,1,5,inoc2,19,,EXP-2019
+657,1,5,5,Exp19DM03,c,Exp19DM03_inoc1_T7_P34,5,1.0,fichier total,1,5,inoc1,19,,EXP-2019
+658,1,7,9,Exp19DM02,c,Exp19DM02_inoc2_T6_P02,3,2.0,fichier total,1,5,inoc2,19,,EXP-2019
+659,1,5,5,Exp19DM02,b,Exp19DM02_inoc2_T6_P07,7,1.0,fichier total,1,5,inoc2,19,,EXP-2019
+660,1,7,7,Exp19DM09,c,Exp19DM09_inoc1_T4_P02,9,1.0,4dpi,1,5,NA,19,4,EXP-2019
+661,1,5,5,Exp19DM03,a,Exp19DM03_inoc2_T7_P36,3,2.0,fichier total,1,5,inoc2,19,,EXP-2019
+662,1,5,5,Exp19DM02,c,Exp19DM02_inoc1_T6_P28,7,1.0,fichier total,1,7,inoc1,19,,EXP-2019
+663,1,7,7,Exp19DM09,b,Exp19DM09_inoc1_T4_P02,9,4.0,4dpi,1,7,NA,19,4,EXP-2019
+664,1,5,5,Exp19DM03,b,Exp19DM03_inoc2_T7_P27,7,3.0,fichier total,1,7,inoc2,19,,EXP-2019
+665,1,3,3,Exp19DM02,b,Exp19DM02_inoc1_T6_P30,9,1.0,fichier total,1,7,inoc1,19,,EXP-2019
+666,1,5,5,Exp19DM04,a,Exp19DM04_inoc1_T6_P03,9,4.0,fichier total,1,7,inoc1,19,,EXP-2019
+667,1,5,5,Exp19DM06,c,Exp19DM06_inoc2_T6_P07,7,3.0,fichier total,1,7,inoc2,19,,EXP-2019
+668,1,7,7,Exp19DM04,c,Exp19DM04_inoc2_T6_P49,7,1.0,fichier total,1,7,inoc2,19,,EXP-2019
+669,1,5,5,Exp19DM03,c,Exp19DM03_inoc1_T7_P23,3,2.0,fichier total,1,7,inoc1,19,,EXP-2019
+670,1,7,7,Exp19DM04,a,Exp19DM04_inoc2_T6_P08,7,1.0,fichier total,1,7,inoc2,19,,EXP-2019
+671,1,7,7,Exp19DM02,a,Exp19DM02_inoc2_T6_P35,5,4.0,fichier total,1,7,inoc2,19,,EXP-2019
+672,0,9,,Exp19DM06,b,Exp19DM06_inoc2_T6_P04,5,2.0,fichier total,1,9,inoc2,19,,EXP-2019
+673,0,9,,Exp19DM04,c,Exp19DM04_inoc2_T6_P03,9,1.0,fichier total,1,9,inoc2,19,,EXP-2019
+674,0,9,,Exp19DM03,c,Exp19DM03_inoc1_T7_P05,5,2.0,fichier total,1,9,inoc1,19,,EXP-2019
+675,0,9,,Exp19DM06,c,Exp19DM06_inoc2_T6_P08,7,1.0,fichier total,1,9,inoc2,19,,EXP-2019
+676,0,9,,Exp19DM06,a,Exp19DM06_inoc2_T6_P10,7,2.0,fichier total,1,9,inoc2,19,,EXP-2019
+677,1,5,5,Exp19DM03,b,Exp19DM03_inoc1_T7_P14,3,1.0,fichier total,1,9,inoc1,19,,EXP-2019
+678,0,9,,Exp19DM04,c,Exp19DM04_inoc2_T6_P02,9,1.0,fichier total,1,9,inoc2,19,,EXP-2019
+679,0,9,,Exp19DM04,a,Exp19DM04_inoc1_T6_P05,9,2.0,fichier total,,9,inoc1,19,,EXP-2019
+680,0,9,,Exp19DM04,c,Exp19DM04_inoc2_T6_P03,,1.0,fichier total,,9,inoc2,19,,EXP-2019
+681,0,9,,Exp19DM04,a,Exp19DM04_inoc2_T6_P05,,2.0,fichier total,,9,inoc2,19,,EXP-2019
+682,1,3,3,Exp19DM04,a,Exp19DM04_inoc2_T6_P22,1,1.0,fichier total,1,1,inoc2,19,,EXP-2019
+683,1,1,5,Exp19DM04,b,Exp19DM04_inoc2_T6_P11,1,4.0,fichier total,1,1,inoc2,19,,EXP-2019
+684,1,3,3,Exp19DM04,c,Exp19DM04_inoc1_T6_P24,1,1.0,fichier total,1,1,inoc1,19,,EXP-2019
+685,1,1,3,Exp19DM04,b,Exp19DM04_inoc1_T6_P14,1,1.0,fichier total,1,3,inoc1,19,,EXP-2019
+686,1,1,3,Exp19DM04,b,Exp19DM04_inoc2_T6_P12,1,1.0,fichier total,1,,inoc2,19,,EXP-2019
+687,1,3,3,Exp19DM04,c,Exp19DM04_inoc2_T6_P22,1,1.0,fichier total,1,1,inoc2,19,,EXP-2019
+688,1,1,3,Exp19DM04,b,Exp19DM04_inoc1_T6_P27,1,3.0,fichier total,1,1,inoc1,19,,EXP-2019
+689,1,3,3,Exp19DM04,b,Exp19DM04_inoc1_T6_P24,1,1.0,fichier total,1,1,inoc1,19,,EXP-2019
+690,1,5,5,Exp19DM02,a,Exp19DM02_inoc2_T6_P14,1,2.0,fichier total,,1,inoc2,19,,EXP-2019
+691,1,3,3,Exp19DM04,b,Exp19DM04_inoc2_T6_P22,1,1.0,fichier total,1,1,inoc2,19,,EXP-2019
+692,1,1,3,Exp19DM04,c,Exp19DM04_inoc2_T6_P24,3,3.0,fichier total,1,3,inoc2,19,,EXP-2019
+693,1,3,1,Exp19DM02,a,Exp19DM02_inoc2_T6_P22,3,4.0,fichier total,1,1,inoc2,19,,EXP-2019
+694,1,5,5,Exp19DM02,b,Exp19DM02_inoc1_T6_P23,3,1.0,fichier total,1,1,inoc1,19,,EXP-2019
+695,1,3,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P36,3,1.0,fichier total,1,3,inoc2,19,,EXP-2019
+696,1,3,3,Exp19DM04,a,Exp19DM04_inoc1_T6_P26,3,4.0,fichier total,,1,inoc1,19,,EXP-2019
+697,1,3,5,Exp19DM04,c,Exp19DM04_inoc2_T6_P14,3,1.0,fichier total,1,3,inoc2,19,,EXP-2019
+698,1,3,3,Exp19DM04,b,Exp19DM04_inoc2_T6_P46,3,4.0,fichier total,1,3,inoc2,19,,EXP-2019
+699,1,3,3,Exp19DM02,a,Exp19DM02_inoc2_T6_P23,3,2.0,fichier total,1,1,inoc2,19,,EXP-2019
+700,1,7,7,Exp19DM02,b,Exp19DM02_inoc2_T6_P35,5,4.0,fichier total,1,7,inoc2,19,,EXP-2019
+701,0,9,,Exp19DM06,a,Exp19DM06_inoc2_T6_P04,5,2.0,fichier total,1,9,inoc2,19,,EXP-2019
+702,1,5,5,Exp19DM03,a,Exp19DM03_inoc2_T7_P31,5,2.0,fichier total,1,3,inoc2,19,,EXP-2019
+703,1,5,5,Exp19DM02,c,Exp19DM02_inoc1_T6_P29,5,1.0,fichier total,1,3,inoc1,19,,EXP-2019
+704,1,1,3,Exp19DM03,b,Exp19DM03_inoc1_T7_P20,5,4.0,fichier total,1,7,inoc1,19,,EXP-2019
+705,1,7,9,Exp19DM02,a,Exp19DM02_inoc1_T6_P04,5,3.0,fichier total,1,5,inoc1,19,,EXP-2019
+706,1,5,5,Exp19DM02,c,Exp19DM02_inoc1_T6_P07,5,3.0,fichier total,1,5,inoc1,19,,EXP-2019
+707,1,,5,Exp19DM04,a,Exp19DM04_inoc1_T6_P25,5,3.0,fichier total,1,3,inoc1,19,,EXP-2019
+708,1,1,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P10,5,4.0,fichier total,1,3,inoc2,19,,EXP-2019
+709,1,5,5,Exp19DM02,b,Exp19DM02_inoc2_T6_P06,5,1.0,fichier total,1,5,inoc2,19,,EXP-2019
+710,0,9,,Exp19DM02,c,Exp19DM02_inoc2_T6_P06,7,3.0,fichier total,1,9,inoc2,19,,EXP-2019
+711,1,5,5,Exp19DM06,b,Exp19DM06_inoc2_T6_P09,7,4.0,fichier total,1,7,inoc2,19,,EXP-2019
+712,1,7,9,Exp19DM02,a,Exp19DM02_inoc1_T6_P08,7,3.0,fichier total,1,7,inoc1,19,,EXP-2019
+713,1,5,5,Exp19DM03,c,Exp19DM03_inoc2_T7_P25,7,2.0,fichier total,1,7,inoc2,19,,EXP-2019
+714,0,9,,Exp19DM06,b,Exp19DM06_inoc2_T6_P12,7,4.0,fichier total,1,9,inoc2,19,,EXP-2019
+715,1,5,5,Exp19DM02,a,Exp19DM02_inoc2_T6_P01,7,3.0,fichier total,1,5,inoc2,19,,EXP-2019
+716,1,7,9,Exp19DM03,a,Exp19DM03_inoc2_T7_P03,7,3.0,fichier total,1,7,inoc2,19,,EXP-2019
+717,1,7,9,Exp19DM06,b,Exp19DM06_inoc2_T6_P10,7,3.0,fichier total,1,7,inoc2,19,,EXP-2019
+718,0,9,,Exp19DM09,a,Exp19DM09_inoc1_T4_P09,9,1.0,4dpi,1,7,NA,19,4,EXP-2019
+719,0,9,,Exp19DM09,b,Exp19DM09_inoc1_T4_P09,9,1.0,4dpi,1,7,NA,19,4,EXP-2019
+720,1,7,9,Exp19DM03,c,Exp19DM03_inoc1_T7_P26,9,3.0,fichier total,1,7,inoc1,19,,EXP-2019
+721,1,7,9,Exp19DM09,a,Exp19DM09_inoc1_T4_P12,9,2.0,4dpi,1,7,NA,19,4,EXP-2019
+722,0,9,,Exp19DM09,c,Exp19DM09_inoc1_T4_P09,9,1.0,4dpi,1,7,NA,19,4,EXP-2019
+723,1,7,9,Exp19DM02,a,Exp19DM02_inoc2_T6_P13,9,4.0,fichier total,1,7,inoc2,19,,EXP-2019
+724,1,,5,Exp19DM04,b,Exp19DM04_inoc1_T6_P03,9,4.0,fichier total,1,7,inoc1,19,,EXP-2019
+725,0,9,,Exp19DM04,b,Exp19DM04_inoc2_T6_P05,9,2.0,fichier total,1,9,inoc2,19,,EXP-2019
+726,0,9,,Exp19DM04,a,Exp19DM04_inoc2_T6_P02,9,1.0,fichier total,1,9,inoc2,19,,EXP-2019
+727,1,1,3,Exp19DM02,a,Exp19DM02_inoc2_T6_P20,3,2.0,fichier total,1,3,inoc2,19,,EXP-2019
+728,1,1,1,Exp19DM03,c,Exp19DM03_inoc2_T7_P29,,4.0,fichier total,,,inoc2,19,,EXP-2019
+729,1,1,3,Exp19DM03,a,Exp19DM03_inoc2_T7_P18,,2.0,fichier total,,,inoc2,19,,EXP-2019
+730,1,1,3,Exp19DM03,b,Exp19DM03_inoc2_T7_P26,,2.0,fichier total,,,inoc2,19,,EXP-2019
+731,1,1,3,Exp19DM04,b,Exp19DM04_inoc1_T6_P03,,2.0,fichier total,,,inoc1,19,,EXP-2019
+732,1,1,3,Exp19DM04,a,Exp19DM04_inoc2_T6_P18,,3.0,fichier total,0,,inoc2,19,,EXP-2019
+733,1,1,3,Exp19DM04,a,Exp19DM04_inoc2_T6_P21,,3.0,fichier total,0,,inoc2,19,,EXP-2019
+734,1,1,1,Exp19DM04,b,Exp19DM04_inoc1_T6_P42,,4.0,fichier total,0,,inoc1,19,,EXP-2019
+735,1,1,3,Exp19DM03,c,Exp19DM03_inoc1_T7_P20,5,4.0,fichier total,1,7,inoc1,19,,EXP-2019
+736,1,1,3,Exp19DM03,a,Exp19DM03_inoc2_T7_P13,,1.0,fichier total,,,inoc2,19,,EXP-2019
+737,1,3,3,Exp19DM03,a,Exp19DM03_inoc2_T7_P25,,3.0,fichier total,,,inoc2,19,,EXP-2019
+738,1,3,3,Exp19DM04,b,Exp19DM04_inoc2_T6_P48,,1.0,fichier total,,,inoc2,19,,EXP-2019
+739,1,3,3,Exp19DM04,a,Exp19DM04_inoc1_T6_P16,,4.0,fichier total,,,inoc1,19,,EXP-2019
+740,1,3,3,Exp19DM04,c,Exp19DM04_inoc2_T6_P36,,4.0,fichier total,0,,inoc2,19,,EXP-2019
+741,1,3,3,Exp19DM03,b,Exp19DM03_inoc1_T7_P39,,3.0,fichier total,0,,inoc1,19,,EXP-2019
+742,1,3,1,Exp19DM04,b,Exp19DM04_inoc2_T6_P28,,4.0,fichier total,0,,inoc2,19,,EXP-2019
+743,1,3,3,Exp19DM02,b,Exp19DM02_inoc1_T6_P24,,1.0,fichier total,0,,inoc1,19,,EXP-2019
+744,1,3,3,Exp19DM04,c,Exp19DM04_inoc1_T6_P26,,2.0,fichier total,0,,inoc1,19,,EXP-2019
+745,1,3,3,Exp19DM04,a,Exp19DM04_inoc1_T6_P04,,2.0,fichier total,0,,inoc1,19,,EXP-2019
+746,1,3,1,Exp19DM04,c,Exp19DM04_inoc2_T6_P43,,3.0,fichier total,,,inoc2,19,,EXP-2019
+747,1,5,5,Exp19DM06,b,Exp19DM06_inoc2_T6_P07,7,3.0,fichier total,1,7,inoc2,19,,EXP-2019
+748,1,5,7,Exp19DM02,a,Exp19DM02_inoc1_T6_P08,3,2.0,fichier total,1,1,inoc1,19,,EXP-2019
+749,1,5,5,Exp19DM03,a,Exp19DM03_inoc1_T7_P03,,2.0,fichier total,0,,inoc1,19,,EXP-2019
+750,1,5,3,Exp19DM02,c,Exp19DM02_inoc1_T6_P21,,3.0,fichier total,0,,inoc1,19,,EXP-2019
+751,1,5,5,Exp19DM04,a,Exp19DM04_inoc2_T6_P35,,1.0,fichier total,,,inoc2,19,,EXP-2019
+752,1,5,5,Exp19DM02,c,Exp19DM02_inoc2_T6_P16,3,3.0,fichier total,1,5,inoc2,19,,EXP-2019
+753,1,5,3,Exp19DM04,a,Exp19DM04_inoc1_T6_P41,,3.0,fichier total,,,inoc1,19,,EXP-2019
+754,1,5,3,Exp19DM04,a,Exp19DM04_inoc2_T6_P47,,2.0,fichier total,,,inoc2,19,,EXP-2019
+755,1,5,7,Exp19DM03,a,Exp19DM03_inoc1_T7_P32,3,1.0,fichier total,1,5,inoc1,19,,EXP-2019
+756,1,7,9,Exp19DM09,a,Exp19DM09_inoc1_T4_P06,,1.0,4dpi,0,,NA,19,4,EXP-2019
+757,1,7,9,Exp19DM03,a,Exp19DM03_inoc1_T7_P06,7,1.0,fichier total,1,7,inoc1,19,,EXP-2019
+758,1,7,5,Exp19DM03,a,Exp19DM03_inoc1_T7_P12,3,1.0,fichier total,1,5,inoc1,19,,EXP-2019
+759,1,7,7,Exp19DM09,c,Exp19DM09_inoc1_T4_P09,,2.0,4dpi,0,,NA,19,4,EXP-2019
+760,1,7,9,Exp19DM06,b,Exp19DM06_inoc2_T6_P04,7,1.0,fichier total,1,7,inoc2,19,,EXP-2019
+761,1,7,9,Exp19DM04,b,Exp19DM04_inoc1_T6_P05,7,1.0,fichier total,1,7,inoc1,19,,EXP-2019
+762,1,7,9,Exp19DM02,b,Exp19DM02_inoc1_T6_P04,7,1.0,fichier total,1,7,inoc1,19,,EXP-2019
+763,1,7,9,Exp19DM06,c,Exp19DM06_inoc2_T6_P10,7,3.0,fichier total,1,7,inoc2,19,,EXP-2019
+764,1,7,5,Exp19DM03,c,Exp19DM03_inoc2_T7_P14,5,1.0,fichier total,1,5,inoc2,19,,EXP-2019
+765,0,9,,Exp19DM03,b,Exp19DM03_inoc1_T7_P26,9,3.0,fichier total,1,7,inoc1,19,,EXP-2019
+766,0,9,,Exp19DM09,a,Exp19DM09_inoc1_T4_P08,5,3.0,4dpi,1,7,NA,19,4,EXP-2019
+767,0,9,,Exp19DM04,b,Exp19DM04_inoc1_T6_P03,9,1.0,fichier total,1,9,inoc1,19,,EXP-2019
+768,0,9,,Exp19DM09,a,Exp19DM09_inoc1_T4_P01,9,2.0,4dpi,1,9,NA,19,4,EXP-2019
+769,0,9,,Exp19DM04,a,Exp19DM04_inoc1_T6_P02,9,1.0,fichier total,1,9,inoc1,19,,EXP-2019
+770,0,9,,Exp19DM02,b,Exp19DM02_inoc2_T6_P16,7,2.0,fichier total,1,9,inoc2,19,,EXP-2019
+771,0,9,,Exp19DM02,b,Exp19DM02_inoc2_T6_P26,7,1.0,fichier total,1,7,inoc2,19,,EXP-2019
+772,0,9,,Exp19DM02,a,Exp19DM02_inoc2_T6_P02,7,1.0,fichier total,1,9,inoc2,19,,EXP-2019
+773,0,9,,Exp19DM06,a,Exp19DM06_inoc2_T6_P12,7,4.0,fichier total,1,9,inoc2,19,,EXP-2019
+774,0,9,,Exp19DM06,a,Exp19DM06_inoc2_T6_P06,7,4.0,fichier total,1,9,inoc2,19,,EXP-2019
+775,1,3,1,Exp20DM02,a,Exp20DM02_inoc1_T6_P11,,4.0,fichier total,0,,inoc1,20,,EXP-2020
+776,1,1,1,Exp20DM02,a,Exp20DM02_inoc2_T6_P38,,3.0,fichier total,0,,inoc2,20,,EXP-2020
+777,1,1,1,Exp20DM04,a,Exp20DM04_inoc1_T6_P30,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+778,1,,1,Exp20DM04,b,Exp20DM04_inoc1_T6_P05,,4.0,fichier total,0,,inoc1,20,,EXP-2020
+779,1,1,1,Exp20DM04,c,Exp20DM04_inoc1_T6_P31,,4.0,fichier total,0,,inoc1,20,,EXP-2020
+780,1,3,1,Exp20DM02,a,Exp20DM02_inoc2_T6_P18,,2.0,fichier total,0,,inoc2,20,,EXP-2020
+781,1,,1,Exp20DM04,a,Exp20DM04_inoc1_T6_P34,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+782,1,,1,Exp20DM04,b,Exp20DM04_inoc1_T6_P30,,4.0,fichier total,0,,inoc1,20,,EXP-2020
+783,1,5,1,Exp20DM02,a,Exp20DM02_inoc2_T6_P31,,2.0,fichier total,0,,inoc2,20,,EXP-2020
+784,1,3,1,Exp20DM02,a,Exp20DM02_inoc1_T6_P19,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+785,1,3,3,Exp20DM03,a,Exp20DM03_inoc2_T6_P17,,4.0,fichier total,0,,inoc2,20,,EXP-2020
+786,1,3,3,Exp20DM03,c,Exp20DM03_inoc2_T6_P15,,2.0,fichier total,0,,inoc2,20,,EXP-2020
+787,1,1,3,Exp20DM01,a,Exp20DM01_inoc2_T6_P53,,3.0,fichier total,0,,inoc2,20,,EXP-2020
+788,1,3,3,Exp20DM04,c,Exp20DM04_inoc1_T6_P17,,1.0,fichier total,0,,inoc1,20,,EXP-2020
+789,1,5,3,Exp20DM03,b,Exp20DM03_inoc2_T6_P21,7,4.0,fichier total,1,5,inoc2,20,,EXP-2020
+790,1,3,3,Exp20DM02,c,Exp20DM02_inoc1_T6_P03,,1.0,fichier total,0,,inoc1,20,,EXP-2020
+791,1,5,3,Exp20DM01,b,Exp20DM01_inoc2_T6_P34,,4.0,fichier total,0,,inoc2,20,,EXP-2020
+792,1,3,3,Exp20DM02,b,Exp20DM02_inoc2_T6_P19,,3.0,fichier total,0,,inoc2,20,,EXP-2020
+793,1,3,3,Exp20DM04,c,Exp20DM04_inoc1_T6_P19,9,4.0,fichier total,1,7,inoc1,20,,EXP-2020
+794,1,,3,Exp20DM04,a,Exp20DM04_inoc1_T6_P23,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+795,1,3,5,Exp20DM02,a,Exp20DM02_inoc2_T6_P35,,4.0,fichier total,0,,inoc2,20,,EXP-2020
+796,1,5,5,Exp20DM02,b,Exp20DM02_inoc1_T6_P06,9,1.0,fichier total,1,7,inoc1,20,,EXP-2020
+797,1,5,5,Exp20DM03,b,Exp20DM03_inoc2_T6_P15,7,3.0,fichier total,1,7,inoc2,20,,EXP-2020
+798,1,3,5,Exp20DM04,a,Exp20DM04_inoc1_T6_P05,,2.0,fichier total,0,,inoc1,20,,EXP-2020
+799,1,3,5,Exp20DM02,b,Exp20DM02_inoc1_T6_P34,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+800,1,5,5,Exp20DM02,b,Exp20DM02_inoc1_T6_P20,,1.0,fichier total,0,,inoc1,20,,EXP-2020
+801,1,5,5,Exp20DM01,b,Exp20DM01_inoc2_T6_P39,5,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+802,1,5,5,Exp20DM01,a,Exp20DM01_inoc2_T6_P44,,4.0,fichier total,0,,inoc2,20,,EXP-2020
+803,1,5,5,Exp20DM02,a,Exp20DM02_inoc1_T6_P35,,1.0,fichier total,0,,inoc1,20,,EXP-2020
+804,1,,5,Exp20DM04,a,Exp20DM04_inoc1_T6_P08,3,3.0,fichier total,1,1,inoc1,20,,EXP-2020
+805,1,5,7,Exp20DM02,b,Exp20DM02_inoc1_T6_P37,5,2.0,fichier total,1,3,inoc1,20,,EXP-2020
+806,1,7,7,Exp20DM02,c,Exp20DM02_inoc1_T6_P09,5,4.0,fichier total,1,5,inoc1,20,,EXP-2020
+807,1,7,7,Exp20DM02,b,Exp20DM02_inoc1_T6_P16,7,4.0,fichier total,1,7,inoc1,20,,EXP-2020
+808,1,5,7,Exp20DM01,b,Exp20DM01_inoc2_T6_P17,5,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+809,1,7,7,Exp20DM02,b,Exp20DM02_inoc2_T6_P34,9,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+810,1,7,7,Exp20DM03,a,Exp20DM03_inoc1_T6_P05,7,1.0,fichier total,1,7,inoc1,20,,EXP-2020
+811,1,7,7,Exp20DM02,c,Exp20DM02_inoc2_T6_P37,7,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+812,1,7,7,Exp20DM02,c,Exp20DM02_inoc1_T6_P29,7,3.0,fichier total,1,7,inoc1,20,,EXP-2020
+813,1,5,7,Exp20DM02,a,Exp20DM02_inoc2_T6_P10,5,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+814,1,7,7,Exp20DM02,b,Exp20DM02_inoc2_T6_P31,7,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+815,1,7,9,Exp20DM01,a,Exp20DM01_inoc2_T6_P15,5,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+816,1,7,9,Exp20DM02,b,Exp20DM02_inoc2_T6_P24,7,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+817,1,7,9,Exp20DM01,b,Exp20DM01_inoc2_T6_P12,5,4.0,fichier total,1,5,inoc2,20,,EXP-2020
+818,1,7,9,Exp20DM01,a,Exp20DM01_inoc2_T6_P23,5,3.0,fichier total,1,5,inoc2,20,,EXP-2020
+819,1,7,9,Exp20DM02,c,Exp20DM02_inoc2_T6_P29,7,3.0,fichier total,1,5,inoc2,20,,EXP-2020
+820,1,7,9,Exp20DM02,a,Exp20DM02_inoc2_T6_P12,5,2.0,fichier total,1,3,inoc2,20,,EXP-2020
+821,1,7,9,Exp20DM01,b,Exp20DM01_inoc2_T6_P20,7,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+822,1,7,9,Exp20DM02,a,Exp20DM02_inoc2_T6_P27,,4.0,fichier total,0,,inoc2,20,,EXP-2020
+823,1,9,9,Exp20DM01,b,Exp20DM01_inoc2_T6_P02,9,2.0,fichier total,1,7,inoc2,20,,EXP-2020
+824,1,7,9,Exp20DM02,c,Exp20DM02_inoc2_T6_P39,7,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+825,1,3,1,Exp20DM02,c,Exp20DM02_inoc1_T6_P25,5,1.0,fichier total,1,1,inoc1,20,,EXP-2020
+826,1,1,3,Exp20DM02,b,Exp20DM02_inoc1_T6_P41,5,3.0,fichier total,1,1,inoc1,20,,EXP-2020
+827,1,1,3,Exp20DM02,c,Exp20DM02_inoc1_T6_P41,3,3.0,fichier total,1,1,inoc1,20,,EXP-2020
+828,1,5,5,Exp20DM01,a,Exp20DM01_inoc2_T6_P22,3,2.0,fichier total,1,1,inoc2,20,,EXP-2020
+829,1,3,1,Exp20DM02,b,Exp20DM02_inoc1_T6_P25,5,1.0,fichier total,1,1,inoc1,20,,EXP-2020
+830,1,3,3,Exp20DM02,c,Exp20DM02_inoc1_T6_P22,5,2.0,fichier total,1,1,inoc1,20,,EXP-2020
+831,1,3,3,Exp20DM02,a,Exp20DM02_inoc1_T6_P29,5,4.0,fichier total,1,1,inoc1,20,,EXP-2020
+832,1,1,3,Exp20DM02,a,Exp20DM02_inoc1_T6_P41,5,3.0,fichier total,1,1,inoc1,20,,EXP-2020
+833,1,1,3,Exp20DM02,c,Exp20DM02_inoc1_T6_P38,7,3.0,fichier total,1,1,inoc1,20,,EXP-2020
+834,1,1,3,Exp20DM02,c,Exp20DM02_inoc1_T6_P29,3,4.0,fichier total,1,1,inoc1,20,,EXP-2020
+835,1,5,3,Exp20DM03,b,Exp20DM03_inoc1_T6_P13,5,3.0,fichier total,1,3,inoc1,20,,EXP-2020
+836,1,7,9,Exp20DM02,a,Exp20DM02_inoc2_T6_P14,9,2.0,fichier total,1,3,inoc2,20,,EXP-2020
+837,1,3,3,Exp20DM03,a,Exp20DM03_inoc1_T6_P12,5,3.0,fichier total,1,3,inoc1,20,,EXP-2020
+838,1,3,3,Exp20DM01,a,Exp20DM01_inoc2_T6_P37,5,3.0,fichier total,1,3,inoc2,20,,EXP-2020
+839,1,,3,Exp20DM04,a,Exp20DM04_inoc1_T6_P27,5,1.0,fichier total,1,3,inoc1,20,,EXP-2020
+840,0,9,,Exp20DM02,a,Exp20DM02_inoc1_T6_P12,5,1.0,fichier total,1,3,inoc1,20,,EXP-2020
+841,1,,3,Exp20DM04,c,Exp20DM04_inoc1_T6_P37,5,1.0,fichier total,1,3,inoc1,20,,EXP-2020
+842,1,,3,Exp20DM04,b,Exp20DM04_inoc1_T6_P29,5,4.0,fichier total,1,3,inoc1,20,,EXP-2020
+843,1,3,3,Exp20DM01,b,Exp20DM01_inoc2_T6_P37,5,3.0,fichier total,1,3,inoc2,20,,EXP-2020
+844,1,5,3,Exp20DM03,a,Exp20DM03_inoc1_T6_P13,5,3.0,fichier total,1,3,inoc1,20,,EXP-2020
+845,1,7,9,Exp20DM01,a,Exp20DM01_inoc2_T6_P46,5,3.0,fichier total,1,5,inoc2,20,,EXP-2020
+846,1,5,5,Exp20DM01,b,Exp20DM01_inoc2_T6_P07,5,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+847,0,9,,Exp20DM01,b,Exp20DM01_inoc2_T6_P19,7,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+848,1,7,7,Exp20DM02,a,Exp20DM02_inoc2_T6_P38,7,4.0,fichier total,1,5,inoc2,20,,EXP-2020
+849,0,9,,Exp20DM01,a,Exp20DM01_inoc2_T6_P20,5,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+850,1,,5,Exp20DM04,a,Exp20DM04_inoc1_T6_P21,7,3.0,fichier total,1,5,inoc1,20,,EXP-2020
+851,1,5,5,Exp20DM02,a,Exp20DM02_inoc2_T6_P40,7,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+852,1,7,9,Exp20DM02,a,Exp20DM02_inoc2_T6_P44,9,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+853,1,5,3,Exp20DM03,b,Exp20DM03_inoc1_T6_P07,5,3.0,fichier total,1,5,inoc1,20,,EXP-2020
+854,0,9,,Exp20DM01,c,Exp20DM01_inoc2_T6_P18,9,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+855,1,7,7,Exp20DM03,b,Exp20DM03_inoc2_T6_P15,7,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+856,1,7,9,Exp20DM02,c,Exp20DM02_inoc2_T6_P04,9,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+857,1,7,7,Exp20DM02,a,Exp20DM02_inoc2_T6_P34,9,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+858,1,7,9,Exp20DM04,c,Exp20DM04_inoc1_T6_P01,7,4.0,fichier total,1,7,inoc1,20,,EXP-2020
+859,1,7,7,Exp20DM02,b,Exp20DM02_inoc1_T6_P36,7,2.0,fichier total,1,7,inoc1,20,,EXP-2020
+860,1,7,9,Exp20DM03,a,Exp20DM03_inoc2_T6_P18,7,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+861,0,9,,Exp20DM01,c,Exp20DM01_inoc2_T6_P51,7,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+862,1,7,9,Exp20DM02,c,Exp20DM02_inoc2_T6_P29,7,2.0,fichier total,1,7,inoc2,20,,EXP-2020
+863,1,5,5,Exp20DM01,a,Exp20DM01_inoc2_T6_P01,9,3.0,fichier total,1,7,inoc2,20,,EXP-2020
+864,0,9,,Exp20DM04,a,Exp20DM04_inoc1_T6_P02,7,1.0,fichier total,1,9,inoc1,20,,EXP-2020
+865,0,9,,Exp20DM04,c,Exp20DM04_inoc1_T6_P22,9,1.0,fichier total,1,9,inoc1,20,,EXP-2020
+866,0,9,,Exp20DM02,c,Exp20DM02_inoc2_T6_P34,7,2.0,fichier total,1,9,inoc2,20,,EXP-2020
+867,0,9,,Exp20DM01,c,Exp20DM01_inoc2_T6_P02,9,1.0,fichier total,1,9,inoc2,20,,EXP-2020
+868,0,9,,Exp20DM01,c,Exp20DM01_inoc2_T6_P04,9,2.0,fichier total,1,9,inoc2,20,,EXP-2020
+869,0,9,,Exp20DM02,c,Exp20DM02_inoc1_T6_P21,5,3.0,fichier total,1,9,inoc1,20,,EXP-2020
+870,0,9,,Exp20DM02,b,Exp20DM02_inoc2_T6_P02,9,1.0,fichier total,1,9,inoc2,20,,EXP-2020
+871,0,9,,Exp20DM03,c,Exp20DM03_inoc2_T6_P16,9,1.0,fichier total,1,9,inoc2,20,,EXP-2020
+872,0,9,,Exp20DM02,b,Exp20DM02_inoc1_T6_P06,5,3.0,fichier total,1,9,inoc1,20,,EXP-2020
+873,0,9,,Exp20DM02,b,Exp20DM02_inoc1_T6_P32,3,1.0,fichier total,1,9,inoc1,20,,EXP-2020
+874,1,1,3,Exp20DM02,b,Exp20DM02_inoc1_T6_P29,3,4.0,fichier total,1,1,inoc1,20,,EXP-2020
+875,1,7,9,Exp20DM01,c,Exp20DM01_inoc2_T6_P37,3,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+876,0,9,,Exp20DM02,c,Exp20DM02_inoc1_T6_P32,3,1.0,fichier total,1,9,inoc1,20,,EXP-2020
+877,0,9,,Exp20DM02,c,Exp20DM02_inoc1_T6_P34,3,2.0,fichier total,1,9,inoc1,20,,EXP-2020
+878,1,7,5,Exp20DM01,a,Exp20DM01_inoc2_T6_P40,3,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+879,1,5,5,Exp20DM02,b,Exp20DM02_inoc1_T6_P07,3,4.0,fichier total,1,5,inoc1,20,,EXP-2020
+880,1,5,5,Exp20DM03,a,Exp20DM03_inoc1_T6_P07,3,3.0,fichier total,1,5,inoc1,20,,EXP-2020
+881,1,5,7,Exp20DM01,c,Exp20DM01_inoc2_T6_P47,3,4.0,fichier total,1,3,inoc2,20,,EXP-2020
+882,0,9,,Exp20DM03,a,Exp20DM03_inoc1_T6_P02,3,1.0,fichier total,1,9,inoc1,20,,EXP-2020
+883,1,7,9,Exp20DM01,b,Exp20DM01_inoc2_T6_P14,3,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+884,1,7,9,Exp20DM01,c,Exp20DM01_inoc2_T6_P25,5,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+885,1,7,9,Exp20DM03,a,Exp20DM03_inoc2_T6_P15,5,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+886,1,5,7,Exp20DM02,b,Exp20DM02_inoc2_T6_P10,5,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+887,1,,5,Exp20DM04,b,Exp20DM04_inoc1_T6_P23,5,4.0,fichier total,1,5,inoc1,20,,EXP-2020
+888,1,7,9,Exp20DM03,a,Exp20DM03_inoc2_T6_P20,5,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+889,1,,5,Exp20DM04,a,Exp20DM04_inoc1_T6_P26,5,1.0,fichier total,1,5,inoc1,20,,EXP-2020
+890,0,9,,Exp20DM02,b,Exp20DM02_inoc1_T6_P13,5,4.0,fichier total,1,7,inoc1,20,,EXP-2020
+891,1,7,5,Exp20DM03,c,Exp20DM03_inoc1_T6_P09,5,3.0,fichier total,1,5,inoc1,20,,EXP-2020
+892,0,9,,Exp20DM01,b,Exp20DM01_inoc2_T6_P21,5,2.0,fichier total,1,7,inoc2,20,,EXP-2020
+893,1,7,7,Exp20DM03,c,Exp20DM03_inoc1_T6_P12,5,4.0,fichier total,1,3,inoc1,20,,EXP-2020
+894,0,9,,Exp20DM02,b,Exp20DM02_inoc1_T6_P12,7,2.0,fichier total,1,7,inoc1,20,,EXP-2020
+895,1,5,3,Exp20DM03,b,Exp20DM03_inoc1_T6_P01,7,1.0,fichier total,1,9,inoc1,20,,EXP-2020
+896,1,7,9,Exp20DM02,b,Exp20DM02_inoc2_T6_P22,7,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+897,1,5,7,Exp20DM02,b,Exp20DM02_inoc2_T6_P45,7,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+898,1,7,9,Exp20DM04,a,Exp20DM04_inoc1_T6_P26,7,2.0,fichier total,1,7,inoc1,20,,EXP-2020
+899,0,9,,Exp20DM02,a,Exp20DM02_inoc2_T6_P42,7,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+900,0,9,,Exp20DM01,b,Exp20DM01_inoc2_T6_P13,7,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+901,0,9,,Exp20DM01,c,Exp20DM01_inoc2_T6_P19,7,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+902,0,9,,Exp20DM01,b,Exp20DM01_inoc2_T6_P37,9,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+903,0,9,,Exp20DM02,a,Exp20DM02_inoc1_T6_P42,9,4.0,fichier total,1,7,inoc1,20,,EXP-2020
+904,1,7,9,Exp20DM02,a,Exp20DM02_inoc2_T6_P19,9,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+905,0,9,,Exp20DM02,b,Exp20DM02_inoc1_T6_P14,9,3.0,fichier total,1,7,inoc1,20,,EXP-2020
+906,0,9,,Exp20DM01,a,Exp20DM01_inoc2_T6_P17,9,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+907,0,9,,Exp20DM01,a,Exp20DM01_inoc2_T6_P13,9,3.0,fichier total,1,7,inoc2,20,,EXP-2020
+908,0,9,,Exp20DM02,c,Exp20DM02_inoc2_T6_P40,9,4.0,fichier total,1,5,inoc2,20,,EXP-2020
+909,1,9,9,Exp20DM01,c,Exp20DM01_inoc2_T6_P02,9,2.0,fichier total,1,7,inoc2,20,,EXP-2020
+910,1,3,5,Exp20DM02,a,Exp20DM02_inoc2_T6_P36,9,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+911,1,3,5,Exp20DM02,b,Exp20DM02_inoc1_T6_P01,9,3.0,fichier total,1,7,inoc1,20,,EXP-2020
+912,1,1,3,Exp20DM04,b,Exp20DM04_inoc1_T6_P22,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+913,1,1,1,Exp20DM02,b,Exp20DM02_inoc2_T6_P38,,3.0,fichier total,0,,inoc2,20,,EXP-2020
+914,1,1,1,Exp20DM02,a,Exp20DM02_inoc1_T6_P18,,1.0,fichier total,0,,inoc1,20,,EXP-2020
+915,1,1,3,Exp20DM01,b,Exp20DM01_inoc2_T6_P39,,4.0,fichier total,0,,inoc2,20,,EXP-2020
+916,1,1,1,Exp20DM02,b,Exp20DM02_inoc1_T6_P33,,2.0,fichier total,0,,inoc1,20,,EXP-2020
+917,,1,,Exp20DM01,b,Exp20DM01_inoc1_T6_P28,,2.0,fichier total,0,,inoc1,20,,EXP-2020
+918,1,1,3,Exp20DM02,b,Exp20DM02_inoc2_T6_P31,,1.0,fichier total,0,,inoc2,20,,EXP-2020
+919,1,1,1,Exp20DM02,c,Exp20DM02_inoc1_T6_P33,,2.0,fichier total,0,,inoc1,20,,EXP-2020
+920,,1,,Exp20DM04,b,Exp20DM04_inoc2_T6_P17,,2.0,fichier total,0,,inoc2,20,,EXP-2020
+921,,1,,Exp20DM01,c,Exp20DM01_inoc1_T6_P44,,4.0,fichier total,0,,inoc1,20,,EXP-2020
+922,1,3,3,Exp20DM02,c,Exp20DM02_inoc2_T6_P43,,1.0,fichier total,0,,inoc2,20,,EXP-2020
+923,1,3,3,Exp20DM02,c,Exp20DM02_inoc1_T6_P22,,1.0,fichier total,0,,inoc1,20,,EXP-2020
+924,1,3,5,Exp20DM01,a,Exp20DM01_inoc2_T6_P50,,3.0,fichier total,0,,inoc2,20,,EXP-2020
+925,1,3,3,Exp20DM04,b,Exp20DM04_inoc1_T6_P21,,2.0,fichier total,0,,inoc1,20,,EXP-2020
+926,,3,,Exp20DM01,c,Exp20DM01_inoc1_T6_P37,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+927,1,3,3,Exp20DM01,b,Exp20DM01_inoc2_T6_P17,,1.0,fichier total,0,,inoc2,20,,EXP-2020
+928,,3,,Exp20DM01,a,Exp20DM01_inoc1_T6_P30,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+929,1,3,3,Exp20DM03,b,Exp20DM03_inoc1_T6_P03,,2.0,fichier total,0,,inoc1,20,,EXP-2020
+930,,3,,Exp20DM01,c,Exp20DM01_inoc1_T6_P34,,3.0,fichier total,0,,inoc1,20,,EXP-2020
+931,1,5,5,Exp20DM02,c,Exp20DM02_inoc1_T6_P38,5,1.0,fichier total,1,5,inoc1,20,,EXP-2020
+932,,5,,Exp20DM01,a,Exp20DM01_inoc1_T6_P08,,3.0,fichier total,1,,inoc1,20,,EXP-2020
+933,1,5,3,Exp20DM02,a,Exp20DM02_inoc2_T6_P18,7,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+934,,5,,Exp20DM04,a,Exp20DM04_inoc2_T6_P17,,1.0,fichier total,0,,inoc2,20,,EXP-2020
+935,,5,,Exp20DM01,c,Exp20DM01_inoc1_T6_P34,,1.0,fichier total,1,,inoc1,20,,EXP-2020
+936,,5,,Exp20DM04,b,Exp20DM04_inoc2_T6_P32,,2.0,fichier total,0,,inoc2,20,,EXP-2020
+937,1,5,5,Exp20DM01,a,Exp20DM01_inoc2_T6_P52,7,4.0,fichier total,1,5,inoc2,20,,EXP-2020
+938,1,5,5,Exp20DM01,a,Exp20DM01_inoc2_T6_P41,,4.0,fichier total,0,,inoc2,20,,EXP-2020
+939,1,5,3,Exp20DM03,c,Exp20DM03_inoc2_T6_P19,,4.0,fichier total,0,,inoc2,20,,EXP-2020
+940,1,7,9,Exp20DM02,b,Exp20DM02_inoc2_T6_P06,9,2.0,fichier total,1,7,inoc2,20,,EXP-2020
+941,1,7,7,Exp20DM02,c,Exp20DM02_inoc1_T6_P24,7,2.0,fichier total,1,7,inoc1,20,,EXP-2020
+942,,7,,Exp20DM01,c,Exp20DM01_inoc1_T6_P21,,2.0,fichier total,1,,inoc1,20,,EXP-2020
+943,1,7,9,Exp20DM02,c,Exp20DM02_inoc2_T6_P43,7,3.0,fichier total,1,5,inoc2,20,,EXP-2020
+944,1,7,9,Exp20DM03,a,Exp20DM03_inoc2_T6_P19,7,1.0,fichier total,1,7,inoc2,20,,EXP-2020
+945,,7,,Exp20DM01,b,Exp20DM01_inoc1_T6_P45,,4.0,fichier total,1,,inoc1,20,,EXP-2020
+946,,7,,Exp20DM01,b,Exp20DM01_inoc1_T6_P35,,4.0,fichier total,1,,inoc1,20,,EXP-2020
+947,1,7,5,Exp20DM02,c,Exp20DM02_inoc2_T6_P32,7,2.0,fichier total,1,7,inoc2,20,,EXP-2020
+948,,7,,Exp20DM01,b,Exp20DM01_inoc1_T6_P20,,3.0,fichier total,1,,inoc1,20,,EXP-2020
+949,1,7,9,Exp20DM02,b,Exp20DM02_inoc2_T6_P37,7,4.0,fichier total,1,7,inoc2,20,,EXP-2020
+950,0,9,,Exp20DM01,b,Exp20DM01_inoc2_T6_P20,,1.0,fichier total,0,,inoc2,20,,EXP-2020
+951,,9,,Exp20DM01,b,Exp20DM01_inoc1_T6_P23,,1.0,fichier total,1,,inoc1,20,,EXP-2020
+952,0,9,,Exp20DM02,a,Exp20DM02_inoc1_T6_P32,3,1.0,fichier total,1,9,inoc1,20,,EXP-2020
+953,0,9,,Exp20DM02,b,Exp20DM02_inoc1_T6_P08,5,1.0,fichier total,1,5,inoc1,20,,EXP-2020
+954,0,9,,Exp20DM02,c,Exp20DM02_inoc2_T6_P19,9,2.0,fichier total,1,9,inoc2,20,,EXP-2020
+955,0,9,,Exp20DM01,c,Exp20DM01_inoc2_T6_P08,9,2.0,fichier total,1,5,inoc2,20,,EXP-2020
+956,0,9,,Exp20DM02,b,Exp20DM02_inoc2_T6_P08,,2.0,fichier total,0,,inoc2,20,,EXP-2020
+957,0,9,,Exp20DM01,c,Exp20DM01_inoc2_T6_P21,7,1.0,fichier total,1,5,inoc2,20,,EXP-2020
+958,,9,,Exp20DM04,b,Exp20DM04_inoc2_T6_P24,,2.0,fichier total,1,,inoc2,20,,EXP-2020
+959,0,9,,Exp20DM04,a,Exp20DM04_inoc1_T6_P04,7,2.0,fichier total,1,9,inoc1,20,,EXP-2020
+960,1,1,1,Exp21DM01,c,Exp21DM01_inoc1_T6_P17,,1.0,6dpi,0,,inoc1,21,6,EXP-2021
+961,1,3,1,Exp21DM02,c,Exp21DM02_inoc2_T6_P03,,3.0,6dpi,0,,inoc2,21,6,EXP-2021
+962,1,1,1,Exp21DM01,b,Exp21DM01_inoc2_T6_P05,,3.0,6dpi,0,,inoc2,21,6,EXP-2021
+963,1,1,1,Exp21DM03,b,Exp21DM03_inoc3_T6_P20,,1.0,6dpi,0,,inoc3,21,6,EXP-2021
+964,1,3,1,Exp21DM03,c,Exp21DM03_inoc3_T6_P29,,1.0,6dpi,0,,inoc3,21,6,EXP-2021
+965,1,5,1,Exp21DM12,a,Exp21DM12_inoc3_T4_P21,,4.0,4dpi,0,,NA,21,4,EXP-2021
+966,1,1,1,Exp21DM12,b,Exp21DM12_inoc3_T6_P44,,1.0,6dpi,0,,NA,21,6,EXP-2021
+967,1,3,1,Exp21DM12,b,Exp21DM12_inoc3_T6_P55,,1.0,6dpi,0,,NA,21,6,EXP-2021
+968,1,3,1,Exp21DM12,a,Exp21DM12_inoc3_T6_P46,,1.0,6dpi,0,,NA,21,6,EXP-2021
+969,1,1,1,Exp21DM01,c,Exp21DM01_inoc1_T6_P36,,3.0,6dpi,0,,inoc1,21,6,EXP-2021
+970,1,3,3,Exp21DM03,a,Exp21DM03_inoc3_T4_P16,,1.0,4dpi,0,,inoc3,21,4,EXP-2021
+971,1,3,3,Exp21DM04,c,Exp21DM04_inoc2_T6_P14,,3.0,6dpi,0,,inoc2,21,6,EXP-2021
+972,1,1,3,Exp21DM03,a,Exp21DM03_inoc2_T6_P31,,4.0,6dpi,0,,inoc2,21,6,EXP-2021
+973,1,3,3,Exp21DM03,a,Exp21DM03_inoc3_T6_P39,,2.0,6dpi,0,,inoc3,21,6,EXP-2021
+974,1,3,3,Exp21DM03,c,Exp21DM03_inoc4_T6_P22,,3.0,6dpi,0,,inoc4,21,6,EXP-2021
+975,1,1,3,Exp21DM03,a,Exp21DM03_inoc2_T6_P03,,2.0,6dpi,0,,inoc2,21,6,EXP-2021
+976,1,3,3,Exp21DM03,a,Exp21DM03_inoc4_T6_P05,,4.0,6dpi,0,,inoc4,21,6,EXP-2021
+977,1,3,3,Exp21DM12,c,Exp21DM12_inoc3_T4_P57,,4.0,4dpi,0,,NA,21,4,EXP-2021
+978,1,3,3,Exp21DM03,a,Exp21DM03_inoc3_T6_P49,,2.0,6dpi,0,,inoc3,21,6,EXP-2021
+979,1,1,3,Exp21DM03,b,Exp21DM03_inoc1_T6_P37,,3.0,fichier total,0,,inoc1,21,,EXP-2021
+980,1,3,5,Exp21DM03,b,Exp21DM03_inoc4_T6_P12,1,4.0,6dpi,1,1,inoc4,21,6,EXP-2021
+981,1,7,5,Exp21DM04,b,Exp21DM04_inoc2_T3_P11,,1.0,3dpi,0,,inoc2,21,3,EXP-2021
+982,1,3,5,Exp21DM03,a,Exp21DM03_inoc4_T6_P06,,1.0,6dpi,0,,inoc4,21,6,EXP-2021
+983,1,5,5,Exp21DM12,c,Exp21DM12_inoc3_T4_P14,,3.0,4dpi,0,,NA,21,4,EXP-2021
+984,1,1,5,Exp21DM07,c,Exp21DM07_inoc1_T6_P11,,2.0,fichier total,0,,inoc1,21,,EXP-2021
+985,1,5,5,Exp21DM07,c,Exp21DM07_inoc1_T6_P01,,3.0,fichier total,0,,inoc1,21,,EXP-2021
+986,1,3,5,Exp21DM12,b,Exp21DM12_inoc3_T6_P38,,4.0,6dpi,0,,NA,21,6,EXP-2021
+987,1,3,5,Exp21DM13,a,Exp21DM13_inoc2_T6_P19,,2.0,6dpi,0,,inoc2,21,6,EXP-2021
+988,1,7,5,Exp21DM02,c,Exp21DM02_inoc2_T6_P32,,2.0,6dpi,0,,inoc2,21,6,EXP-2021
+989,1,5,5,Exp21DM05,a,Exp21DM05_inoc2_T6_P02,,2.0,6dpi,0,,inoc2,21,6,EXP-2021
+990,1,7,7,Exp21DM12,c,Exp21DM12_inoc3_T3_P32,,1.0,3dpi,0,,NA,21,3,EXP-2021
+991,1,7,7,Exp21DM03,a,Exp21DM03_inoc4_T4_P24,,3.0,4dpi,0,,inoc4,21,4,EXP-2021
+992,1,7,7,Exp21DM04,a,Exp21DM04_inoc2_T3_P18,,1.0,3dpi,0,,inoc2,21,3,EXP-2021
+993,1,7,7,Exp21DM13,a,Exp21DM13_inoc1_T3_P27,,1.0,3dpi,0,,inoc1,21,3,EXP-2021
+994,1,7,7,Exp21DM03,a,Exp21DM03_inoc4_T4_P06,,1.0,4dpi,0,,inoc4,21,4,EXP-2021
+995,1,7,7,Exp21DM12,a,Exp21DM12_inoc3_T4_P46,5,2.0,4dpi,1,5,NA,21,4,EXP-2021
+996,1,7,7,Exp21DM13,c,Exp21DM13_inoc1_T3_P08,,1.0,3dpi,0,,inoc1,21,3,EXP-2021
+997,1,7,7,Exp21DM12,c,Exp21DM12_inoc3_T3_P38,,2.0,3dpi,0,,NA,21,3,EXP-2021
+998,1,7,7,Exp21DM12,a,Exp21DM12_inoc3_T3_P23,,2.0,3dpi,0,,NA,21,3,EXP-2021
+999,1,7,7,Exp21DM03,b,Exp21DM03_inoc3_T4_P42,,3.0,4dpi,0,,inoc3,21,4,EXP-2021
+1000,1,7,9,Exp21DM13,a,Exp21DM13_inoc2_T6_P23,3,1.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1001,1,7,9,Exp21DM01,b,Exp21DM01_inoc1_T6_P12,7,2.0,6dpi,1,7,inoc1,21,6,EXP-2021
+1002,1,7,9,Exp21DM04,c,Exp21DM04_inoc2_T6_P21,3,3.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1003,1,7,9,Exp21DM01,b,Exp21DM01_inoc2_T6_P12,7,2.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1004,1,7,9,Exp21DM01,b,Exp21DM01_inoc1_T6_P25,,3.0,6dpi,0,,inoc1,21,6,EXP-2021
+1005,1,7,9,Exp21DM01,c,Exp21DM01_inoc2_T6_P19,9,1.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1006,1,7,9,Exp21DM02,a,Exp21DM02_inoc2_T6_P07,7,1.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1007,1,7,9,Exp21DM02,c,Exp21DM02_inoc1_T6_P17,7,4.0,6dpi,1,7,inoc1,21,6,EXP-2021
+1008,1,7,9,Exp21DM13,a,Exp21DM13_inoc1_T4_P04,7,1.0,4dpi,1,7,inoc1,21,4,EXP-2021
+1009,1,7,9,Exp21DM12,b,Exp21DM12_inoc3_T3_P27,,2.0,3dpi,0,,NA,21,3,EXP-2021
+1010,1,5,5,Exp21DM04,a,Exp21DM04_inoc2_T6_P12,3,4.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1011,1,1,3,Exp21DM04,a,Exp21DM04_inoc2_T6_P09,3,4.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1012,1,5,5,Exp21DM04,b,Exp21DM04_inoc2_T6_P12,3,4.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1013,1,3,3,Exp21DM04,a,Exp21DM04_inoc2_T6_P18,3,1.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1014,1,5,5,Exp21DM02,c,Exp21DM02_inoc1_T6_P31,3,1.0,6dpi,1,1,inoc1,21,6,EXP-2021
+1015,1,3,3,Exp21DM04,a,Exp21DM04_inoc2_T6_P13,3,2.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1016,1,3,3,Exp21DM04,a,Exp21DM04_inoc2_T6_P17,1,3.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1017,1,3,3,Exp21DM04,c,Exp21DM04_inoc2_T6_P19,1,3.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1018,1,5,5,Exp21DM03,c,Exp21DM03_inoc4_T6_P12,1,4.0,6dpi,1,1,inoc4,21,6,EXP-2021
+1019,1,5,5,Exp21DM01,a,Exp21DM01_inoc1_T6_P31,3,1.0,6dpi,1,1,inoc1,21,6,EXP-2021
+1020,1,5,3,Exp21DM02,b,Exp21DM02_inoc1_T6_P20,3,3.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1021,0,9,,Exp21DM01,a,Exp21DM01_inoc2_T6_P10,3,3.0,6dpi,1,3,inoc2,21,6,EXP-2021
+1022,1,7,9,Exp21DM02,b,Exp21DM02_inoc2_T6_P18,5,4.0,6dpi,1,3,inoc2,21,6,EXP-2021
+1023,1,7,7,Exp21DM01,b,Exp21DM01_inoc1_T6_P28,5,3.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1024,1,5,3,Exp21DM03,c,Exp21DM03_inoc2_T6_P24,3,1.0,6dpi,1,3,inoc2,21,6,EXP-2021
+1025,1,5,3,Exp21DM03,b,Exp21DM03_inoc2_T6_P24,3,1.0,6dpi,1,3,inoc2,21,6,EXP-2021
+1026,1,5,3,Exp21DM01,c,Exp21DM01_inoc1_T6_P20,3,3.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1027,1,7,9,Exp21DM01,b,Exp21DM01_inoc2_T6_P41,5,3.0,6dpi,1,3,inoc2,21,6,EXP-2021
+1028,1,5,3,Exp21DM04,c,Exp21DM04_inoc2_T6_P13,3,3.0,6dpi,1,3,inoc2,21,6,EXP-2021
+1029,0,9,,Exp21DM02,a,Exp21DM02_inoc1_T6_P42,5,1.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1030,1,7,5,Exp21DM02,b,Exp21DM02_inoc1_T6_P39,5,3.0,6dpi,1,5,inoc1,21,6,EXP-2021
+1031,1,7,9,Exp21DM13,c,Exp21DM13_inoc2_T6_P24,7,4.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1032,1,7,5,Exp21DM01,a,Exp21DM01_inoc2_T6_P16,7,3.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1033,0,9,,Exp21DM05,b,Exp21DM05_inoc1_T6_P07,5,1.0,6dpi,1,5,inoc1,21,6,EXP-2021
+1034,1,5,5,Exp21DM04,a,Exp21DM04_inoc2_T6_P16,5,4.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1035,1,7,5,Exp21DM02,b,Exp21DM02_inoc2_T6_P28,3,3.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1036,1,5,5,Exp21DM13,a,Exp21DM13_inoc2_T6_P7,5,2.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1037,1,7,7,Exp21DM13,a,Exp21DM13_inoc2_T6_P44,5,3.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1038,1,5,5,Exp21DM02,b,Exp21DM02_inoc2_T6_P08,5,4.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1039,1,3,3,Exp21DM12,a,Exp21DM12_inoc3_T6_P40,7,4.0,6dpi,1,5,NA,21,6,EXP-2021
+1040,0,9,,Exp21DM07,b,Exp21DM07_inoc1_T6_P07,9,2.0,fichier total,1,7,inoc1,21,,EXP-2021
+1041,1,7,7,Exp21DM02,a,Exp21DM02_inoc2_T6_P37,7,1.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1042,0,9,,Exp21DM01,a,Exp21DM01_inoc2_T6_P12,7,2.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1043,0,9,,Exp21DM04,a,Exp21DM04_inoc2_T3_P03,9,4.0,3dpi,1,7,inoc2,21,3,EXP-2021
+1044,1,7,9,Exp21DM13,b,Exp21DM13_inoc1_T4_P22,7,1.0,4dpi,1,7,inoc1,21,4,EXP-2021
+1045,0,9,,Exp21DM04,b,Exp21DM04_inoc2_T3_P07,9,2.0,3dpi,1,7,inoc2,21,3,EXP-2021
+1046,1,7,5,Exp21DM13,b,Exp21DM13_inoc2_T6_P27,5,4.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1047,1,7,9,Exp21DM03,c,Exp21DM03_inoc2_T6_P01,7,4.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1048,0,9,,Exp21DM01,c,Exp21DM01_inoc1_T6_P09,9,2.0,6dpi,1,7,inoc1,21,6,EXP-2021
+1049,1,7,9,Exp21DM01,c,Exp21DM01_inoc1_T6_P01,9,4.0,6dpi,1,7,inoc1,21,6,EXP-2021
+1050,1,7,7,Exp21DM03,a,Exp21DM03_inoc4_T4_P15,9,3.0,4dpi,1,9,inoc4,21,4,EXP-2021
+1051,0,9,,Exp21DM13,a,Exp21DM13_inoc2_T6_P28,9,1.0,6dpi,1,9,inoc2,21,6,EXP-2021
+1052,0,9,,Exp21DM13,c,Exp21DM13_inoc1_T3_P05,7,1.0,3dpi,1,9,inoc1,21,3,EXP-2021
+1053,0,9,,Exp21DM03,a,Exp21DM03_inoc2_T6_P05,3,2.0,6dpi,1,9,inoc2,21,6,EXP-2021
+1054,0,9,,Exp21DM13,b,Exp21DM13_inoc1_T4_P21,9,1.0,4dpi,1,9,inoc1,21,4,EXP-2021
+1055,0,9,,Exp21DM03,c,Exp21DM03_inoc3_T6_P02,9,1.0,6dpi,1,9,inoc3,21,6,EXP-2021
+1056,0,9,,Exp21DM05,a,Exp21DM05_inoc1_T6_P05,5,2.0,6dpi,1,9,inoc1,21,6,EXP-2021
+1057,0,9,,Exp21DM03,a,Exp21DM03_inoc3_T4_P02,9,1.0,4dpi,1,9,inoc3,21,4,EXP-2021
+1058,0,9,,Exp21DM13,c,Exp21DM13_inoc1_T3_P23,9,2.0,3dpi,1,9,inoc1,21,3,EXP-2021
+1059,0,9,,Exp21DM13,a,Exp21DM13_inoc1_T3_P05,7,1.0,3dpi,1,9,inoc1,21,3,EXP-2021
+1060,1,5,7,Exp21DM03,b,Exp21DM03_inoc4_T6_P07,1,4.0,6dpi,1,1,inoc4,21,6,EXP-2021
+1061,1,5,7,Exp21DM03,c,Exp21DM03_inoc4_T6_P07,1,4.0,6dpi,1,1,inoc4,21,6,EXP-2021
+1062,1,5,5,Exp21DM04,a,Exp21DM04_inoc2_T6_P19,1,1.0,6dpi,1,3,inoc2,21,6,EXP-2021
+1063,1,5,7,Exp21DM03,a,Exp21DM03_inoc4_T6_P07,1,4.0,6dpi,1,1,inoc4,21,6,EXP-2021
+1064,1,5,5,Exp21DM04,a,Exp21DM04_inoc2_T6_P19,1,3.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1065,0,9,,Exp21DM01,a,Exp21DM01_inoc1_T6_P23,1,2.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1066,1,1,5,Exp21DM03,a,Exp21DM03_inoc4_T6_P12,1,4.0,6dpi,1,1,inoc4,21,6,EXP-2021
+1067,0,9,,Exp21DM02,a,Exp21DM02_inoc2_T6_P36,3,3.0,6dpi,1,9,inoc2,21,6,EXP-2021
+1068,1,7,7,Exp21DM02,c,Exp21DM02_inoc2_T6_P38,3,2.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1069,1,5,5,Exp21DM02,c,Exp21DM02_inoc1_T6_P14,3,1.0,6dpi,1,5,inoc1,21,6,EXP-2021
+1070,1,5,5,Exp21DM01,b,Exp21DM01_inoc1_T6_P14,3,1.0,6dpi,1,5,inoc1,21,6,EXP-2021
+1071,1,7,7,Exp21DM01,c,Exp21DM01_inoc2_T6_P38,3,2.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1072,0,9,,Exp21DM03,b,Exp21DM03_inoc1_T6_P03,3,1.0,fichier total,1,9,inoc1,21,,EXP-2021
+1073,1,1,3,Exp21DM04,b,Exp21DM04_inoc2_T6_P13,3,2.0,6dpi,1,1,inoc2,21,6,EXP-2021
+1074,1,7,9,Exp21DM01,a,Exp21DM01_inoc2_T6_P14,3,4.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1075,1,7,7,Exp21DM02,a,Exp21DM02_inoc2_T6_P28,3,3.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1076,0,9,1,Exp21DM01,c,Exp21DM01_inoc2_T6_P38,5,3.0,6dpi,,,inoc2,21,6,EXP-2021
+1077,1,5,3,Exp21DM12,c,Exp21DM12_inoc3_T6_P27,5,1.0,6dpi,1,5,NA,21,6,EXP-2021
+1078,1,7,7,Exp21DM01,c,Exp21DM01_inoc1_T6_P07,5,1.0,6dpi,1,5,inoc1,21,6,EXP-2021
+1079,0,9,,Exp21DM02,c,Exp21DM02_inoc1_T6_P20,5,1.0,6dpi,1,7,inoc1,21,6,EXP-2021
+1080,1,7,9,Exp21DM13,c,Exp21DM13_inoc2_T6_P24,5,1.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1081,1,7,5,Exp21DM13,c,Exp21DM13_inoc2_T6_P12,5,2.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1082,0,9,,Exp21DM01,a,Exp21DM01_inoc1_T6_P44,5,3.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1083,1,7,9,Exp21DM13,c,Exp21DM13_inoc2_T6_P22,5,1.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1084,1,5,5,Exp21DM13,b,Exp21DM13_inoc2_T6_P7,5,2.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1085,1,7,9,Exp21DM01,b,Exp21DM01_inoc1_T6_P27,5,1.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1086,0,9,,Exp21DM03,b,Exp21DM03_inoc2_T3_P04,7,1.0,3dpi,1,7,inoc2,21,3,EXP-2021
+1087,1,7,9,Exp21DM01,a,Exp21DM01_inoc2_T6_P24,7,2.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1088,1,7,7,Exp21DM13,b,Exp21DM13_inoc2_T6_P44,7,1.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1089,1,5,5,Exp21DM01,c,Exp21DM01_inoc2_T6_P04,7,3.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1090,0,9,,Exp21DM13,a,Exp21DM13_inoc1_T3_P02,7,1.0,3dpi,1,7,inoc1,21,3,EXP-2021
+1091,0,9,,Exp21DM03,c,Exp21DM03_inoc2_T3_P05,7,1.0,3dpi,1,7,inoc2,21,3,EXP-2021
+1092,0,9,,Exp21DM04,a,Exp21DM04_inoc2_T3_P18,7,4.0,3dpi,1,7,inoc2,21,3,EXP-2021
+1093,0,9,,Exp21DM04,a,Exp21DM04_inoc2_T3_P21,7,1.0,3dpi,1,5,inoc2,21,3,EXP-2021
+1094,1,7,7,Exp21DM02,c,Exp21DM02_inoc2_T6_P02,7,2.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1095,1,7,9,Exp21DM03,b,Exp21DM03_inoc2_T6_P04,7,1.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1096,0,9,,Exp21DM02,b,Exp21DM02_inoc2_T6_P19,9,2.0,6dpi,1,9,inoc2,21,6,EXP-2021
+1097,0,9,,Exp21DM02,c,Exp21DM02_inoc2_T6_P04,9,1.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1098,1,7,7,Exp21DM13,c,Exp21DM13_inoc1_T4_P26,9,3.0,4dpi,1,7,inoc1,21,4,EXP-2021
+1099,0,9,,Exp21DM05,b,Exp21DM05_inoc1_T3_P04,9,1.0,3dpi,1,7,inoc1,21,3,EXP-2021
+1100,0,9,,Exp21DM02,b,Exp21DM02_inoc2_T6_P02,9,1.0,6dpi,1,9,inoc2,21,6,EXP-2021
+1101,1,7,9,Exp21DM03,c,Exp21DM03_inoc4_T4_P05,9,1.0,4dpi,1,7,inoc4,21,4,EXP-2021
+1102,0,9,,Exp21DM13,b,Exp21DM13_inoc1_T3_P03,9,1.0,3dpi,1,9,inoc1,21,3,EXP-2021
+1103,0,9,,Exp21DM07,c,Exp21DM07_inoc1_T6_P10,9,3.0,fichier total,1,7,inoc1,21,,EXP-2021
+1104,1,7,9,Exp21DM13,b,Exp21DM13_inoc1_T3_P26,9,3.0,3dpi,1,5,inoc1,21,3,EXP-2021
+1105,0,9,,Exp21DM02,a,Exp21DM02_inoc2_T6_P06,9,2.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1106,1,1,1,Exp21DM02,b,Exp21DM02_inoc1_T6_P45,,3.0,6dpi,0,,inoc1,21,6,EXP-2021
+1107,1,1,1,Exp21DM03,c,Exp21DM03_inoc3_T6_P17,,3.0,6dpi,0,,inoc3,21,6,EXP-2021
+1108,1,1,3,Exp21DM03,c,Exp21DM03_inoc3_T4_P08,,2.0,4dpi,0,,inoc3,21,4,EXP-2021
+1109,1,1,3,Exp21DM02,b,Exp21DM02_inoc1_T6_P17,,3.0,6dpi,0,,inoc1,21,6,EXP-2021
+1110,1,1,3,Exp21DM04,a,Exp21DM04_inoc2_T6_P15,,2.0,6dpi,0,,inoc2,21,6,EXP-2021
+1111,1,1,3,Exp21DM03,b,Exp21DM03_inoc1_T6_P35,,1.0,fichier total,0,,inoc1,21,,EXP-2021
+1112,1,1,5,Exp21DM04,b,Exp21DM04_inoc2_T6_P10,,2.0,6dpi,0,,inoc2,21,6,EXP-2021
+1113,1,1,3,Exp21DM07,c,Exp21DM07_inoc1_T6_P13,,2.0,fichier total,0,,inoc1,21,,EXP-2021
+1114,1,1,1,Exp21DM02,c,Exp21DM02_inoc2_T6_P31,,1.0,6dpi,0,,inoc2,21,6,EXP-2021
+1115,1,1,3,Exp21DM02,c,Exp21DM02_inoc2_T6_P31,,2.0,6dpi,0,,inoc2,21,6,EXP-2021
+1116,1,3,3,Exp21DM01,c,Exp21DM01_inoc2_T6_P29,,1.0,6dpi,0,,inoc2,21,6,EXP-2021
+1117,1,3,3,Exp21DM03,b,Exp21DM03_inoc3_T6_P25,,4.0,6dpi,0,,inoc3,21,6,EXP-2021
+1118,1,3,3,Exp21DM12,b,Exp21DM12_inoc3_T6_P11,7,4.0,6dpi,1,5,NA,21,6,EXP-2021
+1119,1,3,5,Exp21DM13,a,Exp21DM13_inoc2_T6_P42,,4.0,6dpi,0,,inoc2,21,6,EXP-2021
+1120,1,3,3,Exp21DM12,b,Exp21DM12_inoc3_T4_P60,,1.0,4dpi,0,,NA,21,4,EXP-2021
+1121,1,3,3,Exp21DM03,a,Exp21DM03_inoc3_T4_P01,,1.0,4dpi,0,,inoc3,21,4,EXP-2021
+1122,1,3,1,Exp21DM04,a,Exp21DM04_inoc2_T6_P20,,1.0,6dpi,0,,inoc2,21,6,EXP-2021
+1123,1,3,1,Exp21DM12,a,Exp21DM12_inoc3_T6_P30,,4.0,6dpi,0,,NA,21,6,EXP-2021
+1124,1,3,5,Exp21DM03,a,Exp21DM03_inoc4_T4_P24,,4.0,4dpi,0,,inoc4,21,4,EXP-2021
+1125,1,3,5,Exp21DM03,c,Exp21DM03_inoc3_T4_P39,,2.0,4dpi,0,,inoc3,21,4,EXP-2021
+1126,1,5,3,Exp21DM13,a,Exp21DM13_inoc2_T6_P34,,1.0,6dpi,0,,inoc2,21,6,EXP-2021
+1127,1,5,5,Exp21DM12,b,Exp21DM12_inoc3_T6_P12,,4.0,6dpi,0,,NA,21,6,EXP-2021
+1128,1,5,5,Exp21DM02,b,Exp21DM02_inoc1_T6_P25,3,1.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1129,1,5,5,Exp21DM13,a,Exp21DM13_inoc1_T4_P01,,2.0,4dpi,0,,inoc1,21,4,EXP-2021
+1130,1,5,1,Exp21DM14,b,Exp21DM14_inoc1_T8_P04,,1.0,8dpi,0,,inoc1,21,8,EXP-2021
+1131,1,5,5,Exp21DM03,b,Exp21DM03_inoc4_T4_P23,,3.0,4dpi,0,,inoc4,21,4,EXP-2021
+1132,1,5,3,Exp21DM03,a,Exp21DM03_inoc3_T4_P51,,2.0,4dpi,0,,inoc3,21,4,EXP-2021
+1133,1,5,5,Exp21DM05,b,Exp21DM05_inoc2_T6_P02,,3.0,6dpi,0,,inoc2,21,6,EXP-2021
+1134,1,5,3,Exp21DM03,a,Exp21DM03_inoc3_T4_P33,,1.0,4dpi,0,,inoc3,21,4,EXP-2021
+1135,1,5,5,Exp21DM03,a,Exp21DM03_inoc1_T6_P41,7,1.0,fichier total,1,7,inoc1,21,,EXP-2021
+1136,1,7,9,Exp21DM01,c,Exp21DM01_inoc2_T6_P34,5,1.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1137,1,7,7,Exp21DM12,b,Exp21DM12_inoc3_T3_P30,,2.0,3dpi,0,,NA,21,3,EXP-2021
+1138,1,7,7,Exp21DM12,b,Exp21DM12_inoc3_T3_P38,,3.0,3dpi,0,,NA,21,3,EXP-2021
+1139,1,7,7,Exp21DM02,c,Exp21DM02_inoc1_T6_P46,,1.0,6dpi,0,,inoc1,21,6,EXP-2021
+1140,1,7,5,Exp21DM12,b,Exp21DM12_inoc3_T4_P11,,3.0,4dpi,0,,NA,21,4,EXP-2021
+1141,1,7,9,Exp21DM04,b,Exp21DM04_inoc2_T3_P13,,2.0,3dpi,0,,inoc2,21,3,EXP-2021
+1142,1,7,3,Exp21DM03,a,Exp21DM03_inoc3_T6_P33,,4.0,6dpi,0,,inoc3,21,6,EXP-2021
+1143,1,7,9,Exp21DM12,a,Exp21DM12_inoc3_T4_P01,9,3.0,4dpi,1,7,NA,21,4,EXP-2021
+1144,1,7,9,Exp21DM01,b,Exp21DM01_inoc1_T6_P08,7,3.0,6dpi,1,5,inoc1,21,6,EXP-2021
+1145,1,7,7,Exp21DM12,c,Exp21DM12_inoc3_T3_P15,,3.0,3dpi,0,,NA,21,3,EXP-2021
+1146,0,9,,Exp21DM12,a,Exp21DM12_inoc3_T3_P44,,4.0,3dpi,0,,NA,21,3,EXP-2021
+1147,0,9,,Exp21DM01,a,Exp21DM01_inoc1_T6_P11,5,2.0,6dpi,1,3,inoc1,21,6,EXP-2021
+1148,0,9,,Exp21DM13,a,Exp21DM13_inoc2_T6_P29,7,1.0,6dpi,1,9,inoc2,21,6,EXP-2021
+1149,0,9,,Exp21DM07,a,Exp21DM07_inoc1_T6_P21,,1.0,fichier total,0,,inoc1,21,,EXP-2021
+1150,0,9,,Exp21DM01,b,Exp21DM01_inoc2_T6_P41,9,1.0,6dpi,1,7,inoc2,21,6,EXP-2021
+1151,0,9,,Exp21DM03,a,Exp21DM03_inoc2_T3_P27,,1.0,3dpi,0,,inoc2,21,3,EXP-2021
+1152,0,9,,Exp21DM04,c,Exp21DM04_inoc2_T6_P05,3,2.0,6dpi,1,9,inoc2,21,6,EXP-2021
+1153,0,9,,Exp21DM07,a,Exp21DM07_inoc1_T6_P05,9,2.0,fichier total,1,9,inoc1,21,,EXP-2021
+1154,0,9,,Exp21DM04,a,Exp21DM04_inoc2_T6_P18,3,4.0,6dpi,1,5,inoc2,21,6,EXP-2021
+1155,0,9,,Exp21DM01,c,Exp21DM01_inoc1_T6_P40,7,2.0,6dpi,1,5,inoc1,21,6,EXP-2021

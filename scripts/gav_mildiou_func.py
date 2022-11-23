@@ -1,3 +1,4 @@
+from pathlib import Path
 import os
 import shutil
 from functools import reduce
@@ -15,7 +16,7 @@ from sklearn.cross_decomposition import PLSRegression
 # import plotly.graph_objects as go
 # from plotly.subplots import make_subplots
 
-import gav_oidium_const as goc
+import gav_mildiou_const as goc
 
 
 def check_list_in_list(required_columns, available_columns):
@@ -58,6 +59,13 @@ consistency_checks_list = [
     "oiv_s_inc",
     "ligne_oob",
 ]
+
+
+def ensure_folder(forced_path, return_string: bool = True):
+    path = forced_path.parent
+    if path.is_dir() is False:
+        path.mkdir(parents=True, exist_ok=True)
+    return str(forced_path) if return_string is True else forced_path
 
 
 def consistency_checks(df_src):
@@ -138,7 +146,7 @@ def build_inconsistencies_dataframe(df_source):
     )
 
     df_inconsistent.to_csv(
-        os.path.join(goc.datain_path, "inconsistent_excels.csv"),
+        ensure_folder(goc.datain_path.joinpath("inconsistent_excels.csv")),
         index=False,
         sep=";",
     )
@@ -176,7 +184,7 @@ def clean_merged_dataframe(df_source):
         .drop_duplicates()
     )
     df_clean_merged.to_csv(
-        os.path.join(goc.datain_path, "clean_merged.csv"),
+        ensure_folder(goc.datain_path.joinpath("clean_merged.csv")),
         index=False,
         sep=";",
     )
@@ -184,9 +192,8 @@ def clean_merged_dataframe(df_source):
 
 
 def get_distant_excels():
-    if os.path.isfile(goc.excel_file_list_path):
-        with open(goc.excel_file_list_path, "r", encoding="UTF8") as f:
-            files = f.read().split("?")
+    if goc.distant_excels_df.is_file():
+        return pd.read_csv(str(goc.distant_excels_df), sep=";")
     else:
         files = [
             os.path.join(root, name)
@@ -200,23 +207,21 @@ def get_distant_excels():
             and "DM" in name
             and (name.endswith("xlsx") or name.endswith("xls"))
         ]
-        pd.DataFrame(
+        return pd.DataFrame(
             list(zip([os.path.basename(fn) for fn in files], files)),
             columns=["file", "path"],
-        ).to_csv(os.path.join(goc.datain_path, "imported_excels.csv"), sep=";")
-        with open(goc.excel_file_list_path, "w+", encoding="UTF8") as f:
-            f.write("?".join(files))
-    return files
+        ).to_csv(
+            ensure_folder(goc.datain_path.joinpath("imported_excels.csv")),
+            sep=";",
+        )
 
 
 def copy_excel_files(files):
     for file in tqdm(files):
         file_name = os.path.basename(file)
-        if not file_name.startswith("~$") and not os.path.isfile(
-            os.path.join(
-                goc.excel_file_path,
-                file_name,
-            )
+        if (
+            file_name.startswith("~$") is False
+            and goc.excel_file_path.joinpath(file_name).is_file() is False
         ):
             shutil.copy(src=file, dst=goc.excel_file_path)
 
@@ -344,7 +349,9 @@ def filter_csvs():
                     ]
                     if df.shape[0] > 0:
                         df.to_csv(
-                            os.path.join(goc.oidium_extracted_csvs_path, csv_file_name),
+                            ensure_folder(
+                                goc.mildiou_extracted_csvs_path.joinpath(csv_file_name)
+                            ),
                             index=False,
                         )
                         df_result = _add_result(
@@ -371,7 +378,10 @@ def filter_csvs():
                         comment=f"Missing columns: {res}",
                     )
 
-        df_result.sort_values(["file"]).to_csv(goc.path_to_df_result, index=False)
+        df_result.sort_values(["file"]).to_csv(
+            ensure_folder(goc.path_to_df_result),
+            index=False,
+        )
         return df_result
 
 
@@ -379,7 +389,7 @@ def get_local_csvs():
     return [
         os.path.join(root, name)
         for root, _, files in os.walk(
-            goc.oidium_extracted_csvs_path,
+            goc.mildiou_extracted_csvs_path,
             topdown=False,
         )
         for name in files
@@ -412,7 +422,7 @@ def build_raw_merged(lcl_csv_files):
         ]
     ).rename_columns()
     df.to_csv(
-        os.path.join(goc.datain_path, "raw_merged.csv"),
+        ensure_folder(goc.datain_path.joinpath("raw_merged.csv")),
         index=False,
         sep=";",
     )
