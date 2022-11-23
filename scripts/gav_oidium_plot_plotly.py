@@ -8,7 +8,6 @@ import skimage.io as skio
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import plotly.express as px
-from plotly.subplots import make_subplots
 import plotly.io as pio
 
 import gav_oidium_const as goc
@@ -324,6 +323,7 @@ def plot_model(
     column_names=None,
     marginal_x=None,
     marginal_y=None,
+    hover_data=None,
     rescale: bool = True,
 ):
 
@@ -333,7 +333,7 @@ def plot_model(
     else:
         x = X[:, x_comp]
         y = X[:, y_comp]
-    df = pd.DataFrame({"x": x, "y": y, "color": color})
+    df = pd.DataFrame({"x": x, "y": y, "color": color, "hover_data": hover_data})
 
     fig = px.scatter(
         data_frame=df,
@@ -344,6 +344,7 @@ def plot_model(
         width=width,
         marginal_x=marginal_x,
         marginal_y=marginal_y,
+        hover_data=["hover_data"],
     )
     fig.update_traces(
         marker=dict(size=12, line=dict(width=2, color="DarkSlateGrey"), opacity=0.7),

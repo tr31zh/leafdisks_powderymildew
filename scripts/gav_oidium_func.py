@@ -59,24 +59,41 @@ consistency_checks_list = [
     "ligne_oob",
 ]
 
-# fmt: off
 
 def consistency_checks(df_src):
     return {
         "sporulation_oob": df_src.sporulation.isin([0, 1]),
-        "sporulation_ds_inc": (((df_src.sporulation == 0) & df_src.densite_sporulation.isna()) | ((df_src.sporulation == 1) & ~df_src.densite_sporulation.isna())),
-        "densite_sporulation_oob": (df_src.densite_sporulation.isin(goc.odd_numbers) | df_src.densite_sporulation.isna()),
+        "sporulation_ds_inc": (
+            ((df_src.sporulation == 0) & df_src.densite_sporulation.isna())
+            | ((df_src.sporulation == 1) & ~df_src.densite_sporulation.isna())
+        ),
+        "densite_sporulation_oob": (
+            df_src.densite_sporulation.isin(goc.odd_numbers)
+            | df_src.densite_sporulation.isna()
+        ),
         "necrose_oob": df_src.necrose.isin([0, 1]),
-        "necrose_sn_inc": (((df_src.necrose == 1) & ~df_src.surface_necrosee.isna()) | ((df_src.necrose == 0) & df_src.surface_necrosee.isna())),
-        "necrose_tn_inc": (((df_src.necrose == 1) & ~df_src.taille_necrose.isna()) | ((df_src.necrose == 0) & df_src.taille_necrose.isna())),
-        "taille_necrose_oob": (df_src.taille_necrose.isin(goc.odd_numbers) | df_src.taille_necrose.isna()),
-        "surface_necrosee_oob": (df_src.surface_necrosee.isin(goc.odd_numbers) | df_src.surface_necrosee.isna()),
+        "necrose_sn_inc": (
+            ((df_src.necrose == 1) & ~df_src.surface_necrosee.isna())
+            | ((df_src.necrose == 0) & df_src.surface_necrosee.isna())
+        ),
+        "necrose_tn_inc": (
+            ((df_src.necrose == 1) & ~df_src.taille_necrose.isna())
+            | ((df_src.necrose == 0) & df_src.taille_necrose.isna())
+        ),
+        "taille_necrose_oob": (
+            df_src.taille_necrose.isin(goc.odd_numbers) | df_src.taille_necrose.isna()
+        ),
+        "surface_necrosee_oob": (
+            df_src.surface_necrosee.isin(goc.odd_numbers)
+            | df_src.surface_necrosee.isna()
+        ),
         "oiv_oob": df_src.oiv.isin(goc.odd_numbers),
-        "oiv_s_inc": (((df_src.oiv == 9) & df_src.sporulation == 0) | ((df_src.oiv != 9) & df_src.sporulation == 1)),
+        "oiv_s_inc": (
+            ((df_src.oiv == 9) & df_src.sporulation == 0)
+            | ((df_src.oiv != 9) & df_src.sporulation == 1)
+        ),
         "ligne_oob": df_src.ligne.notna(),
     }
-
-# fmt: on
 
 
 def build_inconsistencies_dataframe(df_source):
@@ -552,7 +569,7 @@ def clean_sheet(df_sheet):
     )
 
 
-def invert_axis(df_src):
+def invert_axis(df_src, fill_val: int = 1):
     return (
         df_src.assign(
             surface_necrosee=lambda x: 10 - x.surface_necrosee,
@@ -560,10 +577,10 @@ def invert_axis(df_src):
             taille_necrose=lambda x: 10 - x.taille_necrose,
         )
         .assign(
-            surface_necrosee=lambda x: x.surface_necrosee.fillna(0),
-            densite_sporulation=lambda x: x.densite_sporulation.fillna(0),
-            taille_necrose=lambda x: x.taille_necrose.fillna(0),
-            sporulation=lambda x: x.sporulation.fillna(0),
+            surface_necrosee=lambda x: x.surface_necrosee.fillna(fill_val),
+            densite_sporulation=lambda x: x.densite_sporulation.fillna(fill_val),
+            taille_necrose=lambda x: x.taille_necrose.fillna(fill_val),
+            sporulation=lambda x: x.sporulation.fillna(fill_val),
         )
         .drop_duplicates()
         .sort_values(

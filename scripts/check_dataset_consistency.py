@@ -31,7 +31,8 @@ import click
 from rich.console import Console
 from rich.progress import track
 
-DEFAULT_ROOT_FOLDER = "./data_in/images/ld_sheets" if False else "./"
+# DEFAULT_ROOT_FOLDER = "./data_in/images/ld_sheets"
+DEFAULT_ROOT_FOLDER = "./"
 
 console = Console()
 
@@ -57,22 +58,6 @@ def write_report(path, report):
     )
 
 
-@click.command()
-@click.option(
-    "--root_folder",
-    default=DEFAULT_ROOT_FOLDER,
-    help="Path to root folder",
-)
-@click.option(
-    "--images_folder_name",
-    default="images",
-    help="Name of the images folder, 'images' by default",
-)
-@click.option(
-    "--masks_folder_name",
-    default="masks",
-    help="Name of the masks folder, 'masks' by default",
-)
 def check_dataset(root_folder, images_folder_name, masks_folder_name):
     out_to("___________________________")
     out_to(f"Current working folder {str(Path.cwd())}")
@@ -271,10 +256,30 @@ def check_dataset(root_folder, images_folder_name, masks_folder_name):
         report_data=report["metatdata"]["masks"],
     )
 
-    write_report(path=p_root_folder, report=report)
-    out_to("___________________________")
-    out_to("---> Exit")
+
+@click.command()
+@click.option(
+    "--root_folder",
+    default=DEFAULT_ROOT_FOLDER,
+    help="Path to root folder",
+)
+@click.option(
+    "--images_folder_name",
+    default="images",
+    help="Name of the images folder, 'images' by default",
+)
+@click.option(
+    "--masks_folder_name",
+    default="masks",
+    help="Name of the masks folder, 'masks' by default",
+)
+def _check_dataset(root_folder, images_folder_name, masks_folder_name):
+    return check_dataset(
+        root_folder=root_folder,
+        images_folder_name=images_folder_name,
+        masks_folder_name=masks_folder_name,
+    )
 
 
 if __name__ == "__main__":
-    check_dataset()
+    _check_dataset()

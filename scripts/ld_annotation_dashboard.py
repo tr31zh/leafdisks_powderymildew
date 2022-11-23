@@ -51,7 +51,7 @@ path_to_here = Path(__file__).parent
 checkpoint_path = path_to_here.parent.joinpath(
     "notebooks",
     "lightning_logs",
-    "version_14",
+    "version_12",
     "checkpoints",
     "epoch=34-step=105-train_loss=0.0088628-val_loss=0.01398.ckpt",
 )
@@ -66,7 +66,7 @@ csv_path = path_to_here.parent.joinpath(
 
 index_columns = ["experiment", "rep", "image_name", "ligne", "colonne"]
 
-predictor = ldpl.LeafDiskPredictor(
+predictor = ldpl.LeafDiskSegmentationPredictor(
     model=ldpl.LeafDiskSegmentation.load_from_checkpoint(
         checkpoint_path=str(checkpoint_path)
     )

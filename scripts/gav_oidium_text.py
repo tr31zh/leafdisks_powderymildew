@@ -306,6 +306,14 @@ Linear discriminant analysis (LDA), normal discriminant analysis (NDA), or discr
 > LDA is closely related to analysis of variance (ANOVA) and regression analysis, which also attempt to express one dependent variable as a linear combination of other features or measurements.[1][2] However, ANOVA uses categorical independent variables and a continuous dependent variable, whereas discriminant analysis has continuous independent variables and a categorical dependent variable (i.e. the class label).[3] Logistic regression and probit regression are more similar to LDA than ANOVA is, as they also explain a categorical variable by the values of continuous independent variables. These other methods are preferable in applications where it is not reasonable to assume that the independent variables are normally distributed, which is a fundamental assumption of the LDA method.
 """
 
+txt_model_def_mlp = f"""
+{goc.lvl_4_header} Multilayer Perceptron (MLP)
+&ndash; From [Wikipedia](https://en.wikipedia.org/wiki/Multilayer_perceptron)
+A multilayer perceptron (MLP) is a fully connected class of feedforward artificial neural network (ANN). The term MLP is used ambiguously, sometimes loosely to mean any feedforward ANN, sometimes strictly to refer to networks composed of multiple layers of perceptrons (with threshold activation); see § Terminology. Multilayer perceptrons are sometimes colloquially referred to as "vanilla" neural networks, especially when they have a single hidden layer.[1]
+
+An MLP consists of at least three layers of nodes: an input layer, a hidden layer and an output layer. Except for the input nodes, each node is a neuron that uses a nonlinear activation function. MLP utilizes a supervised learning technique called backpropagation for training.[2][3] Its multiple layers and non-linear activation distinguish MLP from a linear perceptron. It can distinguish data that is not linearly separable.[4]
+"""
+
 txt_model_def_plsda = f"""
 {goc.lvl_4_header} Partial least squares regression PLS-DA
 &ndash; From [Wikipedia](https://en.wikipedia.org/wiki/Partial_least_squares_regression)
