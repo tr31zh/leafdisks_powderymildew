@@ -13,9 +13,6 @@ from tqdm import tqdm
 from sklearn.preprocessing import StandardScaler
 from sklearn.cross_decomposition import PLSRegression
 
-# import plotly.graph_objects as go
-# from plotly.subplots import make_subplots
-
 import gav_mildiou_const as goc
 
 
@@ -33,10 +30,10 @@ def get_oiv_cat(df):
 
 
 def get_common_columns(csv_files):
-    common_columns = set(pd.read_csv(csv_files[0]).columns.to_list())
+    common_columns = set(read_dataframe(csv_files[0]).columns.to_list())
     columns_occ = {}
     for filepath in csv_files:
-        cu_columns = pd.read_csv(filepath).columns.to_list()
+        cu_columns = read_dataframe(filepath).columns.to_list()
         for c in cu_columns:
             if c in columns_occ:
                 columns_occ[c] += 1
@@ -66,6 +63,15 @@ def ensure_folder(forced_path, return_string: bool = True):
     if path.is_dir() is False:
         path.mkdir(parents=True, exist_ok=True)
     return str(forced_path) if return_string is True else forced_path
+
+
+def read_dataframe(path) -> pd.DataFrame:
+    return pd.read_csv(filepath_or_buffer=str(path), sep=";")
+
+
+def write_dataframe(df: pd.DataFrame, path) -> pd.DataFrame:
+    df.to_csv(path_or_buf=ensure_folder(path, return_string=True), sep=";", index=False)
+    return df
 
 
 def consistency_checks(df_src):
@@ -105,125 +111,130 @@ def consistency_checks(df_src):
 
 
 def build_inconsistencies_dataframe(df_source):
-    checks = consistency_checks(df_src=df_source)
-    df_inconsistent = (
-        pd.concat([df_source[~v].assign(because=k) for k, v in checks.items()])[
-            ["experiment", "sheet", "because"]
-        ]
-        .sort_values(["experiment", "sheet", "because"])
-        .drop_duplicates()
-        .reset_index(drop=True)
-    )
-    df_inconsistent = (
-        df_inconsistent.assign(
-            sporulation_oob=np.where(
-                df_inconsistent.because == "sporulation_oob", 1, 0
-            ),
-            sporulation_ds_inc=np.where(
-                df_inconsistent.because == "sporulation_ds_inc", 1, 0
-            ),
-            densite_sporulation_oob=np.where(
-                df_inconsistent.because == "densite_sporulation_oob", 1, 0
-            ),
-            necrose_oob=np.where(df_inconsistent.because == "necrose_oob", 1, 0),
-            necrose_sn_inc=np.where(df_inconsistent.because == "necrose_sn_inc", 1, 0),
-            necrose_tn_inc=np.where(df_inconsistent.because == "necrose_tn_inc", 1, 0),
-            taille_necrose_oob=np.where(
-                df_inconsistent.because == "taille_necrose_oob", 1, 0
-            ),
-            surface_necrosee_oob=np.where(
-                df_inconsistent.because == "surface_necrosee_oob", 1, 0
-            ),
-            oiv_oob=np.where(df_inconsistent.because == "oiv_oob", 1, 0),
-            oiv_s_inc=np.where(df_inconsistent.because == "oiv_s_inc", 1, 0),
-            ligne_oob=np.where(df_inconsistent.because == "ligne_oob", 1, 0),
+    if goc.inconsistent_sheets.is_file():
+        return read_dataframe(goc.inconsistent_sheets)
+    else:
+        checks = consistency_checks(df_src=df_source)
+        df_inconsistent = (
+            pd.concat([df_source[~v].assign(because=k) for k, v in checks.items()])[
+                ["experiment", "sheet", "because"]
+            ]
+            .sort_values(["experiment", "sheet", "because"])
+            .drop_duplicates()
+            .reset_index(drop=True)
         )
-        .drop(["because"], axis=1)
-        .groupby(["experiment", "sheet"])
-        .agg("sum")
-        .reset_index(drop=False)
-        .drop_duplicates()
-    )
+        df_inconsistent = (
+            df_inconsistent.assign(
+                sporulation_oob=np.where(
+                    df_inconsistent.because == "sporulation_oob", 1, 0
+                ),
+                sporulation_ds_inc=np.where(
+                    df_inconsistent.because == "sporulation_ds_inc", 1, 0
+                ),
+                densite_sporulation_oob=np.where(
+                    df_inconsistent.because == "densite_sporulation_oob", 1, 0
+                ),
+                necrose_oob=np.where(df_inconsistent.because == "necrose_oob", 1, 0),
+                necrose_sn_inc=np.where(
+                    df_inconsistent.because == "necrose_sn_inc", 1, 0
+                ),
+                necrose_tn_inc=np.where(
+                    df_inconsistent.because == "necrose_tn_inc", 1, 0
+                ),
+                taille_necrose_oob=np.where(
+                    df_inconsistent.because == "taille_necrose_oob", 1, 0
+                ),
+                surface_necrosee_oob=np.where(
+                    df_inconsistent.because == "surface_necrosee_oob", 1, 0
+                ),
+                oiv_oob=np.where(df_inconsistent.because == "oiv_oob", 1, 0),
+                oiv_s_inc=np.where(df_inconsistent.because == "oiv_s_inc", 1, 0),
+                ligne_oob=np.where(df_inconsistent.because == "ligne_oob", 1, 0),
+            )
+            .drop(["because"], axis=1)
+            .groupby(["experiment", "sheet"])
+            .agg("sum")
+            .reset_index(drop=False)
+            .drop_duplicates()
+        )
 
-    df_inconsistent.to_csv(
-        ensure_folder(goc.datain_path.joinpath("inconsistent_excels.csv")),
-        index=False,
-        sep=";",
-    )
-
-    return df_inconsistent
+        return write_dataframe(df=df_inconsistent, path=goc.inconsistent_sheets)
 
 
 def clean_merged_dataframe(df_source):
-    checks = consistency_checks(df_src=df_source)
-    df_clean_merged = (
-        df_source[
-            (
-                checks["sporulation_oob"]
-                & checks["sporulation_ds_inc"]
-                & checks["densite_sporulation_oob"]
-                & checks["necrose_oob"]
-                & checks["necrose_sn_inc"]
-                & checks["necrose_tn_inc"]
-                & checks["taille_necrose_oob"]
-                & checks["surface_necrosee_oob"]
-                & checks["oiv_oob"]
-                & checks["oiv_s_inc"]
-                & checks["ligne_oob"]
+    if goc.clean_merged.is_file():
+        return read_dataframe(goc.clean_merged)
+    else:
+        checks = consistency_checks(df_src=df_source)
+        df_clean_merged = (
+            df_source[
+                (
+                    checks["sporulation_oob"]
+                    & checks["sporulation_ds_inc"]
+                    & checks["densite_sporulation_oob"]
+                    & checks["necrose_oob"]
+                    & checks["necrose_sn_inc"]
+                    & checks["necrose_tn_inc"]
+                    & checks["taille_necrose_oob"]
+                    & checks["surface_necrosee_oob"]
+                    & checks["oiv_oob"]
+                    & checks["oiv_s_inc"]
+                    & checks["ligne_oob"]
+                )
+            ]
+            .assign(
+                colonne=lambda x: x.colonne.astype("Int64"),
+                necrose=lambda x: x.necrose.astype("Int64"),
+                oiv=lambda x: x.oiv.astype("Int64"),
+                sporulation=lambda x: x.sporulation.astype("Int64"),
+                surface_necrosee=lambda x: x.surface_necrosee.astype("Int64"),
+                densite_sporulation=lambda x: x.densite_sporulation.astype("Int64"),
+                taille_necrose=lambda x: x.taille_necrose.astype("Int64"),
             )
-        ]
-        .assign(
-            colonne=lambda x: x.colonne.astype("Int64"),
-            necrose=lambda x: x.necrose.astype("Int64"),
-            oiv=lambda x: x.oiv.astype("Int64"),
-            sporulation=lambda x: x.sporulation.astype("Int64"),
-            surface_necrosee=lambda x: x.surface_necrosee.astype("Int64"),
-            densite_sporulation=lambda x: x.densite_sporulation.astype("Int64"),
-            taille_necrose=lambda x: x.taille_necrose.astype("Int64"),
+            .drop_duplicates()
         )
-        .drop_duplicates()
-    )
-    df_clean_merged.to_csv(
-        ensure_folder(goc.datain_path.joinpath("clean_merged.csv")),
-        index=False,
-        sep=";",
-    )
-    return df_clean_merged
+        return write_dataframe(df=df_clean_merged, path=goc.clean_merged)
 
 
 def get_distant_excels():
-    if goc.distant_excels_df.is_file():
-        return pd.read_csv(str(goc.distant_excels_df), sep=";")
+    if goc.distant_excels.is_file():
+        return read_dataframe(goc.distant_excels)
     else:
+        if goc.distant_excel_file_path.is_dir() is False:
+            raise FileNotFoundError("Unable to acces distant server")
         files = [
             os.path.join(root, name)
-            for root, _, files in os.walk(
-                str(goc.distant_excel_file_path),
-                topdown=False,
-                followlinks=True,
+            for root, _, files in tqdm(
+                os.walk(
+                    str(goc.distant_excel_file_path),
+                    topdown=False,
+                    followlinks=True,
+                ),
+                desc="Looking for distant Excels",
             )
             for name in files
             if "_saisie" in name
             and "DM" in name
             and (name.endswith("xlsx") or name.endswith("xls"))
         ]
-        return pd.DataFrame(
-            list(zip([os.path.basename(fn) for fn in files], files)),
-            columns=["file", "path"],
-        ).to_csv(
-            ensure_folder(goc.datain_path.joinpath("imported_excels.csv")),
-            sep=";",
+        return write_dataframe(
+            pd.DataFrame(
+                list(zip([os.path.basename(fn) for fn in files], files)),
+                columns=["file", "path"],
+            ),
+            goc.distant_excels,
         )
 
 
 def copy_excel_files(files):
-    for file in tqdm(files):
+    if goc.excel_file_path.is_dir() is False:
+        goc.excel_file_path.mkdir(parents=True, exist_ok=True)
+    for file in tqdm(files, desc="Copying Excel files"):
         file_name = os.path.basename(file)
-        if (
-            file_name.startswith("~$") is False
-            and goc.excel_file_path.joinpath(file_name).is_file() is False
-        ):
-            shutil.copy(src=file, dst=goc.excel_file_path)
+        ensure_folder(goc.excel_file_path)
+        dst_file = goc.excel_file_path.joinpath(file_name)
+        if file_name.startswith("~$") is False and dst_file.is_file() is False:
+            shutil.copy(src=file, dst=str(dst_file))
 
 
 def _add_result(
@@ -234,14 +245,20 @@ def _add_result(
     comment="success",
     csv_file_name=np.nan,
 ):
-    return df.append(
-        {
-            "file": file,
-            "sheet": sheet,
-            "outcome": outcome,
-            "comment": comment,
-            "csv_file_name": csv_file_name,
-        },
+    return pd.concat(
+        [
+            df,
+            pd.DataFrame(
+                data={
+                    "file": [file],
+                    "sheet": [sheet],
+                    "outcome": [outcome],
+                    "comment": [comment],
+                    "csv_file_name": [csv_file_name],
+                }
+            ),
+        ],
+        # axis=0,
         ignore_index=True,
     )
 
@@ -250,7 +267,7 @@ def _lower_dataframe(df):
     try:
         df.columns = df.columns.str.lower().str.replace(" ", "")
         for c in df.columns:
-            if c != "nomphoto" and df[c].dtype == object:
+            if c != "photo" and df[c].dtype == object:
                 df[c] = df[c].str.lower().str.replace(" ", "")
     except:
         return False
@@ -259,8 +276,8 @@ def _lower_dataframe(df):
 
 
 def filter_csvs():
-    if os.path.isfile(goc.path_to_df_result):
-        return pd.read_csv(goc.path_to_df_result)
+    if os.path.isfile(goc.csv_filter_result):
+        return read_dataframe(goc.csv_filter_result)
     else:
         df_result = pd.DataFrame(
             columns=[
@@ -284,7 +301,7 @@ def filter_csvs():
             and (name.endswith("xlsx") or name.endswith("xls"))
         ]
 
-        for lcl_excel_file in tqdm(lcl_excel_files):
+        for lcl_excel_file in tqdm(lcl_excel_files, desc="Filtering Escel sheets"):
             tst_excel_file = pd.ExcelFile(lcl_excel_file)
             for sheet_name in tst_excel_file.sheet_names:
                 df = _lower_dataframe(df=tst_excel_file.parse(sheet_name=sheet_name))
@@ -344,15 +361,27 @@ def filter_csvs():
                     df = df.assign(
                         exp=Path(lcl_excel_file).stem,
                         sheet=sheet_name,
-                    ).dropna(subset=["nomphoto", "oiv"])[
+                    ).dropna(subset=["photo", "oiv"])[
                         goc.needed_columns + ["exp", "sheet"]
                     ]
                     if df.shape[0] > 0:
-                        df.to_csv(
-                            ensure_folder(
-                                goc.mildiou_extracted_csvs_path.joinpath(csv_file_name)
+                        write_dataframe(
+                            df=df.rename(
+                                columns={
+                                    "exp": "experiment",
+                                    "sheet": "sheet",
+                                    "oiv": "oiv",
+                                    "photo": "image_name",
+                                    "s": "sporulation",
+                                    "fn": "surface_necrosee",
+                                    "n": "necrose",
+                                    "sq": "densite_sporulation",
+                                    "tn": "taille_necrose",
+                                }
                             ),
-                            index=False,
+                            path=goc.mildiou_extracted_csvs_path.joinpath(
+                                csv_file_name
+                            ),
                         )
                         df_result = _add_result(
                             df=df_result,
@@ -378,11 +407,7 @@ def filter_csvs():
                         comment=f"Missing columns: {res}",
                     )
 
-        df_result.sort_values(["file"]).to_csv(
-            ensure_folder(goc.path_to_df_result),
-            index=False,
-        )
-        return df_result
+        return write_dataframe(df_result.sort_values(["file"]), goc.csv_filter_result)
 
 
 def get_local_csvs():
@@ -397,37 +422,19 @@ def get_local_csvs():
     ]
 
 
-@pf.register_dataframe_method
-def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
-    return df.rename(
-        columns={
-            "exp": "experiment",
-            "sheet": "sheet",
-            "oiv": "oiv",
-            "nomphoto": "image_name",
-            "s": "sporulation",
-            "fn": "surface_necrosee",
-            "n": "necrose",
-            "sq": "densite_sporulation",
-            "tn": "taille_necrose",
-        }
-    )
-
-
 def build_raw_merged(lcl_csv_files):
-    df = pd.concat(
-        [
-            pd.read_csv(filepath)[get_common_columns(lcl_csv_files)]
-            for filepath in lcl_csv_files
-        ]
-    ).rename_columns()
-    df.to_csv(
-        ensure_folder(goc.datain_path.joinpath("raw_merged.csv")),
-        index=False,
-        sep=";",
-    )
-
-    return df
+    if os.path.isfile(goc.raw_merged):
+        return read_dataframe(goc.raw_merged)
+    else:
+        return write_dataframe(
+            df=pd.concat(
+                [
+                    read_dataframe(filepath)[get_common_columns(lcl_csv_files)]
+                    for filepath in lcl_csv_files
+                ]
+            ),
+            path=goc.raw_merged,
+        )
 
 
 def build_dup_df(df):
@@ -514,20 +521,34 @@ def build_sbs_plsda(df_src, df_dup):
             cur_pls_da = PLSRegression(n_components=X.shape[1])
             cur_pls_da.fit(X, y).transform(X)
 
-            df_sheet_plsda = df_sheet_plsda.append(
-                {
-                    "experiment": row["experiment"],
-                    "sheet": row["sheet"],
-                    "row_count": df.shape[0],
-                    "score": cur_pls_da.score(X, df.oiv),
-                    "dup_count": tmp_df.shape[0],
-                    "dup_rate": tmp_df.shape[0] / df.shape[0],
-                },
+            df_sheet_plsda = pd.concat(
+                [
+                    df_sheet_plsda,
+                    pd.DataFrame(
+                        data={
+                            "experiment": [row["experiment"]],
+                            "sheet": [row["sheet"]],
+                            "row_count": [df.shape[0]],
+                            "score": [cur_pls_da.score(X, df.oiv)],
+                            "dup_count": [tmp_df.shape[0]],
+                            "dup_rate": [tmp_df.shape[0] / df.shape[0]],
+                        }
+                    ),
+                ],
+                # axis=0,
                 ignore_index=True,
             )
         except:
-            df_sheet_plsda = df_sheet_plsda.append(
-                {"experiment": row["experiment"], "sheet": row["sheet"]},
+            df_sheet_plsda = pd.concat(
+                [
+                    df_sheet_plsda,
+                    pd.DataFrame(
+                        data={
+                            "experiment": [row["experiment"]],
+                            "sheet": [row["sheet"]],
+                        }
+                    ),
+                ],
                 ignore_index=True,
             )
     return df_sheet_plsda
@@ -549,33 +570,6 @@ def build_sbs_dup_df(df_src):
             )["df_dup"].assign(experiment=row["experiment"], sheet=row["sheet"])
             for _, row in df_src[["experiment", "sheet"]].drop_duplicates().iterrows()
         ]
-    )
-
-
-def clean_sheet(df_sheet):
-    return (
-        df_sheet[goc.needed_columns]
-        .drop_duplicates()
-        .assign(
-            n=lambda x: x.n.astype("Int64"),
-            oiv=lambda x: x.oiv.astype("Int64"),
-            s=lambda x: x.s.astype("Int64"),
-            fn=lambda x: x.fn.astype("Int64"),
-            sq=lambda x: x.sq.astype("Int64"),
-            tn=lambda x: x.tn.astype("Int64"),
-        )
-        .assign(
-            fn=lambda x: 10 - x.fn,
-            sq=lambda x: 10 - x.sq,
-            tn=lambda x: 10 - x.tn,
-        )
-        .assign(
-            fn=lambda x: x.fn.fillna(0),
-            sq=lambda x: x.sq.fillna(0),
-            tn=lambda x: x.tn.fillna(0),
-            s=lambda x: x.s.fillna(0),
-        )
-        .rename_columns()
     )
 
 
@@ -616,3 +610,63 @@ def sheet_filtering_out_df(df):
         .drop(["csv_file_name", "outcome"], axis=1)
         .reset_index(drop=True)
     )
+
+
+def build_all_dataframes() -> dict:
+    result = {}
+
+    result["files"] = get_distant_excels()
+    copy_excel_files(result["files"].path.to_list())
+
+    result["result"] = filter_csvs()
+    lcl_csv_files = [
+        os.path.join(goc.mildiou_extracted_csvs_path, filename)
+        for filename in result["result"].csv_file_name.dropna().to_list()
+    ]
+
+    result["raw_merged"] = build_raw_merged(lcl_csv_files)
+    result["merged"] = clean_merged_dataframe(result["raw_merged"])
+
+    result["num"] = (
+        result["merged"]
+        .drop(["colonne"], axis=1)
+        .dropna()
+        .select_dtypes(exclude=object)
+        .drop_duplicates()
+    )
+    num_cols = result["num"].columns
+    num_cols = [
+        "sporulation",
+        "densite_sporulation",
+        "necrose",
+        "surface_necrosee",
+        "taille_necrose",
+        "oiv",
+    ]
+    result["num"] = result["num"][num_cols].sort_values(
+        ["oiv", "sporulation", "necrose"]
+    )
+
+    result["inverted"] = invert_axis(result["merged"])
+    result["inverted"] = result["inverted"][
+        [result["inverted"].columns[i] for i in [9, 8, 4, 6, 0, 3, 2, 10, 5, 7, 1]]
+    ].sort_values(["oiv", "sporulation", "necrose"])
+
+    result["inv_num"] = (
+        result["inverted"]
+        .drop(["colonne"], axis=1)
+        .select_dtypes(exclude=object)
+        .drop_duplicates()
+        .sort_values(
+            [
+                "oiv",
+                "necrose",
+                "taille_necrose",
+                "surface_necrosee",
+                "sporulation",
+                "densite_sporulation",
+            ]
+        )
+    )
+
+    return result

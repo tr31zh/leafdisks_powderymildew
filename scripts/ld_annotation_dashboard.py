@@ -14,7 +14,7 @@ from dash import Dash, Input, State, Output, callback, dash_table, dcc, html, AL
 from dash.exceptions import PreventUpdate
 import dash_bootstrap_components as dbc
 
-import gav_oidium_const as goc
+import gav_mildiou_const as goc
 
 import ld_dataset as ldd
 import ld_th_pl_lightning as ldpl

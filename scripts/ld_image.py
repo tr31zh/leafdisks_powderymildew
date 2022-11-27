@@ -1,5 +1,7 @@
 from typing import Any, Union
 
+import math
+
 import numpy as np
 import cv2
 
@@ -202,8 +204,14 @@ class ContourWrapper(object):
     def __init__(self, contour) -> None:
         self.contour = contour
         M = cv2.moments(contour)
-        self.cx = M["m10"] / M["m00"]
-        self.cy = M["m01"] / M["m00"]
+        self._area = cv2.contourArea(self.contour)
+        if self.area > 0:
+            self.cx = M["m10"] / M["m00"]
+            self.cy = M["m01"] / M["m00"]
+        else:
+            self.cx = -1
+            self.cy = -1
+
         self.col = None
         self.row_index = None
         self.left, self.top, self.width, self.height = cv2.boundingRect(contour)
@@ -464,7 +472,33 @@ def print_contours_indexes(mask, contours, canvas=None):
     return canvas
 
 
-def get_leaf_disk(image, contours, row, col, mask=None, padding=0) -> ContourWrapper:
+def get_leaf_disk_patch(image, mask, contours, row, col, patch_size) -> ContourWrapper:
+    c = contours.get(row=row, col=col)
+    c_mask = A.crop(mask.copy(), c.left, c.top, c.right, c.bottom)
+    c_image = A.crop(image.copy(), c.left, c.top, c.right, c.bottom)
+
+    (x, y), radius = cv2.minEnclosingCircle(
+        cv2.findContours(c_mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[
+            -2:-1
+        ][0][0]
+    )
+    x, y = int(x), int(y)
+    radius = int(min(radius, patch_size))
+
+    adj_size = int(math.cos(math.pi / 4) * radius)
+
+    return A.crop(c_image, x - adj_size, y - adj_size, x + adj_size, y + adj_size)
+
+
+def get_leaf_disk(
+    image,
+    contours,
+    row,
+    col,
+    mask=None,
+    padding=0,
+    return_square: bool = False,
+) -> ContourWrapper:
     c = contours.get(row=row, col=col)
     if mask is not None:
         image = cv2.bitwise_and(image, image, mask=erode(mask, kernel_size=15))

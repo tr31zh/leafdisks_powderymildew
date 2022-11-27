@@ -1,5 +1,5 @@
-nomphoto,oiv,s,sq,n,fn,tn,ligne,colonne,exp,sheet
-Exp19DM07_inoc1_T6_P24,md,md,md,md,,,b,3,Exp19DM07_saisie,fichier total
-Exp19DM07_inoc1_T6_P25,md,md,md,md,md,md,c,3,Exp19DM07_saisie,fichier total
-Exp19DM07_inoc1_T6_P56,md,,,,,,a,3,Exp19DM07_saisie,fichier total
-Exp19DM07_inoc1_T6_P76,md,md,md,md,md,md,a,1,Exp19DM07_saisie,fichier total
+image_name;oiv;sporulation;densite_sporulation;necrose;surface_necrosee;taille_necrose;ligne;colonne;experiment;sheet
+Exp19DM07_inoc1_T6_P24;md;md;md;md;;;b;3;Exp19DM07_saisie;fichier total
+Exp19DM07_inoc1_T6_P25;md;md;md;md;md;md;c;3;Exp19DM07_saisie;fichier total
+Exp19DM07_inoc1_T6_P56;md;;;;;;a;3;Exp19DM07_saisie;fichier total
+Exp19DM07_inoc1_T6_P76;md;md;md;md;md;md;a;1;Exp19DM07_saisie;fichier total

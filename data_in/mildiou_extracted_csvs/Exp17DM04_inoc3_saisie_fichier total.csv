@@ -1,4 +1,4 @@
-nomphoto,oiv,s,sq,n,fn,tn,ligne,colonne,exp,sheet
-Exp17DM04_inoc3_T6_P14,md,,,,,,a,3,Exp17DM04_inoc3_saisie,fichier total
-Exp17DM04_inoc3_T6_P14,md,,,,,,b,3,Exp17DM04_inoc3_saisie,fichier total
-Exp17DM04_inoc3_T6_P14,md,,,,,,c,3,Exp17DM04_inoc3_saisie,fichier total
+image_name;oiv;sporulation;densite_sporulation;necrose;surface_necrosee;taille_necrose;ligne;colonne;experiment;sheet
+Exp17DM04_inoc3_T6_P14;md;;;;;;a;3;Exp17DM04_inoc3_saisie;fichier total
+Exp17DM04_inoc3_T6_P14;md;;;;;;b;3;Exp17DM04_inoc3_saisie;fichier total
+Exp17DM04_inoc3_T6_P14;md;;;;;;c;3;Exp17DM04_inoc3_saisie;fichier total

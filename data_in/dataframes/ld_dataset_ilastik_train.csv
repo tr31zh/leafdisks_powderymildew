@@ -1,0 +1,214 @@
+,taille_necrose,experiment,oiv,surface_necrosee,necrose,densite_sporulation,sheet,sporulation,image_name,colonne,ligne,rep,year,dai,exp_folder
+0,,Exp20DM02,3,,0,1,fichier total,1,Exp20DM02_inoc1_T6_P18,4.0,b,inoc1,20,,EXP-2020
+1,,Exp20DM04,3,,0,1,fichier total,1,Exp20DM04_inoc1_T6_P10,4.0,a,inoc1,20,,EXP-2020
+2,,Exp20DM01,1,,0,1,fichier total,1,Exp20DM01_inoc2_T6_P32,2.0,a,inoc2,20,,EXP-2020
+3,,Exp20DM01,1,,0,3,fichier total,1,Exp20DM01_inoc2_T6_P49,2.0,c,inoc2,20,,EXP-2020
+4,,Exp20DM02,3,,0,3,fichier total,1,Exp20DM02_inoc1_T6_P03,3.0,a,inoc1,20,,EXP-2020
+5,,Exp20DM02,3,,0,3,fichier total,1,Exp20DM02_inoc2_T6_P31,1.0,a,inoc2,20,,EXP-2020
+6,7,Exp20DM01,5,9,1,5,fichier total,1,Exp20DM01_inoc2_T6_P01,3.0,b,inoc2,20,,EXP-2020
+7,5,Exp20DM01,5,3,1,5,fichier total,1,Exp20DM01_inoc2_T6_P48,2.0,b,inoc2,20,,EXP-2020
+8,,Exp20DM02,5,,0,5,fichier total,1,Exp20DM02_inoc2_T6_P41,2.0,c,inoc2,20,,EXP-2020
+9,7,Exp20DM02,7,5,1,7,fichier total,1,Exp20DM02_inoc1_T6_P19,1.0,c,inoc1,20,,EXP-2020
+10,7,Exp20DM03,7,7,1,7,fichier total,1,Exp20DM03_inoc1_T6_P05,1.0,b,inoc1,20,,EXP-2020
+11,7,Exp20DM01,7,9,1,7,fichier total,1,Exp20DM01_inoc2_T6_P07,3.0,c,inoc2,20,,EXP-2020
+12,7,Exp20DM02,7,9,1,9,fichier total,1,Exp20DM02_inoc1_T6_P43,4.0,c,inoc1,20,,EXP-2020
+13,5,Exp20DM02,7,7,1,9,fichier total,1,Exp20DM02_inoc2_T6_P07,4.0,c,inoc2,20,,EXP-2020
+14,7,Exp20DM01,7,7,1,9,fichier total,1,Exp20DM01_inoc2_T6_P12,2.0,c,inoc2,20,,EXP-2020
+15,1,Exp20DM02,1,5,1,3,fichier total,1,Exp20DM02_inoc1_T6_P41,3.0,a,inoc1,20,,EXP-2020
+16,1,Exp20DM02,5,5,1,3,fichier total,1,Exp20DM02_inoc1_T6_P22,2.0,b,inoc1,20,,EXP-2020
+17,1,Exp20DM02,3,5,1,1,fichier total,1,Exp20DM02_inoc1_T6_P25,1.0,b,inoc1,20,,EXP-2020
+18,3,Exp20DM01,5,3,1,7,fichier total,1,Exp20DM01_inoc2_T6_P47,4.0,b,inoc2,20,,EXP-2020
+19,3,Exp20DM02,7,5,1,9,fichier total,1,Exp20DM02_inoc2_T6_P13,4.0,b,inoc2,20,,EXP-2020
+20,3,Exp20DM01,5,3,1,7,fichier total,1,Exp20DM01_inoc2_T6_P47,4.0,a,inoc2,20,,EXP-2020
+21,5,Exp20DM01,7,5,1,9,fichier total,1,Exp20DM01_inoc2_T6_P23,3.0,a,inoc2,20,,EXP-2020
+22,5,Exp20DM01,5,7,1,5,fichier total,1,Exp20DM01_inoc2_T6_P52,4.0,a,inoc2,20,,EXP-2020
+23,5,Exp20DM01,7,7,1,9,fichier total,1,Exp20DM01_inoc2_T6_P08,3.0,c,inoc2,20,,EXP-2020
+24,7,Exp20DM02,7,7,1,7,fichier total,1,Exp20DM02_inoc1_T6_P16,4.0,b,inoc1,20,,EXP-2020
+25,7,Exp20DM03,7,5,1,9,fichier total,1,Exp20DM03_inoc2_T6_P15,4.0,a,inoc2,20,,EXP-2020
+26,7,Exp20DM01,9,9,1,,fichier total,0,Exp20DM01_inoc2_T6_P09,3.0,b,inoc2,20,,EXP-2020
+27,9,Exp20DM01,9,9,1,,fichier total,0,Exp20DM01_inoc2_T6_P06,3.0,c,inoc2,20,,EXP-2020
+28,9,Exp20DM04,,7,1,3,fichier total,1,Exp20DM04_inoc1_T6_P18,4.0,a,inoc1,20,,EXP-2020
+29,9,Exp20DM02,9,9,1,,fichier total,0,Exp20DM02_inoc2_T6_P19,2.0,a,inoc2,20,,EXP-2020
+30,9,Exp20DM02,9,3,1,,fichier total,0,Exp20DM02_inoc1_T6_P36,3.0,a,inoc1,20,,EXP-2020
+31,1,Exp20DM02,1,3,1,3,fichier total,1,Exp20DM02_inoc1_T6_P29,4.0,b,inoc1,20,,EXP-2020
+32,7,Exp20DM01,9,3,1,,fichier total,0,Exp20DM01_inoc2_T6_P10,2.0,c,inoc2,20,,EXP-2020
+33,3,Exp20DM04,3,5,1,5,fichier total,1,Exp20DM04_inoc1_T6_P28,1.0,a,inoc1,20,,EXP-2020
+34,9,Exp20DM02,9,5,1,,fichier total,0,Exp20DM02_inoc1_T6_P21,3.0,c,inoc1,20,,EXP-2020
+35,5,Exp20DM01,5,5,1,5,fichier total,1,Exp20DM01_inoc2_T6_P07,2.0,c,inoc2,20,,EXP-2020
+36,7,Exp20DM02,7,7,1,5,fichier total,1,Exp20DM02_inoc1_T6_P39,2.0,b,inoc1,20,,EXP-2020
+37,5,Exp20DM02,9,7,1,,fichier total,0,Exp20DM02_inoc2_T6_P09,4.0,a,inoc2,20,,EXP-2020
+38,7,Exp20DM02,7,7,1,9,fichier total,1,Exp20DM02_inoc1_T6_P23,2.0,b,inoc1,20,,EXP-2020
+39,7,Exp20DM02,7,9,1,9,fichier total,1,Exp20DM02_inoc2_T6_P06,2.0,b,inoc2,20,,EXP-2020
+40,9,Exp20DM01,9,9,1,,fichier total,0,Exp20DM01_inoc2_T6_P04,2.0,c,inoc2,20,,EXP-2020
+41,7,Exp20DM03,7,9,1,7,fichier total,1,Exp20DM03_inoc2_T6_P19,1.0,c,inoc2,20,,EXP-2020
+42,,Exp20DM03,1,,0,3,fichier total,1,Exp20DM03_inoc2_T6_P22,3.0,a,inoc2,20,,EXP-2020
+43,,Exp20DM02,1,,0,3,fichier total,1,Exp20DM02_inoc1_T6_P28,2.0,b,inoc1,20,,EXP-2020
+44,,Exp20DM04,1,,0,3,fichier total,1,Exp20DM04_inoc1_T6_P31,3.0,a,inoc1,20,,EXP-2020
+45,,Exp20DM02,3,,0,1,fichier total,1,Exp20DM02_inoc2_T6_P05,3.0,a,inoc2,20,,EXP-2020
+46,,Exp20DM04,3,,0,,fichier total,,Exp20DM04_inoc2_T6_P21,2.0,b,inoc2,20,,EXP-2020
+47,,Exp20DM04,3,,0,,fichier total,,Exp20DM04_inoc2_T6_P12,2.0,b,inoc2,20,,EXP-2020
+48,3,Exp20DM03,5,5,1,3,fichier total,1,Exp20DM03_inoc1_T6_P13,3.0,b,inoc1,20,,EXP-2020
+49,,Exp20DM04,5,,0,,fichier total,,Exp20DM04_inoc2_T6_P32,3.0,a,inoc2,20,,EXP-2020
+50,5,Exp20DM01,5,5,1,5,fichier total,1,Exp20DM01_inoc2_T6_P21,4.0,c,inoc2,20,,EXP-2020
+51,5,Exp20DM01,7,3,1,5,fichier total,1,Exp20DM01_inoc2_T6_P48,2.0,a,inoc2,20,,EXP-2020
+52,5,Exp20DM02,7,7,1,9,fichier total,1,Exp20DM02_inoc2_T6_P09,1.0,c,inoc2,20,,EXP-2020
+53,,Exp20DM01,7,,1,,fichier total,,Exp20DM01_inoc1_T6_P19,1.0,a,inoc1,20,,EXP-2020
+54,3,Exp20DM02,9,7,1,,fichier total,0,Exp20DM02_inoc2_T6_P12,1.0,b,inoc2,20,,EXP-2020
+55,5,Exp20DM01,9,9,1,,fichier total,0,Exp20DM01_inoc2_T6_P46,1.0,c,inoc2,20,,EXP-2020
+56,,Exp20DM01,9,,0,,fichier total,0,Exp20DM01_inoc2_T6_P23,4.0,b,inoc2,20,,EXP-2020
+57,9,Exp20DM02,9,3,1,,fichier total,0,Exp20DM02_inoc1_T6_P32,1.0,b,inoc1,20,,EXP-2020
+58,9,Exp20DM01,9,9,1,,fichier total,0,Exp20DM01_inoc2_T6_P04,2.0,b,inoc2,20,,EXP-2020
+59,9,Exp20DM02,9,7,1,,fichier total,0,Exp20DM02_inoc1_T6_P19,2.0,a,inoc1,20,,EXP-2020
+60,,Exp20DM03,3,,0,3,fichier total,1,Exp20DM03_inoc2_T6_P21,1.0,b,inoc2,20,,EXP-2020
+61,,Exp20DM02,5,,0,5,fichier total,1,Exp20DM02_inoc2_T6_P37,1.0,a,inoc2,20,,EXP-2020
+62,,Exp20DM03,3,,0,3,fichier total,1,Exp20DM03_inoc2_T6_P17,3.0,a,inoc2,20,,EXP-2020
+63,,Exp20DM02,1,,0,1,fichier total,1,Exp20DM02_inoc1_T6_P16,2.0,c,inoc1,20,,EXP-2020
+64,,Exp20DM02,3,,0,3,fichier total,1,Exp20DM02_inoc1_T6_P28,1.0,b,inoc1,20,,EXP-2020
+65,,Exp20DM02,5,,0,5,fichier total,1,Exp20DM02_inoc1_T6_P41,2.0,c,inoc1,20,,EXP-2020
+66,5,Exp20DM01,5,3,1,5,fichier total,1,Exp20DM01_inoc2_T6_P26,3.0,c,inoc2,20,,EXP-2020
+67,9,Exp20DM02,9,5,1,,fichier total,0,Exp20DM02_inoc1_T6_P06,3.0,c,inoc1,20,,EXP-2020
+68,7,Exp20DM02,5,7,1,5,fichier total,1,Exp20DM02_inoc2_T6_P21,1.0,a,inoc2,20,,EXP-2020
+69,,Exp21DM13,1,,0,1,6dpi,1,Exp21DM13_inoc2_T6_P36,4.0,b,inoc2,21,6,EXP-2021
+70,,Exp21DM03,1,,0,1,6dpi,1,Exp21DM03_inoc3_T6_P14,3.0,b,inoc3,21,6,EXP-2021
+71,,Exp21DM03,1,,0,1,fichier total,1,Exp21DM03_inoc1_T6_P50,3.0,b,inoc1,21,,EXP-2021
+72,,Exp21DM03,1,,0,3,6dpi,1,Exp21DM03_inoc3_T6_P49,1.0,b,inoc3,21,6,EXP-2021
+73,,Exp21DM01,1,,0,3,6dpi,1,Exp21DM01_inoc1_T6_P14,2.0,a,inoc1,21,6,EXP-2021
+74,,Exp21DM03,3,,0,3,fichier total,1,Exp21DM03_inoc1_T6_P28,1.0,c,inoc1,21,,EXP-2021
+75,,Exp21DM12,3,,0,5,4dpi,1,Exp21DM12_inoc3_T4_P55,2.0,c,NA,21,4,EXP-2021
+76,,Exp21DM01,5,,0,5,6dpi,1,Exp21DM01_inoc2_T6_P29,4.0,c,inoc2,21,6,EXP-2021
+77,,Exp21DM12,5,,0,5,6dpi,1,Exp21DM12_inoc3_T6_P31,4.0,a,NA,21,6,EXP-2021
+78,,Exp21DM03,5,,0,7,4dpi,1,Exp21DM03_inoc4_T4_P21,4.0,c,inoc4,21,4,EXP-2021
+79,,Exp21DM12,7,,0,7,3dpi,1,Exp21DM12_inoc3_T3_P17,1.0,a,NA,21,3,EXP-2021
+80,,Exp21DM12,7,,0,7,3dpi,1,Exp21DM12_inoc3_T3_P17,1.0,c,NA,21,3,EXP-2021
+81,,Exp21DM13,7,,0,9,3dpi,1,Exp21DM13_inoc1_T3_P21,2.0,c,inoc1,21,3,EXP-2021
+82,,Exp21DM12,7,,0,9,3dpi,1,Exp21DM12_inoc3_T3_P17,2.0,b,NA,21,3,EXP-2021
+83,5,Exp21DM01,7,9,1,9,6dpi,1,Exp21DM01_inoc1_T6_P41,2.0,b,inoc1,21,6,EXP-2021
+84,1,Exp21DM04,5,3,1,5,6dpi,1,Exp21DM04_inoc2_T6_P18,3.0,b,inoc2,21,6,EXP-2021
+85,1,Exp21DM01,5,3,1,5,6dpi,1,Exp21DM01_inoc1_T6_P31,1.0,b,inoc1,21,6,EXP-2021
+86,1,Exp21DM04,1,3,1,3,6dpi,1,Exp21DM04_inoc2_T6_P13,2.0,b,inoc2,21,6,EXP-2021
+87,3,Exp21DM01,9,7,1,,6dpi,0,Exp21DM01_inoc1_T6_P25,2.0,c,inoc1,21,6,EXP-2021
+88,3,Exp21DM02,9,5,1,,6dpi,0,Exp21DM02_inoc2_T6_P25,2.0,a,inoc2,21,6,EXP-2021
+89,3,Exp21DM01,7,5,1,7,6dpi,1,Exp21DM01_inoc1_T6_P28,3.0,b,inoc1,21,6,EXP-2021
+90,5,Exp21DM13,7,5,1,7,6dpi,1,Exp21DM13_inoc2_T6_P13,4.0,c,inoc2,21,6,EXP-2021
+91,5,Exp21DM02,7,3,1,9,6dpi,1,Exp21DM02_inoc2_T6_P27,2.0,c,inoc2,21,6,EXP-2021
+92,5,Exp21DM02,7,7,1,7,6dpi,1,Exp21DM02_inoc2_T6_P02,2.0,c,inoc2,21,6,EXP-2021
+93,7,Exp21DM12,7,5,1,9,6dpi,1,Exp21DM12_inoc3_T6_P01,4.0,c,NA,21,6,EXP-2021
+94,7,Exp21DM13,9,7,1,,4dpi,0,Exp21DM13_inoc1_T4_P23,1.0,b,inoc1,21,4,EXP-2021
+95,7,Exp21DM05,9,7,1,,6dpi,0,Exp21DM05_inoc2_T6_P04,1.0,c,inoc2,21,6,EXP-2021
+96,9,Exp21DM13,9,9,1,,3dpi,0,Exp21DM13_inoc1_T3_P12,1.0,b,inoc1,21,3,EXP-2021
+97,9,Exp21DM13,9,9,1,,3dpi,0,Exp21DM13_inoc1_T3_P21,1.0,c,inoc1,21,3,EXP-2021
+98,9,Exp21DM04,9,3,1,,3dpi,0,Exp21DM04_inoc2_T3_P02,1.0,b,inoc2,21,3,EXP-2021
+99,3,Exp21DM01,9,1,1,,6dpi,0,Exp21DM01_inoc1_T6_P23,2.0,b,inoc1,21,6,EXP-2021
+100,3,Exp21DM01,9,1,1,,6dpi,0,Exp21DM01_inoc1_T6_P23,2.0,c,inoc1,21,6,EXP-2021
+101,1,Exp21DM04,3,1,1,3,6dpi,1,Exp21DM04_inoc2_T6_P17,3.0,a,inoc2,21,6,EXP-2021
+102,1,Exp21DM04,3,3,1,3,6dpi,1,Exp21DM04_inoc2_T6_P18,3.0,c,inoc2,21,6,EXP-2021
+103,5,Exp21DM04,7,3,1,9,6dpi,1,Exp21DM04_inoc2_T6_P21,2.0,b,inoc2,21,6,EXP-2021
+104,7,Exp21DM01,7,3,1,9,6dpi,1,Exp21DM01_inoc2_T6_P38,2.0,b,inoc2,21,6,EXP-2021
+105,7,Exp21DM01,7,5,1,7,6dpi,1,Exp21DM01_inoc2_T6_P12,3.0,c,inoc2,21,6,EXP-2021
+106,5,Exp21DM13,7,5,1,9,6dpi,1,Exp21DM13_inoc2_T6_P25,1.0,b,inoc2,21,6,EXP-2021
+107,7,Exp21DM13,9,5,1,,6dpi,0,Exp21DM13_inoc2_T6_P5,1.0,b,inoc2,21,6,EXP-2021
+108,9,Exp21DM03,9,7,1,,6dpi,0,Exp21DM03_inoc4_T6_P03,1.0,a,inoc4,21,6,EXP-2021
+109,7,Exp21DM02,7,7,1,9,6dpi,1,Exp21DM02_inoc2_T6_P09,3.0,b,inoc2,21,6,EXP-2021
+110,7,Exp21DM04,9,7,1,,3dpi,0,Exp21DM04_inoc2_T3_P18,4.0,b,inoc2,21,3,EXP-2021
+111,7,Exp21DM13,7,9,1,9,3dpi,1,Exp21DM13_inoc1_T3_P10,4.0,b,inoc1,21,3,EXP-2021
+112,5,Exp21DM01,7,9,1,9,6dpi,1,Exp21DM01_inoc1_T6_P08,3.0,c,inoc1,21,6,EXP-2021
+113,7,Exp21DM01,9,9,1,,6dpi,0,Exp21DM01_inoc1_T6_P09,2.0,c,inoc1,21,6,EXP-2021
+114,,Exp21DM03,1,,0,3,6dpi,1,Exp21DM03_inoc4_T6_P11,3.0,b,inoc4,21,6,EXP-2021
+115,,Exp21DM03,1,,0,3,6dpi,1,Exp21DM03_inoc3_T6_P11,2.0,a,inoc3,21,6,EXP-2021
+116,,Exp21DM03,1,,0,3,fichier total,1,Exp21DM03_inoc1_T6_P33,1.0,b,inoc1,21,,EXP-2021
+117,,Exp21DM12,3,,0,5,4dpi,1,Exp21DM12_inoc3_T4_P16,2.0,b,NA,21,4,EXP-2021
+118,,Exp21DM03,3,,0,3,6dpi,1,Exp21DM03_inoc3_T6_P47,1.0,c,inoc3,21,6,EXP-2021
+119,,Exp21DM03,3,,0,3,4dpi,1,Exp21DM03_inoc3_T4_P24,2.0,a,inoc3,21,4,EXP-2021
+120,,Exp21DM01,5,,0,1,6dpi,1,Exp21DM01_inoc1_T6_P08,1.0,b,inoc1,21,6,EXP-2021
+121,1,Exp21DM04,5,3,1,3,6dpi,1,Exp21DM04_inoc2_T6_P19,3.0,b,inoc2,21,6,EXP-2021
+122,,Exp21DM03,5,,0,5,4dpi,1,Exp21DM03_inoc3_T4_P45,1.0,b,inoc3,21,4,EXP-2021
+123,,Exp21DM12,7,,0,9,3dpi,1,Exp21DM12_inoc3_T3_P59,2.0,a,NA,21,3,EXP-2021
+124,,Exp21DM13,7,,0,7,3dpi,1,Exp21DM13_inoc1_T3_P26,1.0,a,inoc1,21,3,EXP-2021
+125,,Exp21DM12,7,,0,7,3dpi,1,Exp21DM12_inoc3_T3_P57,2.0,a,NA,21,3,EXP-2021
+126,7,Exp21DM07,9,9,1,,fichier total,0,Exp21DM07_inoc1_T6_P13,3.0,b,inoc1,21,,EXP-2021
+127,,Exp21DM12,9,,0,,3dpi,0,Exp21DM12_inoc3_T3_P11,2.0,b,NA,21,3,EXP-2021
+128,,Exp21DM01,9,,0,,6dpi,0,Exp21DM01_inoc1_T6_P07,2.0,b,inoc1,21,6,EXP-2021
+129,5,Exp21DM01,9,7,1,,6dpi,0,Exp21DM01_inoc1_T6_P41,3.0,a,inoc1,21,6,EXP-2021
+130,7,Exp21DM05,9,9,1,,3dpi,0,Exp21DM05_inoc1_T3_P06,1.0,c,inoc1,21,3,EXP-2021
+131,9,Exp21DM01,9,3,1,,6dpi,0,Exp21DM01_inoc1_T6_P35,2.0,c,inoc1,21,6,EXP-2021
+132,,Exp21DM03,3,,0,5,6dpi,1,Exp21DM03_inoc3_T6_P38,1.0,b,inoc3,21,6,EXP-2021
+133,,Exp21DM12,7,,0,9,3dpi,1,Exp21DM12_inoc3_T3_P60,3.0,b,NA,21,3,EXP-2021
+134,,Exp21DM03,3,,0,1,6dpi,1,Exp21DM03_inoc3_T6_P30,2.0,a,inoc3,21,6,EXP-2021
+135,,Exp21DM12,1,,0,3,6dpi,1,Exp21DM12_inoc3_T6_P56,2.0,a,NA,21,6,EXP-2021
+136,,Exp21DM03,3,,0,3,6dpi,1,Exp21DM03_inoc3_T6_P49,4.0,b,inoc3,21,6,EXP-2021
+137,,Exp21DM03,1,,0,3,6dpi,1,Exp21DM03_inoc3_T6_P18,2.0,c,inoc3,21,6,EXP-2021
+138,7,Exp21DM07,9,7,1,,fichier total,0,Exp21DM07_inoc1_T6_P20,2.0,a,inoc1,21,,EXP-2021
+139,9,Exp21DM03,9,3,1,,3dpi,0,Exp21DM03_inoc2_T3_P02,1.0,c,inoc2,21,3,EXP-2021
+140,3,Exp21DM03,1,3,1,3,6dpi,1,Exp21DM03_inoc2_T6_P33,3.0,b,inoc2,21,6,EXP-2021
+141,,Exp22DM02,1,,0,1,6dpi,1,Exp22DM02_inoc1_T6_P47,2.0,a,inoc1,22,6,EXP-2022
+142,,Exp22DM09,3,,0,1,6dpi,1,Exp22DM09_inoc1_T6_P31,3.0,a,NA,22,6,EXP-2022
+143,,Exp22DM08,1,,0,1,Fichier total,1,Exp22DM08-Inoc1-T6-P69,3.0,b,inoc1,22,,EXP-2022
+144,,Exp22DM08,5,,0,3,5dpi,1,Exp22DM08_inoc2_T5_P85,2.0,c,inoc2,22,5,EXP-2022
+145,,Exp22DM02,3,,0,3,6dpi,1,Exp22DM02_inoc2_T6_P10,3.0,c,inoc2,22,6,EXP-2022
+146,1,Exp22DM02,3,3,1,3,6dpi,1,Exp22DM02_inoc1_T6_P40,4.0,c,inoc1,22,6,EXP-2022
+147,5,Exp22DM08,5,5,1,5,6dpi,1,Exp22DM08_inoc1_T6_P58,1.0,a,inoc1,22,6,EXP-2022
+148,,Exp22DM02,3,,0,5,4dpi,1,Exp22DM02_inoc2_T4_P109,2.0,b,inoc2,22,4,EXP-2022
+149,,Exp22DM02,5,,0,5,4dpi,1,Exp22DM02_inoc2_T4_P89,4.0,b,inoc2,22,4,EXP-2022
+150,7,Exp22DM08,5,5,1,7,Fichier total,1,Exp22DM08-Inoc1-T6-P72,2.0,b,inoc1,22,,EXP-2022
+151,,Exp22DM03,7,,0,7,3dpi,1,Exp22DM03_inoc1_T3_P30,3.0,a,inoc1,22,3,EXP-2022
+152,7,Exp22DM08,7,3,1,7,Fichier total,1,Exp22DM08-Inoc1-T5-P82,1.0,a,inoc1,22,,EXP-2022
+153,5,Exp22DM08,7,3,1,9,6dpi,1,Exp22DM08_inoc2_T6_P27,3.0,b,inoc2,22,6,EXP-2022
+154,,Exp22DM08,5,,0,9,Fichier total,1,Exp22DM08-Inoc1-T4-P82,3.0,a,inoc1,22,,EXP-2022
+155,9,Exp22DM09,7,7,1,9,3dpi,1,Exp22DM09_inoc1_T3_P32,4.0,a,NA,22,3,EXP-2022
+156,1,Exp22DM08,1,5,1,5,6dpi,1,Exp22DM08_inoc1_T6_P68,2.0,b,inoc1,22,6,EXP-2022
+157,1,Exp22DM08,7,1,1,9,6dpi,1,Exp22DM08_inoc2_T6_P07,1.0,c,inoc2,22,6,EXP-2022
+158,1,Exp22DM08,7,1,1,9,Fichier total,1,Exp22DM08-Inoc1-T6-P72,3.0,b,inoc1,22,,EXP-2022
+159,3,Exp22DM01,3,5,1,3,6dpi,1,Exp22DM01_inoc1_T6_P20,2.0,c,inoc1,22,6,EXP-2022
+160,3,Exp22DM01,3,5,1,5,6dpi,1,Exp22DM01_inoc1_T6_P20,1.0,a,inoc1,22,6,EXP-2022
+161,3,Exp22DM08,5,3,1,9,Fichier total,1,Exp22DM08-Inoc1-T6-P7,1.0,c,inoc1,22,,EXP-2022
+162,5,Exp22DM02,9,9,1,,6dpi,0,Exp22DM02_inoc3_T6_P20,3.0,b,inoc3,22,6,EXP-2022
+163,5,Exp22DM06,9,7,1,,3dpi,0,Exp22DM06_inoc1_T3_P38,4.0,b,NA,22,3,EXP-2022
+164,5,Exp22DM08,7,3,1,9,5dpi,1,Exp22DM08_inoc2_T5_P29,2.0,c,inoc2,22,5,EXP-2022
+165,7,Exp22DM03,9,3,1,,5dpi,0,Exp22DM03_inoc2_T5_P02,3.0,b,inoc2,22,5,EXP-2022
+166,7,Exp22DM08,7,3,1,7,4dpi ,1,Exp22DM08_inoc1_T4_P85,1.0,a,inoc1,22,4,EXP-2022
+167,7,Exp22DM08,5,5,1,7,5dpi,1,Exp22DM08_inoc1_T5_P82,2.0,a,inoc1,22,5,EXP-2022
+168,9,Exp22DM08,1,9,1,5,5dpi,1,Exp22DM08_inoc1_T5_P86,2.0,b,inoc1,22,5,EXP-2022
+169,9,Exp22DM08,9,7,1,,3dpi,0,Exp22DM08_inoc2_T3_P02,3.0,c,inoc2,22,3,EXP-2022
+170,9,Exp22DM01,9,9,1,,3dpi,0,Exp22DM01_inoc1_T3_P01,1.0,b,inoc1,22,3,EXP-2022
+171,1,Exp22DM08,5,1,1,5,6dpi,1,Exp22DM08_inoc2_T6_P86,2.0,c,inoc2,22,6,EXP-2022
+172,1,Exp22DM08,7,1,1,9,6dpi,1,Exp22DM08_inoc2_T6_P07,1.0,a,inoc2,22,6,EXP-2022
+173,1,Exp22DM08,5,1,1,3,6dpi,1,Exp22DM08_inoc2_T6_P65,1.0,c,inoc2,22,6,EXP-2022
+174,5,Exp22DM02,7,3,1,9,4dpi,1,Exp22DM02_inoc2_T4_P68,1.0,a,inoc2,22,4,EXP-2022
+175,5,Exp22DM08,9,3,1,,Fichier total,0,Exp22DM08-Inoc1-T3-P82,1.0,b,inoc1,22,,EXP-2022
+176,3,Exp22DM02,7,3,1,7,4dpi,1,Exp22DM02_inoc2_T4_P104,2.0,a,inoc2,22,4,EXP-2022
+177,5,Exp22DM02,7,5,1,9,6dpi,1,Exp22DM02_inoc3_T6_P37,3.0,a,inoc3,22,6,EXP-2022
+178,3,Exp22DM08,5,5,1,9,6dpi,1,Exp22DM08_inoc1_T6_P07,1.0,b,inoc1,22,6,EXP-2022
+179,7,Exp22DM08,5,5,1,3,6dpi,1,Exp22DM08_inoc1_T6_P85,2.0,b,inoc1,22,6,EXP-2022
+180,9,Exp22DM06,9,7,1,,6dpi,0,Exp22DM06_inoc1_T6_P51,2.0,c,NA,22,6,EXP-2022
+181,7,Exp22DM06,9,7,1,,4dpi,0,Exp22DM06_inoc1_T4_P60,1.0,a,NA,22,4,EXP-2022
+182,5,Exp22DM02,7,7,1,9,6dpi,1,Exp22DM02_inoc3_T6_P28,1.0,b,inoc3,22,6,EXP-2022
+183,9,Exp22DM09,7,9,1,9,5dpi,1,Exp22DM09_inoc1_T5_P37,3.0,c,NA,22,5,EXP-2022
+184,9,Exp22DM08,5,9,1,7,5dpi,1,Exp22DM08_inoc1_T5_P85,1.0,a,inoc1,22,5,EXP-2022
+185,7,Exp22DM01,5,9,1,5,6dpi,1,Exp22DM01_inoc1_T6_P01,2.0,a,inoc1,22,6,EXP-2022
+186,,Exp22DM08,1,,0,1,6dpi,1,Exp22DM08_inoc1_T6_P64,4.0,b,inoc1,22,6,EXP-2022
+187,,Exp22DM01,1,,0,1,6dpi,1,Exp22DM01_inoc2_T6_P11,1.0,a,inoc2,22,6,EXP-2022
+188,,Exp22DM01,1,,0,3,6dpi,1,Exp22DM01_inoc1_T6_P12,1.0,a,inoc1,22,6,EXP-2022
+189,,Exp22DM01,3,,0,3,4dpi,1,Exp22DM01_inoc2_T4_P15,1.0,b,inoc2,22,4,EXP-2022
+190,,Exp22DM08,3,,0,5,6dpi,1,Exp22DM08_inoc2_T6_P06,4.0,a,inoc2,22,6,EXP-2022
+191,,Exp22DM01,3,,0,3,4dpi,1,Exp22DM01_inoc2_T4_P12,3.0,b,inoc2,22,4,EXP-2022
+192,,Exp22DM08,5,,0,5,Fichier total,1,Exp22DM08-Inoc1-T4-P22,1.0,b,inoc1,22,,EXP-2022
+193,,Exp22DM02,5,,0,3,6dpi,1,Exp22DM02_inoc2_T6_P25,3.0,c,inoc2,22,6,EXP-2022
+194,5,Exp22DM09,5,7,1,7,4dpi,1,Exp22DM09_inoc1_T4_P33,1.0,a,NA,22,4,EXP-2022
+195,7,Exp22DM11,7,9,1,9,3dpi,1,Exp22DM11_inoc2_T3_P14,4.0,a,inoc2,22,3,EXP-2022
+196,9,Exp22DM08,7,7,1,9,4dpi ,1,Exp22DM08_inoc1_T4_P68,1.0,b,inoc1,22,4,EXP-2022
+197,,Exp22DM08,7,,0,9,4dpi,1,Exp22DM08_inoc2_T4_P07,3.0,a,inoc2,22,4,EXP-2022
+198,7,Exp22DM08,9,7,1,,Fichier total,0,Exp22DM08-Inoc1-T3-P8,3.0,c,inoc1,22,,EXP-2022
+199,,Exp22DM11,9,,0,,3dpi,0,Exp22DM11_inoc3_T3_P29,2.0,c,inoc3,22,3,EXP-2022
+200,9,Exp22DM08,9,7,1,,3dpi,0,Exp22DM08_inoc1_T3_P22,2.0,a,inoc1,22,3,EXP-2022
+201,7,Exp22DM06,9,9,1,,4dpi,0,Exp22DM06_inoc1_T4_P47,4.0,b,NA,22,4,EXP-2022
+202,9,Exp22DM08,9,7,1,,3dpi,0,Exp22DM08_inoc1_T3_P20,2.0,b,inoc1,22,3,EXP-2022
+203,9,Exp22DM03,9,5,1,,5dpi,0,Exp22DM03_inoc1_T5_P06,3.0,b,inoc1,22,5,EXP-2022
+204,5,Exp22DM01,1,7,1,3,6dpi,1,Exp22DM01_inoc1_T6_P14,1.0,b,inoc1,22,6,EXP-2022
+205,7,Exp22DM08,7,9,1,7,Fichier total,1,Exp22DM08-Inoc1-T6-P46,4.0,c,inoc1,22,,EXP-2022
+206,,Exp22DM08,5,,0,9,5dpi,1,Exp22DM08_inoc1_T5_P23,3.0,c,inoc1,22,5,EXP-2022
+207,,Exp22DM02,5,,0,3,6dpi,1,Exp22DM02_inoc2_T6_P116,3.0,a,inoc2,22,6,EXP-2022
+208,,Exp22DM09,5,,0,5,6dpi,1,Exp22DM09_inoc1_T6_P36,4.0,a,NA,22,6,EXP-2022
+209,,Exp22DM08,3,,0,3,4dpi,1,Exp22DM08_inoc2_T4_P01,1.0,a,inoc2,22,4,EXP-2022
+210,9,Exp22DM08,7,7,1,7,Fichier total,1,Exp22DM08-Inoc1-T3-P10,4.0,b,inoc1,22,,EXP-2022
+211,7,Exp22DM02,7,7,1,9,6dpi,1,Exp22DM02_inoc3_T6_P06,2.0,a,inoc3,22,6,EXP-2022
+212,7,Exp22DM02,5,9,1,3,6dpi,1,Exp22DM02_inoc2_T6_P78,3.0,a,inoc2,22,6,EXP-2022

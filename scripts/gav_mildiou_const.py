@@ -1,17 +1,25 @@
 from pathlib import Path
 
+# Folders
 root_folder = Path(__file__).parent.parent
-
 datain_path = root_folder.joinpath("data_in")
 dataout_path = root_folder.joinpath("data_out")
 excel_file_path = datain_path.joinpath("mildiou_source_excels")
 distant_excel_file_path = datain_path.joinpath("gav_phenotypage")
+dataframes_path = datain_path.joinpath("dataframes")
+
+# Dataframes
+distant_excels = dataframes_path.joinpath("distant_excels_df.csv")
+clean_merged = dataframes_path.joinpath("clean_merged.csv")
+csv_filter_result = dataframes_path.joinpath("csv_filter_result.csv")
+inconsistent_sheets = dataframes_path.joinpath("inconsistent_sheets.csv")
+clean_merged = dataframes_path.joinpath("clean_merged.csv")
+raw_merged = dataframes_path.joinpath("raw_merged.csv")
+
 mildiou_extracted_csvs_path = datain_path.joinpath("mildiou_extracted_csvs")
-distant_excels_df = datain_path.joinpath("imported_excels.csv")
-path_to_df_result = datain_path.joinpath("extracted_csv_files.csv")
 
 odd_numbers = [1, 3, 5, 7, 9]
-needed_columns = ["nomphoto", "oiv", "s", "sq", "n", "fn", "tn", "ligne", "colonne"]
+needed_columns = ["photo", "oiv", "s", "sq", "n", "fn", "tn", "ligne", "colonne"]
 
 three_plot_width = 600
 three_plot_height = 500
