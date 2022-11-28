@@ -4,6 +4,8 @@ from re import I, L
 import numpy as np
 import pandas as pd
 
+from tqdm.notebook import tqdm
+
 import cv2
 
 from torch.utils.data import Dataset
@@ -62,7 +64,7 @@ def build_items_dataframe(images_folder, masks_folder=None) -> pd.DataFrame:
         df_dict["image_name"] = []
         df_dict["image_path"] = []
         df_dict["mask_path"] = []
-        for image_path in images_folder.glob("*"):
+        for image_path in tqdm(images_folder.glob("*"), desc="Parsing images folder"):
             if cv2.imread(str(image_path)) is None:
                 continue
             image_name = image_path.stem
@@ -81,7 +83,7 @@ def build_items_dataframe(images_folder, masks_folder=None) -> pd.DataFrame:
     else:
         df_dict["image_name"] = []
         df_dict["image_path"] = []
-        for image_path in images_folder.glob("*"):
+        for image_path in tqdm(images_folder.glob("*"), desc="Parsing images folder"):
             if cv2.imread(str(image_path)) is None:
                 continue
             df_dict["image_name"].append(image_path.name)

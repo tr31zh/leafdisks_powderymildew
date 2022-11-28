@@ -145,8 +145,11 @@ data_out/.DS_Store
 *.bmp
 *.jpg
 *.zip
+*.JPG
 
 */CamVid/*
 */lightning_logs/*
+lightning_logs/*
 
 *.json
+*.out
